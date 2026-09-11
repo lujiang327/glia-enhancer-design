@@ -1,0 +1,125 @@
+INFO  @ 09 Sep 2026 11:39:34: [26 MB] 
+# Command line: callpeak -t reports/qc/muller.filtered.bedpe -f BEDPE -g hs --keep-dup all -q 0.01 -n muller_diagnostic --outdir reports/qc/peaks
+# ARGUMENTS LIST:
+# name = muller_diagnostic
+# format = BEDPE
+# ChIP-seq file = ['reports/qc/muller.filtered.bedpe']
+# control file = None
+# effective genome size = 2.91e+09
+# band width = 300
+# model fold = [5, 50]
+# qvalue cutoff = 1.00e-02
+# The maximum gap between significant sites is assigned as the read length/tag size.
+# The minimum length of peaks is assigned as the predicted fragment length "d".
+# Larger dataset will be scaled towards smaller dataset.
+# Range for calculating regional lambda is: 10000 bps
+# Broad region calling is off
+# Paired-End mode is on
+ 
+INFO  @ 09 Sep 2026 11:39:34: [26 MB] #1 read fragment files... 
+INFO  @ 09 Sep 2026 11:39:34: [26 MB] #1 read treatment fragments... 
+INFO  @ 09 Sep 2026 11:39:35: [113 MB]  1000000 fragments parsed 
+INFO  @ 09 Sep 2026 11:39:35: [117 MB]  2000000 fragments parsed 
+INFO  @ 09 Sep 2026 11:39:36: [129 MB]  3000000 fragments parsed 
+INFO  @ 09 Sep 2026 11:39:36: [136 MB]  4000000 fragments parsed 
+INFO  @ 09 Sep 2026 11:39:37: [143 MB]  5000000 fragments parsed 
+INFO  @ 09 Sep 2026 11:39:37: [152 MB]  6000000 fragments parsed 
+INFO  @ 09 Sep 2026 11:39:37: [162 MB]  7000000 fragments parsed 
+INFO  @ 09 Sep 2026 11:39:38: [176 MB]  8000000 fragments parsed 
+INFO  @ 09 Sep 2026 11:39:38: [181 MB]  9000000 fragments parsed 
+INFO  @ 09 Sep 2026 11:39:39: [183 MB]  10000000 fragments parsed 
+INFO  @ 09 Sep 2026 11:39:39: [191 MB]  11000000 fragments parsed 
+INFO  @ 09 Sep 2026 11:39:40: [198 MB]  12000000 fragments parsed 
+INFO  @ 09 Sep 2026 11:39:40: [204 MB]  13000000 fragments parsed 
+INFO  @ 09 Sep 2026 11:39:40: [207 MB]  14000000 fragments parsed 
+INFO  @ 09 Sep 2026 11:39:41: [207 MB]  15000000 fragments parsed 
+INFO  @ 09 Sep 2026 11:39:41: [211 MB]  16000000 fragments parsed 
+INFO  @ 09 Sep 2026 11:39:42: [217 MB]  17000000 fragments parsed 
+INFO  @ 09 Sep 2026 11:39:42: [223 MB]  18000000 fragments parsed 
+INFO  @ 09 Sep 2026 11:39:43: [232 MB]  19000000 fragments parsed 
+INFO  @ 09 Sep 2026 11:39:43: [232 MB]  20000000 fragments parsed 
+INFO  @ 09 Sep 2026 11:39:43: [244 MB]  21000000 fragments parsed 
+INFO  @ 09 Sep 2026 11:39:44: [248 MB]  22000000 fragments parsed 
+INFO  @ 09 Sep 2026 11:39:44: [260 MB]  23000000 fragments parsed 
+INFO  @ 09 Sep 2026 11:39:45: [270 MB]  24000000 fragments parsed 
+INFO  @ 09 Sep 2026 11:39:45: [273 MB]  25000000 fragments parsed 
+INFO  @ 09 Sep 2026 11:39:46: [273 MB]  26000000 fragments parsed 
+INFO  @ 09 Sep 2026 11:39:46: [273 MB]  27000000 fragments parsed 
+INFO  @ 09 Sep 2026 11:39:46: [273 MB]  28000000 fragments parsed 
+INFO  @ 09 Sep 2026 11:39:47: [277 MB]  29000000 fragments parsed 
+INFO  @ 09 Sep 2026 11:39:47: [278 MB]  30000000 fragments parsed 
+INFO  @ 09 Sep 2026 11:39:48: [281 MB]  31000000 fragments parsed 
+INFO  @ 09 Sep 2026 11:39:48: [294 MB]  32000000 fragments parsed 
+INFO  @ 09 Sep 2026 11:39:48: [300 MB]  33000000 fragments parsed 
+INFO  @ 09 Sep 2026 11:39:49: [308 MB]  34000000 fragments parsed 
+INFO  @ 09 Sep 2026 11:39:49: [308 MB]  35000000 fragments parsed 
+INFO  @ 09 Sep 2026 11:39:50: [314 MB]  36000000 fragments parsed 
+INFO  @ 09 Sep 2026 11:39:50: [336 MB]  37000000 fragments parsed 
+INFO  @ 09 Sep 2026 11:39:51: [345 MB]  38000000 fragments parsed 
+INFO  @ 09 Sep 2026 11:39:51: [359 MB]  39000000 fragments parsed 
+INFO  @ 09 Sep 2026 11:39:51: [362 MB]  40000000 fragments parsed 
+INFO  @ 09 Sep 2026 11:39:52: [369 MB]  41000000 fragments parsed 
+INFO  @ 09 Sep 2026 11:39:52: [376 MB]  42000000 fragments parsed 
+INFO  @ 09 Sep 2026 11:39:53: [377 MB]  43000000 fragments parsed 
+INFO  @ 09 Sep 2026 11:39:53: [385 MB]  44000000 fragments parsed 
+INFO  @ 09 Sep 2026 11:39:54: [391 MB]  45000000 fragments parsed 
+INFO  @ 09 Sep 2026 11:39:54: [399 MB]  46000000 fragments parsed 
+INFO  @ 09 Sep 2026 11:39:54: [399 MB]  47000000 fragments parsed 
+INFO  @ 09 Sep 2026 11:39:55: [401 MB]  48000000 fragments parsed 
+INFO  @ 09 Sep 2026 11:39:55: [404 MB]  49000000 fragments parsed 
+INFO  @ 09 Sep 2026 11:39:56: [404 MB]  50000000 fragments parsed 
+INFO  @ 09 Sep 2026 11:39:56: [404 MB]  51000000 fragments parsed 
+INFO  @ 09 Sep 2026 11:39:56: [404 MB]  52000000 fragments parsed 
+INFO  @ 09 Sep 2026 11:39:57: [404 MB]  53000000 fragments parsed 
+INFO  @ 09 Sep 2026 11:39:57: [409 MB]  54000000 fragments parsed 
+INFO  @ 09 Sep 2026 11:39:58: [417 MB]  55000000 fragments parsed 
+INFO  @ 09 Sep 2026 11:39:58: [423 MB]  56000000 fragments parsed 
+INFO  @ 09 Sep 2026 11:39:59: [431 MB]  57000000 fragments parsed 
+INFO  @ 09 Sep 2026 11:39:59: [433 MB]  58000000 fragments parsed 
+INFO  @ 09 Sep 2026 11:39:59: [435 MB]  59000000 fragments parsed 
+INFO  @ 09 Sep 2026 11:40:00: [437 MB]  60000000 fragments parsed 
+INFO  @ 09 Sep 2026 11:40:00: [442 MB]  61000000 fragments parsed 
+INFO  @ 09 Sep 2026 11:40:01: [444 MB]  62000000 fragments parsed 
+INFO  @ 09 Sep 2026 11:40:01: [447 MB]  63000000 fragments parsed 
+INFO  @ 09 Sep 2026 11:40:02: [458 MB]  64000000 fragments parsed 
+INFO  @ 09 Sep 2026 11:40:02: [468 MB]  65000000 fragments parsed 
+INFO  @ 09 Sep 2026 11:40:02: [468 MB]  66000000 fragments parsed 
+INFO  @ 09 Sep 2026 11:40:03: [468 MB]  67000000 fragments parsed 
+INFO  @ 09 Sep 2026 11:40:03: [473 MB]  68000000 fragments parsed 
+INFO  @ 09 Sep 2026 11:40:04: [475 MB]  69000000 fragments parsed 
+INFO  @ 09 Sep 2026 11:40:04: [476 MB]  70000000 fragments parsed 
+INFO  @ 09 Sep 2026 11:40:04: [476 MB]  71000000 fragments parsed 
+INFO  @ 09 Sep 2026 11:40:05: [479 MB]  72000000 fragments parsed 
+INFO  @ 09 Sep 2026 11:40:05: [491 MB]  73000000 fragments parsed 
+INFO  @ 09 Sep 2026 11:40:06: [493 MB]  74000000 fragments parsed 
+INFO  @ 09 Sep 2026 11:40:06: [496 MB]  75000000 fragments parsed 
+INFO  @ 09 Sep 2026 11:40:07: [506 MB]  76000000 fragments parsed 
+INFO  @ 09 Sep 2026 11:40:07: [510 MB]  77000000 fragments parsed 
+INFO  @ 09 Sep 2026 11:40:07: [512 MB]  78000000 fragments parsed 
+INFO  @ 09 Sep 2026 11:40:08: [513 MB]  79000000 fragments parsed 
+INFO  @ 09 Sep 2026 11:40:08: [513 MB]  80000000 fragments parsed 
+INFO  @ 09 Sep 2026 11:40:09: [513 MB]  81000000 fragments parsed 
+INFO  @ 09 Sep 2026 11:40:09: [517 MB]  82000000 fragments parsed 
+INFO  @ 09 Sep 2026 11:40:09: [523 MB]  83000000 fragments parsed 
+INFO  @ 09 Sep 2026 11:40:10: [530 MB]  84000000 fragments parsed 
+INFO  @ 09 Sep 2026 11:40:10: [530 MB]  85000000 fragments parsed 
+INFO  @ 09 Sep 2026 11:40:11: [530 MB]  86000000 fragments parsed 
+INFO  @ 09 Sep 2026 11:40:11: [530 MB]  87000000 fragments parsed 
+INFO  @ 09 Sep 2026 11:40:11: [530 MB]  88000000 fragments parsed 
+INFO  @ 09 Sep 2026 11:40:12: [530 MB]  89000000 fragments parsed 
+INFO  @ 09 Sep 2026 11:40:12: [530 MB]  90000000 fragments parsed 
+INFO  @ 09 Sep 2026 11:40:13: [530 MB]  91000000 fragments parsed 
+INFO  @ 09 Sep 2026 11:40:13: [530 MB]  92000000 fragments parsed 
+INFO  @ 09 Sep 2026 11:40:55: [1082 MB] #1 mean fragment size is determined as 189.4 bp from treatment 
+INFO  @ 09 Sep 2026 11:40:55: [1082 MB] #1 fragment size = 189.4 
+INFO  @ 09 Sep 2026 11:40:55: [1082 MB] #1  total fragments in treatment: 92217728 
+INFO  @ 09 Sep 2026 11:40:55: [1082 MB] #1 finished! 
+INFO  @ 09 Sep 2026 11:40:55: [1082 MB] #2 Build Peak Model... 
+INFO  @ 09 Sep 2026 11:40:55: [1082 MB] #2 Skipped... 
+INFO  @ 09 Sep 2026 11:40:55: [1082 MB] #3 Call peaks... 
+INFO  @ 09 Sep 2026 11:40:55: [1083 MB] #3 Pre-compute pvalue-qvalue table... 
+INFO  @ 09 Sep 2026 11:44:42: [4153 MB] #3 Call peaks for each chromosome... 
+INFO  @ 09 Sep 2026 11:45:40: [4153 MB] #4 Write output xls file... reports/qc/peaks/muller_diagnostic_peaks.xls 
+INFO  @ 09 Sep 2026 11:45:40: [4153 MB] #4 Write peak in narrowPeak format file... reports/qc/peaks/muller_diagnostic_peaks.narrowPeak 
+INFO  @ 09 Sep 2026 11:45:40: [4153 MB] #4 Write summits bed file... reports/qc/peaks/muller_diagnostic_summits.bed 
+INFO  @ 09 Sep 2026 11:45:40: [4153 MB] Done! 

@@ -1,0 +1,5 @@
+donor	unambiguous_MG_cells	retained_fragment_records	median_retained_fragments_per_cell	pooled_TSS_proxy	scope
+LGS1	879	19737292	17912	21.44257777152012	unambiguous_subset_only
+LGS2	1101	29433336	20883	22.752810105216856	unambiguous_subset_only
+LGS3	741	20491363	22283	22.757538112460665	unambiguous_subset_only
+LVG1	713	16317594	22384	20.204160824896476	unambiguous_subset_only

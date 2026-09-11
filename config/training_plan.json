@@ -1,0 +1,19 @@
+{
+  "organism": "Homo sapiens",
+  "tissue": "adult retina",
+  "target": "Muller glia",
+  "genome_build": "hg38",
+  "chrombpnet_version": "1.0.1",
+  "chrombpnet_commit": "eaa0fe58b6a43da62ea23b75cfc2bef4ecd3550c",
+  "input_length": 2114,
+  "output_length": 1000,
+  "seeds": [42, 123, 456],
+  "bias_threshold_factor_initial": 0.5,
+  "candidate_regions_are_training_universe": false,
+  "barcode_policy": "exclude all bare barcodes matching multiple RNA sample prefixes",
+  "reference_fasta": null,
+  "training_peak_set": null,
+  "gc_matched_nonpeak_set": null,
+  "runtime": null,
+  "status": "PLANNED_NOT_RUN"
+}

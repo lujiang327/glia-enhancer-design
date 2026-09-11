@@ -1,0 +1,12 @@
+{
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "python": "3.9.6",
+  "executables": {
+    "nvidia-smi": null,
+    "chrombpnet": null,
+    "docker": null,
+    "Rscript": null,
+    "bedtools": null
+  },
+  "disk_free_bytes": 213269372928
+}

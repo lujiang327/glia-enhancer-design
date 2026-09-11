@@ -1,0 +1,27 @@
+{
+  "fragment_file": "data/raw/GSM5866073_Mullerglia_frags.tsv.gz",
+  "sha256": "9bb28ba83c01be8babb7c2dd06a9286243915783d756ba6142796d291c27dfbc",
+  "bytes": 865987028,
+  "fragment_records": 92966728,
+  "read_support_sum": 138605039,
+  "chr1_22_X_records": 92889684,
+  "distinct_bare_barcodes": 3665,
+  "median_records_per_bare_barcode": 20746,
+  "median_chr1_22_X_records_per_bare_barcode": 20731,
+  "barcode_suffix_record_counts": {
+    "1": 92966728
+  },
+  "records_by_number_of_matching_RNA_samples": {
+    "1": 86678407,
+    "2": 6018192,
+    "3": 270129
+  },
+  "barcodes_by_number_of_matching_RNA_samples": {
+    "1": 3434,
+    "2": 224,
+    "3": 7
+  },
+  "biological_cell_count": null,
+  "usable_fragments_after_blacklist": null,
+  "warning": "Bare barcodes are not globally unique cell IDs. Chromosome-filtered records are provisional, not fully QC-filtered usable depth."
+}

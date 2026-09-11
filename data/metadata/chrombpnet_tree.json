@@ -1,0 +1,1278 @@
+{
+  "sha": "eaa0fe58b6a43da62ea23b75cfc2bef4ecd3550c",
+  "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/trees/eaa0fe58b6a43da62ea23b75cfc2bef4ecd3550c",
+  "tree": [
+    {
+      "path": ".github",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b4a7daee0572c1b32884b7faa666bdbc0ac3d303",
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/trees/b4a7daee0572c1b32884b7faa666bdbc0ac3d303"
+    },
+    {
+      "path": ".github/workflows",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "27bcc3610b8128da64e5974ab67d9d230ea90017",
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/trees/27bcc3610b8128da64e5974ab67d9d230ea90017"
+    },
+    {
+      "path": ".github/workflows/latest-docker-image.yml",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "b148a0a28dd23b38b32f7906ff676aa4fa5c6a9f",
+      "size": 640,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/b148a0a28dd23b38b32f7906ff676aa4fa5c6a9f"
+    },
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b5776d06910286c53ea0db268eb6be1c80e6767f",
+      "size": 159,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/b5776d06910286c53ea0db268eb6be1c80e6767f"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "048c4691fec59826c3e65d70924f3d20be6e4cef",
+      "size": 2855,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/048c4691fec59826c3e65d70924f3d20be6e4cef"
+    },
+    {
+      "path": "CITATION.cff",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f4906e5cb78ae6c2a64068f863f4bc9b6eca5e91",
+      "size": 883,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/f4906e5cb78ae6c2a64068f863f4bc9b6eca5e91"
+    },
+    {
+      "path": "LICENSE",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "24836b2ffc589cfe964f8a8d14ba19e7c2048a85",
+      "size": 1068,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/24836b2ffc589cfe964f8a8d14ba19e7c2048a85"
+    },
+    {
+      "path": "MANIFEST.in",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "30de28aa886b061c15353a64e905bd621e83bad2",
+      "size": 87,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/30de28aa886b061c15353a64e905bd621e83bad2"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bfcb410b06ce1fb9e8f290690acefef9b7b2fd8f",
+      "size": 14590,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/bfcb410b06ce1fb9e8f290690acefef9b7b2fd8f"
+    },
+    {
+      "path": "chrombpnet",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e18f1245403285d18471382c0eb17516523d3259",
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/trees/e18f1245403285d18471382c0eb17516523d3259"
+    },
+    {
+      "path": "chrombpnet/CHROMBPNET.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e224b54fddfb6a1f5c786a9940d00432baf0345a",
+      "size": 7346,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/e224b54fddfb6a1f5c786a9940d00432baf0345a"
+    },
+    {
+      "path": "chrombpnet/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "chrombpnet/data",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a8eae38c84d8bdc1b15a7e787eb92f8c0df5a8d0",
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/trees/a8eae38c84d8bdc1b15a7e787eb92f8c0df5a8d0"
+    },
+    {
+      "path": "chrombpnet/data/ATAC.ref.motifs.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ad8d84cc9edd8be24cdbca0e8c0cf5fac7f4bc68",
+      "size": 3525,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/ad8d84cc9edd8be24cdbca0e8c0cf5fac7f4bc68"
+    },
+    {
+      "path": "chrombpnet/data/DNASE.ref.motifs.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "24695c158ac1b0ca99d1126f71c48a5f9b1b70ab",
+      "size": 7013,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/24695c158ac1b0ca99d1126f71c48a5f9b1b70ab"
+    },
+    {
+      "path": "chrombpnet/data/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "db5b8c9468b47d995b176fb44734e50399332647",
+      "size": 702,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/db5b8c9468b47d995b176fb44734e50399332647"
+    },
+    {
+      "path": "chrombpnet/data/motif_to_pwm.ATAC.tsv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "73bf844f5a37842a91ced4a5d14f214213e27217",
+      "size": 139,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/73bf844f5a37842a91ced4a5d14f214213e27217"
+    },
+    {
+      "path": "chrombpnet/data/motif_to_pwm.DNASE.tsv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "93b3dc32c481488c555493fd8441c26853bc14c9",
+      "size": 44,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/93b3dc32c481488c555493fd8441c26853bc14c9"
+    },
+    {
+      "path": "chrombpnet/data/motif_to_pwm.TF.tsv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e13f20c04933f9fc4a0f4d3ca39542a0e637a66b",
+      "size": 342,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/e13f20c04933f9fc4a0f4d3ca39542a0e637a66b"
+    },
+    {
+      "path": "chrombpnet/data/motifs.meme.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "868e1e581e5cd3b0f3db5643889fa1f8057836bf",
+      "size": 1108122,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/868e1e581e5cd3b0f3db5643889fa1f8057836bf"
+    },
+    {
+      "path": "chrombpnet/evaluation",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "eabd2940fe298d76e0c7655ec6c83efd510d0ee8",
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/trees/eabd2940fe298d76e0c7655ec6c83efd510d0ee8"
+    },
+    {
+      "path": "chrombpnet/evaluation/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "chrombpnet/evaluation/custom_sequences",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "15a0bffd1f6851f92cf2e002eb6ebc2609ac342f",
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/trees/15a0bffd1f6851f92cf2e002eb6ebc2609ac342f"
+    },
+    {
+      "path": "chrombpnet/evaluation/custom_sequences/custom_sequence_interpret.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "28bd05eb8ec51a486444db780dd3e331c3489f24",
+      "size": 401329,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/28bd05eb8ec51a486444db780dd3e331c3489f24"
+    },
+    {
+      "path": "chrombpnet/evaluation/custom_sequences/custom_sequence_pred.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7a84ad5838b0d8caf077042396400ecb8863128e",
+      "size": 45112,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/7a84ad5838b0d8caf077042396400ecb8863128e"
+    },
+    {
+      "path": "chrombpnet/evaluation/custom_sequences/example.fa",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0b44bc619c61806db050de7867280a3b46bf8bcc",
+      "size": 4242,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/0b44bc619c61806db050de7867280a3b46bf8bcc"
+    },
+    {
+      "path": "chrombpnet/evaluation/custom_sequences/viz_sequence.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "76c0945dbfe8754de2e85cae53c8b42637a455d8",
+      "size": 6936,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/76c0945dbfe8754de2e85cae53c8b42637a455d8"
+    },
+    {
+      "path": "chrombpnet/evaluation/figure_notebooks",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ce0468d389ef665fd1c2f10a0ef34b6fbfa28d4f",
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/trees/ce0468d389ef665fd1c2f10a0ef34b6fbfa28d4f"
+    },
+    {
+      "path": "chrombpnet/evaluation/figure_notebooks/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f560da23e2feb409641db1697916efb6ea177309",
+      "size": 37,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/f560da23e2feb409641db1697916efb6ea177309"
+    },
+    {
+      "path": "chrombpnet/evaluation/figure_notebooks/dnase_versus_atac",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "db6661fc6c91309663714899349a7919186f8337",
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/trees/db6661fc6c91309663714899349a7919186f8337"
+    },
+    {
+      "path": "chrombpnet/evaluation/figure_notebooks/dnase_versus_atac/footprinting.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e62381db217f6bb0c09b6f1ce47b19e403cf72fc",
+      "size": 38681,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/e62381db217f6bb0c09b6f1ce47b19e403cf72fc"
+    },
+    {
+      "path": "chrombpnet/evaluation/figure_notebooks/subsampling",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "366b4bc11c091b1e6c61e97f24b5b43cad03de56",
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/trees/366b4bc11c091b1e6c61e97f24b5b43cad03de56"
+    },
+    {
+      "path": "chrombpnet/evaluation/figure_notebooks/subsampling/arch_compare_footprinting.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7acee372dd26d98276c1800918ebd0019807f207",
+      "size": 139218,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/7acee372dd26d98276c1800918ebd0019807f207"
+    },
+    {
+      "path": "chrombpnet/evaluation/figure_notebooks/subsampling/bias_diff_footprinting.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "acdd7d901e2a376bfa67fd377cfa8ff7d8ffae71",
+      "size": 75350,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/acdd7d901e2a376bfa67fd377cfa8ff7d8ffae71"
+    },
+    {
+      "path": "chrombpnet/evaluation/figure_notebooks/subsampling/comparing_deepshaps.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "85900bb6a5e8009e28c07f86ff534262feccd801",
+      "size": 73549,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/85900bb6a5e8009e28c07f86ff534262feccd801"
+    },
+    {
+      "path": "chrombpnet/evaluation/figure_notebooks/subsampling/comparing_deepshaps_new.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "61d3ed86c37c6e37e7160e04fb523761a8e06e43",
+      "size": 80278,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/61d3ed86c37c6e37e7160e04fb523761a8e06e43"
+    },
+    {
+      "path": "chrombpnet/evaluation/figure_notebooks/subsampling/comparing_dnase_tf_new.ipynb",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "1e10f1187b38bd3b3b9e19b6c4ea409cb008ae7b",
+      "size": 296791,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/1e10f1187b38bd3b3b9e19b6c4ea409cb008ae7b"
+    },
+    {
+      "path": "chrombpnet/evaluation/figure_notebooks/subsampling/comparing_jsd.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "881783f239c02919354681bab035ffbdb6fe92a4",
+      "size": 71807,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/881783f239c02919354681bab035ffbdb6fe92a4"
+    },
+    {
+      "path": "chrombpnet/evaluation/figure_notebooks/subsampling/comparing_tfm_hits.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "caadc01e3325e3c7a6f79b56773e44e5ffd4abff",
+      "size": 30996,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/caadc01e3325e3c7a6f79b56773e44e5ffd4abff"
+    },
+    {
+      "path": "chrombpnet/evaluation/figure_notebooks/subsampling/correlation_plots_region_wise_gm12878.ipynb",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "62332566befb3ab162d2380ae9058601ffce5197",
+      "size": 1250844,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/62332566befb3ab162d2380ae9058601ffce5197"
+    },
+    {
+      "path": "chrombpnet/evaluation/figure_notebooks/subsampling/footprinting.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "65fdd571f584a0fb09f399e62a5e5dca3fa17a25",
+      "size": 45622,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/65fdd571f584a0fb09f399e62a5e5dca3fa17a25"
+    },
+    {
+      "path": "chrombpnet/evaluation/figure_notebooks/subsampling/get_deepshap_and_predictions.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6edc5399b264a3bdac2727e50be9e20c477384c2",
+      "size": 101573,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/6edc5399b264a3bdac2727e50be9e20c477384c2"
+    },
+    {
+      "path": "chrombpnet/evaluation/figure_notebooks/subsampling/get_predictions.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "36311cf6238092ee204b96ecb18f34ee9cd7304f",
+      "size": 177402,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/36311cf6238092ee204b96ecb18f34ee9cd7304f"
+    },
+    {
+      "path": "chrombpnet/evaluation/figure_notebooks/subsampling/get_predictions_bias.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5b36565a6328ecab1a2b9e87119e8bef491690a4",
+      "size": 135162,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/5b36565a6328ecab1a2b9e87119e8bef491690a4"
+    },
+    {
+      "path": "chrombpnet/evaluation/figure_notebooks/subsampling/viz_sequence.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "70e3d30ed5e00e67512cb993744e698b41f64f81",
+      "size": 7081,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/70e3d30ed5e00e67512cb993744e698b41f64f81"
+    },
+    {
+      "path": "chrombpnet/evaluation/interpret",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e9baa676466a238bcd6f6a050bed7be2b891e35d",
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/trees/e9baa676466a238bcd6f6a050bed7be2b891e35d"
+    },
+    {
+      "path": "chrombpnet/evaluation/interpret/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1cbc21ac0a966ff164cf11d88e780682d2809d7e",
+      "size": 3422,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/1cbc21ac0a966ff164cf11d88e780682d2809d7e"
+    },
+    {
+      "path": "chrombpnet/evaluation/interpret/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "chrombpnet/evaluation/interpret/input_utils.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5c9911d17767bc8b5fd0b19b3361165ee91b5b05",
+      "size": 1115,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/5c9911d17767bc8b5fd0b19b3361165ee91b5b05"
+    },
+    {
+      "path": "chrombpnet/evaluation/interpret/interpret.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d248dcfec47e5ebd8dc286ec435b05d1cf3e25b0",
+      "size": 5591,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/d248dcfec47e5ebd8dc286ec435b05d1cf3e25b0"
+    },
+    {
+      "path": "chrombpnet/evaluation/interpret/shap_utils.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ab87f886ae7549cade8c0ce4f09f4e373362b4a2",
+      "size": 3845,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/ab87f886ae7549cade8c0ce4f09f4e373362b4a2"
+    },
+    {
+      "path": "chrombpnet/evaluation/invivo_footprints",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ccafc5727ee5d2935cfd73c6437df41867496917",
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/trees/ccafc5727ee5d2935cfd73c6437df41867496917"
+    },
+    {
+      "path": "chrombpnet/evaluation/invivo_footprints/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "chrombpnet/evaluation/invivo_footprints/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "chrombpnet/evaluation/invivo_footprints/figures",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8d39f9746ec3cd793749eeac5b427cee1d6626e9",
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/trees/8d39f9746ec3cd793749eeac5b427cee1d6626e9"
+    },
+    {
+      "path": "chrombpnet/evaluation/invivo_footprints/figures/scoredist_0.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "738cf64536bb470cd5f2b930effd983040f61c97",
+      "size": 30784,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/738cf64536bb470cd5f2b930effd983040f61c97"
+    },
+    {
+      "path": "chrombpnet/evaluation/invivo_footprints/run_tfmodisco.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e0d5da4557c51043cd29edc7f7644353da297d3b",
+      "size": 9973,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/e0d5da4557c51043cd29edc7f7644353da297d3b"
+    },
+    {
+      "path": "chrombpnet/evaluation/invivo_footprints/script.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "7571539aa1fe262b0f3d98eb984ef2da6eaf4995",
+      "size": 610,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/7571539aa1fe262b0f3d98eb984ef2da6eaf4995"
+    },
+    {
+      "path": "chrombpnet/evaluation/invivo_footprints/script_new.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aea2812207e8ad5af087689930bd1c5d0f8cca1c",
+      "size": 2510,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/aea2812207e8ad5af087689930bd1c5d0f8cca1c"
+    },
+    {
+      "path": "chrombpnet/evaluation/invivo_footprints/tf_modiscohits.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1a0f0a79d5b979d884425b45c1d65891077018bd",
+      "size": 13499,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/1a0f0a79d5b979d884425b45c1d65891077018bd"
+    },
+    {
+      "path": "chrombpnet/evaluation/make_bigwigs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f27bcb5ffd7f8ffde369838d6f0fa68732694b57",
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/trees/f27bcb5ffd7f8ffde369838d6f0fa68732694b57"
+    },
+    {
+      "path": "chrombpnet/evaluation/make_bigwigs/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b5c3a057a0eae71b06ef60f7cb7e605e12151da0",
+      "size": 2062,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/b5c3a057a0eae71b06ef60f7cb7e605e12151da0"
+    },
+    {
+      "path": "chrombpnet/evaluation/make_bigwigs/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "chrombpnet/evaluation/make_bigwigs/bigwig_helper.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9252657456b8492616a1e4acf122540a6ae10adf",
+      "size": 4475,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/9252657456b8492616a1e4acf122540a6ae10adf"
+    },
+    {
+      "path": "chrombpnet/evaluation/make_bigwigs/importance_hdf5_to_bigwig.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f2c7dbd0ca577a0551701762845700a159271ae3",
+      "size": 2420,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/f2c7dbd0ca577a0551701762845700a159271ae3"
+    },
+    {
+      "path": "chrombpnet/evaluation/make_bigwigs/predict_to_bigwig.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "355c992df9f6e8bf36028fe9fec4769413fa9cf5",
+      "size": 11857,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/355c992df9f6e8bf36028fe9fec4769413fa9cf5"
+    },
+    {
+      "path": "chrombpnet/evaluation/marginal_footprints",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "abac585493bb86617f16e4fe3e964ebdd57b7268",
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/trees/abac585493bb86617f16e4fe3e964ebdd57b7268"
+    },
+    {
+      "path": "chrombpnet/evaluation/marginal_footprints/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "418d327357e6f0d1dc2349c1b24d39c0ac50c749",
+      "size": 3742,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/418d327357e6f0d1dc2349c1b24d39c0ac50c749"
+    },
+    {
+      "path": "chrombpnet/evaluation/marginal_footprints/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "chrombpnet/evaluation/marginal_footprints/marginal_footprinting.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b7f95a2aeda9c25ccc73365702aa5f241da69de9",
+      "size": 7014,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/b7f95a2aeda9c25ccc73365702aa5f241da69de9"
+    },
+    {
+      "path": "chrombpnet/helpers",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "cbd28da3af6d194dbe1875100f8ad32083e3b575",
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/trees/cbd28da3af6d194dbe1875100f8ad32083e3b575"
+    },
+    {
+      "path": "chrombpnet/helpers/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "chrombpnet/helpers/data_generator_examples",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3bc7bacbbb4b4c6013a020a21fb06391a5741410",
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/trees/3bc7bacbbb4b4c6013a020a21fb06391a5741410"
+    },
+    {
+      "path": "chrombpnet/helpers/data_generator_examples/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "chrombpnet/helpers/data_generator_examples/batchgen_generator_example.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5256ff3003ea626bf201f1bcd0b814a79fe1c6dc",
+      "size": 5017,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/5256ff3003ea626bf201f1bcd0b814a79fe1c6dc"
+    },
+    {
+      "path": "chrombpnet/helpers/generate_reports",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fb0205a7660e7bf411b6f92743a6b802ff94170c",
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/trees/fb0205a7660e7bf411b6f92743a6b802ff94170c"
+    },
+    {
+      "path": "chrombpnet/helpers/generate_reports/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "chrombpnet/helpers/generate_reports/make_html.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7ea63e258e5e5433a0ee735d8cb9d9ea84e98b55",
+      "size": 18003,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/7ea63e258e5e5433a0ee735d8cb9d9ea84e98b55"
+    },
+    {
+      "path": "chrombpnet/helpers/generate_reports/make_html_bias.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "920e799874d49bbc77b5839d04c5d8994da9104b",
+      "size": 14314,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/920e799874d49bbc77b5839d04c5d8994da9104b"
+    },
+    {
+      "path": "chrombpnet/helpers/hyperparameters",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "382259b6dde827d05fd88666b59a6e8f6b38a3c1",
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/trees/382259b6dde827d05fd88666b59a6e8f6b38a3c1"
+    },
+    {
+      "path": "chrombpnet/helpers/hyperparameters/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "chrombpnet/helpers/hyperparameters/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "chrombpnet/helpers/hyperparameters/find_bias_hyperparams.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f6c391606614034cd275081f4430f162b96ae1e7",
+      "size": 8486,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/f6c391606614034cd275081f4430f162b96ae1e7"
+    },
+    {
+      "path": "chrombpnet/helpers/hyperparameters/find_chrombpnet_hyperparams.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bc8fbaeaa915f058fef6863d427f85a14e838b31",
+      "size": 10566,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/bc8fbaeaa915f058fef6863d427f85a14e838b31"
+    },
+    {
+      "path": "chrombpnet/helpers/hyperparameters/param_utils.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c0ebf4188441148ec0c462a26d55b1d08d37096f",
+      "size": 2587,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/c0ebf4188441148ec0c462a26d55b1d08d37096f"
+    },
+    {
+      "path": "chrombpnet/helpers/make_chr_splits",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "229beb162c5340f1680c75511b8fdf72d77d69ba",
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/trees/229beb162c5340f1680c75511b8fdf72d77d69ba"
+    },
+    {
+      "path": "chrombpnet/helpers/make_chr_splits/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "chrombpnet/helpers/make_chr_splits/splits.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8fb4acc6765e4c72d17242da4efdf1d66f6bb160",
+      "size": 1591,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/8fb4acc6765e4c72d17242da4efdf1d66f6bb160"
+    },
+    {
+      "path": "chrombpnet/helpers/make_gc_matched_negatives",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1bd3210082c347ae5d2427e52b8c94f3bbd37b9b",
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/trees/1bd3210082c347ae5d2427e52b8c94f3bbd37b9b"
+    },
+    {
+      "path": "chrombpnet/helpers/make_gc_matched_negatives/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6ed6b859d2544802414ec1d8ad74a0cb8fd26344",
+      "size": 3541,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/6ed6b859d2544802414ec1d8ad74a0cb8fd26344"
+    },
+    {
+      "path": "chrombpnet/helpers/make_gc_matched_negatives/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "chrombpnet/helpers/make_gc_matched_negatives/get_gc_content.py",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "521f2bee1766e11f82b555d1fa279a307f79298b",
+      "size": 2464,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/521f2bee1766e11f82b555d1fa279a307f79298b"
+    },
+    {
+      "path": "chrombpnet/helpers/make_gc_matched_negatives/get_gc_matched_negatives.py",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "b2f0a78575b675e601b1ed46534bb45b4b0794b7",
+      "size": 7035,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/b2f0a78575b675e601b1ed46534bb45b4b0794b7"
+    },
+    {
+      "path": "chrombpnet/helpers/make_gc_matched_negatives/get_genomewide_gc_buckets",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b91425ac8cfe72306f5fc0d3a77610e23cc1079d",
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/trees/b91425ac8cfe72306f5fc0d3a77610e23cc1079d"
+    },
+    {
+      "path": "chrombpnet/helpers/make_gc_matched_negatives/get_genomewide_gc_buckets/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f0ba7c186fdaf80d05894277e01cf35b767cc639",
+      "size": 1595,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/f0ba7c186fdaf80d05894277e01cf35b767cc639"
+    },
+    {
+      "path": "chrombpnet/helpers/make_gc_matched_negatives/get_genomewide_gc_buckets/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "chrombpnet/helpers/make_gc_matched_negatives/get_genomewide_gc_buckets/get_genomewide_gc_bins.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b8d51f3f2f68fcc34521131393e46e041fcd764c",
+      "size": 2943,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/b8d51f3f2f68fcc34521131393e46e041fcd764c"
+    },
+    {
+      "path": "chrombpnet/helpers/make_gc_matched_negatives/make_gc_matched_negatives.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "d1c2d8c4edbbbdb27a46398f03d93d5f87b39fc4",
+      "size": 2701,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/d1c2d8c4edbbbdb27a46398f03d93d5f87b39fc4"
+    },
+    {
+      "path": "chrombpnet/helpers/postprocessing",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "cd72ef8949e085cfb6d9e1be52ca776aad84b841",
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/trees/cd72ef8949e085cfb6d9e1be52ca776aad84b841"
+    },
+    {
+      "path": "chrombpnet/helpers/postprocessing/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9e2a0d4ac6a64354d5ff2a6a547b076cd05bd285",
+      "size": 152,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/9e2a0d4ac6a64354d5ff2a6a547b076cd05bd285"
+    },
+    {
+      "path": "chrombpnet/helpers/postprocessing/reformat_chrombpnet_h5.py",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "ec7627be89e940fcb57cbbc4f58b6d8ce0b4ab2a",
+      "size": 2227,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/ec7627be89e940fcb57cbbc4f58b6d8ce0b4ab2a"
+    },
+    {
+      "path": "chrombpnet/helpers/preprocessing",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "77901b19996df98bb95bacafa69bcb84f598ac36",
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/trees/77901b19996df98bb95bacafa69bcb84f598ac36"
+    },
+    {
+      "path": "chrombpnet/helpers/preprocessing/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f5074759dc72883fc887a60e01e41880d1e46bee",
+      "size": 6740,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/f5074759dc72883fc887a60e01e41880d1e46bee"
+    },
+    {
+      "path": "chrombpnet/helpers/preprocessing/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "chrombpnet/helpers/preprocessing/analysis",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "bff25bba23c02b388bbdb4ef6b9a91de6d3638f7",
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/trees/bff25bba23c02b388bbdb4ef6b9a91de6d3638f7"
+    },
+    {
+      "path": "chrombpnet/helpers/preprocessing/analysis/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c93de8086ed74e3b5f811c09988a314d798058fc",
+      "size": 1280,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/c93de8086ed74e3b5f811c09988a314d798058fc"
+    },
+    {
+      "path": "chrombpnet/helpers/preprocessing/analysis/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "chrombpnet/helpers/preprocessing/analysis/build_pwm_from_bigwig.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1a3d953059592e22b2ae06eda619d7e67abd7338",
+      "size": 2950,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/1a3d953059592e22b2ae06eda619d7e67abd7338"
+    },
+    {
+      "path": "chrombpnet/helpers/preprocessing/auto_shift_detect.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7d96beff865eaf3126f672de15dc3f9c5a8fe1dd",
+      "size": 11082,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/7d96beff865eaf3126f672de15dc3f9c5a8fe1dd"
+    },
+    {
+      "path": "chrombpnet/helpers/preprocessing/images",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f84cb4b63a296f716abe4a06f236a93b4a2f33ff",
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/trees/f84cb4b63a296f716abe4a06f236a93b4a2f33ff"
+    },
+    {
+      "path": "chrombpnet/helpers/preprocessing/images/atac_44_shift.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "523571a5e1ac2ed8c2acb4758e3aec2eb526703e",
+      "size": 50169,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/523571a5e1ac2ed8c2acb4758e3aec2eb526703e"
+    },
+    {
+      "path": "chrombpnet/helpers/preprocessing/images/atac_45_shift.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1fa32f5c47904f4f7451cf4b846d96e39c7aefe3",
+      "size": 48427,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/1fa32f5c47904f4f7451cf4b846d96e39c7aefe3"
+    },
+    {
+      "path": "chrombpnet/helpers/preprocessing/images/atac_no_shift.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "580ddca20f5943b41ea653e2ab8273dc3fcc490c",
+      "size": 36370,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/580ddca20f5943b41ea653e2ab8273dc3fcc490c"
+    },
+    {
+      "path": "chrombpnet/helpers/preprocessing/images/dnase_01_shift.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e84af2cef1ab3b4c115598371810758813927474",
+      "size": 29729,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/e84af2cef1ab3b4c115598371810758813927474"
+    },
+    {
+      "path": "chrombpnet/helpers/preprocessing/images/dnase_no_shift.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e632f81151f6a721a4398f1ec9f63f5b712e92f7",
+      "size": 32816,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/e632f81151f6a721a4398f1ec9f63f5b712e92f7"
+    },
+    {
+      "path": "chrombpnet/helpers/preprocessing/images/script.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "92ab5f1ebadc84b24504d4613c3928c2e0d8d0e4",
+      "size": 4459,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/92ab5f1ebadc84b24504d4613c3928c2e0d8d0e4"
+    },
+    {
+      "path": "chrombpnet/helpers/preprocessing/reads_to_bigwig.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ef366e63ea915cf4ccd50348c2def146a1f847e0",
+      "size": 7054,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/ef366e63ea915cf4ccd50348c2def146a1f847e0"
+    },
+    {
+      "path": "chrombpnet/parsers.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e413eeb89c65c7e3fc2f31e2e31cc8aac4f5b203",
+      "size": 27913,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/e413eeb89c65c7e3fc2f31e2e31cc8aac4f5b203"
+    },
+    {
+      "path": "chrombpnet/pipelines.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "302e32eca474e4c7bbb260ffa53096b6daf28861",
+      "size": 26058,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/302e32eca474e4c7bbb260ffa53096b6daf28861"
+    },
+    {
+      "path": "chrombpnet/training",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "47375122c57d8797e57b0c01fca1441847d0e1c4",
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/trees/47375122c57d8797e57b0c01fca1441847d0e1c4"
+    },
+    {
+      "path": "chrombpnet/training/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "chrombpnet/training/data_generators",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ff8605d70035eaf624bf6da8fe1aacc03d9fabe7",
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/trees/ff8605d70035eaf624bf6da8fe1aacc03d9fabe7"
+    },
+    {
+      "path": "chrombpnet/training/data_generators/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "chrombpnet/training/data_generators/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "chrombpnet/training/data_generators/batchgen_generator.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f5111079816f112c1da05df4397618debe35f425",
+      "size": 5518,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/f5111079816f112c1da05df4397618debe35f425"
+    },
+    {
+      "path": "chrombpnet/training/data_generators/initializers.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f074fd3060259c51ce84ffde82f9db968609d4a0",
+      "size": 4418,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/f074fd3060259c51ce84ffde82f9db968609d4a0"
+    },
+    {
+      "path": "chrombpnet/training/metrics.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d2dfab66252070d34b0c1363d56ccd286aebae1c",
+      "size": 4755,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/d2dfab66252070d34b0c1363d56ccd286aebae1c"
+    },
+    {
+      "path": "chrombpnet/training/models",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "10e7f964368de5b8d7ed7a23a92858ece9f2118e",
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/trees/10e7f964368de5b8d7ed7a23a92858ece9f2118e"
+    },
+    {
+      "path": "chrombpnet/training/models/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "chrombpnet/training/models/bpnet_model.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "39e29df72947f6d9b9c2c76bbc0198b13f04e871",
+      "size": 4048,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/39e29df72947f6d9b9c2c76bbc0198b13f04e871"
+    },
+    {
+      "path": "chrombpnet/training/models/chrombpnet_with_bias_model.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7a79fce7a262c77c6190338d741298c6d69c5214",
+      "size": 6167,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/7a79fce7a262c77c6190338d741298c6d69c5214"
+    },
+    {
+      "path": "chrombpnet/training/predict.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9695ab39393de3ebeb9f14c0e3120529b2852ffb",
+      "size": 7743,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/9695ab39393de3ebeb9f14c0e3120529b2852ffb"
+    },
+    {
+      "path": "chrombpnet/training/train.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a87bc59f653559435c8fbb3943e7d837c3f45f6f",
+      "size": 4817,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/a87bc59f653559435c8fbb3943e7d837c3f45f6f"
+    },
+    {
+      "path": "chrombpnet/training/utils",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "13bde9516461993f602a882bd7754c34819a1347",
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/trees/13bde9516461993f602a882bd7754c34819a1347"
+    },
+    {
+      "path": "chrombpnet/training/utils/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "chrombpnet/training/utils/argmanager.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5445e826a1b905846a7e800aeb314a979f444390",
+      "size": 3781,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/5445e826a1b905846a7e800aeb314a979f444390"
+    },
+    {
+      "path": "chrombpnet/training/utils/augment.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "51967c327543c16c216ccdd9af41d5e2a20ad0f0",
+      "size": 3120,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/51967c327543c16c216ccdd9af41d5e2a20ad0f0"
+    },
+    {
+      "path": "chrombpnet/training/utils/callbacks.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7a9fcb8714c4c26180e064fc7caf45aee8eeb208",
+      "size": 1538,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/7a9fcb8714c4c26180e064fc7caf45aee8eeb208"
+    },
+    {
+      "path": "chrombpnet/training/utils/data_utils.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "261fd64ee3e321372b41cb02ead0cbbc67f00107",
+      "size": 3553,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/261fd64ee3e321372b41cb02ead0cbbc67f00107"
+    },
+    {
+      "path": "chrombpnet/training/utils/losses.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "525e38bc5b0af1c05ef94b8c28ebf57aa854044d",
+      "size": 687,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/525e38bc5b0af1c05ef94b8c28ebf57aa854044d"
+    },
+    {
+      "path": "chrombpnet/training/utils/metrics_utils.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fbf8d0fe87024bbc89050eae8b28d8480c76dfcb",
+      "size": 6434,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/fbf8d0fe87024bbc89050eae8b28d8480c76dfcb"
+    },
+    {
+      "path": "chrombpnet/training/utils/one_hot.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4fadf92a3738e7462cc1b99c55cf7fa6127dff8e",
+      "size": 2565,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/4fadf92a3738e7462cc1b99c55cf7fa6127dff8e"
+    },
+    {
+      "path": "dockerfile",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "872b58a135c4843d87b24e6d81c91e55db131119",
+      "size": 2052,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/872b58a135c4843d87b24e6d81c91e55db131119"
+    },
+    {
+      "path": "images",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "39e0db81d26085df82069578bb26f3e5ac0e4a90",
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/trees/39e0db81d26085df82069578bb26f3e5ac0e4a90"
+    },
+    {
+      "path": "images/bias_pwm.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7b79ff569ae73f7398bb0cfee4210c2daec37e26",
+      "size": 42153,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/7b79ff569ae73f7398bb0cfee4210c2daec37e26"
+    },
+    {
+      "path": "images/chrombpnet_arch.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "28e9ac4c0fb0f6290092deca9f9e5ac47119f77b",
+      "size": 20924,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/28e9ac4c0fb0f6290092deca9f9e5ac47119f77b"
+    },
+    {
+      "path": "requirements.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dcff9b3c24301f40720510a5c66816de7290e453",
+      "size": 411,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/dcff9b3c24301f40720510a5c66816de7290e453"
+    },
+    {
+      "path": "setup.py",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "546c19ea535f09dc1ded6066b33d29cfb45759e2",
+      "size": 1077,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/546c19ea535f09dc1ded6066b33d29cfb45759e2"
+    },
+    {
+      "path": "tests",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ada36607d2305c5410b144f9211d6f2ef17b3686",
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/trees/ada36607d2305c5410b144f9211d6f2ef17b3686"
+    },
+    {
+      "path": "tests/full_workflow.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "1cc47103bb649c29e5c53542f8fde1f0fc97a9e8",
+      "size": 3028,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/1cc47103bb649c29e5c53542f8fde1f0fc97a9e8"
+    },
+    {
+      "path": "tests/genomewide_gc_bin_test.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "9d0e56de1b0555e8f919e1b3ec66ae06b5e8270b",
+      "size": 1496,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/9d0e56de1b0555e8f919e1b3ec66ae06b5e8270b"
+    },
+    {
+      "path": "tests/test_pred_to_bigwig.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "763047a397e42e11c4e2dfa00a5d12d6ba499cdb",
+      "size": 349,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/763047a397e42e11c4e2dfa00a5d12d6ba499cdb"
+    },
+    {
+      "path": "workflows",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3c6581350a6fe555d894055ec7c411c808a27c2c",
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/trees/3c6581350a6fe555d894055ec7c411c808a27c2c"
+    },
+    {
+      "path": "workflows/train_bias_model.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8aff68d512b68a5282fef02e6189baf8bbe0394a",
+      "size": 12178,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/8aff68d512b68a5282fef02e6189baf8bbe0394a"
+    },
+    {
+      "path": "workflows/train_chrombpnet_model.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "509bcbe0037fda99ae584caa950e1f6a69f42d96",
+      "size": 17611,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/509bcbe0037fda99ae584caa950e1f6a69f42d96"
+    },
+    {
+      "path": "workflows/tutorial",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "16316d4d9717b2667b2f8d4aa68f084dde26d632",
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/trees/16316d4d9717b2667b2f8d4aa68f084dde26d632"
+    },
+    {
+      "path": "workflows/tutorial/step1_download_bams_and_peaks.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "9db25496dbaa455a1ff3266729ffa17f4ca67a27",
+      "size": 1756,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/9db25496dbaa455a1ff3266729ffa17f4ca67a27"
+    },
+    {
+      "path": "workflows/tutorial/step2_make_bigwigs_from_bams.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "928cca375c5ee69d50ebe989efd2ade0ba1205a0",
+      "size": 1435,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/928cca375c5ee69d50ebe989efd2ade0ba1205a0"
+    },
+    {
+      "path": "workflows/tutorial/step3_get_background_regions.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "5ecb97e7eb15ffb39ff278c7cc289adb0d5f6ed3",
+      "size": 3221,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/5ecb97e7eb15ffb39ff278c7cc289adb0d5f6ed3"
+    },
+    {
+      "path": "workflows/tutorial/step4_train_bias_model.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "b126b39dce4aface3e77d1a9577b6bf69fe3ebb6",
+      "size": 4633,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/b126b39dce4aface3e77d1a9577b6bf69fe3ebb6"
+    },
+    {
+      "path": "workflows/tutorial/step5_interpret_bias_model.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "8691eedb40fb9fa76e5cd49414aff91b0d90cc89",
+      "size": 1588,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/8691eedb40fb9fa76e5cd49414aff91b0d90cc89"
+    },
+    {
+      "path": "workflows/tutorial/step6_train_chrombpnet_model.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "cf81be94b8ac52f810e4afbe653a24f9de9adb65",
+      "size": 10619,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/cf81be94b8ac52f810e4afbe653a24f9de9adb65"
+    },
+    {
+      "path": "workflows/tutorial/step7_interpret_chrombpnet_model.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "a20776de2af78b40036377be74959765fe9c35d2",
+      "size": 1657,
+      "url": "https://api.github.com/repos/kundajelab/chrombpnet/git/blobs/a20776de2af78b40036377be74959765fe9c35d2"
+    }
+  ],
+  "truncated": false
+}

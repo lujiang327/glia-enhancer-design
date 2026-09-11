@@ -1,0 +1,9 @@
+donor	rna_prefix	author_sample	eye	rna_geo	biosample	age_years	sex	donor_disease	tissue_disease
+LVG1	1	LVGret1	OD	GSM5866087	SAMN25696390	55.0	male	normal	normal retina
+LVG1	2	LVGret2	OS	GSM5866088	SAMN25696389	55.0	male	normal	normal retina
+LGS1	3	LGS1ODret	OD	GSM5866081	SAMN25696396	85.0	female	normal	normal retina
+LGS1	4	LGS1OSret	OS	GSM5866082	SAMN25696395	85.0	female	normal	normal retina
+LGS2	5	LGS2ODret	OD	GSM5866083	SAMN25696394	87.0	male	normal	normal retina
+LGS2	6	LGS2OSret	OS	GSM5866084	SAMN25696393	87.0	male	normal	normal retina
+LGS3	7	LGS3ODret	OD	GSM5866085	SAMN25696392	74.0	female	dementia	normal retina
+LGS3	8	LGS3OSret	OS	GSM5866086	SAMN25696391	74.0	female	dementia	normal retina

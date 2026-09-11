@@ -1,0 +1,6 @@
+{
+  "diagnostic_peaks_before_blacklist": 104194,
+  "diagnostic_peaks_after_blacklist": 104194,
+  "merged_peak_intervals": 104194,
+  "method": "MACS3 BEDPE q=0.01; hs; keep-dup all. Full published MG pool. FRiP = any fragment overlap / retained records. Not final training peaks or an independent validation peak set."
+}

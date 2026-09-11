@@ -1,0 +1,21 @@
+{'input': 10000000, 'blacklist_overlap': 57124, 'retained': 9933147, 'noncanonical': 9729}
+{'input': 20000000, 'blacklist_overlap': 123507, 'retained': 19855878, 'noncanonical': 20615}
+{'input': 30000000, 'blacklist_overlap': 197139, 'retained': 29777174, 'noncanonical': 25687}
+{'input': 40000000, 'blacklist_overlap': 282581, 'retained': 39686013, 'noncanonical': 31406}
+{'input': 50000000, 'blacklist_overlap': 348884, 'retained': 49619710, 'noncanonical': 31406}
+{'input': 60000000, 'blacklist_overlap': 412642, 'retained': 59538650, 'noncanonical': 48708}
+{'input': 70000000, 'blacklist_overlap': 499009, 'retained': 69452283, 'noncanonical': 48708}
+{'input': 80000000, 'blacklist_overlap': 568035, 'retained': 79365063, 'noncanonical': 66902}
+{'input': 90000000, 'blacklist_overlap': 643752, 'retained': 89283780, 'noncanonical': 72468}
+{
+  "counts": {
+    "input": 92966728,
+    "blacklist_overlap": 671956,
+    "retained": 92217728,
+    "noncanonical": 77044
+  },
+  "tss_count": 39548,
+  "pooled_tss_enrichment_proxy": 21.971235158972423,
+  "tss_definition": "Pooled hg38 QC; writes BEDPE for peak calling, no differential testing.\n\nAssumes input is a deduplicated 10x fragment file with already shifted ends.\nRetains chr1-22,X; excludes full fragments overlapping blacklist intervals.\nTSS proxy: strand-oriented start and end-1 insertions, unique RefGene TSSs,\nmean signal +/-50 bp divided by mean outer 100 bp within +/-2 kb.\nThis is not the ArchR per-cell TSS enrichment statistic.\n",
+  "coordinate_convention": "10x shifted start and end-1; no further shift"
+}

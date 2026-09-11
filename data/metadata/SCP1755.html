@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>
+  scRNA-seq and scATAC-seq atlas of adult human retina - Single Cell Portal
+</title>
+<link rel="icon" type="image/x-icon" href="https://singlecell.broadinstitute.org/single_cell/assets/scp_favicon-1d789652ef8c200e339a406bdb39d8caee8e3659cebd427b52998f88c9bf9235.ico" />
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="lwuaP-Dwp3may3ACHXm7mnspHvNnQvpeNFJplu1byMfYP-HM35vPVFdGSCtslPBUnBHxULPMUvAB3pxlv4dv4A" />
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <script nonce="C/8VQH4CroahsBnzP6ON2Y35mzIG6q1eZqh0Jooi7vs=">
+    // TODO (SCP-2246): Remove inlined `Cookies` dependency
+    /*! js-cookie v2.2.1 | MIT */
+    !function(a){var b;if("function"==typeof define&&define.amd&&(define(a),b=!0),"object"==typeof exports&&(module.exports=a(),b=!0),!b){var c=window.Cookies,d=window.Cookies=a();d.noConflict=function(){return window.Cookies=c,d}}}(function(){function a(){for(var a=0,b={};a<arguments.length;a++){var c=arguments[a];for(var d in c)b[d]=c[d]}return b}function b(a){return a.replace(/(%[0-9A-Z]{2})+/g,decodeURIComponent)}function c(d){function e(){}function f(b,c,f){if("undefined"!=typeof document){f=a({path:"/"},e.defaults,f),"number"==typeof f.expires&&(f.expires=new Date(1*new Date+864e5*f.expires)),f.expires=f.expires?f.expires.toUTCString():"";try{var g=JSON.stringify(c);/^[\{\[]/.test(g)&&(c=g)}catch(j){}c=d.write?d.write(c,b):encodeURIComponent(c+"").replace(/%(23|24|26|2B|3A|3C|3E|3D|2F|3F|40|5B|5D|5E|60|7B|7D|7C)/g,decodeURIComponent),b=encodeURIComponent(b+"").replace(/%(23|24|26|2B|5E|60|7C)/g,decodeURIComponent).replace(/[\(\)]/g,escape);var h="";for(var i in f)f[i]&&(h+="; "+i,!0!==f[i]&&(h+="="+f[i].split(";")[0]));return document.cookie=b+"="+c+h}}function g(a,c){if("undefined"!=typeof document){for(var e={},f=document.cookie?document.cookie.split("; "):[],g=0;g<f.length;g++){var h=f[g].split("="),i=h.slice(1).join("=");c||'"'!==i.charAt(0)||(i=i.slice(1,-1));try{var j=b(h[0]);if(i=(d.read||d)(i,j)||b(i),c)try{i=JSON.parse(i)}catch(k){}if(e[j]=i,a===j)break}catch(k){}}return a?e[a]:e}}return e.set=f,e.get=function(a){return g(a,!1)},e.getJSON=function(a){return g(a,!0)},e.remove=function(b,c){f(b,"",a(c,{expires:-1}))},e.defaults={},e.withConverter=c,e}return c(function(){})});
+  </script>
+  <script type="text/javascript" nonce="C/8VQH4CroahsBnzP6ON2Y35mzIG6q1eZqh0Jooi7vs=">
+
+      window.SCP = {};
+
+      // load the max number of gene searches and corresponding error message.
+      window.MAX_GENE_SEARCH = 50;
+      window.MAX_GENE_SEARCH_MSG = 'For performance reasons, gene search is limited to 50 genes, except for  pre-processed dot plots (where available). Please use multiple searches to view more genes.';
+
+      window.SCP.analyticsPageName = 'site-study';
+      window.SCP.currentStudyAccession = 'SCP1755';
+
+      // if we had search forms to preserve, recall and resubmit
+      if ( localStorage.getItem('previous-search-url') ) {
+          var searchUrl = localStorage.getItem('previous-search-url');
+          localStorage.removeItem('previous-search-url');
+          window.location = searchUrl;
+      }
+
+      window.SCP.userAccessTokenObject = {};
+      window.SCP.userAccessToken = window.SCP.userAccessTokenObject?.access_token ? window.SCP.userAccessTokenObject.access_token : "";
+      window.SCP.userSignedIn = false;
+      window.SCP.environment = 'production';
+      window.SCP.abTests = []
+
+      window.SCP.hasLoggedPageView = false;
+
+
+      // Set the unique cookie for tracking user IDs in GA.  Also used in Mixpanel.
+      // This is not personally identifiable, lasts for 1 year or until cleared.
+      if ( typeof Cookies.get('user_id') === 'undefined' ) {
+        Cookies.set('user_id', '6e5ca307-019d-4860-ac63-316ad058e659', {expires: 365})
+      }
+      window.SCP.userId = Cookies.get('user_id');
+
+      // track whether this user (if present) is registered for Terra
+      // this is needed for reporting upstream to Bard
+      window.SCP.registeredForTerra = false
+
+      // set userId in Google Analytics
+      // Where else is `userId` used?  Consider removing this raw global.
+      var userId = window.SCP.userId;
+
+      // stats for search UI
+      window.SCP.studyStats = {"all":2220,"public":1040,"compliant":476};
+
+  </script>
+
+  <link rel="stylesheet" href="https://singlecell.broadinstitute.org/single_cell/assets/application-8870b74a46ff424f82e81587f590922629cb7e55595c1de7f435a909b1ad2510.css" media="all" />
+  <script src="https://singlecell.broadinstitute.org/single_cell/assets/application-9153974bd41aa9223ab8a1ebecb18533a645695d1e5c69b67c1f89e4e9c6ba55.js" nonce="C/8VQH4CroahsBnzP6ON2Y35mzIG6q1eZqh0Jooi7vs="></script>
+
+  
+  
+  
+  <script src="https://singlecell.broadinstitute.org/vite/assets/application-44MXMwEu.js" crossorigin="" type="module" nonce="C/8VQH4CroahsBnzP6ON2Y35mzIG6q1eZqh0Jooi7vs="></script><link rel="modulepreload" href="https://singlecell.broadinstitute.org/vite/assets/plotly.js-dist--T4BmmsJ.js" as="script" crossorigin="" nonce="C/8VQH4CroahsBnzP6ON2Y35mzIG6q1eZqh0Jooi7vs=">
+<link rel="modulepreload" href="https://singlecell.broadinstitute.org/vite/assets/morpheus-app-CZbFtKx8.js" as="script" crossorigin="" nonce="C/8VQH4CroahsBnzP6ON2Y35mzIG6q1eZqh0Jooi7vs=">
+<link rel="modulepreload" href="https://singlecell.broadinstitute.org/vite/assets/igv-D-pisvFO.js" as="script" crossorigin="" nonce="C/8VQH4CroahsBnzP6ON2Y35mzIG6q1eZqh0Jooi7vs="><link rel="stylesheet" crossorigin="" href="https://singlecell.broadinstitute.org/vite/assets/application-BaV1RhJa.css" nonce="C/8VQH4CroahsBnzP6ON2Y35mzIG6q1eZqh0Jooi7vs=" />
+
+
+
+</head>
+<body >
+
+  <script src="https://cdn.datatables.net/plug-ins/1.10.15/sorting/natural.js" nonce="C/8VQH4CroahsBnzP6ON2Y35mzIG6q1eZqh0Jooi7vs="></script>
+
+    <nav class="navbar fluid navbar-inverse navbar-fixed-top sc-navbar rectangle study-rectangle study-navbar" role="navigation" id="single-cell-navbar">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" aria-label='Toggle navbar' data-toggle="collapse" data-target="#scp-navbar-dropdown-collapse">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <div id="navbar-brand-wrapper">
+        <a class="navbar-brand check-upload" href="/single_cell"><img alt="Single Cell Portal logo" src="https://singlecell.broadinstitute.org/single_cell/assets/SCP-white-83fd7ce49706d64a2b8fddaf56d58172b27611b983f96bc40536e52decfdf3e2.png" /></a>
+    </div>
+  </div>
+    <h1 class="study-header">
+scRNA-seq and scATAC-seq atlas of adult human retina
+</h1>
+
+    <ul id="scp-navbar-dropdown-collapse" class="nav navbar-nav pull-right collapse navbar-collapse">
+      <li class='dropdown'><a class="dropdown-toggle" data-toggle="dropdown" href="#">Help <span class='caret'></span></a>
+        <ul class="dropdown-menu dropdown-menu-right">
+          <li><a target="_blank" rel="noopener noreferrer" href="https://singlecell.zendesk.com/hc/en-us"><span class='fas fa-fw fa-info-circle'></span> Documentation</a></li>
+          <li><a id="open-contact-modal" href="#"><span class='fas fa-fw fa-envelope'></span> Contact us</a></li>
+          <li><a id="request-a-feature" href="https://singlecell.zendesk.com/hc/en-us/requests/new?ticket_form_id=360000303412&amp;tf_1260822624790=SCP374&amp;tf_anonymous_requester_email=&amp;tf_subject=Feature%20Request%20for%20Single%20Cell%20Portal&amp;tf_description=Please%20describe%20your%20enhancement,%20including%20any%20links%20to%20relevant%20SCP%20studies%20or%20other%20resources,%20screenshots%20of%20related%20visualizations,%20and%20whether%20you%20are%20willing%20to%20financially%20sponsor%20this%20feature.%3Cbr/%3E---%3Cbr/%3E%3Cbr/%3E"><span class='fas fa-fw fa-lightbulb'></span> Request a feature</a></li>
+          <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/broadinstitute/single_cell_portal_core"><span class='fab fa-fw fa-github'></span> Portal source code</a></li>
+          <li><a target="_blank" rel="noopener noreferrer" href="/single_cell/api/v1"><span class='fas fa-fw fa-code'></span> REST API documentation</a></li>
+            <li><a href="/single_cell/features/latest"><span class='fas fa-fw fa-bullhorn'></span> New features</a></li>
+        </ul>
+      </li>
+      <li class="left-border-0-5">
+        <a class="check-upload" data-analytics-name="prominent-create-study-button" href="/single_cell/studies/new"><span class='fas fa-plus fa-fw'></span> Create study</a>
+      </li>
+
+        <li><a class="left-border-0-5" id="login-nav" rel="nofollow" data-method="post" href="/single_cell/users/auth/google_oauth2"><span class='fas fa-sign-in-alt fa-fw'></span> Sign in</a></li>
+    </ul>
+</nav>
+
+<script type='text/javascript' nonce="C/8VQH4CroahsBnzP6ON2Y35mzIG6q1eZqh0Jooi7vs=">
+  $('#open-contact-modal').on('click', function() {
+    $('#generic-update-target')
+      .html("<div class=\"modal fade\" id=\"generic-update-modal\" role=\"dialog\" aria-labelledby=\"generic-update-modal\" aria-hidden=\"true\">\n    <div class=\"modal-dialog modal-lg\">\n        <div class=\"modal-content\">\n            <div class=\"modal-header\">\n                <h4 id=\"generic-update-modal-title\" class=\"text-center\"><\/h4>\n            <\/div>\n            <div class=\"modal-body\" id=\"generic-update-modal-body\">\n            <\/div>\n            <div class=\"modal-footer\">\n                <button class=\"close\" aria-label=\"Close modal\" data-dismiss=\"modal\">×<\/button>\n            <\/div>\n        <\/div>\n    <\/div>\n<\/div>")
+    $('#generic-update-modal-title').html('<span class=\'h2\'>Need Help?</span>')
+    $('#generic-update-modal-body')
+      .html("<p class=\"scp-help-text\">If you are experiencing issues using Single Cell Portal or would like to ask a question,\n    please send an email to <a href=\"mailto:scp-support@broadinstitute.zendesk.com\">scp-support@broadinstitute.zendesk.com<\/a>.<\/p>\n<p class=\"scp-help-text\">You can also visit our <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://singlecell.zendesk.com/hc/en-us\">documentation<\/a>\n    to view common topics about using Single Cell Portal.<\/p>\n")
+    $('#generic-update-modal').modal('show')
+  })
+</script>
+
+<div id="notices-target">
+  <div class="modal fade" id="message_modal" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <p class="text-success text-center" id="notice-content"></p>
+          <p class="text-danger text-center" id="alert-content"><strong></strong></p>
+        </div>
+        <div class="modal-footer">
+          <button class="close" aria-label='Close' data-dismiss="modal">×</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" nonce="C/8VQH4CroahsBnzP6ON2Y35mzIG6q1eZqh0Jooi7vs=">
+    if (false) {
+        showMessageModal("", "")
+    } else {
+        $('#notice-content').empty();
+        $('#alert-content').empty();
+    }
+</script>
+
+</div>
+  <div class="container-fluid" id="wrap">
+    <div class="row" id="main-body">
+      <div class="col-md-12">
+        <div id="title-bar">
+  
+
+</div>
+<div id="tab-root">
+  <ul class="nav nav-tabs"  data-analytics-name="study-overview" role="tablist" id="study-tabs">
+  <li role="presentation" class="study-nav " id="study-summary-nav">
+    <a href="#study-summary" data-toggle="tab">Summary <i class="far fa-fw fa-file-alt"></i></a>
+  </li>
+    <li role="presentation" class="study-nav  active" id="study-visualize-nav">
+      <a href="#study-visualize" data-toggle="tab">Explore <i class="fas fa-fw fa-eye"></i></a>
+    </li>
+      <li role="presentation" class="study-nav disabled" id="study-download-nav">
+        <a href="#study-download" data-toggle="tooltip" title="Please sign in to download data">
+          Download <i class="fas fa-fw fa-download"></i>
+        </a>
+      </li>
+    <li role="presentation" class="study-badges">
+      <span class="badge" id="cell-count"> 51645 total cells</span>
+      <span class="badge" id="gene-count"> 36601 genes</span>
+    </li>
+</ul>
+
+  <div class="tab-content top-pad">
+    <div class="tab-pane " id="study-summary" role="tabpanel">
+      <div id="study-description-row">
+  <div id="study-description-container">
+    <div id="study-description-content" class="ck-content">
+      <p>scRNA-seq atlas of the adult human retina from:</p><p>Sean K. Wang, Surag Nair, Rui Li, Katerina Kraft, Anusri Pampari, Aman Patel, Joyce B. Kang, Christy Luong, Anshul Kundaje, Howard Y. Chang. <i>Single-cell multiome of the human retina and deep learning nominate causal variants in complex eye diseases.</i> <strong>Cell Genomics (2022)</strong>. DOI: <a href="https://doi.org/10.1016/j.xgen.2022.100164">10.1016/j.xgen.2022.100164</a><br><br>Corresponding scATAC-seq data can be viewed <a href="https://epigenomegateway.wustl.edu/browser2022/?blob=7Zpbj9o4FMe_CkofS0LCZQZ4o6gXtJ1pNbDdh1VVOc4h8Y6xU8cMZUbz3XscQgiQ0ukyiio18ILjv.1z.eVgTB6sEIRcwDVZgDW0orDTt5rWHYPVRGhQd4Rbwwcr0URpa9gedLuDy3a_M2haIIL0Qu.i2_c6g8empRWht4k1_PfBEpvZbpYcFE6n17FpqqzJiQ84bd4tY82kwJEPB1046VKZJooWoElANDGqmVmpsTcrSlkyBQ5UAxo2JzyBpjVnHD74_21mMA1j3ueCqfiZJTP4hs5lQzQ2xlLMWYgr4awkZsXm1yWo9WsRxJIJHPTw.NjcuQsxEH1Fkts9r9Ori.3V3MN9cVkMioo8FJHWcTJste7YfbT0ndUy0dyBYNmKlz5ntGUy2FKL5Na7cHz_ZOCKhv0O8VMwfwsCdqFDNIEIITUxwdkL3nwKXxumP8ksKwwZFYeUBrYw.kmMHRmyuWm2N8xvAZ8MdoHzWbjCQYWApb1lsUg7qORSYeuF511edjp4BUQCC59P9ZrjhKl5RwjSiIjQ3nBnm7g5ScdZJvYKEm17DlmQeynIKnGoXLSmGMDWDWgmyMurJUdDFvAyoaPZaPwyVjKNTwutsWf4acruwfZc1xZSLa5AR3j9BkiQTMRsOrVHikY3jr86SNl.Upr7KcxC8v9TlQY_XwJ1Z.YujeZrpdLAm9SZtUZBUDAryeycEX8iAvhmDd2mZbzFOx8HjfHel4tGOhAdy1H48OaNTaWAhs9iyUmhFh1xUSItgaRElRPT7RIyGBzXp.eHA61AsQAns6Im5WxSMNb45dkIOSMnINlXlfCxL8jRoHOfuN0q0NgY4BgDairOrx_XTy4fR8qy6nEkygnxwbwrKR7Xde14Xkrwu_oJhOyryjcgZWQEvtfvB1WQgQbUVDwbFbhsYQN_hEPWXcJB1pMD0O.1abtXBQBm5TrzZ2f.7ejVyMbwU8VOInCoK2HhULLbbNILf.5VAYUxwYxLTajpOJuOd1IxzIHG86Qfo7EnKuFirz.HYg5.Z35RBRS79Wsizq8XfP2kcrEvK6sW.4rdN8icgutWUiz4uq4Vz7izTMPNGyHmiWO2GxT4qbLxI33p0V.5NIem5_eCi8tK9p0bU5ytKY4xpabnbHpGk8lT6sqBrISVA0WOiOsCnZMqEEEL6rryjGQkWkm61iexKGjKmCh0775o.l438CsBYrt8TcP5Z5.MKvmzk8.Cpuzcs9C9247Sget2Kjn13C5f03A2DR.VXEj8w7sxljahFJKE.Ywzvd7RwaUIFebQ3PtbAk4NKwHmlDxgSczJ.koGZjGiqFkGC_8_LNCRNfSaVgQsjDAOHRddynkb.OZdBW905OQxcPQ37YT3v0LTLn5_BFBAbtvm7.zGeybQ_NMYHYnL4DkSnQTi50RVgEzcDr8kUmH4anSeflbCxtHkY4MIGklVIMfHqQuHJYeqsgOTQ01hE2teR5AE.L__phxt2fLcyn4LfUFzx39_zKzdcoNe_yItJk5_BCedv9qXhDY2WT5dYY60ZbQcasoKSHnNyXCq4gwuNe4LlzJOdjVlC0tdWsqQQRO38ZgBPhu2sVpBiARMQR.2P6VP_6WT2rjtSCd5D.hfsP3maONi_lIEHCZokkXnl95gHrh2H58OtD0PqN13ex2747k9PLF3.x5tp1GZRnLFRHhN7lhItHFPqyV6k_d8usk9RPDk0oTDCrn0s.cQY9ws4f7J7HVTjzXx0eB3uM0F9S4jM7.MsZlqxeK8AwO7m3X7FJw0W2Jm3HjhmQoZMR4oEOlzjJkGp0tA5zLjyw9kWw2JY_yY3aevcI0kfcoPKY_x3yaT5UwCgvgcxlwm.WNWmApCNbvDCyY6j5_RbF8q9DBNFLYi9Icbn7LMBUTdziIwi22m.A4-">here</a>.</p><p>&nbsp;</p>
+    </div>
+  </div>
+    <div id="study-sidebar-container">
+      <button id="toggle-study-resources" class="terra-tertiary-btn" title="Toggle display of sidebar"><span class="fas fa-lg fa-angle-right"></span></button>
+      <div id="study-sidebar-content">
+    <h5>Resources</h5>
+      <p>
+        <a class="navigation-form external-resource-link" target="_blank" rel="noopener" title="View study in DUOS" data-toggle="tooltip" data-analytics-name="duos-link" href="https://duos.org/studies/363"><img alt="DUOS logo" class="duos-logo" src="https://singlecell.broadinstitute.org/single_cell/assets/duos-logo-80d33b01eb4c18077b51fe47d3806204362207476763f336e31565d5aa48bcf1.svg" /></a>
+      </p>
+</div>
+
+    </div>
+</div>
+
+
+<script type="text/javascript" nonce="C/8VQH4CroahsBnzP6ON2Y35mzIG6q1eZqh0Jooi7vs=">
+  $("#toggle-study-resources").click(function() {
+    $("#study-sidebar-container").toggleClass('closed')
+    $("#toggle-study-resources > span").toggleClass('fa-angle-right fa-angle-left')
+
+  })
+  $('.corresponding-author').each( function(index) {
+    window.SCP.renderComponent(this, 'AuthorEmailPopup', { dataEl: this })
+  })
+</script>
+
+    </div>
+    <div class="tab-pane active in" id="study-visualize" role="tabpanel">
+        <script type="text/javascript" nonce="C/8VQH4CroahsBnzP6ON2Y35mzIG6q1eZqh0Jooi7vs=">
+  window.SCP.studyAccession = 'SCP1755';
+  window.SCP.renderComponent('study-visualize', 'ExploreView', {studyAccession: window.SCP.studyAccession})
+    if (typeof window.SCP.readOnlyToken === 'undefined') {
+      window.SCP.readOnlyTokenObject = {"access_token":"ya29.c.c0AZ4bNpa_KLcFcxWLjuaH7bfpmaByNFVOptEG4GH689vX_csMd54WDBXW0HpTb55QPChoPGyZRbpcOyWoEkBowHAJeIA1cttTaJiGwZkC09pbnsFLSfgwk31jQPqAOJKFST8ehym28tU0U7XEQS9Kfv1F575AavdMC6BP7aRsO2Zp5gzks6fDYUHswCN6UV5mNy8aeE_NT-_e491EShB6qZ4riWPqWtcRbskuB3o56cjXiww-htxkiS6FPVSdi3KTq3Gu5K7ay0zyR3-jBHjuhGg_MEoUVzji0KurytlrUO8i5eJdgyOwml-a1MbQg61O45AMmX4WsrXS2r8bpW7zcIcg5-O3NmFR54M1KbkFbv6Jdhp1ZlIx0q9vy7UT388PQbrFq0OsyZ0IuahiIleORt53q0FVsSy094kcl_IznsoqppxItrQnssdgrVemWrQzhmxife9YWp80Ml_OrqJnqsmtF79lRSV7Rd7lgd2-k7z8ai514UOBogXa5xztJlXeB_55Un8IOU-jeVSdc2Qzofy4Mi0z-vfYR57XR3dqvutj9YnW90Rez5YoQ-BvM3OoxcJOrgyaMOM_X6yvbOVb-rggSnhMlle21UpeMVbIBw4XUlgwlFg__pU1n13dxMktoM1poRaoriUZFsmx3hVk4XZx4xIURyeruw4V3i3uR4qrFtmsRn-tjXIk03Q2ShVgypuzo2IJOoOenyu86owusUI2zwlwSbaSnxv0h8n-F5i9rIIvfedou_VJl6UavwkQmhSkf6Il9J-MBZ1k9fz30J4oRr1SwlV68qn4O3xUgxjva2wvRFIBptpRM0Iyvos7p1Wmzkjx3vWaeUfyvRsswtnkxw3phwpz5eb4pmaM5aSVF41vh3taervBIzs7t7Sjjn5eaq4gZRJF1Itmr8WtuFoVBuUcn12Q6_wU1r9ORxphJVoytXxZ4Mspb-I-gSwcJRFddl0iBkBB_ynQt6liUstXv4_Fk5z1R2MSgU8jvlxz9XIZn3ZwOfa","expires_in":3599,"expires_at":"2026-09-09T12:28:05.660-04:00"}
+      window.SCP.readOnlyToken = window.SCP.readOnlyTokenObject.access_token
+    }
+
+  function initIdeogramCaches(retryCount=0) {
+    setTimeout(() => {
+      if (!window.Ideogram && retryCount < 50) {
+        retryCount++
+        initIdeogramCaches(retryCount)
+      } else {
+        window.Ideogram.initCaches()
+      }
+    }, 250)
+  }
+
+  initIdeogramCaches()
+</script>
+
+
+    </div>
+
+  </div>
+</div>
+
+<div class="modal fade" id="update-study-settings-modal" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="text-center">Updating Study... Please wait<br/></h4>
+      </div>
+      <div class="modal-body">
+        <div class="spinner-target" id="update-study-settings-spinner"></div>
+      </div>
+      <div class="modal-footer">
+        <button class="close" data-dismiss="modal">×</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript" nonce="C/8VQH4CroahsBnzP6ON2Y35mzIG6q1eZqh0Jooi7vs=">
+    // re-open a tab on reload if necessary
+    reopenUiTab('#study-tabs');
+</script>
+
+      </div>
+    </div>
+  </div>
+
+<div class="modal fade" id="loading-modal" role="dialog" aria-labelledby="loading-modal" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="text-center">Loading... Please Wait</h4>
+      </div>
+      <div class="modal-body">
+        <div id="spinner_target"></div>
+      </div>
+      <div class="modal-footer">
+        <button class="close" aria-label='Close' data-dismiss="modal">×</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="delete-modal" role="dialog" aria-labelledby="delete-modal" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="text-center">Deleting... Please Wait</h4>
+			</div>
+			<div class="modal-body">
+				<div class="spinner-target" id="delete-modal-spinner"></div>
+			</div>
+			<div class="modal-footer">
+				<button class="close" aria-label='Close' data-dismiss="modal">×</button>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="modal fade" id="generic-modal" role="dialog" aria-labelledby="generic-modal" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 id="generic-modal-title" class="text-center"></h4>
+      </div>
+      <div class="modal-body">
+        <div class="spinner-target" id="generic-modal-spinner"></div>
+      </div>
+      <div class="modal-footer" id="generic-modal-footer">
+        <button class="close" aria-label='Close' data-dismiss="modal">×</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="generic-update-target"></div>
+<div id="scp-footer">
+    <a class="pull-left" href="https://www.broadinstitute.org"><img alt="Broad logo" src="https://singlecell.broadinstitute.org/single_cell/assets/broad-logo-white-ee7bc0721282916672dfe095963b6ba3fb9383b882b42713d6ce1a8bba43b207.png" /></a>
+    <div class="footer-text-block pull-left">
+      &copy; 2026 The Broad Institute of MIT and Harvard
+    </div>
+    <div class="footer-text-block pull-left left-border-0-5">
+      <a href="/single_cell/privacy_policy">Privacy Policy</a>&nbsp;
+      <a href="/single_cell/terms_of_service">Terms of Service</a>&nbsp;
+      <a id="whitepaper-btn" data-toggle="tooltip" data-placement="top" title="Read the Single Cell Portal whitepaper!" target="_blank" href="https://www.biorxiv.org/content/10.1101/2023.07.13.548886v1">Portal whitepaper</a>
+
+    </div>
+    <div class="footer-social-media-icons-block pull-right">
+      <a target="_blank" data-analytics-name="youtube-link" aria-label="YouTube" href="https://www.youtube.com/channel/UCp_UGD74MW8up1YkWZrWkKw"><i class='fab fa-youtube'></i></a>
+      <a class="bluesky-link" href="https://bsky.app/profile/singlecell.broadinstitute.org" target="_blank" data-analytics-name="bluesky-link" aria-label="Bluesky">
+        <svg class="bluesky-logo" xmlns="http://www.w3.org/2000/svg" fill="none" width="35" height="35" viewBox="0 0 628 561">
+          <path fill="currentColor" d="M123.121 33.664C188.241 82.553 258.281 181.68 284 234.873c25.719-53.192 95.759-152.32 160.879-201.21C491.866-1.611 568-28.906 568 57.947c0 17.346-9.945 145.713-15.778 166.555-20.275 72.453-94.155 90.933-159.875 79.748C507.222 323.8 536.444 388.56 473.333 453.32c-119.86 122.992-172.272-30.859-185.702-70.281-2.462-7.227-3.614-10.608-3.631-7.733-.017-2.875-1.169.506-3.631 7.733-13.43 39.422-65.842 193.273-185.702 70.281-63.111-64.76-33.89-129.52 80.986-149.071-65.72 11.185-139.6-7.295-159.875-79.748C9.945 203.659 0 75.291 0 57.946 0-28.906 76.135-1.612 123.121 33.664Z"></path>
+        </svg>
+      </a>
+      <a target="_blank" data-analytics-name="twitter-link" aria-label="Twitter" href="https://twitter.com/SingleCellBroad"><i class='fab fa-twitter-square', data-analytics-name='twitter-link' ></i></a>
+    </div>
+    <div class="clearfix"></div>
+
+</div>
+<script type="text/javascript" nonce="C/8VQH4CroahsBnzP6ON2Y35mzIG6q1eZqh0Jooi7vs=">
+
+    // variable used mostly for testing
+    PAGE_RENDERED = true;
+
+    // enable default behaviors
+    enableDefaultActions();
+
+    // adjusting margins on page when notification banner is present
+    $(document).ready(function() {
+        const hasNotificationBanner = document.querySelector('.notification-banner') !== null
+        const isHomePage = document.querySelector('.home-page-fix') !== null
+        if (hasNotificationBanner && !isHomePage) {
+          const isStudyPage = window.SCP.analyticsPageName === 'site-study'
+          const marginTop = isStudyPage ? '5px' : '100px'
+          $('#main-body').css('margin-top', marginTop)
+          if (!isStudyPage) {
+            // E.g. upload wizard page, study details page
+            $('.notification-banner').css('margin-top', '50px')
+          }
+        }
+    });
+</script>
+
+
+<input type="hidden" id="user-provider-info" value='{&quot;email&quot;:null,&quot;featureFlagsWithDefaults&quot;:{&quot;convention_required&quot;:true,&quot;raw_counts_required_backend&quot;:true,&quot;clientside_validation&quot;:true,&quot;raw_counts_required_frontend&quot;:true,&quot;correlation_refinements&quot;:false,&quot;differential_expression_frontend&quot;:true,&quot;progressive_loading&quot;:false,&quot;legend_search&quot;:false,&quot;ingest_anndata_file&quot;:true,&quot;show_de_upload&quot;:true,&quot;show_cell_facet_filtering&quot;:true,&quot;show_numeric_cell_filtering&quot;:true,&quot;show_igv_multiome&quot;:true,&quot;show_pathway_expression&quot;:true,&quot;default_pairwise_de_ui&quot;:false,&quot;dot_plot_preprocessing&quot;:false,&quot;dot_plot_preprocessing_frontend&quot;:true}}'/>
+</body>
+</html>

@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+data/raw/
+data/intermediate/
+data/metadata/author_code/
+data/metadata/model_code/
+*.part
+models/
+reports/qc/*.bedpe
+.DS_Store

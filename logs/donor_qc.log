@@ -1,0 +1,14 @@
+{'input': 10000000, 'genomic_filter_excluded': 63521, 'ambiguous_excluded': 500023, 'retained': 9436456}
+{'input': 20000000, 'genomic_filter_excluded': 134845, 'ambiguous_excluded': 1210545, 'retained': 18654610}
+{'input': 30000000, 'genomic_filter_excluded': 209138, 'ambiguous_excluded': 1871814, 'retained': 27919048}
+{'input': 40000000, 'genomic_filter_excluded': 291199, 'ambiguous_excluded': 2854071, 'retained': 36854730}
+{'input': 60000000, 'genomic_filter_excluded': 429652, 'ambiguous_excluded': 4040225, 'retained': 55530123}
+{'input': 70000000, 'genomic_filter_excluded': 512602, 'ambiguous_excluded': 4435147, 'retained': 65052251}
+{'input': 80000000, 'genomic_filter_excluded': 593796, 'ambiguous_excluded': 5277368, 'retained': 74128836}
+{'input': 90000000, 'genomic_filter_excluded': 668540, 'ambiguous_excluded': 6063561, 'retained': 83267899}
+donor	unambiguous_MG_cells	retained_fragment_records	median_retained_fragments_per_cell	pooled_TSS_proxy	scope
+LGS1	879	19737292	17912	21.44257777152012	unambiguous_subset_only
+LGS2	1101	29433336	20883	22.752810105216856	unambiguous_subset_only
+LGS3	741	20491363	22283	22.757538112460665	unambiguous_subset_only
+LVG1	713	16317594	22384	20.204160824896476	unambiguous_subset_only
+

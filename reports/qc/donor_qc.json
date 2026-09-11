@@ -1,0 +1,11 @@
+{
+  "flow": {
+    "input": 92966728,
+    "genomic_filter_excluded": 698822,
+    "ambiguous_excluded": 6288321,
+    "retained": 85979585
+  },
+  "bin_size": 50000,
+  "tss_count": 39548,
+  "policy": "Build identifiable-donor pseudobulks from the unambiguous barcode subset.\n\n50-kb fragment-midpoint bins are QC features, not accessible peaks or DA tests.\n"
+}

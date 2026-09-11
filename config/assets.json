@@ -1,0 +1,51 @@
+[
+  {
+    "name": "GSM5866081_matrix.mtx.gz",
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5866nnn/GSM5866081/suppl/GSM5866081_matrix.mtx.gz",
+    "bytes": 280281941,
+    "sha256": "ce1c09dc7daa5e8493c9d212b86a4b1f0dd0289dcc3ca01e2531a331daa9e1bd",
+    "path": "data/raw/GSM5866081_matrix.mtx.gz"
+  },
+  {
+    "name": "GSM5866073_Mullerglia_frags.tsv.gz",
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5866nnn/GSM5866073/suppl/GSM5866073_Mullerglia_frags.tsv.gz",
+    "bytes": 865987028,
+    "sha256": "9bb28ba83c01be8babb7c2dd06a9286243915783d756ba6142796d291c27dfbc",
+    "path": "data/raw/GSM5866073_Mullerglia_frags.tsv.gz"
+  },
+  {
+    "name": "GSM5866081_features.tsv.gz",
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5866nnn/GSM5866081/suppl/GSM5866081_features.tsv.gz",
+    "bytes": 252981,
+    "sha256": "079bb5504d1d1f55c5e4cfc24d02fb8a09d883b35efba22842ec8dc4091056bd",
+    "path": "data/raw/GSM5866081_features.tsv.gz"
+  },
+  {
+    "name": "GSM5866081_barcodes.tsv.gz",
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5866nnn/GSM5866081/suppl/GSM5866081_barcodes.tsv.gz",
+    "bytes": 283547,
+    "sha256": "6764b048fc44a3919e110b5a4186bc5a7e3319d133bf433374ccf60eae021618",
+    "path": "data/raw/GSM5866081_barcodes.tsv.gz"
+  },
+  {
+    "name": "hg38.refGene.txt.gz",
+    "url": "https://hgdownload.soe.ucsc.edu/goldenPath/hg38/database/refGene.txt.gz",
+    "bytes": 8668756,
+    "sha256": "58fbc18d60bcda5fd4635e71b99dffde09d6eb67995c7f9ded3af194eb789756",
+    "path": "data/raw/hg38.refGene.txt.gz"
+  },
+  {
+    "name": "hg38.chrom.sizes",
+    "url": "https://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZips/hg38.chrom.sizes",
+    "bytes": 11672,
+    "sha256": "e1d9152418038457a959e949d99c9caf7ae3e4f87cfbb4ffe7d8b9a54ba1202b",
+    "path": "data/raw/hg38.chrom.sizes"
+  },
+  {
+    "name": "hg38-blacklist.v2.bed.gz",
+    "url": "https://raw.githubusercontent.com/Boyle-Lab/Blacklist/master/lists/hg38-blacklist.v2.bed.gz",
+    "bytes": 5867,
+    "sha256": "c92e763af17271446194991e71917ac220593a5a3d40a06667be24178ef08cf2",
+    "path": "data/raw/hg38-blacklist.v2.bed.gz"
+  }
+]

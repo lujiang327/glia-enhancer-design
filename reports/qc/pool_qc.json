@@ -1,0 +1,12 @@
+{
+  "counts": {
+    "input": 92966728,
+    "blacklist_overlap": 671956,
+    "retained": 92217728,
+    "noncanonical": 77044
+  },
+  "tss_count": 39548,
+  "pooled_tss_enrichment_proxy": 21.971235158972423,
+  "tss_definition": "Pooled hg38 QC; writes BEDPE for peak calling, no differential testing.\n\nAssumes input is a deduplicated 10x fragment file with already shifted ends.\nRetains chr1-22,X; excludes full fragments overlapping blacklist intervals.\nTSS proxy: strand-oriented start and end-1 insertions, unique RefGene TSSs,\nmean signal +/-50 bp divided by mean outer 100 bp within +/-2 kb.\nThis is not the ArchR per-cell TSS enrichment statistic.\n",
+  "coordinate_convention": "10x shifted start and end-1; no further shift"
+}

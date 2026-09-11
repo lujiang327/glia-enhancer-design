@@ -1,0 +1,16 @@
+{
+  "status": "NOT_TRAINED",
+  "checkpoint": null,
+  "checkpoint_sha256": null,
+  "checks": {
+    "chromosome_split_integrity": "pending",
+    "training_stability_across_seeds": "pending",
+    "held_out_count_performance": "pending",
+    "held_out_profile_performance": "pending",
+    "biological_donor_generalization": "pending",
+    "bias_model_no_tf_leakage": "pending",
+    "tf_model_no_residual_tn5_bias": "pending",
+    "motif_recovery_and_attribution": "pending"
+  },
+  "evidence": []
+}

@@ -1,0 +1,431 @@
+{
+  "sha": "bd458c65f5917f5dccb87f123e9be672472bd4b6",
+  "url": "https://api.github.com/repos/kundajelab/retina-models/git/trees/bd458c65f5917f5dccb87f123e9be672472bd4b6",
+  "tree": [
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6adcc60579816a819a0d7f32801c3983128ad4da",
+      "size": 1824,
+      "url": "https://api.github.com/repos/kundajelab/retina-models/git/blobs/6adcc60579816a819a0d7f32801c3983128ad4da"
+    },
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "05d61737cf32fba3b0d748956f37a02bdff1b6f2",
+      "size": 1068,
+      "url": "https://api.github.com/repos/kundajelab/retina-models/git/blobs/05d61737cf32fba3b0d748956f37a02bdff1b6f2"
+    },
+    {
+      "path": "jobscripts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2228e9c770b4304af00c1e778b60bf11f7371f8d",
+      "url": "https://api.github.com/repos/kundajelab/retina-models/git/trees/2228e9c770b4304af00c1e778b60bf11f7371f8d"
+    },
+    {
+      "path": "jobscripts/jobscript.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "07511b65631b6d282228a873a39c76d3522e0066",
+      "size": 556,
+      "url": "https://api.github.com/repos/kundajelab/retina-models/git/blobs/07511b65631b6d282228a873a39c76d3522e0066"
+    },
+    {
+      "path": "jobscripts/predict",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a4a1b82f868dc49b5b0df6908e897900da4c585a",
+      "url": "https://api.github.com/repos/kundajelab/retina-models/git/trees/a4a1b82f868dc49b5b0df6908e897900da4c585a"
+    },
+    {
+      "path": "jobscripts/predict/submit_predict_fold0.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8d23a4992df1bc4cf5af5bd334dcbd2da729c072",
+      "size": 1044,
+      "url": "https://api.github.com/repos/kundajelab/retina-models/git/blobs/8d23a4992df1bc4cf5af5bd334dcbd2da729c072"
+    },
+    {
+      "path": "jobscripts/predict/submit_predict_fold1.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bff82110110bd4fdeb1cce936c46aece71f539bd",
+      "size": 1051,
+      "url": "https://api.github.com/repos/kundajelab/retina-models/git/blobs/bff82110110bd4fdeb1cce936c46aece71f539bd"
+    },
+    {
+      "path": "jobscripts/predict/submit_predict_fold2.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "59f447ac2a0d1e346a1775323d14b4fd866e11ef",
+      "size": 1060,
+      "url": "https://api.github.com/repos/kundajelab/retina-models/git/blobs/59f447ac2a0d1e346a1775323d14b4fd866e11ef"
+    },
+    {
+      "path": "jobscripts/predict/submit_predict_fold3.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ce4a385944acdee9b02a24dd6882f156ccfe8b39",
+      "size": 1070,
+      "url": "https://api.github.com/repos/kundajelab/retina-models/git/blobs/ce4a385944acdee9b02a24dd6882f156ccfe8b39"
+    },
+    {
+      "path": "jobscripts/predict/submit_predict_fold4.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f5c9055c0bdcca052f542e4c759988d967a315a0",
+      "size": 1068,
+      "url": "https://api.github.com/repos/kundajelab/retina-models/git/blobs/f5c9055c0bdcca052f542e4c759988d967a315a0"
+    },
+    {
+      "path": "jobscripts/submit_hdf5_to_bigwig_fold0.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0e24755edd3212841a392390af65dec3a055e5ab",
+      "size": 1179,
+      "url": "https://api.github.com/repos/kundajelab/retina-models/git/blobs/0e24755edd3212841a392390af65dec3a055e5ab"
+    },
+    {
+      "path": "jobscripts/submit_interpret_fold0.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ab2c4ca47b6c77c0ec4a212ea906b9f0ee361789",
+      "size": 908,
+      "url": "https://api.github.com/repos/kundajelab/retina-models/git/blobs/ab2c4ca47b6c77c0ec4a212ea906b9f0ee361789"
+    },
+    {
+      "path": "jobscripts/submit_modisco_fold0.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ddd3afc89701867286b12f7865a07889c8a583bf",
+      "size": 946,
+      "url": "https://api.github.com/repos/kundajelab/retina-models/git/blobs/ddd3afc89701867286b12f7865a07889c8a583bf"
+    },
+    {
+      "path": "jobscripts/train",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "bd0710520be54e79171fb7586d9b4da9c31e3ff9",
+      "url": "https://api.github.com/repos/kundajelab/retina-models/git/trees/bd0710520be54e79171fb7586d9b4da9c31e3ff9"
+    },
+    {
+      "path": "jobscripts/train/submit_training_fold0.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "55d75d1e3acba4fe7e1ccebda83fa103fb600327",
+      "size": 1145,
+      "url": "https://api.github.com/repos/kundajelab/retina-models/git/blobs/55d75d1e3acba4fe7e1ccebda83fa103fb600327"
+    },
+    {
+      "path": "jobscripts/train/submit_training_fold1.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "13bd226ae8e79034c6446694ac190c4cd864c4b7",
+      "size": 1154,
+      "url": "https://api.github.com/repos/kundajelab/retina-models/git/blobs/13bd226ae8e79034c6446694ac190c4cd864c4b7"
+    },
+    {
+      "path": "jobscripts/train/submit_training_fold2.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "34ecf97565a987f1a796e495c6e758d42fa0735c",
+      "size": 1162,
+      "url": "https://api.github.com/repos/kundajelab/retina-models/git/blobs/34ecf97565a987f1a796e495c6e758d42fa0735c"
+    },
+    {
+      "path": "jobscripts/train/submit_training_fold3.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "83fb5d20928d21a1497f8f59a7580fd7b252e10b",
+      "size": 1171,
+      "url": "https://api.github.com/repos/kundajelab/retina-models/git/blobs/83fb5d20928d21a1497f8f59a7580fd7b252e10b"
+    },
+    {
+      "path": "jobscripts/train/submit_training_fold4.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "63c34cf7de093a926a9fd47317f7d8dc597d533a",
+      "size": 1171,
+      "url": "https://api.github.com/repos/kundajelab/retina-models/git/blobs/63c34cf7de093a926a9fd47317f7d8dc597d533a"
+    },
+    {
+      "path": "notebooks",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e02457712243ed50a5f0e2c870f589895513a905",
+      "url": "https://api.github.com/repos/kundajelab/retina-models/git/trees/e02457712243ed50a5f0e2c870f589895513a905"
+    },
+    {
+      "path": "notebooks/PerformancePlots.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5c09028c8f8f535970a15e4897ee30892f4471a4",
+      "size": 125181,
+      "url": "https://api.github.com/repos/kundajelab/retina-models/git/blobs/5c09028c8f8f535970a15e4897ee30892f4471a4"
+    },
+    {
+      "path": "notebooks/SNPs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ad4bb6f993655b5d1ec679a8bb2cab28b9494362",
+      "url": "https://api.github.com/repos/kundajelab/retina-models/git/trees/ad4bb6f993655b5d1ec679a8bb2cab28b9494362"
+    },
+    {
+      "path": "notebooks/SNPs/SNPs_Tier2Retina.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8dae279f8cf02483b6cf8ade95253d57c34ce74f",
+      "size": 6265,
+      "url": "https://api.github.com/repos/kundajelab/retina-models/git/blobs/8dae279f8cf02483b6cf8ade95253d57c34ce74f"
+    },
+    {
+      "path": "notebooks/SNPs/SNPs_Tier3Retina.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7ce5ba45e1f0deba61925fc2e2ec289d99e10b39",
+      "size": 12593,
+      "url": "https://api.github.com/repos/kundajelab/retina-models/git/blobs/7ce5ba45e1f0deba61925fc2e2ec289d99e10b39"
+    },
+    {
+      "path": "notebooks/SNPs/SNPs_allRetina.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2060a91100e1ed46bf31d93a4786dd6dab2e4bf0",
+      "size": 213738,
+      "url": "https://api.github.com/repos/kundajelab/retina-models/git/blobs/2060a91100e1ed46bf31d93a4786dd6dab2e4bf0"
+    },
+    {
+      "path": "notebooks/SNPs/SNPs_overlapPeaksRetina.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4631773a17b63fddcef0680a1e411fc7ef18fa33",
+      "size": 35017,
+      "url": "https://api.github.com/repos/kundajelab/retina-models/git/blobs/4631773a17b63fddcef0680a1e411fc7ef18fa33"
+    },
+    {
+      "path": "notebooks/SNPs/SNPs_random.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6470ddb067712be8ac191356277493df4cb9e6c1",
+      "size": 325694,
+      "url": "https://api.github.com/repos/kundajelab/retina-models/git/blobs/6470ddb067712be8ac191356277493df4cb9e6c1"
+    },
+    {
+      "path": "notebooks/SNPs/SNPs_randomInPeaks.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "152471d8bd799113636cd877e7893d187fef950d",
+      "size": 43300,
+      "url": "https://api.github.com/repos/kundajelab/retina-models/git/blobs/152471d8bd799113636cd877e7893d187fef950d"
+    },
+    {
+      "path": "notebooks/SNPs_README.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "444d85224d114dcb6892b6388003e609f03c7484",
+      "size": 861,
+      "url": "https://api.github.com/repos/kundajelab/retina-models/git/blobs/444d85224d114dcb6892b6388003e609f03c7484"
+    },
+    {
+      "path": "notebooks/ScoreSNPs.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "186b9b9f18ba35bf1866391c92e62621a53bf79b",
+      "size": 387142,
+      "url": "https://api.github.com/repos/kundajelab/retina-models/git/blobs/186b9b9f18ba35bf1866391c92e62621a53bf79b"
+    },
+    {
+      "path": "notebooks/Vignettes.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dea62b4ac01cba630a706fef9f12348c19098d6b",
+      "size": 399400,
+      "url": "https://api.github.com/repos/kundajelab/retina-models/git/blobs/dea62b4ac01cba630a706fef9f12348c19098d6b"
+    },
+    {
+      "path": "notebooks/mhc.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e6d56b82a7b3726153a47fbf6cf6b15db787f947",
+      "size": 2465,
+      "url": "https://api.github.com/repos/kundajelab/retina-models/git/blobs/e6d56b82a7b3726153a47fbf6cf6b15db787f947"
+    },
+    {
+      "path": "requirements.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5a1811b368e14ff16b9a78e44f5b98b8561cf8b4",
+      "size": 334,
+      "url": "https://api.github.com/repos/kundajelab/retina-models/git/blobs/5a1811b368e14ff16b9a78e44f5b98b8561cf8b4"
+    },
+    {
+      "path": "scripts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8dd116f11c286601c6a939f5f4c1215bb9696191",
+      "url": "https://api.github.com/repos/kundajelab/retina-models/git/trees/8dd116f11c286601c6a939f5f4c1215bb9696191"
+    },
+    {
+      "path": "scripts/bigwig_helper.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e6e71eefeffd866db33c1fa179576bd5fd6a306c",
+      "size": 3479,
+      "url": "https://api.github.com/repos/kundajelab/retina-models/git/blobs/e6e71eefeffd866db33c1fa179576bd5fd6a306c"
+    },
+    {
+      "path": "scripts/frag_to_unstranded_bigwig.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6da2433a1231fcd42fd2dfdcb7883136edf70855",
+      "size": 1081,
+      "url": "https://api.github.com/repos/kundajelab/retina-models/git/blobs/6da2433a1231fcd42fd2dfdcb7883136edf70855"
+    },
+    {
+      "path": "scripts/importance_hdf5_to_bigwig.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "827b885d545e11576429424a8df785196901e775",
+      "size": 2114,
+      "url": "https://api.github.com/repos/kundajelab/retina-models/git/blobs/827b885d545e11576429424a8df785196901e775"
+    },
+    {
+      "path": "scripts/predict_to_bigwig.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "392b3069e2b235b14254d4bb3a4fd9d2c5b11137",
+      "size": 4406,
+      "url": "https://api.github.com/repos/kundajelab/retina-models/git/blobs/392b3069e2b235b14254d4bb3a4fd9d2c5b11137"
+    },
+    {
+      "path": "src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3b324fa3e4b8e3150f4c85ac0f95679246d7ee3c",
+      "url": "https://api.github.com/repos/kundajelab/retina-models/git/trees/3b324fa3e4b8e3150f4c85ac0f95679246d7ee3c"
+    },
+    {
+      "path": "src/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/kundajelab/retina-models/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "src/archs.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "32ef1c8e5ed2ed3afdffd9aab9be8aea0c740a87",
+      "size": 1458,
+      "url": "https://api.github.com/repos/kundajelab/retina-models/git/blobs/32ef1c8e5ed2ed3afdffd9aab9be8aea0c740a87"
+    },
+    {
+      "path": "src/interpret.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c13fd4817ab16a266af1405b3f99ff454184c3db",
+      "size": 4377,
+      "url": "https://api.github.com/repos/kundajelab/retina-models/git/blobs/c13fd4817ab16a266af1405b3f99ff454184c3db"
+    },
+    {
+      "path": "src/metrics.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9be53bc7cb47647d394875142bf9fde592d5815a",
+      "size": 3265,
+      "url": "https://api.github.com/repos/kundajelab/retina-models/git/blobs/9be53bc7cb47647d394875142bf9fde592d5815a"
+    },
+    {
+      "path": "src/run_modisco.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f957355341048ec87704c08c951c3654e795ba75",
+      "size": 6682,
+      "url": "https://api.github.com/repos/kundajelab/retina-models/git/blobs/f957355341048ec87704c08c951c3654e795ba75"
+    },
+    {
+      "path": "src/train.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "48b5cd1b3d08997763f06c850c938ea15d2ce736",
+      "size": 6608,
+      "url": "https://api.github.com/repos/kundajelab/retina-models/git/blobs/48b5cd1b3d08997763f06c850c938ea15d2ce736"
+    },
+    {
+      "path": "src/utils",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1126e1ce8a1ffc444cf56bc134d397a54e6c3355",
+      "url": "https://api.github.com/repos/kundajelab/retina-models/git/trees/1126e1ce8a1ffc444cf56bc134d397a54e6c3355"
+    },
+    {
+      "path": "src/utils/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8b137891791fe96927ad78e64b0aad7bded08bdc",
+      "size": 1,
+      "url": "https://api.github.com/repos/kundajelab/retina-models/git/blobs/8b137891791fe96927ad78e64b0aad7bded08bdc"
+    },
+    {
+      "path": "src/utils/argmanager.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7e85abf2ad4370d6ba87bd188d8d9b944838a054",
+      "size": 4898,
+      "url": "https://api.github.com/repos/kundajelab/retina-models/git/blobs/7e85abf2ad4370d6ba87bd188d8d9b944838a054"
+    },
+    {
+      "path": "src/utils/augment.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "958328eaf50b77110c75c4821e9e77718f3f87a1",
+      "size": 2682,
+      "url": "https://api.github.com/repos/kundajelab/retina-models/git/blobs/958328eaf50b77110c75c4821e9e77718f3f87a1"
+    },
+    {
+      "path": "src/utils/data_utils.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "235eda54f9e50fe98718bca87598dbc8daba44f3",
+      "size": 5895,
+      "url": "https://api.github.com/repos/kundajelab/retina-models/git/blobs/235eda54f9e50fe98718bca87598dbc8daba44f3"
+    },
+    {
+      "path": "src/utils/loss.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6890084fca6ddb1ceae1299d31d7d00cafdbf213",
+      "size": 584,
+      "url": "https://api.github.com/repos/kundajelab/retina-models/git/blobs/6890084fca6ddb1ceae1299d31d7d00cafdbf213"
+    },
+    {
+      "path": "src/utils/one_hot.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4fadf92a3738e7462cc1b99c55cf7fa6127dff8e",
+      "size": 2565,
+      "url": "https://api.github.com/repos/kundajelab/retina-models/git/blobs/4fadf92a3738e7462cc1b99c55cf7fa6127dff8e"
+    },
+    {
+      "path": "src/utils/shap_utils.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e9d2fba24c00b1c66bedd8fc5590046e2d12155a",
+      "size": 3802,
+      "url": "https://api.github.com/repos/kundajelab/retina-models/git/blobs/e9d2fba24c00b1c66bedd8fc5590046e2d12155a"
+    },
+    {
+      "path": "src/utils/train_utils.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "86c3d17c939accfa9b4ac3e475582fc4587c99de",
+      "size": 1064,
+      "url": "https://api.github.com/repos/kundajelab/retina-models/git/blobs/86c3d17c939accfa9b4ac3e475582fc4587c99de"
+    }
+  ],
+  "truncated": false
+}

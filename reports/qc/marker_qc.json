@@ -1,0 +1,16 @@
+{
+  "rna_cells": 51645,
+  "features": 36601,
+  "nnz": 89102830,
+  "groups": {
+    "non_MG_barcode_background": 47742,
+    "MG_LVG1": 713,
+    "MG_all": 3434,
+    "ambiguous_excluded": 469,
+    "MG_LGS1": 879,
+    "MG_LGS2": 1101,
+    "MG_LGS3": 741
+  },
+  "missing_markers": [],
+  "policy": "Check RNA markers only on unambiguously mapped published MG barcodes.\n\nDoes not cluster, transfer labels, relabel cells, or perform differential tests.\n"
+}

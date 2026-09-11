@@ -1,0 +1,16 @@
+{
+  "data_recommendation": "GO_PILOT",
+  "model_reliability": "NOT_ASSESSED_NOT_TRAINED",
+  "downstream_recommendation": "NO_GO",
+  "working_cells": 3434,
+  "working_fragment_records": 85979585,
+  "working_median_fragments": 20536.5,
+  "working_FRiP": 0.6219622948866292,
+  "execution_blocker": "Linux/GPU training environment not configured",
+  "caveats": [
+    "ambiguous barcodes excluded",
+    "neuronal RNA and donor-specific variation",
+    "LGS3 dementia metadata",
+    "QC proxies differ from original per-cell metrics"
+  ]
+}
