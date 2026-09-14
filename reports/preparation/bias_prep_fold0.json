@@ -1,0 +1,23 @@
+{
+  "status": "PASS_FOR_BIAS_TRAINING_CANDIDATE_MODEL_QC_PENDING",
+  "fold": 0,
+  "bias_threshold": 0.5,
+  "validation_chromosome_for_tn5_pwm": "chr8",
+  "nonzero_bigwig_entries_on_validation_chromosome": 3188983,
+  "regions": {
+    "train_validation_nonpeaks_input": 403882,
+    "test_nonpeaks_input": 54307,
+    "train_validation_peaks": 201941,
+    "test_peaks": 54307,
+    "nonpeaks_after_count_cutoff": 244715,
+    "nonpeaks_after_outlier_filter": 225814
+  },
+  "upper_count_cutoff": 25.0,
+  "estimated_counts_loss_weight": 0.9,
+  "applied_counts_loss_weight": 1.0,
+  "warnings": [
+    "Upstream ChromBPNet classified the bias input as low read depth and clamped the estimated count-loss weight from 0.9 to 1.0."
+  ],
+  "decision": "Proceed with one fold-0 seed-42 bias candidate. Do not accept the bias model until held-out prediction and motif-leakage QC pass.",
+  "source": "Cluster-local stdout and stderr from the completed fold-0 threshold-0.5 preparation job; logs and model inputs remain excluded from Git."
+}

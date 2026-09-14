@@ -54,6 +54,31 @@ ChromBPNet threshold. Neighboring backgrounds can overlap within a split.
 
 ![GC distributions](gc_matching.png)
 
+## Fold 0 bias preparation
+
+The fold 0, threshold 0.5 preparation job completed successfully. It retained
+225,814 bias-training nonpeak regions after the count and outlier filters, from
+403,882 train/validation nonpeaks. The estimated count-loss weight was 0.9;
+ChromBPNet clamped it to 1.0 and emitted its low-read-depth warning. This is a
+material caveat, but the retained-region count is sufficient to train one bias
+candidate and assess its held-out behavior. The candidate must pass prediction
+and motif-leakage QC before it can be used for the full accessibility model.
+Machine-readable metrics and the decision are in
+[`bias_prep_fold0.json`](bias_prep_fold0.json).
+
+The count distribution confirms that this warning concerns the deliberately
+low-signal nonpeak windows used to learn Tn5 bias. Across fold 0 train and
+validation chromosomes, peak windows have median 298 insertions per 1 kb
+(1st percentile 50), whereas all candidate nonpeaks have median 17. The bias
+filter retains nonzero, non-outlier windows below the 25-count cutoff; their
+median is 9. It does not justify removing a donor or discarding accessible
+peaks. See [`bias_count_distribution_fold0.json`](bias_count_distribution_fold0.json)
+for the complete quantiles and the script
+[`plot_bias_count_distribution.py`](../../scripts/plot_bias_count_distribution.py)
+for reproduction.
+
+![Fold 0 peak and bias-region count distributions](bias_count_distribution_fold0.png)
+
 ## Reproducibility and remaining work
 
 See [the preparation guide](../../docs/training_preparation.md) for commands,

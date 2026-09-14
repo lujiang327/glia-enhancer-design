@@ -26,3 +26,20 @@ TSVs, retained nonpeak count and PWM before submitting a GPU training job.
 Output is written under `models/bias/fold_0/threshold_0.5/prep`. The job refuses
 to overwrite that directory. Move a failed partial output aside with a descriptive
 name before rerunning so its evidence is retained.
+
+## First bias-training candidate
+
+After reviewing the threshold, retained-region count and Tn5 PWM, submit fold 0,
+seed 42 on one A40:
+
+```bash
+mkdir -p logs/slurm
+sbatch --account=YOUR_ACCOUNT hpc/slurm/train_bias_fold0_seed42.sbatch
+```
+
+This trains for at most 50 epochs with early-stopping patience 5. It uses the
+prepared +4/-4 bigWig directly, avoiding repeated fragment conversion and GPU
+time spent sorting reads. It records finite epoch losses and the best validation
+epoch. Completion produces a candidate model only; bias prediction, attribution,
+motif leakage checks and peak-transfer QC remain required before ChromBPNet
+training.
