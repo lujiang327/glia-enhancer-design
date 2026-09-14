@@ -1,0 +1,192 @@
+{
+  "status": "GENERATED_REQUIRES_VALIDATION",
+  "peak_filter_counts": {
+    "raw_peaks": 256503,
+    "retained_peaks": 256248,
+    "blacklist_context": 205,
+    "boundary_or_N_context": 50
+  },
+  "candidate_background_count": 2311134,
+  "peaks": "data/intermediate/training/muller.training_peaks.narrowPeak",
+  "folds": {
+    "fold_0": {
+      "negatives": "data/intermediate/training/fold_0.negatives.bed",
+      "metrics": {
+        "train": {
+          "peaks": 184040,
+          "negatives": 368080,
+          "exact_bucket_fraction": 0.7866958269941318,
+          "mean_gc_gap": 0.015342968919800042,
+          "max_gc_gap": 0.29,
+          "fraction_gap_gt_0_05": 0.11730873723103673,
+          "gc_histogram_total_variation": 0.12209030645511845
+        },
+        "valid": {
+          "peaks": 17901,
+          "negatives": 35802,
+          "exact_bucket_fraction": 0.8282777498463773,
+          "mean_gc_gap": 0.013433048433048435,
+          "max_gc_gap": 0.29,
+          "fraction_gap_gt_0_05": 0.09711747947042065,
+          "gc_histogram_total_variation": 0.10153064074632702
+        },
+        "test": {
+          "peaks": 54307,
+          "negatives": 54307,
+          "exact_bucket_fraction": 0.8880070709116689,
+          "mean_gc_gap": 0.006003645938829249,
+          "max_gc_gap": 0.24,
+          "fraction_gap_gt_0_05": 0.044561474579704274,
+          "gc_histogram_total_variation": 0.060176404515071724
+        }
+      }
+    },
+    "fold_1": {
+      "negatives": "data/intermediate/training/fold_1.negatives.bed",
+      "metrics": {
+        "train": {
+          "peaks": 180572,
+          "negatives": 361144,
+          "exact_bucket_fraction": 0.7971030946104601,
+          "mean_gc_gap": 0.01437074961788096,
+          "max_gc_gap": 0.3,
+          "fraction_gap_gt_0_05": 0.10986476308619277,
+          "gc_histogram_total_variation": 0.11514797421527147
+        },
+        "valid": {
+          "peaks": 24407,
+          "negatives": 48814,
+          "exact_bucket_fraction": 0.7206129389109681,
+          "mean_gc_gap": 0.021760765354201662,
+          "max_gc_gap": 0.33,
+          "fraction_gap_gt_0_05": 0.16364157823575204,
+          "gc_histogram_total_variation": 0.17673208505756546
+        },
+        "test": {
+          "peaks": 51269,
+          "negatives": 51269,
+          "exact_bucket_fraction": 0.9124422165441105,
+          "mean_gc_gap": 0.004729368624314888,
+          "max_gc_gap": 0.2,
+          "fraction_gap_gt_0_05": 0.03549903450428134,
+          "gc_histogram_total_variation": 0.046187754783592425
+        }
+      }
+    },
+    "fold_2": {
+      "negatives": "data/intermediate/training/fold_2.negatives.bed",
+      "metrics": {
+        "train": {
+          "peaks": 191060,
+          "negatives": 382120,
+          "exact_bucket_fraction": 0.786603684706375,
+          "mean_gc_gap": 0.01523864231131582,
+          "max_gc_gap": 0.32,
+          "fraction_gap_gt_0_05": 0.11563906626190726,
+          "gc_histogram_total_variation": 0.12080759970689836
+        },
+        "valid": {
+          "peaks": 18107,
+          "negatives": 36214,
+          "exact_bucket_fraction": 0.789363229690175,
+          "mean_gc_gap": 0.013717623018722043,
+          "max_gc_gap": 0.27,
+          "fraction_gap_gt_0_05": 0.1044347489921025,
+          "gc_histogram_total_variation": 0.11177997459546032
+        },
+        "test": {
+          "peaks": 47081,
+          "negatives": 47081,
+          "exact_bucket_fraction": 0.8986002846158748,
+          "mean_gc_gap": 0.005511777574817867,
+          "max_gc_gap": 0.24,
+          "fraction_gap_gt_0_05": 0.04058962214056626,
+          "gc_histogram_total_variation": 0.05246277691637816
+        }
+      }
+    },
+    "fold_3": {
+      "negatives": "data/intermediate/training/fold_3.negatives.bed",
+      "metrics": {
+        "train": {
+          "peaks": 184401,
+          "negatives": 368802,
+          "exact_bucket_fraction": 0.7815223344775788,
+          "mean_gc_gap": 0.015973422053025745,
+          "max_gc_gap": 0.3,
+          "fraction_gap_gt_0_05": 0.1217102944127201,
+          "gc_histogram_total_variation": 0.12709800922988487
+        },
+        "valid": {
+          "peaks": 17416,
+          "negatives": 34832,
+          "exact_bucket_fraction": 0.8229501607717041,
+          "mean_gc_gap": 0.011870406522737713,
+          "max_gc_gap": 0.29,
+          "fraction_gap_gt_0_05": 0.08908474965548921,
+          "gc_histogram_total_variation": 0.09600367478180984
+        },
+        "test": {
+          "peaks": 54431,
+          "negatives": 54431,
+          "exact_bucket_fraction": 0.9138542374749683,
+          "mean_gc_gap": 0.004664070107108082,
+          "max_gc_gap": 0.23,
+          "fraction_gap_gt_0_05": 0.03503518215722658,
+          "gc_histogram_total_variation": 0.04556227149969686
+        }
+      }
+    },
+    "fold_4": {
+      "negatives": "data/intermediate/training/fold_4.negatives.bed",
+      "metrics": {
+        "train": {
+          "peaks": 187672,
+          "negatives": 375344,
+          "exact_bucket_fraction": 0.7991202736689543,
+          "mean_gc_gap": 0.014594745087173367,
+          "max_gc_gap": 0.31,
+          "fraction_gap_gt_0_05": 0.10972867556161814,
+          "gc_histogram_total_variation": 0.11487595379172173
+        },
+        "valid": {
+          "peaks": 19416,
+          "negatives": 38832,
+          "exact_bucket_fraction": 0.8514369592088998,
+          "mean_gc_gap": 0.010518901936547179,
+          "max_gc_gap": 0.28,
+          "fraction_gap_gt_0_05": 0.0798053152039555,
+          "gc_histogram_total_variation": 0.08786567779151215
+        },
+        "test": {
+          "peaks": 49160,
+          "negatives": 49160,
+          "exact_bucket_fraction": 0.8649715215622458,
+          "mean_gc_gap": 0.006989625711960944,
+          "max_gc_gap": 0.23,
+          "fraction_gap_gt_0_05": 0.05126118795768918,
+          "gc_histogram_total_variation": 0.0684499593165175
+        }
+      }
+    }
+  },
+  "parameters": {
+    "input_length": 2114,
+    "output_length": 1000,
+    "max_jitter": 500,
+    "background_stride": 1000,
+    "gc_bucket_width": 0.01,
+    "background_ratio_train_valid": 2,
+    "background_ratio_test": 1,
+    "background_seed": 1234,
+    "peak_caller": "MACS3 3.0.4",
+    "peak_format": "BED",
+    "peak_pvalue": 0.01,
+    "peak_shift": -75,
+    "peak_extension": 150,
+    "peak_effective_genome": "hs",
+    "background_method": "Without replacement within split; exact rounded GC bucket when available, nearest available bucket otherwise; all deviations reported",
+    "window_policy": "ACGT-only full input plus jitter; reject blacklist and chromosome-boundary overlap; backgrounds also exclude all relaxed raw peak spans"
+  },
+  "method": "Filter relaxed peaks and sample fold-specific GC-matched genomic negatives.\n\nNative Mac implementation of the ChromBPNet GC-bucket strategy, with bounded\nnearest-bucket fallback instead of the upstream unbounded random walk. Adds\nACGT and full-jitter context checks. All matching discrepancies are retained.\n"
+}

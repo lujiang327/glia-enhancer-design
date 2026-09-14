@@ -1,0 +1,4 @@
+LGS1 [{'n_fragments': 49999, 'plus_shift': 4, 'minus_shift': -5}, {'n_fragments': 49997, 'plus_shift': 4, 'minus_shift': -5}]
+LGS2 [{'n_fragments': 50000, 'plus_shift': 4, 'minus_shift': -5}, {'n_fragments': 50000, 'plus_shift': 4, 'minus_shift': -5}]
+LGS3 [{'n_fragments': 49999, 'plus_shift': 4, 'minus_shift': -5}, {'n_fragments': 50000, 'plus_shift': 4, 'minus_shift': -5}]
+LVG1 [{'n_fragments': 49997, 'plus_shift': 4, 'minus_shift': -5}, {'n_fragments': 49999, 'plus_shift': 4, 'minus_shift': -5}]

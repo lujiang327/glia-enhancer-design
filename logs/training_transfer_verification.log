@@ -1,0 +1,21 @@
+PASS data/raw/reference/hg38.canonical.fa
+PASS data/raw/reference/hg38.canonical.fa.fai
+PASS data/raw/reference/hg38.canonical.chrom.sizes
+PASS data/raw/hg38-blacklist.v2.bed.gz
+PASS data/intermediate/training/muller.original_fragments.tsv.gz
+PASS data/intermediate/training/muller.insertions.bw
+PASS data/intermediate/training/muller.training_peaks.narrowPeak
+PASS data/intermediate/training/LGS1.insertions.bw
+PASS data/intermediate/training/LGS2.insertions.bw
+PASS data/intermediate/training/LGS3.insertions.bw
+PASS data/intermediate/training/LVG1.insertions.bw
+PASS data/intermediate/training/fold_0.negatives.bed
+PASS data/intermediate/training/fold_1.negatives.bed
+PASS data/intermediate/training/fold_2.negatives.bed
+PASS data/intermediate/training/fold_3.negatives.bed
+PASS data/intermediate/training/fold_4.negatives.bed
+PASS data/intermediate/donor_pseudobulks/LGS1.bedpe
+PASS data/intermediate/donor_pseudobulks/LGS2.bedpe
+PASS data/intermediate/donor_pseudobulks/LGS3.bedpe
+PASS data/intermediate/donor_pseudobulks/LVG1.bedpe
+Verified 20 training inputs. Model validation remains separate.

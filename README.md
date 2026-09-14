@@ -15,11 +15,34 @@ full project and its scientific validation gate.
 - Four identifiable donor pseudobulks, broad-bin donor consistency, diagnostic MACS3
   accessible peaks and FRiP. These are QC peak calls, not differential tests.
 - Figures, measured tables, logs, pinned QC dependencies and five chromosome folds.
+- Verified reference and donor/pooled insertion tracks, 256,248 genome-wide
+  training peaks and GC-matched backgrounds; all five input-integrity checks pass.
 - A fail-closed model-validation gate; later analyses are not implemented or run.
 
-No trained ChromBPNet checkpoint exists yet. Model runtime, reference FASTA,
-final training peaks/backgrounds, insertion tracks and bias model still need to be
-prepared on the training host. The macOS local environment is used for QC.
+No trained ChromBPNet checkpoint exists yet. Local training-input preparation is
+documented in [the preparation guide](docs/training_preparation.md). The GPU
+runtime, bias model and ChromBPNet fitting/validation remain separate next steps.
+See [the input-preparation report and GC plots](reports/preparation/README.md).
+
+## Mac to Great Lakes
+
+Use this existing repository, `https://github.com/lujiang327/glia-enhancer-design.git`,
+for code, configuration, documentation and reviewable QC results. Prepare changes
+on the Mac, push them to this repository, then pull the same commit on Great Lakes.
+Record the commit used for each training run.
+
+Private connection, account and directory settings are saved locally in
+`config/greatlakes.json`. This file is excluded from Git and must be synchronized
+manually between machines. Copy [the template](config/greatlakes.example.json)
+to that path when configuring a new checkout. Singularity 4.4.1 was
+confirmed by the user after `module load singularity`; the GPU training environment
+has not yet been validated. These settings do not submit jobs or provision resources.
+
+Git does not carry the ignored raw data, donor pseudobulks, local virtual environment,
+container images or checkpoints. Recreate/download large inputs from the manifests
+or transfer them separately, preserving their paths and verifying checksums. A
+clone alone is therefore not sufficient to start training. After input validation,
+the preparation guide explains how to transfer and verify the large inputs.
 
 ## Reproduce QC
 
@@ -31,7 +54,7 @@ executed. Approximately 6 GB of local storage is used by this QC run.
 
 ```bash
 python3 -m venv .venv
-.venv/bin/python -m pip install -r config/qc_requirements.lock.txt
+.venv/bin/python -m pip install -r config/preparation_requirements.lock.txt
 python3 scripts/download.py config/assets.json
 mkdir -p reports/qc/peaks logs
 python3 scripts/audit_fragments.py --fragments data/raw/GSM5866073_Mullerglia_frags.tsv.gz --rna-barcodes data/raw/GSM5866081_barcodes.tsv.gz --out reports/qc > logs/fragment_audit.log 2>&1
@@ -42,7 +65,7 @@ python3 scripts/donor_qc.py > logs/donor_qc.log 2>&1
 python3 scripts/peak_qc.py > logs/peak_qc.log 2>&1
 .venv/bin/python scripts/plot_qc.py > logs/plot_qc.log 2>&1
 python3 scripts/report_qc.py > logs/report_qc.log 2>&1
-python3 -m unittest discover -s tests
+.venv/bin/python -m unittest discover -s tests
 python3 scripts/verify_outputs.py
 ```
 

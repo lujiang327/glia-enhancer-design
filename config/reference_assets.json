@@ -1,0 +1,16 @@
+[
+  {
+    "name": "hg38.analysisSet.fa.gz",
+    "url": "https://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZips/analysisSet/hg38.analysisSet.fa.gz",
+    "path": "data/raw/reference/hg38.analysisSet.fa.gz",
+    "bytes": 949157663,
+    "sha256": "cb69cd39fa5309b156f5cba45bd70553776d4e2c5c7000d1eed6c7bca8b8f459"
+  },
+  {
+    "name": "md5sum.txt",
+    "url": "https://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZips/analysisSet/md5sum.txt",
+    "path": "data/raw/reference/upstream.md5sum.txt",
+    "bytes": 307,
+    "sha256": "18faa79000d5767175175e8f89632dd00d40bd583497a5b0b6f109f30e949ce6"
+  }
+]

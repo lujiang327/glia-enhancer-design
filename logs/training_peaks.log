@@ -1,0 +1,211 @@
+Running peaks
+INFO  @ 11 Sep 2026 14:13:42: [29 MB] 
+# Command line: callpeak -t data/intermediate/training/muller.insertions.bed.gz -f BED -g hs --keep-dup all --nomodel --shift -75 --extsize 150 -p 0.01 --call-summits -n muller_relaxed --outdir data/intermediate/training/peaks
+# ARGUMENTS LIST:
+# name = muller_relaxed
+# format = BED
+# ChIP-seq file = ['data/intermediate/training/muller.insertions.bed.gz']
+# control file = None
+# effective genome size = 2.91e+09
+# band width = 300
+# model fold = [5, 50]
+# pvalue cutoff = 1.00e-02
+# qvalue will not be calculated and reported as -1 in the final output.
+# The maximum gap between significant sites is assigned as the read length/tag size.
+# The minimum length of peaks is assigned as the predicted fragment length "d".
+# Larger dataset will be scaled towards smaller dataset.
+# Range for calculating regional lambda is: 10000 bps
+# Broad region calling is off
+# Paired-End mode is off
+# Searching for subpeak summits is on
+ 
+INFO  @ 11 Sep 2026 14:13:42: [29 MB] #1 read tag files... 
+INFO  @ 11 Sep 2026 14:13:42: [29 MB] #1 read treatment tags... 
+INFO  @ 11 Sep 2026 14:13:43: [124 MB]  1000000 reads parsed 
+INFO  @ 11 Sep 2026 14:13:43: [126 MB]  2000000 reads parsed 
+INFO  @ 11 Sep 2026 14:13:44: [136 MB]  3000000 reads parsed 
+INFO  @ 11 Sep 2026 14:13:44: [136 MB]  4000000 reads parsed 
+INFO  @ 11 Sep 2026 14:13:44: [138 MB]  5000000 reads parsed 
+INFO  @ 11 Sep 2026 14:13:45: [143 MB]  6000000 reads parsed 
+INFO  @ 11 Sep 2026 14:13:45: [148 MB]  7000000 reads parsed 
+INFO  @ 11 Sep 2026 14:13:46: [155 MB]  8000000 reads parsed 
+INFO  @ 11 Sep 2026 14:13:46: [160 MB]  9000000 reads parsed 
+INFO  @ 11 Sep 2026 14:13:47: [163 MB]  10000000 reads parsed 
+INFO  @ 11 Sep 2026 14:13:47: [166 MB]  11000000 reads parsed 
+INFO  @ 11 Sep 2026 14:13:48: [171 MB]  12000000 reads parsed 
+INFO  @ 11 Sep 2026 14:13:48: [178 MB]  13000000 reads parsed 
+INFO  @ 11 Sep 2026 14:13:48: [187 MB]  14000000 reads parsed 
+INFO  @ 11 Sep 2026 14:13:49: [187 MB]  15000000 reads parsed 
+INFO  @ 11 Sep 2026 14:13:49: [194 MB]  16000000 reads parsed 
+INFO  @ 11 Sep 2026 14:13:50: [200 MB]  17000000 reads parsed 
+INFO  @ 11 Sep 2026 14:13:50: [204 MB]  18000000 reads parsed 
+INFO  @ 11 Sep 2026 14:13:51: [211 MB]  19000000 reads parsed 
+INFO  @ 11 Sep 2026 14:13:51: [211 MB]  20000000 reads parsed 
+INFO  @ 11 Sep 2026 14:13:52: [212 MB]  21000000 reads parsed 
+INFO  @ 11 Sep 2026 14:13:52: [212 MB]  22000000 reads parsed 
+INFO  @ 11 Sep 2026 14:13:52: [215 MB]  23000000 reads parsed 
+INFO  @ 11 Sep 2026 14:13:53: [215 MB]  24000000 reads parsed 
+INFO  @ 11 Sep 2026 14:13:53: [216 MB]  25000000 reads parsed 
+INFO  @ 11 Sep 2026 14:13:54: [221 MB]  26000000 reads parsed 
+INFO  @ 11 Sep 2026 14:13:54: [221 MB]  27000000 reads parsed 
+INFO  @ 11 Sep 2026 14:13:55: [221 MB]  28000000 reads parsed 
+INFO  @ 11 Sep 2026 14:13:55: [221 MB]  29000000 reads parsed 
+INFO  @ 11 Sep 2026 14:13:55: [221 MB]  30000000 reads parsed 
+INFO  @ 11 Sep 2026 14:13:56: [221 MB]  31000000 reads parsed 
+INFO  @ 11 Sep 2026 14:13:56: [221 MB]  32000000 reads parsed 
+INFO  @ 11 Sep 2026 14:13:57: [221 MB]  33000000 reads parsed 
+INFO  @ 11 Sep 2026 14:13:57: [221 MB]  34000000 reads parsed 
+INFO  @ 11 Sep 2026 14:13:58: [221 MB]  35000000 reads parsed 
+INFO  @ 11 Sep 2026 14:13:58: [221 MB]  36000000 reads parsed 
+INFO  @ 11 Sep 2026 14:13:59: [221 MB]  37000000 reads parsed 
+INFO  @ 11 Sep 2026 14:13:59: [221 MB]  38000000 reads parsed 
+INFO  @ 11 Sep 2026 14:13:59: [221 MB]  39000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:00: [223 MB]  40000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:00: [223 MB]  41000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:01: [223 MB]  42000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:01: [226 MB]  43000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:02: [226 MB]  44000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:02: [237 MB]  45000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:03: [242 MB]  46000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:03: [242 MB]  47000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:03: [242 MB]  48000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:04: [242 MB]  49000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:04: [242 MB]  50000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:05: [242 MB]  51000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:05: [242 MB]  52000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:06: [242 MB]  53000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:06: [242 MB]  54000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:07: [247 MB]  55000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:07: [247 MB]  56000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:07: [247 MB]  57000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:08: [247 MB]  58000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:08: [247 MB]  59000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:09: [259 MB]  60000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:09: [259 MB]  61000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:10: [259 MB]  62000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:10: [259 MB]  63000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:11: [259 MB]  64000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:11: [259 MB]  65000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:11: [259 MB]  66000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:12: [259 MB]  67000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:12: [259 MB]  68000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:13: [259 MB]  69000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:13: [259 MB]  70000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:14: [259 MB]  71000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:14: [259 MB]  72000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:15: [259 MB]  73000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:15: [259 MB]  74000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:15: [259 MB]  75000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:16: [259 MB]  76000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:16: [259 MB]  77000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:17: [259 MB]  78000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:17: [259 MB]  79000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:18: [259 MB]  80000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:18: [259 MB]  81000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:19: [259 MB]  82000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:19: [259 MB]  83000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:19: [259 MB]  84000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:20: [259 MB]  85000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:20: [259 MB]  86000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:21: [259 MB]  87000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:21: [259 MB]  88000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:22: [259 MB]  89000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:22: [259 MB]  90000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:23: [259 MB]  91000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:23: [259 MB]  92000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:23: [265 MB]  93000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:24: [274 MB]  94000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:24: [274 MB]  95000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:25: [274 MB]  96000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:25: [274 MB]  97000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:26: [274 MB]  98000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:26: [274 MB]  99000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:27: [274 MB]  100000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:27: [274 MB]  101000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:27: [274 MB]  102000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:28: [274 MB]  103000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:28: [274 MB]  104000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:29: [274 MB]  105000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:29: [274 MB]  106000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:30: [274 MB]  107000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:30: [274 MB]  108000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:31: [274 MB]  109000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:31: [274 MB]  110000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:31: [274 MB]  111000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:32: [274 MB]  112000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:32: [274 MB]  113000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:33: [274 MB]  114000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:33: [274 MB]  115000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:34: [274 MB]  116000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:34: [274 MB]  117000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:35: [274 MB]  118000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:35: [274 MB]  119000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:35: [274 MB]  120000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:36: [274 MB]  121000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:36: [274 MB]  122000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:37: [274 MB]  123000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:37: [274 MB]  124000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:38: [274 MB]  125000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:38: [274 MB]  126000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:39: [274 MB]  127000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:39: [274 MB]  128000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:40: [274 MB]  129000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:40: [274 MB]  130000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:40: [274 MB]  131000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:41: [274 MB]  132000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:41: [274 MB]  133000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:42: [274 MB]  134000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:42: [274 MB]  135000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:43: [274 MB]  136000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:43: [274 MB]  137000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:44: [274 MB]  138000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:44: [274 MB]  139000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:44: [274 MB]  140000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:45: [274 MB]  141000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:45: [274 MB]  142000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:46: [274 MB]  143000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:46: [274 MB]  144000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:47: [274 MB]  145000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:47: [274 MB]  146000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:48: [274 MB]  147000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:48: [274 MB]  148000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:48: [277 MB]  149000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:49: [281 MB]  150000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:49: [281 MB]  151000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:50: [281 MB]  152000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:50: [281 MB]  153000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:51: [281 MB]  154000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:51: [281 MB]  155000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:52: [282 MB]  156000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:52: [286 MB]  157000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:53: [290 MB]  158000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:53: [293 MB]  159000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:53: [293 MB]  160000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:54: [293 MB]  161000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:54: [293 MB]  162000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:55: [297 MB]  163000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:55: [301 MB]  164000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:56: [305 MB]  165000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:56: [307 MB]  166000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:57: [309 MB]  167000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:57: [312 MB]  168000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:58: [312 MB]  169000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:58: [312 MB]  170000000 reads parsed 
+INFO  @ 11 Sep 2026 14:14:58: [312 MB]  171000000 reads parsed 
+INFO  @ 11 Sep 2026 14:15:01: [718 MB] #1 tag size is determined as 1 bps 
+INFO  @ 11 Sep 2026 14:15:01: [718 MB] #1 tag size = 1.0 
+INFO  @ 11 Sep 2026 14:15:01: [718 MB] #1  total tags in treatment: 171959170 
+INFO  @ 11 Sep 2026 14:15:01: [718 MB] #1 finished! 
+INFO  @ 11 Sep 2026 14:15:01: [718 MB] #2 Build Peak Model... 
+INFO  @ 11 Sep 2026 14:15:01: [718 MB] #2 Skipped... 
+INFO  @ 11 Sep 2026 14:15:01: [718 MB] #2 Use 150 as fragment length 
+INFO  @ 11 Sep 2026 14:15:01: [718 MB] #2 Sequencing ends will be shifted towards 5' by 75 bp(s) 
+INFO  @ 11 Sep 2026 14:15:01: [718 MB] #3 Call peaks... 
+INFO  @ 11 Sep 2026 14:15:01: [718 MB] #3 Going to call summits inside each peak ... 
+INFO  @ 11 Sep 2026 14:15:01: [718 MB] #3 Call peaks with given -log10pvalue cutoff: 2.00000 ... 
+INFO  @ 11 Sep 2026 14:15:01: [718 MB] #3 Pre-compute pvalue-qvalue table... 
+INFO  @ 11 Sep 2026 14:19:59: [3885 MB] #3 Call peaks for each chromosome... 
+INFO  @ 11 Sep 2026 14:21:36: [3885 MB] #4 Write output xls file... data/intermediate/training/peaks/muller_relaxed_peaks.xls 
+INFO  @ 11 Sep 2026 14:21:37: [3885 MB] #4 Write peak in narrowPeak format file... data/intermediate/training/peaks/muller_relaxed_peaks.narrowPeak 
+INFO  @ 11 Sep 2026 14:21:37: [3885 MB] #4 Write summits bed file... data/intermediate/training/peaks/muller_relaxed_summits.bed 
+INFO  @ 11 Sep 2026 14:21:37: [3885 MB] Done! 

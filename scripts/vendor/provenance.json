@@ -1,0 +1,7 @@
+{
+  "chrombpnet_commit": "eaa0fe58b6a43da62ea23b75cfc2bef4ecd3550c",
+  "auto_shift_source_sha256": "e178cdfa0f65d5e75934d1119ea14255480b42aad44e90b6d5e177e65c807cc3",
+  "modisco_version": "0.5.16.0",
+  "modisco_util_sha256": "2784b280d7528a75054a85dcbfbe01de727af51cee0976ce077943e750f42db5",
+  "extraction": "AST extraction of pure shift and IC functions; ic_scale composes upstream normalization and modisco formula"
+}

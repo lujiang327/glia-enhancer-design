@@ -1,0 +1,61 @@
+{
+  "status": "PASS",
+  "scope": "Input integrity, not model reliability",
+  "reference_sha256_verified": true,
+  "track_totals_verified": true,
+  "pooled_equals_donor_sum_at_230_sampled_windows": true,
+  "all_regions_valid_acgt_with_jitter": true,
+  "chromosome_partitions_disjoint": true,
+  "folds": {
+    "fold_0": {
+      "region_counts": {
+        "test": 54307,
+        "train": 368080,
+        "valid": 35802
+      },
+      "exact_sequence_or_reverse_complement_cross_split_duplicates": 0,
+      "duplicate_examples": []
+    },
+    "fold_1": {
+      "region_counts": {
+        "train": 361144,
+        "valid": 48814,
+        "test": 51269
+      },
+      "exact_sequence_or_reverse_complement_cross_split_duplicates": 0,
+      "duplicate_examples": []
+    },
+    "fold_2": {
+      "region_counts": {
+        "train": 382120,
+        "test": 47081,
+        "valid": 36214
+      },
+      "exact_sequence_or_reverse_complement_cross_split_duplicates": 0,
+      "duplicate_examples": []
+    },
+    "fold_3": {
+      "region_counts": {
+        "train": 368802,
+        "test": 54431,
+        "valid": 34832
+      },
+      "exact_sequence_or_reverse_complement_cross_split_duplicates": 0,
+      "duplicate_examples": []
+    },
+    "fold_4": {
+      "region_counts": {
+        "train": 375344,
+        "valid": 38832,
+        "test": 49160
+      },
+      "exact_sequence_or_reverse_complement_cross_split_duplicates": 0,
+      "duplicate_examples": []
+    }
+  },
+  "limitations": [
+    "Near-homology and jitter-offset homologous sequences are not exhaustively assessed",
+    "GC matching deviations require report review",
+    "Bias fitting and all model validation remain pending"
+  ]
+}

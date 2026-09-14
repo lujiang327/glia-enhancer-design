@@ -1,0 +1,33 @@
+{
+  "source_url": "https://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZips/analysisSet/hg38.analysisSet.fa.gz",
+  "source_md5": "6d3c82e1e12b127d526395294526b9c8",
+  "source_sha256": "cb69cd39fa5309b156f5cba45bd70553776d4e2c5c7000d1eed6c7bca8b8f459",
+  "fasta": "data/raw/reference/hg38.canonical.fa",
+  "fasta_sha256": "fb96c995cd3a4b40b73873ff33ff885dd32da7e1b5490481aa4cc3a264965cf1",
+  "chromosomes": {
+    "chr1": 248956422,
+    "chr2": 242193529,
+    "chr3": 198295559,
+    "chr4": 190214555,
+    "chr5": 181538259,
+    "chr6": 170805979,
+    "chr7": 159345973,
+    "chr8": 145138636,
+    "chr9": 138394717,
+    "chr10": 133797422,
+    "chr11": 135086622,
+    "chr12": 133275309,
+    "chr13": 114364328,
+    "chr14": 107043718,
+    "chr15": 101991189,
+    "chr16": 90338345,
+    "chr17": 83257441,
+    "chr18": 80373285,
+    "chr19": 58617616,
+    "chr20": 64444167,
+    "chr21": 46709983,
+    "chr22": 50818468,
+    "chrX": 156040895
+  },
+  "transformation": "Uppercase chr1-22,X only; coordinates and hard-masked N bases preserved."
+}

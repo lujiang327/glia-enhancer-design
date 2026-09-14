@@ -1,0 +1,5 @@
+{"stage": "tracks", "time": "2026-09-11T17:59:48.590465+00:00", "argv": ["/Users/lujiang/Desktop/vs_projects/glia-enhancer-design/.venv/bin/python", "scripts/build_training_tracks.py"]}
+{"stage": "peaks", "time": "2026-09-11T18:13:42.389532+00:00", "argv": ["/Users/lujiang/Desktop/vs_projects/glia-enhancer-design/.venv/bin/macs3", "callpeak", "-t", "data/intermediate/training/muller.insertions.bed.gz", "-f", "BED", "-g", "hs", "--keep-dup", "all", "--nomodel", "--shift", "-75", "--extsize", "150", "-p", "0.01", "--call-summits", "-n", "muller_relaxed", "--outdir", "data/intermediate/training/peaks"]}
+{"stage": "regions", "time": "2026-09-11T18:22:06.946144+00:00", "argv": ["/Users/lujiang/Desktop/vs_projects/glia-enhancer-design/.venv/bin/python", "scripts/prepare_training_regions.py"]}
+{"stage": "regions", "time": "2026-09-11T18:23:31.524595+00:00", "argv": ["/Users/lujiang/Desktop/vs_projects/glia-enhancer-design/.venv/bin/python", "scripts/prepare_training_regions.py"]}
+{"stage": "validate", "time": "2026-09-11T18:28:59.909120+00:00", "argv": ["/Users/lujiang/Desktop/vs_projects/glia-enhancer-design/.venv/bin/python", "scripts/validate_training_inputs.py"]}

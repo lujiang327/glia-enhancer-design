@@ -7,13 +7,27 @@
   "chrombpnet_commit": "eaa0fe58b6a43da62ea23b75cfc2bef4ecd3550c",
   "input_length": 2114,
   "output_length": 1000,
-  "seeds": [42, 123, 456],
+  "seeds": [
+    42,
+    123,
+    456
+  ],
   "bias_threshold_factor_initial": 0.5,
   "candidate_regions_are_training_universe": false,
   "barcode_policy": "exclude all bare barcodes matching multiple RNA sample prefixes",
-  "reference_fasta": null,
-  "training_peak_set": null,
-  "gc_matched_nonpeak_set": null,
+  "reference_fasta": "data/raw/reference/hg38.canonical.fa",
+  "training_peak_set": "data/intermediate/training/muller.training_peaks.narrowPeak",
+  "gc_matched_nonpeak_set": {
+    "fold_0": "data/intermediate/training/fold_0.negatives.bed",
+    "fold_1": "data/intermediate/training/fold_1.negatives.bed",
+    "fold_2": "data/intermediate/training/fold_2.negatives.bed",
+    "fold_3": "data/intermediate/training/fold_3.negatives.bed",
+    "fold_4": "data/intermediate/training/fold_4.negatives.bed"
+  },
   "runtime": null,
-  "status": "PLANNED_NOT_RUN"
+  "status": "INPUTS_PREPARED_MODEL_NOT_TRAINED",
+  "chrom_sizes": "data/raw/reference/hg38.canonical.chrom.sizes",
+  "insertion_bigwig": "data/intermediate/training/muller.insertions.bw",
+  "input_fragment_file": "data/intermediate/training/muller.original_fragments.tsv.gz",
+  "max_jitter": 500
 }

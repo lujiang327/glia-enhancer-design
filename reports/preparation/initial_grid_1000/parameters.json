@@ -1,0 +1,18 @@
+{
+  "input_length": 2114,
+  "output_length": 1000,
+  "max_jitter": 500,
+  "background_stride": 1000,
+  "gc_bucket_width": 0.01,
+  "background_ratio_train_valid": 2,
+  "background_ratio_test": 1,
+  "background_seed": 1234,
+  "peak_caller": "MACS3 3.0.4",
+  "peak_format": "BED",
+  "peak_pvalue": 0.01,
+  "peak_shift": -75,
+  "peak_extension": 150,
+  "peak_effective_genome": "hs",
+  "background_method": "Without replacement within split; exact rounded GC bucket when available, nearest available bucket otherwise; all deviations reported",
+  "window_policy": "ACGT-only full input plus jitter; reject blacklist and chromosome-boundary overlap; backgrounds also exclude all relaxed raw peak spans"
+}

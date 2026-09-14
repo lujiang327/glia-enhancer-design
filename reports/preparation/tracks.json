@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "donors": {
+    "LGS1": {
+      "fragments": 19737292,
+      "insertions": 39474584,
+      "bigwig": "data/intermediate/training/LGS1.insertions.bw"
+    },
+    "LGS2": {
+      "fragments": 29433336,
+      "insertions": 58866672,
+      "bigwig": "data/intermediate/training/LGS2.insertions.bw"
+    },
+    "LGS3": {
+      "fragments": 20491363,
+      "insertions": 40982726,
+      "bigwig": "data/intermediate/training/LGS3.insertions.bw"
+    },
+    "LVG1": {
+      "fragments": 16317594,
+      "insertions": 32635188,
+      "bigwig": "data/intermediate/training/LVG1.insertions.bw"
+    }
+  },
+  "pooled_insertions": 171959170,
+  "pooled_fragments": 85979585,
+  "pooled_bigwig": "data/intermediate/training/muller.insertions.bw",
+  "peak_input": "data/intermediate/training/muller.insertions.bed.gz",
+  "pipeline_fragment_input": "data/intermediate/training/muller.original_fragments.tsv.gz",
+  "fragment_input_coordinate_convention": "Unmodified Cell Ranger fragment endpoints; upstream pipeline must detect shift. BigWigs are already corrected.",
+  "plus_endpoint_delta": 0,
+  "minus_endpoint_delta": 0,
+  "weighting": "One molecule per row, two insertions per molecule; no read-support weighting or cross-cell deduplication."
+}

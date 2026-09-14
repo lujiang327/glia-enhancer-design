@@ -8,3 +8,6 @@ data/metadata/model_code/
 models/
 reports/qc/*.bedpe
 .DS_Store
+*.sif
+# Private cluster settings; synchronize manually between machines.
+/config/greatlakes.json

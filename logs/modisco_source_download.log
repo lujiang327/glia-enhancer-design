@@ -1,0 +1,6 @@
+Collecting modisco==0.5.16.0
+  Downloading modisco-0.5.16.0.tar.gz (217 kB)
+Saved ./data/intermediate/vendor/modisco-0.5.16.0.tar.gz
+Successfully downloaded modisco
+WARNING: You are using pip version 21.2.4; however, version 26.0.1 is available.
+You should consider upgrading via the '/Users/lujiang/Desktop/vs_projects/glia-enhancer-design/.venv/bin/python -m pip install --upgrade pip' command.

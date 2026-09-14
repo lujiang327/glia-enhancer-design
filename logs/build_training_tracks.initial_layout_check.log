@@ -1,0 +1,29 @@
+LGS1 chr1 921025
+LGS1 chr10 1353556
+LGS1 chr11 1893256
+LGS1 chr12 2333682
+LGS1 chr13 2519445
+LGS1 chr14 2836167
+LGS1 chr15 3136818
+LGS1 chr16 3546333
+LGS1 chr17 4129120
+LGS1 chr18 4302207
+LGS1 chr19 4878676
+LGS1 chr2 5546181
+LGS1 chr20 5816544
+LGS1 chr21 5923763
+LGS1 chr22 6170204
+LGS1 chr3 6682700
+LGS1 chr4 7054276
+LGS1 chr5 7488753
+LGS1 chr6 7946330
+LGS1 chr7 8388793
+LGS1 chr8 8738543
+LGS1 chr9 9168976
+LGS1 chrX 9353264
+Traceback (most recent call last):
+  File "/Users/lujiang/Desktop/vs_projects/glia-enhancer-design/scripts/build_training_tracks.py", line 76, in <module>
+    if __name__=='__main__':run()
+  File "/Users/lujiang/Desktop/vs_projects/glia-enhancer-design/scripts/build_training_tracks.py", line 50, in run
+    assert c in sizes and c not in seen,'Donor input must group each chromosome contiguously'
+AssertionError: Donor input must group each chromosome contiguously

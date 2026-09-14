@@ -1,0 +1,58 @@
+....{
+  "fragment_file": "/var/folders/ml/26tj6kfs5bq97k63t74_sfdm0000gp/T/tmp9dple8kz/f.gz",
+  "sha256": "669ebd781e704d59352bd13ecaa38b466a5334da03a79ee1c25d4e35e6e5a21a",
+  "bytes": 67,
+  "fragment_records": 3,
+  "read_support_sum": 103,
+  "chr1_22_X_records": 2,
+  "distinct_bare_barcodes": 2,
+  "median_records_per_bare_barcode": 1.5,
+  "median_chr1_22_X_records_per_bare_barcode": 1.0,
+  "barcode_suffix_record_counts": {
+    "1": 3
+  },
+  "records_by_number_of_matching_RNA_samples": {
+    "2": 2,
+    "1": 1
+  },
+  "barcodes_by_number_of_matching_RNA_samples": {
+    "2": 1,
+    "1": 1
+  },
+  "biological_cell_count": null,
+  "usable_fragments_after_blacklist": null,
+  "warning": "Bare barcodes are not globally unique cell IDs. Chromosome-filtered records are provisional, not fully QC-filtered usable depth."
+}
+A chr1 1
+A chr2 2
+A chr1 3
+B chr1 1
+...
+----------------------------------------------------------------------
+Ran 7 tests in 0.018s
+
+OK
+{
+  "status": "PASS",
+  "donors": {
+    "A": {
+      "fragments": 3,
+      "insertions": 6,
+      "bigwig": "data/intermediate/training/A.insertions.bw"
+    },
+    "B": {
+      "fragments": 1,
+      "insertions": 2,
+      "bigwig": "data/intermediate/training/B.insertions.bw"
+    }
+  },
+  "pooled_insertions": 8,
+  "pooled_fragments": 4,
+  "pooled_bigwig": "data/intermediate/training/muller.insertions.bw",
+  "peak_input": "data/intermediate/training/muller.insertions.bed.gz",
+  "pipeline_fragment_input": "data/intermediate/training/muller.original_fragments.tsv.gz",
+  "fragment_input_coordinate_convention": "Unmodified Cell Ranger fragment endpoints; upstream pipeline must detect shift. BigWigs are already corrected.",
+  "plus_endpoint_delta": 0,
+  "minus_endpoint_delta": 0,
+  "weighting": "One molecule per row, two insertions per molecule; no read-support weighting or cross-cell deduplication."
+}

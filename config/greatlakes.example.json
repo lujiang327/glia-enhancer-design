@@ -1,0 +1,14 @@
+{
+  "cluster": "Great Lakes",
+  "ssh_host": "greatlakes.arc-ts.umich.edu",
+  "username": "YOUR_USERNAME",
+  "slurm_account": "YOUR_SLURM_ACCOUNT",
+  "project_directory": "/ABSOLUTE/PATH/TO/YOUR/PROJECT",
+  "repository_url": "YOUR_REPOSITORY_URL",
+  "container_module": "singularity",
+  "container_command": "singularity",
+  "user_reported_container_version": null,
+  "gpu_partition": null,
+  "container_image": null,
+  "status": "NOT_CONFIGURED"
+}

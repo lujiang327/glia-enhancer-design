@@ -1,0 +1,29 @@
+Running regions
+chr1 peaks 24086 background candidates 1804135
+chr10 peaks 37575 background candidates 1050066
+chr11 peaks 51708 background candidates 1042804
+chr12 peaks 63835 background candidates 1067550
+chr13 peaks 70005 background candidates 837029
+chr14 peaks 78586 background candidates 704016
+chr15 peaks 87034 background candidates 612341
+chr16 peaks 96040 background candidates 616665
+chr17 peaks 108320 background candidates 562011
+chr18 peaks 114247 background candidates 626679
+chr19 peaks 122902 background candidates 395468
+chr2 peaks 142964 background candidates 1942081
+chr20 peaks 149910 background candidates 476245
+chr21 peaks 152905 background candidates 286780
+chr22 peaks 158232 background candidates 247996
+chr3 peaks 174032 background candidates 1620559
+chr4 peaks 186405 background candidates 1619349
+chr5 peaks 200566 background candidates 1469763
+chr6 peaks 214987 background candidates 1402408
+chr7 peaks 227767 background candidates 1295477
+chr8 peaks 238722 background candidates 1196175
+chr9 peaks 249968 background candidates 897821
+chrX peaks 256248 background candidates 1338532
+fold_0 {'train': {'peaks': 184040, 'negatives': 368080, 'exact_bucket_fraction': 0.9889181699630515, 'mean_gc_gap': 0.00034810367311454023, 'max_gc_gap': 0.14, 'fraction_gap_gt_0_05': 0.0016653988263420996, 'gc_histogram_total_variation': 0.0072239730493371}, 'valid': {'peaks': 17901, 'negatives': 35802, 'exact_bucket_fraction': 0.9898329702251271, 'mean_gc_gap': 0.00023629964806435398, 'max_gc_gap': 0.11, 'fraction_gap_gt_0_05': 0.0008379420144126027, 'gc_histogram_total_variation': 0.006089045304731579}, 'test': {'peaks': 54307, 'negatives': 54307, 'exact_bucket_fraction': 0.9996317233505809, 'mean_gc_gap': 4.05104314360948e-06, 'max_gc_gap': 0.02, 'fraction_gap_gt_0_05': 0.0, 'gc_histogram_total_variation': 0.0003498628169480914}}
+fold_1 {'train': {'peaks': 180572, 'negatives': 361144, 'exact_bucket_fraction': 0.9916099949050794, 'mean_gc_gap': 0.0002512848060607404, 'max_gc_gap': 0.12, 'fraction_gap_gt_0_05': 0.0010577498172474138, 'gc_histogram_total_variation': 0.005197372793124072}, 'valid': {'peaks': 24407, 'negatives': 48814, 'exact_bucket_fraction': 0.9769943049125251, 'mean_gc_gap': 0.0008593846027778917, 'max_gc_gap': 0.17, 'fraction_gap_gt_0_05': 0.004916622280493301, 'gc_histogram_total_variation': 0.014770352767648626}, 'test': {'peaks': 51269, 'negatives': 51269, 'exact_bucket_fraction': 0.9977764341024791, 'mean_gc_gap': 3.198814098187988e-05, 'max_gc_gap': 0.03, 'fraction_gap_gt_0_05': 0.0, 'gc_histogram_total_variation': 0.0015994070490939945}}
+fold_2 {'train': {'peaks': 191060, 'negatives': 382120, 'exact_bucket_fraction': 0.989840887679263, 'mean_gc_gap': 0.0003150580969329007, 'max_gc_gap': 0.15, 'fraction_gap_gt_0_05': 0.0014655082173139328, 'gc_histogram_total_variation': 0.006539830419763425}, 'valid': {'peaks': 18107, 'negatives': 36214, 'exact_bucket_fraction': 0.9884575026232949, 'mean_gc_gap': 0.0003073397028773403, 'max_gc_gap': 0.11, 'fraction_gap_gt_0_05': 0.0012702269840393218, 'gc_histogram_total_variation': 0.007428066493621251}, 'test': {'peaks': 47081, 'negatives': 47081, 'exact_bucket_fraction': 0.9992353603364414, 'mean_gc_gap': 7.858796542129522e-06, 'max_gc_gap': 0.02, 'fraction_gap_gt_0_05': 0.0, 'gc_histogram_total_variation': 0.0007009196915953357}}
+fold_3 {'train': {'peaks': 184401, 'negatives': 368802, 'exact_bucket_fraction': 0.9902549335415751, 'mean_gc_gap': 0.0002928129456998607, 'max_gc_gap': 0.14, 'fraction_gap_gt_0_05': 0.0012716850776297308, 'gc_histogram_total_variation': 0.006580766915580718}, 'valid': {'peaks': 17416, 'negatives': 34832, 'exact_bucket_fraction': 0.9924781809830041, 'mean_gc_gap': 0.00023541570969223705, 'max_gc_gap': 0.11, 'fraction_gap_gt_0_05': 0.0012632062471290768, 'gc_histogram_total_variation': 0.004737023426734038}, 'test': {'peaks': 54431, 'negatives': 54431, 'exact_bucket_fraction': 0.9987690837941614, 'mean_gc_gap': 1.8739321342617257e-05, 'max_gc_gap': 0.05, 'fraction_gap_gt_0_05': 0.0, 'gc_histogram_total_variation': 0.0009553379508000956}}
+fold_4 {'train': {'peaks': 187672, 'negatives': 375344, 'exact_bucket_fraction': 0.9916396692101113, 'mean_gc_gap': 0.00025739055373204316, 'max_gc_gap': 0.12, 'fraction_gap_gt_0_05': 0.0012814911121531182, 'gc_histogram_total_variation': 0.0055495758557483265}, 'valid': {'peaks': 19416, 'negatives': 38832, 'exact_bucket_fraction': 0.9934074989699218, 'mean_gc_gap': 0.00017717346518335397, 'max_gc_gap': 0.11, 'fraction_gap_gt_0_05': 0.0005407911001236094, 'gc_histogram_total_variation': 0.003991553358055212}, 'test': {'peaks': 49160, 'negatives': 49160, 'exact_bucket_fraction': 0.9962367778681855, 'mean_gc_gap': 8.157038242473555e-05, 'max_gc_gap': 0.07, 'fraction_gap_gt_0_05': 0.00012205044751830757, 'gc_histogram_total_variation': 0.002115541090317331}}
