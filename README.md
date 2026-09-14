@@ -23,6 +23,9 @@ No trained ChromBPNet checkpoint exists yet. Local training-input preparation is
 documented in [the preparation guide](docs/training_preparation.md). The GPU
 runtime, bias model and ChromBPNet fitting/validation remain separate next steps.
 See [the input-preparation report and GC plots](reports/preparation/README.md).
+Great Lakes runtime and bias-preparation commands are documented in
+[the HPC guide](hpc/README.md); private account and directory settings are never
+stored in its tracked scripts.
 
 ## Mac to Great Lakes
 

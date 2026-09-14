@@ -9,5 +9,7 @@ models/
 reports/qc/*.bedpe
 .DS_Store
 *.sif
+# Cluster logs can contain usernames, node names, job IDs and absolute paths.
+/logs/slurm/
 # Private cluster settings; synchronize manually between machines.
 /config/greatlakes.json

@@ -1,0 +1,21 @@
+{
+  "status": "GPU_SMOKE_PASS_MODEL_NOT_TRAINED",
+  "container_filename": "chrombpnet-upstream-20260914.sif",
+  "container_sha256": "3eea58b1606fe1245ad70abe70ea6268cf10587ea88de52263c268d1952249d5",
+  "container_source": "docker://kundajelab/chrombpnet:latest",
+  "container_source_note": "The registry tag was mutable; the downloaded SIF is pinned by SHA256.",
+  "chrombpnet_version": "1.0.1",
+  "chrombpnet_commit": "eaa0fe58b6a43da62ea23b75cfc2bef4ecd3550c",
+  "chrombpnet_source_archive_sha256": "19fae8304908b97b2c58730ac3ac96dbf3df505ba8914c5da77994bd8a215095",
+  "singularity_version": "4.4.1",
+  "tensorflow_version": "2.8.0",
+  "tested_gpu": "NVIDIA A40",
+  "tested_gpu_memory_mib": 46068,
+  "tested_driver_version": "595.71.05",
+  "required_environment": {
+    "PATH": "/opt/conda/bin:/usr/local/bin:/usr/bin:/bin",
+    "LD_LIBRARY_PATH": "/.singularity.d/libs:/usr/local/cuda/lib64:/usr/local/cuda/extras/CUPTI/lib64"
+  },
+  "evidence": "logs/slurm/chrombpnet_gpu_smoke.log (cluster-local, excluded from Git)",
+  "scope": "Runtime compatibility only; bias and ChromBPNet model reliability remain unassessed."
+}
