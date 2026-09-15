@@ -43,3 +43,19 @@ time spent sorting reads. It records finite epoch losses and the best validation
 epoch. Completion produces a candidate model only; bias prediction, attribution,
 motif leakage checks and peak-transfer QC remain required before ChromBPNet
 training.
+
+## Held-out numerical bias QC
+
+After successful candidate training, evaluate peaks and nonpeaks on the fold 0
+test chromosomes (`chr1`, `chr3`, and `chr6`):
+
+```bash
+mkdir -p logs/slurm
+sbatch --account=YOUR_ACCOUNT hpc/slurm/evaluate_bias_fold0_seed42.sbatch
+```
+
+This writes separate held-out count correlations and profile JSD metrics for
+peaks and nonpeaks. A positive nonpeak count correlation and peak correlation
+above -0.3 pass the preliminary screen. Peak correlation from -0.5 through
+-0.3 is retained as a caution; at or below -0.5 fails. Motif-leakage QC is a
+separate required gate.

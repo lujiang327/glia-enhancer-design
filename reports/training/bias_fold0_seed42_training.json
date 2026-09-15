@@ -1,0 +1,19 @@
+{
+  "status": "CANDIDATE_TRAINED_NUMERICAL_QC_PENDING",
+  "model_role": "Tn5 bias model",
+  "fold": 0,
+  "bias_threshold": 0.5,
+  "seed": 42,
+  "epochs_completed": 10,
+  "early_stopping_patience": 5,
+  "best_epoch_zero_based": 4,
+  "best_epoch_one_based": 5,
+  "initial_validation_loss": 43.95381546020508,
+  "best_validation_loss": 43.803829193115234,
+  "final_validation_loss": 43.81052780151367,
+  "best_training_loss_across_logged_epochs": 42.52003479003906,
+  "relative_validation_loss_improvement": 0.0034123605771070858,
+  "checkpoint_behavior": "Early stopping restored weights from epoch 5 before the final model save.",
+  "interpretation": "Finite and stable training with mild overfitting after epoch 5. The validation improvement is modest, so the checkpoint remains a candidate pending held-out prediction and motif-leakage QC.",
+  "evidence": "User-provided completed Slurm stdout and the model-local training_summary.json; cluster logs and checkpoints remain excluded from Git."
+}
