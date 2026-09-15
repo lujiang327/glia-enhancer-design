@@ -1,0 +1,28 @@
+{
+  "status": "PASS_NUMERICAL_QC_MOTIF_QC_PENDING",
+  "fold": 0,
+  "test_chromosomes": [
+    "chr1",
+    "chr3",
+    "chr6"
+  ],
+  "test_peak_regions": 54307,
+  "test_nonpeak_regions": 54307,
+  "metrics": {
+    "nonpeak_counts_pearsonr": 0.6246908075874367,
+    "nonpeak_counts_spearmanr": 0.6624649412103355,
+    "nonpeak_counts_mse": 1.2602891314485003,
+    "nonpeak_median_jsd": 0.7532046519881158,
+    "nonpeak_median_normalized_jsd": 0.06574468929363851,
+    "peak_counts_pearsonr": 0.3591551573338951,
+    "peak_counts_spearmanr": 0.36670923780387843,
+    "peak_counts_mse": 14.369832465438618,
+    "peak_median_jsd": 0.5335886828305443,
+    "peak_median_normalized_jsd": 0.23563831029913831
+  },
+  "failures": [],
+  "cautions": [],
+  "interpretation": "The bias model generalizes to held-out low-count nonpeaks and does not show the problematic negative peak-count correlation. Peak MSE is expected to be larger because the bias-only model is not intended to explain biological accessibility magnitude.",
+  "remaining_gate": "Attribution and TF-MoDISco review must exclude obvious transcription-factor motif learning before this bias model is accepted.",
+  "evidence": "User-provided completed Slurm stdout and cluster-local numerical_qc_summary.json; prediction artifacts remain excluded from Git."
+}
