@@ -95,3 +95,17 @@ the full model. It uses a fixed seed for the upstream nonpeak subsample, retains
 500-bp training jitter, and writes all preparation artifacts under
 `models/chrombpnet/fold_0/prep`. Review the retained region counts, thresholds,
 scaled-model checksum, and parameters before submitting full-model training.
+
+## First full ChromBPNet candidate
+
+After reviewing the fold 0 preparation summary, train seed 42 on one A40:
+
+```bash
+sbatch --account=YOUR_ACCOUNT hpc/slurm/train_chrombpnet_fold0_seed42.sbatch
+```
+
+The job uses genome-wide prepared peaks plus matched backgrounds, the frozen
+depth-scaled bias model, 500-bp jitter, and chromosome-disjoint train/validation
+sets. It produces both combined and no-bias checkpoints. Completion is not a
+model pass: held-out profile/count performance, additional seeds, donor
+sensitivity, and attribution/motif recovery remain required.

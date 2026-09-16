@@ -29,4 +29,10 @@ See `bias_fold0_seed42_training.json`,
 `bias_fold0_seed42_numerical_qc.json`, and
 `bias_fold0_seed42_motif_qc.json` for machine-readable evidence.
 
+Full-model preparation subsequently retained 256,225 peaks and 256,225 matched
+nonpeaks. Only 23 of 256,248 prepared peaks were removed, the count-loss weight
+is 25.4, and the saved parameters retain 500-bp jitter with the planned 512-filter,
+eight-dilation architecture. See `chrombpnet_fold0_preparation.json`. This is a
+preparation pass; no full-model checkpoint has yet passed validation.
+
 ![Selected learned bias motifs and database matches](bias_motif_qc_selected.png)

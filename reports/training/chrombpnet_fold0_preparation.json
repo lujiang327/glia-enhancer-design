@@ -1,0 +1,24 @@
+{
+  "status": "PASS_FOR_FIRST_FULL_MODEL_TRAINING_CANDIDATE",
+  "fold": 0,
+  "filtered_peaks": 256225,
+  "filtered_nonpeaks": 256225,
+  "input_prepared_peaks": 256248,
+  "peaks_removed": 23,
+  "counts_sum_min_threshold": 0.0,
+  "counts_sum_max_threshold": 13863.9,
+  "training_points_post_threshold": 221456,
+  "counts_loss_weight": 25.4,
+  "architecture": {
+    "filters": 512,
+    "dilation_layers": 8,
+    "input_length": 2114,
+    "output_length": 1000,
+    "max_jitter": 500
+  },
+  "negative_sampling_ratio": 0.1,
+  "bias_model": "models/chrombpnet/fold_0/prep/auxiliary/muller_bias_model_scaled.h5",
+  "split": "config/splits/fold_0.json",
+  "decision": "Proceed with fold-0 seed-42 full ChromBPNet candidate training. Model reliability remains unassessed until held-out, seed, donor, and motif QC pass.",
+  "evidence": "Cluster-local preparation_summary.txt and checksummed preparation outputs; large files remain excluded from Git."
+}
