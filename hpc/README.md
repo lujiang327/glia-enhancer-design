@@ -80,3 +80,18 @@ The two HTML reports must be reviewed before accepting the bias model. Dominant
 Tn5/enzyme-bias patterns or unstructured repeats are expected. An obvious
 transcription-factor motif in the leading patterns blocks use of this bias model
 until the threshold/model choice is revisited.
+
+## Full ChromBPNet preparation gate
+
+After the bias model passes numerical and motif review, prepare fold 0 full-model
+regions, count-loss weight, and a depth-scaled frozen bias model:
+
+```bash
+sbatch --account=YOUR_ACCOUNT hpc/slurm/prepare_chrombpnet_fold0.sbatch
+```
+
+This job uses the GPU only to scale the accepted bias model; it does not train
+the full model. It uses a fixed seed for the upstream nonpeak subsample, retains
+500-bp training jitter, and writes all preparation artifacts under
+`models/chrombpnet/fold_0/prep`. Review the retained region counts, thresholds,
+scaled-model checksum, and parameters before submitting full-model training.

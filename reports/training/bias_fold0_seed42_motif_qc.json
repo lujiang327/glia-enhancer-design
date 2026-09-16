@@ -1,0 +1,45 @@
+{
+  "status": "PASS_FOR_CHROMBPNET_PILOT_WITH_GC_CAVEAT",
+  "model_role": "Tn5 bias model",
+  "fold": 0,
+  "bias_threshold": 0.5,
+  "seed": 42,
+  "interpretation_regions": {
+    "split": "test",
+    "chromosomes": [
+      "chr1",
+      "chr3",
+      "chr6"
+    ],
+    "regions": 30000
+  },
+  "profile_patterns": {
+    "patterns": 15,
+    "seqlets": 31202,
+    "patterns_with_tn5_as_top_match": 15,
+    "top_two_seqlet_fraction": 0.5723030564963144,
+    "top_five_seqlet_fraction": 0.8452983783084418,
+    "assessment": "All learned profile patterns have a Tn5 motif as the top database match. The dominant learned matrices visually resemble the matched Tn5 patterns."
+  },
+  "count_patterns": {
+    "positive_patterns": 26,
+    "positive_seqlets": 27443,
+    "negative_patterns": 8,
+    "negative_seqlets": 12050,
+    "positive_seqlets_in_patterns_with_enzyme_bias_top_match": 19758,
+    "positive_enzyme_bias_seqlet_fraction": 0.7199650184025071,
+    "assessment": "Dominant positive patterns are Tn5/enzyme-bias-like. Other matrices are predominantly diffuse GC-rich, AT-rich, or low-complexity effects rather than compact transcription-factor motifs."
+  },
+  "residual_caveats": [
+    "Count negative pattern 7 matches SP2 at q=2.93e-6 with 778 seqlets, but its learned matrix is a broad composition effect rather than a compact SP-family logo; it represents 1.97% of all count seqlets.",
+    "Count positive patterns 19 and 24 match ZN770 at low q-values but contain only 165 seqlets together (0.42% of all count seqlets) and visually show diffuse GC composition.",
+    "The full ChromBPNet no-bias model must be checked for residual Tn5 patterns and excessive GC-rich motifs. Revisit the bias threshold if the full model's leading motifs show systematic GC leakage."
+  ],
+  "decision": "Use this bias model for the fold-0 full ChromBPNet pilot. This does not establish reliability of the full Muller-glia model and does not release differential accessibility.",
+  "source_checksums": {
+    "profile_motifs_html_sha256": "33adfb622d88f32b443964b1762184c114b5c807f3443813bba23308cd3b90eb",
+    "counts_motifs_html_sha256": "4b60acc8b55d1a8045bd0b3c24fbdaaa17814331aa3882ef7eed75dc80ad9df5",
+    "report_archive_sha256": "fe0cc504f47b94d39020a6b909b1ee8b46ecffbe5a9dfe5995efce27b856475f"
+  },
+  "visual_summary": "reports/training/bias_motif_qc_selected.png"
+}
