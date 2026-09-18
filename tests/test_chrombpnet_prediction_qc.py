@@ -46,7 +46,19 @@ class ChromBPNetPredictionQCTest(unittest.TestCase):
         model = metrics(0.2, 0.1, 2.0, 0.7, 0.1)
         bias = metrics(0.3, 0.2, 1.0, 0.6, 0.2)
         result = self.summarize(model, bias)
-        self.assertEqual(len(result["cautions"]), 5)
+        self.assertEqual(len(result["cautions"]), 8)
+
+    def test_nonpeak_count_regression_is_reported_when_peaks_improve(self):
+        model = metrics(0.8, 0.7, 0.5, 0.3, 0.6)
+        bias = metrics(0.3, 0.2, 2.0, 0.6, 0.2)
+        model["counts_metrics"]["nonpeaks"] = {
+            "pearsonr": 0.2,
+            "spearmanr": 0.1,
+            "mse": 3.0,
+        }
+        result = self.summarize(model, bias)
+        self.assertEqual(len(result["cautions"]), 3)
+        self.assertTrue(all("nonpeak" in item for item in result["cautions"]))
 
 
 if __name__ == "__main__":

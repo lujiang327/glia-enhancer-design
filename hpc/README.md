@@ -121,6 +121,28 @@ sbatch --account=YOUR_ACCOUNT hpc/slurm/evaluate_chrombpnet_fold0_seed42.sbatch
 
 The report records peak, nonpeak, and combined count correlations/MSE and profile
 Jensen-Shannon distances. It expresses every model-minus-baseline comparison so
-that positive values favor the full model. This is an initial aggregate screen;
+that positive values favor the full model. Peak metric regressions and nonpeak
+count-calibration regressions are retained as explicit cautions. This is an
+initial aggregate screen;
 it does not pass the model gate without per-chromosome, depth, donor, seed,
 attribution, and motif assessment.
+
+## Background-calibration control
+
+If the initial candidate improves held-out peaks but broadly inflates nonpeak
+counts, train a controlled candidate that changes only
+`negative_sampling_ratio` from 0.1 to 1.0:
+
+```bash
+sbatch --account=YOUR_ACCOUNT hpc/slurm/train_chrombpnet_fold0_seed42_neg1.sbatch
+```
+
+The job writes to `models/chrombpnet/fold_0/seed_42_neg1` and preserves the
+original checkpoint. After it converges, evaluate it on the same test regions:
+
+```bash
+sbatch --account=YOUR_ACCOUNT hpc/slurm/evaluate_chrombpnet_fold0_seed42_neg1.sbatch
+```
+
+Select between the two candidates using their matched held-out peak and nonpeak
+metrics. Do not choose on training loss alone.

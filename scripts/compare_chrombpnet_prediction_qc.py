@@ -69,6 +69,20 @@ def run(model_path, bias_path, output_path):
                 f"Full model did not improve peak {metric} over matched scaled bias."
             )
 
+    # Background profile shape is expected to remain largely bias-driven, but
+    # worse background count calibration can indicate that the biological
+    # branch adds accessibility where it should be close to zero.
+    nonpeak = deltas["nonpeaks"]
+    for metric in (
+        "counts_pearsonr_gain",
+        "counts_spearmanr_gain",
+        "counts_mse_reduction",
+    ):
+        if nonpeak[metric] <= 0:
+            cautions.append(
+                f"Full model did not improve nonpeak {metric} over matched scaled bias."
+            )
+
     summary = {
         "status": "HELD_OUT_NUMERICAL_RESULTS_READY_FOR_REVIEW",
         "fold": 0,
