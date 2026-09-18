@@ -109,3 +109,18 @@ depth-scaled bias model, 500-bp jitter, and chromosome-disjoint train/validation
 sets. It produces both combined and no-bias checkpoints. Completion is not a
 model pass: held-out profile/count performance, additional seeds, donor
 sensitivity, and attribution/motif recovery remain required.
+
+## Initial held-out full-model numerical comparison
+
+After successful seed-42 training, evaluate the combined model and its scaled
+bias baseline on the identical fold-0 test regions (`chr1`, `chr3`, and `chr6`):
+
+```bash
+sbatch --account=YOUR_ACCOUNT hpc/slurm/evaluate_chrombpnet_fold0_seed42.sbatch
+```
+
+The report records peak, nonpeak, and combined count correlations/MSE and profile
+Jensen-Shannon distances. It expresses every model-minus-baseline comparison so
+that positive values favor the full model. This is an initial aggregate screen;
+it does not pass the model gate without per-chromosome, depth, donor, seed,
+attribution, and motif assessment.
