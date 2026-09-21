@@ -146,3 +146,25 @@ sbatch --account=YOUR_ACCOUNT hpc/slurm/evaluate_chrombpnet_fold0_seed42_neg1.sb
 
 Select between the two candidates using their matched held-out peak and nonpeak
 metrics. Do not choose on training loss alone.
+
+## Provisional-model attribution and motif review
+
+For the ratio-1 calibration candidate, compute contribution scores from the
+no-bias biological checkpoint on a deterministic sample of 30,000 held-out
+peaks:
+
+```bash
+sbatch --account=YOUR_ACCOUNT hpc/slurm/attribute_chrombpnet_fold0_seed42_neg1.sbatch
+```
+
+Then run TF-MoDISco on a CPU node, preferably using an `afterok` dependency:
+
+```bash
+sbatch --account=YOUR_ACCOUNT hpc/slurm/modisco_chrombpnet_fold0_seed42_neg1.sbatch
+```
+
+Review profile and count reports for coherent Müller-glia regulatory motifs,
+seqlet support, diffuse GC/repeat patterns, and residual Tn5 motifs. Motif names
+identify families rather than exact expressed TFs; paired RNA provides supporting
+evidence. Attribution review is part of model validation and does not open the
+differential-accessibility gate by itself.
