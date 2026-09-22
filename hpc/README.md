@@ -168,3 +168,22 @@ seqlet support, diffuse GC/repeat patterns, and residual Tn5 motifs. Motif names
 identify families rather than exact expressed TFs; paired RNA provides supporting
 evidence. Attribution review is part of model validation and does not open the
 differential-accessibility gate by itself.
+
+## Balanced-model seed reproducibility
+
+After the seed-42 balanced candidate passes attribution and motif review, train
+two independent replicas and submit their held-out evaluations as a dependent
+array:
+
+```bash
+TRAIN_JOB=$(sbatch --parsable --account=YOUR_ACCOUNT \
+  hpc/slurm/train_chrombpnet_fold0_neg1_seeds.sbatch)
+TRAIN_JOB=${TRAIN_JOB%%;*}
+sbatch --account=YOUR_ACCOUNT --dependency="afterok:${TRAIN_JOB}" \
+  hpc/slurm/evaluate_chrombpnet_fold0_neg1_seeds.sbatch
+```
+
+Array tasks 0 and 1 use seeds 123 and 456. They write separate checkpoints and
+QC under `seed_123_neg1` and `seed_456_neg1`. Compare both with seed 42 before
+starting donor-sensitivity work. Differential accessibility remains blocked
+until both reproducibility gates are reviewed.

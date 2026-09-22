@@ -1,0 +1,69 @@
+{
+  "status": "PASS_MOTIF_PLAUSIBILITY_WITH_CAVEATS",
+  "candidate": "models/chrombpnet/fold_0/seed_42_neg1/models/muller_chrombpnet_nobias.h5",
+  "fold": 0,
+  "seed": 42,
+  "negative_sampling_ratio": 1.0,
+  "attribution_regions": {
+    "type": "held_out_peaks",
+    "count": 30000,
+    "chromosomes": ["chr1", "chr3", "chr6"]
+  },
+  "tfmodisco": {
+    "profile": {
+      "patterns": 50,
+      "seqlets": 28182,
+      "positive_seqlets": 27608,
+      "negative_seqlets": 574,
+      "largest_pattern_seqlets": 6346,
+      "top_five_pattern_seqlets": 16159
+    },
+    "counts": {
+      "patterns": 38,
+      "seqlets": 22191,
+      "positive_seqlets": 21889,
+      "negative_seqlets": 302,
+      "largest_pattern_seqlets": 5296,
+      "top_five_pattern_seqlets": 14745
+    }
+  },
+  "recovered_motif_families": [
+    "NFI",
+    "SOX",
+    "LHX2/homeobox",
+    "AP-1",
+    "RFX",
+    "RORA/nuclear receptor",
+    "CRX/OTX/homeobox",
+    "CTCF",
+    "SP/KLF",
+    "NFY"
+  ],
+  "rna_support": {
+    "strong_muller_glia_support": ["NFIA", "NFIB", "NFIX", "SOX9", "LHX2"],
+    "additional_detected_factors": ["RFX3", "FOS", "JUNB", "RORA", "PAX6"],
+    "retinal_homeobox_caveat": "CRX and OTX2 were less frequent in Muller glia than in other retinal cells, but were elevated in donor LGS3.",
+    "exact_match_caveat": "NKX6-1 and NOTO were not detected in Muller-glia RNA; their database matches should be interpreted as generic homeobox-family similarity."
+  },
+  "technical_bias_screen": {
+    "tn5_top_matches": 0,
+    "profile_dnase_matched_seqlets": 41,
+    "profile_dnase_matched_fraction": 0.00145,
+    "counts_dnase_or_tn5_matches": 0,
+    "interpretation": "No evidence that residual Tn5 sequence bias dominates the full no-bias model attribution patterns."
+  },
+  "cautions": [
+    "CRX/OTX and generic homeobox patterns may represent shared retinal grammar, cell-state signal, or contamination rather than Muller-glia-specific regulation.",
+    "Database motif names identify sequence families and do not establish which paralog is active.",
+    "This is one seed and one chromosome fold; reproducibility across seeds and biological donors remains required."
+  ],
+  "decision": "Use the negative-sampling-ratio-1 model as the provisional primary candidate for seed-reproducibility and donor-sensitivity testing. Differential accessibility remains blocked.",
+  "source_archive": {
+    "name": "chrombpnet_neg1_motif_reports.tar.gz",
+    "sha256": "74562ce43ddeb2f37aef765208e57b6218c13bb3353b14e59753ab49f01caa1a"
+  },
+  "report_sha256": {
+    "profile_html": "58536e374bfce5428f773c55415f5b96a19062eefd07450f783e024ce14fe13b",
+    "counts_html": "c4b83ac0f2bc75d77e55fe1920da076890299f858c3d450ddaec2266ac17ca2f"
+  }
+}

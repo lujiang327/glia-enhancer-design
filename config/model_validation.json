@@ -1,6 +1,6 @@
 {
-  "status": "NOT_TRAINED",
-  "checkpoint": null,
+  "status": "CANDIDATE_QC_IN_PROGRESS",
+  "checkpoint": "models/chrombpnet/fold_0/seed_42_neg1/models/muller_chrombpnet_nobias.h5",
   "checkpoint_sha256": null,
   "bias_model": {
     "status": "PASS_FOR_CHROMBPNET_PILOT_WITH_GC_CAVEAT",
@@ -11,18 +11,20 @@
     "seed": 42
   },
   "checks": {
-    "chromosome_split_integrity": "pending",
+    "chromosome_split_integrity": "pass",
     "training_stability_across_seeds": "pending",
-    "held_out_count_performance": "pending",
-    "held_out_profile_performance": "pending",
+    "held_out_count_performance": "pass_with_nonpeak_calibration_caveat",
+    "held_out_profile_performance": "pass_initial_aggregate_screen",
     "biological_donor_generalization": "pending",
     "bias_model_no_tf_leakage": "pass_with_gc_composition_caveat",
-    "tf_model_no_residual_tn5_bias": "pending",
-    "motif_recovery_and_attribution": "pending"
+    "tf_model_no_residual_tn5_bias": "pass_initial_motif_screen",
+    "motif_recovery_and_attribution": "pass_with_retinal_homeobox_caveat"
   },
   "evidence": [
     "reports/training/bias_fold0_seed42_training.json",
     "reports/training/bias_fold0_seed42_numerical_qc.json",
-    "reports/training/bias_fold0_seed42_motif_qc.json"
+    "reports/training/bias_fold0_seed42_motif_qc.json",
+    "reports/training/chrombpnet_fold0_seed42_neg1_motif_qc.json",
+    "reports/training/chrombpnet_neg1_motif_rna_support.tsv"
   ]
 }
