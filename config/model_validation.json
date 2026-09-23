@@ -12,7 +12,7 @@
   },
   "checks": {
     "chromosome_split_integrity": "pass",
-    "training_stability_across_seeds": "pending",
+    "training_stability_across_seeds": "pass_with_nonpeak_calibration_caveat",
     "held_out_count_performance": "pass_with_nonpeak_calibration_caveat",
     "held_out_profile_performance": "pass_initial_aggregate_screen",
     "biological_donor_generalization": "pending",
@@ -25,6 +25,7 @@
     "reports/training/bias_fold0_seed42_numerical_qc.json",
     "reports/training/bias_fold0_seed42_motif_qc.json",
     "reports/training/chrombpnet_fold0_seed42_neg1_motif_qc.json",
-    "reports/training/chrombpnet_neg1_motif_rna_support.tsv"
+    "reports/training/chrombpnet_neg1_motif_rna_support.tsv",
+    "reports/training/chrombpnet_fold0_neg1_seed_reproducibility.json"
   ]
 }

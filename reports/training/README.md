@@ -55,3 +55,11 @@ grammar or donor-specific contamination. See
 
 Representative full-model contribution matrices are in
 `chrombpnet_neg1_motif_logos/`.
+
+Independent balanced-model replicas with seeds 123 and 456 reproduce the seed
+42 result. Across the three runs, best validation-loss CV is 0.084%, combined
+count-correlation CV is 0.092%, and combined profile-JSD CV is 0.067%. The seed
+reproducibility gate therefore passes while retaining the shared nonpeak-count
+calibration caveat. See `chrombpnet_fold0_neg1_seed_reproducibility.md` and its
+JSON, TSV, and SVG companions. Biological-donor sensitivity remains pending,
+so differential accessibility is still blocked.

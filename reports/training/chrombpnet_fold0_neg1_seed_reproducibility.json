@@ -1,0 +1,210 @@
+{
+  "status": "PASS_SEED_REPRODUCIBILITY_WITH_NONPEAK_CALIBRATION_CAVEAT",
+  "fold": 0,
+  "negative_sampling_ratio": 1.0,
+  "seeds": [
+    42,
+    123,
+    456
+  ],
+  "per_seed": [
+    {
+      "seed": 42,
+      "epochs_completed": 15,
+      "best_epoch_zero_based": 9,
+      "best_val_loss": 379.17486572265625,
+      "peak_counts_pearsonr": 0.668422645463652,
+      "peak_counts_spearmanr": 0.5976553564513628,
+      "peak_counts_mse": 1.3278210935083148,
+      "peak_median_jsd": 0.4695301594401629,
+      "peak_median_normalized_jsd": 0.3259211381362912,
+      "nonpeak_counts_pearsonr": 0.4535430132693721,
+      "nonpeak_counts_spearmanr": 0.5418562518780871,
+      "nonpeak_counts_mse": 1.659084332425907,
+      "nonpeak_median_jsd": 0.7520684517067118,
+      "nonpeak_median_normalized_jsd": 0.06673251038695958,
+      "combined_counts_pearsonr": 0.775854214294975,
+      "combined_counts_spearmanr": 0.7743321472185004,
+      "combined_counts_mse": 1.4934527129671111,
+      "combined_median_jsd": 0.6232561522109197,
+      "combined_median_normalized_jsd": 0.17404016201667322
+    },
+    {
+      "seed": 123,
+      "epochs_completed": 12,
+      "best_epoch_zero_based": 6,
+      "best_val_loss": 379.3706359863281,
+      "peak_counts_pearsonr": 0.7019187450054228,
+      "peak_counts_spearmanr": 0.613580387205889,
+      "peak_counts_mse": 1.332583677055644,
+      "peak_median_jsd": 0.4715260911631976,
+      "peak_median_normalized_jsd": 0.32221913007079517,
+      "nonpeak_counts_pearsonr": 0.4841737992378301,
+      "nonpeak_counts_spearmanr": 0.5709068212784459,
+      "nonpeak_counts_mse": 1.6690130910346859,
+      "nonpeak_median_jsd": 0.7520936737326624,
+      "nonpeak_median_normalized_jsd": 0.06680933018053545,
+      "combined_counts_pearsonr": 0.7744436459891415,
+      "combined_counts_spearmanr": 0.7685095487204794,
+      "combined_counts_mse": 1.500798384045165,
+      "combined_median_jsd": 0.6240280734156016,
+      "combined_median_normalized_jsd": 0.17365059885810205
+    },
+    {
+      "seed": 456,
+      "epochs_completed": 14,
+      "best_epoch_zero_based": 8,
+      "best_val_loss": 378.7450866699219,
+      "peak_counts_pearsonr": 0.6722994565453695,
+      "peak_counts_spearmanr": 0.5962731666436191,
+      "peak_counts_mse": 1.5034006332511758,
+      "peak_median_jsd": 0.47194976319634885,
+      "peak_median_normalized_jsd": 0.3218642413105853,
+      "nonpeak_counts_pearsonr": 0.4871633237863058,
+      "nonpeak_counts_spearmanr": 0.5665094769596987,
+      "nonpeak_counts_mse": 1.49625572487102,
+      "nonpeak_median_jsd": 0.7518502863908892,
+      "nonpeak_median_normalized_jsd": 0.06723650461803506,
+      "combined_counts_pearsonr": 0.7753037784319456,
+      "combined_counts_spearmanr": 0.7731420036034802,
+      "combined_counts_mse": 1.4998281790610977,
+      "combined_median_jsd": 0.6239079087107874,
+      "combined_median_normalized_jsd": 0.17322263742687222
+    }
+  ],
+  "across_seed_summary": {
+    "best_val_loss": {
+      "mean": 379.09686279296875,
+      "standard_deviation": 0.31998645220377137,
+      "coefficient_of_variation": 0.0008440757062622315,
+      "minimum": 378.7450866699219,
+      "maximum": 379.3706359863281,
+      "range": 0.62554931640625
+    },
+    "peak_counts_pearsonr": {
+      "mean": 0.6808802823381481,
+      "standard_deviation": 0.018322666279572023,
+      "coefficient_of_variation": 0.026910261252759218,
+      "minimum": 0.668422645463652,
+      "maximum": 0.7019187450054228,
+      "range": 0.033496099541770796
+    },
+    "peak_counts_spearmanr": {
+      "mean": 0.6025029701002903,
+      "standard_deviation": 0.00961818535196303,
+      "coefficient_of_variation": 0.015963714420133106,
+      "minimum": 0.5962731666436191,
+      "maximum": 0.613580387205889,
+      "range": 0.017307220562269965
+    },
+    "peak_counts_mse": {
+      "mean": 1.3879351346050448,
+      "standard_deviation": 0.10002440494054972,
+      "coefficient_of_variation": 0.07206706022973687,
+      "minimum": 1.3278210935083148,
+      "maximum": 1.5034006332511758,
+      "range": 0.175579539742861
+    },
+    "peak_median_jsd": {
+      "mean": 0.4710020045999031,
+      "standard_deviation": 0.0012921380067959628,
+      "coefficient_of_variation": 0.0027433811197758724,
+      "minimum": 0.4695301594401629,
+      "maximum": 0.47194976319634885,
+      "range": 0.0024196037561859396
+    },
+    "peak_median_normalized_jsd": {
+      "mean": 0.32333483650589057,
+      "standard_deviation": 0.0022468207762504407,
+      "coefficient_of_variation": 0.006948897930487944,
+      "minimum": 0.3218642413105853,
+      "maximum": 0.3259211381362912,
+      "range": 0.004056896825705925
+    },
+    "nonpeak_counts_pearsonr": {
+      "mean": 0.4749600454311693,
+      "standard_deviation": 0.018607828036100234,
+      "coefficient_of_variation": 0.03917767023794186,
+      "minimum": 0.4535430132693721,
+      "maximum": 0.4871633237863058,
+      "range": 0.033620310516933705
+    },
+    "nonpeak_counts_spearmanr": {
+      "mean": 0.5597575167054106,
+      "standard_deviation": 0.015658084847064845,
+      "coefficient_of_variation": 0.02797297826248823,
+      "minimum": 0.5418562518780871,
+      "maximum": 0.5709068212784459,
+      "range": 0.029050569400358883
+    },
+    "nonpeak_counts_mse": {
+      "mean": 1.6081177161105378,
+      "standard_deviation": 0.09700244262352516,
+      "coefficient_of_variation": 0.060320486275183514,
+      "minimum": 1.49625572487102,
+      "maximum": 1.6690130910346859,
+      "range": 0.17275736616366588
+    },
+    "nonpeak_median_jsd": {
+      "mean": 0.7520041372767544,
+      "standard_deviation": 0.00013383425928888463,
+      "coefficient_of_variation": 0.00017797011034213314,
+      "minimum": 0.7518502863908892,
+      "maximum": 0.7520936737326624,
+      "range": 0.00024338734177320465
+    },
+    "nonpeak_median_normalized_jsd": {
+      "mean": 0.06692611506184336,
+      "standard_deviation": 0.00027153559180320523,
+      "coefficient_of_variation": 0.004057244194621063,
+      "minimum": 0.06673251038695958,
+      "maximum": 0.06723650461803506,
+      "range": 0.0005039942310754719
+    },
+    "combined_counts_pearsonr": {
+      "mean": 0.7752005462386874,
+      "standard_deviation": 0.000710927844896511,
+      "coefficient_of_variation": 0.0009170889369802036,
+      "minimum": 0.7744436459891415,
+      "maximum": 0.775854214294975,
+      "range": 0.001410568305833526
+    },
+    "combined_counts_spearmanr": {
+      "mean": 0.7719945665141533,
+      "standard_deviation": 0.0030762188190636463,
+      "coefficient_of_variation": 0.003984767448498938,
+      "minimum": 0.7685095487204794,
+      "maximum": 0.7743321472185004,
+      "range": 0.0058225984980210255
+    },
+    "combined_counts_mse": {
+      "mean": 1.4980264253577913,
+      "standard_deviation": 0.003990546103263718,
+      "coefficient_of_variation": 0.0026638689650021422,
+      "minimum": 1.4934527129671111,
+      "maximum": 1.500798384045165,
+      "range": 0.00734567107805395
+    },
+    "combined_median_jsd": {
+      "mean": 0.6237307114457695,
+      "standard_deviation": 0.00041534893716820096,
+      "coefficient_of_variation": 0.0006659106719395741,
+      "minimum": 0.6232561522109197,
+      "maximum": 0.6240280734156016,
+      "range": 0.0007719212046819468
+    },
+    "combined_median_normalized_jsd": {
+      "mean": 0.1736377994338825,
+      "standard_deviation": 0.00040891256116385973,
+      "coefficient_of_variation": 0.002354974334488527,
+      "minimum": 0.17322263742687222,
+      "maximum": 0.17404016201667322,
+      "range": 0.0008175245898009997
+    }
+  },
+  "cautions": [
+    "All seeds retain worse nonpeak count correlation and MSE than the matched scaled-bias baseline.",
+    "Seed reproducibility does not establish biological-donor generalization."
+  ],
+  "decision": "Seed reproducibility passes; proceed to donor-sensitivity testing while differential accessibility remains blocked."
+}

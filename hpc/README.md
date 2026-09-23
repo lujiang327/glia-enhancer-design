@@ -187,3 +187,29 @@ Array tasks 0 and 1 use seeds 123 and 456. They write separate checkpoints and
 QC under `seed_123_neg1` and `seed_456_neg1`. Compare both with seed 42 before
 starting donor-sensitivity work. Differential accessibility remains blocked
 until both reproducibility gates are reviewed.
+
+## Donor-sensitivity gate
+
+After seed reproducibility passes, evaluate the pooled seed-42 balanced model
+against each donor's own insertion track on the same held-out chromosomes and
+regions. Submit the four-donor GPU array, then submit the CPU summarizer with an
+`afterok` dependency:
+
+```bash
+DONOR_JOB=$(sbatch --parsable --account=YOUR_ACCOUNT \
+  hpc/slurm/evaluate_chrombpnet_fold0_seed42_neg1_donors.sbatch)
+DONOR_JOB=${DONOR_JOB%%;*}
+SUMMARY_JOB=$(sbatch --parsable --account=YOUR_ACCOUNT \
+  --dependency="afterok:${DONOR_JOB}" \
+  hpc/slurm/summarize_chrombpnet_fold0_seed42_neg1_donors.sbatch)
+SUMMARY_JOB=${SUMMARY_JOB%%;*}
+printf 'DONOR_JOB=%s\nSUMMARY_JOB=%s\n' "$DONOR_JOB" "$SUMMARY_JOB"
+```
+
+Array tasks 0 through 3 correspond to LGS1, LGS2, LGS3, and LVG1. Two tasks
+may run concurrently. The evaluation compares the combined model and matched
+scaled-bias baseline with each donor's observed insertions. Count correlations
+and profile metrics are comparable across donors. Absolute count MSE is saved
+but excluded from the donor decision because the checkpoint's count scale was
+learned from the pooled library. This is donor-resolved evaluation of a pooled
+model, not leave-one-donor-out retraining.

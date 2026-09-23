@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="430" viewBox="0 0 1200 430">
+<rect width="100%" height="100%" fill="white"/>
+<style>text{font-family:Arial,sans-serif;fill:#222}.title{font-size:17px;font-weight:bold}.axis{font-size:12px}.legend{font-size:13px}</style>
+<text x="65" y="25" class="title">Validation loss</text>
+<line x1="65" y1="355" x2="425" y2="355" stroke="#444"/>
+<line x1="65" y1="55" x2="65" y2="355" stroke="#444"/>
+<line x1="65" y1="329.2" x2="425" y2="329.2" stroke="#ddd"/>
+<text x="57" y="333.2" text-anchor="end" class="axis">380</text>
+<line x1="65" y1="268.6" x2="425" y2="268.6" stroke="#ddd"/>
+<text x="57" y="272.6" text-anchor="end" class="axis">390</text>
+<line x1="65" y1="208.0" x2="425" y2="208.0" stroke="#ddd"/>
+<text x="57" y="212.0" text-anchor="end" class="axis">400</text>
+<line x1="65" y1="147.5" x2="425" y2="147.5" stroke="#ddd"/>
+<text x="57" y="151.5" text-anchor="end" class="axis">410</text>
+<line x1="65" y1="86.9" x2="425" y2="86.9" stroke="#ddd"/>
+<text x="57" y="90.9" text-anchor="end" class="axis">420</text>
+<polyline points="65.0,73.2 90.7,190.4 116.4,278.5 142.1,298.2 167.9,290.1 193.6,329.0 219.3,325.0 245.0,317.2 270.7,324.0 296.4,334.2 322.1,310.8 347.9,313.5 373.6,327.6 399.3,295.8 425.0,321.4" fill="none" stroke="#386cb0" stroke-width="2.5"/>
+<polyline points="65.0,149.1 90.7,255.9 116.4,283.7 142.1,322.2 167.9,266.1 193.6,326.7 219.3,333.0 245.0,321.7 270.7,318.9 296.4,322.1 322.1,332.4 347.9,329.8" fill="none" stroke="#f0027f" stroke-width="2.5"/>
+<polyline points="65.0,149.5 90.7,260.6 116.4,291.8 142.1,317.4 167.9,326.3 193.6,272.1 219.3,328.9 245.0,329.1 270.7,336.8 296.4,318.7 322.1,322.5 347.9,333.4 373.6,302.4 399.3,316.1" fill="none" stroke="#31a354" stroke-width="2.5"/>
+<text x="245.0" y="390" text-anchor="middle" class="axis">Epoch (zero-based)</text>
+<text x="18" y="205.0" transform="rotate(-90 18 205.0)" text-anchor="middle" class="axis">Loss</text>
+<text x="500" y="25" class="title">Held-out count Pearson r</text>
+<line x1="500" y1="355" x2="785" y2="355" stroke="#444"/>
+<line x1="500" y1="55" x2="500" y2="355" stroke="#444"/>
+<rect x="530" y="119.1" width="15" height="235.9" fill="#386cb0"/>
+<rect x="548" y="107.3" width="15" height="247.7" fill="#f0027f"/>
+<rect x="566" y="117.7" width="15" height="237.3" fill="#31a354"/>
+<text x="548" y="375" text-anchor="middle" class="axis">peaks</text>
+<rect x="620" y="194.9" width="15" height="160.1" fill="#386cb0"/>
+<rect x="638" y="184.1" width="15" height="170.9" fill="#f0027f"/>
+<rect x="656" y="183.1" width="15" height="171.9" fill="#31a354"/>
+<text x="638" y="375" text-anchor="middle" class="axis">nonpeaks</text>
+<rect x="710" y="81.2" width="15" height="273.8" fill="#386cb0"/>
+<rect x="728" y="81.7" width="15" height="273.3" fill="#f0027f"/>
+<rect x="746" y="81.4" width="15" height="273.6" fill="#31a354"/>
+<text x="728" y="375" text-anchor="middle" class="axis">combined</text>
+<text x="493" y="359.0" text-anchor="end" class="axis">0.00</text>
+<text x="493" y="209.0" text-anchor="end" class="axis">0.42</text>
+<text x="493" y="59.0" text-anchor="end" class="axis">0.85</text>
+<text x="855" y="25" class="title">Median normalized profile JSD</text>
+<line x1="855" y1="355" x2="1140" y2="355" stroke="#444"/>
+<line x1="855" y1="55" x2="855" y2="355" stroke="#444"/>
+<rect x="885" y="83.4" width="15" height="271.6" fill="#386cb0"/>
+<rect x="903" y="86.5" width="15" height="268.5" fill="#f0027f"/>
+<rect x="921" y="86.8" width="15" height="268.2" fill="#31a354"/>
+<text x="903" y="375" text-anchor="middle" class="axis">peaks</text>
+<rect x="975" y="299.4" width="15" height="55.6" fill="#386cb0"/>
+<rect x="993" y="299.3" width="15" height="55.7" fill="#f0027f"/>
+<rect x="1011" y="299.0" width="15" height="56.0" fill="#31a354"/>
+<text x="993" y="375" text-anchor="middle" class="axis">nonpeaks</text>
+<rect x="1065" y="210.0" width="15" height="145.0" fill="#386cb0"/>
+<rect x="1083" y="210.3" width="15" height="144.7" fill="#f0027f"/>
+<rect x="1101" y="210.6" width="15" height="144.4" fill="#31a354"/>
+<text x="1083" y="375" text-anchor="middle" class="axis">combined</text>
+<text x="848" y="359.0" text-anchor="end" class="axis">0.00</text>
+<text x="848" y="209.0" text-anchor="end" class="axis">0.18</text>
+<text x="848" y="59.0" text-anchor="end" class="axis">0.36</text>
+<rect x="500" y="402" width="14" height="14" fill="#386cb0"/>
+<text x="520" y="414" class="legend">seed 42</text>
+<rect x="605" y="402" width="14" height="14" fill="#f0027f"/>
+<text x="625" y="414" class="legend">seed 123</text>
+<rect x="710" y="402" width="14" height="14" fill="#31a354"/>
+<text x="730" y="414" class="legend">seed 456</text>
+</svg>
