@@ -49,6 +49,8 @@ def run(model_path, bias_path, output_path):
             "median_jsd_reduction": (
                 bias[group]["median_jsd"] - model[group]["median_jsd"]
             ),
+            # Despite its upstream name, median_norm_jsd is a clipped
+            # goodness score: 1 - JSD/JSD(observed, uniform). Higher is better.
             "median_normalized_jsd_gain": (
                 model[group]["median_normalized_jsd"]
                 - bias[group]["median_normalized_jsd"]

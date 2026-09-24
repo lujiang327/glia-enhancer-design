@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="410" viewBox="0 0 1040 410">
+<rect width="100%" height="100%" fill="white"/>
+<style>text{font-family:Arial,sans-serif;fill:#222}.title{font-size:17px;font-weight:bold}.axis{font-size:12px}.legend{font-size:13px}</style>
+<text x="65" y="26" class="title">Held-out peak count Pearson r</text>
+<line x1="65" y1="335" x2="515" y2="335" stroke="#333"/>
+<line x1="65" y1="55" x2="65" y2="335" stroke="#333"/>
+<line x1="65" y1="335.0" x2="515" y2="335.0" stroke="#ddd"/>
+<text x="58" y="339.0" text-anchor="end" class="axis">0.00</text>
+<line x1="65" y1="195.0" x2="515" y2="195.0" stroke="#ddd"/>
+<text x="58" y="199.0" text-anchor="end" class="axis">0.38</text>
+<line x1="65" y1="55.0" x2="515" y2="55.0" stroke="#ddd"/>
+<text x="58" y="59.0" text-anchor="end" class="axis">0.75</text>
+<rect x="110" y="88.2" width="27" height="246.8" fill="#386cb0"/>
+<rect x="140" y="182.6" width="27" height="152.4" fill="#bdbdbd"/>
+<text x="138" y="355" text-anchor="middle" class="axis">LGS1</text>
+<rect x="210" y="89.1" width="27" height="245.9" fill="#386cb0"/>
+<rect x="240" y="203.1" width="27" height="131.9" fill="#bdbdbd"/>
+<text x="238" y="355" text-anchor="middle" class="axis">LGS2</text>
+<rect x="310" y="108.0" width="27" height="227.0" fill="#386cb0"/>
+<rect x="340" y="201.3" width="27" height="133.7" fill="#bdbdbd"/>
+<text x="338" y="355" text-anchor="middle" class="axis">LGS3</text>
+<rect x="410" y="116.0" width="27" height="219.0" fill="#386cb0"/>
+<rect x="440" y="238.6" width="27" height="96.4" fill="#bdbdbd"/>
+<text x="438" y="355" text-anchor="middle" class="axis">LVG1</text>
+<text x="290.0" y="378" text-anchor="middle" class="axis">higher is better</text>
+<text x="570" y="26" class="title">Held-out peak profile JSD</text>
+<line x1="570" y1="335" x2="1020" y2="335" stroke="#333"/>
+<line x1="570" y1="55" x2="570" y2="335" stroke="#333"/>
+<line x1="570" y1="335.0" x2="1020" y2="335.0" stroke="#ddd"/>
+<text x="563" y="339.0" text-anchor="end" class="axis">0.00</text>
+<line x1="570" y1="195.0" x2="1020" y2="195.0" stroke="#ddd"/>
+<text x="563" y="199.0" text-anchor="end" class="axis">0.38</text>
+<line x1="570" y1="55.0" x2="1020" y2="55.0" stroke="#ddd"/>
+<text x="563" y="59.0" text-anchor="end" class="axis">0.75</text>
+<rect x="615" y="98.2" width="27" height="236.8" fill="#386cb0"/>
+<rect x="645" y="82.8" width="27" height="252.2" fill="#bdbdbd"/>
+<text x="643" y="355" text-anchor="middle" class="axis">LGS1</text>
+<rect x="715" y="117.7" width="27" height="217.3" fill="#386cb0"/>
+<rect x="745" y="98.1" width="27" height="236.9" fill="#bdbdbd"/>
+<text x="743" y="355" text-anchor="middle" class="axis">LGS2</text>
+<rect x="815" y="98.4" width="27" height="236.6" fill="#386cb0"/>
+<rect x="845" y="83.9" width="27" height="251.1" fill="#bdbdbd"/>
+<text x="843" y="355" text-anchor="middle" class="axis">LGS3</text>
+<rect x="915" y="98.6" width="27" height="236.4" fill="#386cb0"/>
+<rect x="945" y="84.1" width="27" height="250.9" fill="#bdbdbd"/>
+<text x="943" y="355" text-anchor="middle" class="axis">LVG1</text>
+<text x="795.0" y="378" text-anchor="middle" class="axis">lower is better</text>
+<rect x="390" y="390" width="14" height="14" fill="#386cb0"/><text x="410" y="402" class="legend">ChromBPNet</text>
+<rect x="510" y="390" width="14" height="14" fill="#bdbdbd"/><text x="530" y="402" class="legend">scaled bias</text>
+</svg>

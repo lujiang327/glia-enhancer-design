@@ -1,0 +1,14 @@
+file_label	published_label	analysis_group	priority
+Mullerglia	Muller glia	MG	target
+Rod	Rod photoreceptor	Rod	major_off_target
+Cone	Cone photoreceptor	Cone	major_off_target
+ONconebipolar	ON cone bipolar	ON_cone_bipolar	major_off_target
+OFFconebipolar	OFF cone bipolar	OFF_cone_bipolar	major_off_target
+Rodbipolar	Rod bipolar	Rod_bipolar	major_off_target
+GABAamacrine	GABA amacrine	GABA_amacrine	major_off_target
+Glyamacrine	Glycinergic amacrine	Gly_amacrine	major_off_target
+AIIamacrine	AII amacrine	AII_amacrine	major_off_target
+Horizontal	Horizontal cell	Horizontal	major_off_target
+Retinalganglioncell	Retinal ganglion cell	RGC	major_off_target
+Astrocyte	Astrocyte	Astrocyte	glial_off_target
+Microglia	Microglia	Microglia	glial_off_target

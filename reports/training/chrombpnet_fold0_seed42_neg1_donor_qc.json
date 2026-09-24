@@ -1,0 +1,370 @@
+{
+  "status": "DONOR_RESULTS_READY_FOR_REVIEW",
+  "fold": 0,
+  "seed": 42,
+  "negative_sampling_ratio": 1.0,
+  "test_chromosomes": [
+    "chr1",
+    "chr3",
+    "chr6"
+  ],
+  "donors": {
+    "LGS1": {
+      "cells": 879,
+      "retained_fragment_records": 19737292,
+      "median_retained_fragments_per_cell": 17912.0,
+      "pooled_TSS_proxy": 21.44257777152012,
+      "model_metrics": {
+        "peaks": {
+          "counts_pearsonr": 0.6609487127099957,
+          "counts_spearmanr": 0.6083108783512166,
+          "counts_mse_uncalibrated": 2.507800466134514,
+          "median_jsd": 0.6343268741341272,
+          "median_normalized_jsd": 0.17860368359912088
+        },
+        "nonpeaks": {
+          "counts_pearsonr": 0.42354252609552184,
+          "counts_spearmanr": 0.48083342967406845,
+          "counts_mse_uncalibrated": 5.368467679391835,
+          "median_jsd": 0.7988747723961065,
+          "median_normalized_jsd": 0.0281198472155396
+        },
+        "peaks_and_nonpeaks": {
+          "counts_pearsonr": 0.7719706461754019,
+          "counts_spearmanr": 0.7548620264165433,
+          "counts_mse_uncalibrated": 3.9381340727631753,
+          "median_jsd": 0.7347225155261721,
+          "median_normalized_jsd": 0.08416015362298926
+        }
+      },
+      "matched_scaled_bias_metrics": {
+        "peaks": {
+          "counts_pearsonr": 0.40813839912360433,
+          "counts_spearmanr": 0.4224116506960632,
+          "counts_mse_uncalibrated": 3.567859543551848,
+          "median_jsd": 0.6756377343894301,
+          "median_normalized_jsd": 0.1275245850624248
+        },
+        "nonpeaks": {
+          "counts_pearsonr": 0.5929569406605111,
+          "counts_spearmanr": 0.6089081763919327,
+          "counts_mse_uncalibrated": 2.856305626383483,
+          "median_jsd": 0.7993687800149627,
+          "median_normalized_jsd": 0.02779283819538233
+        },
+        "peaks_and_nonpeaks": {
+          "counts_pearsonr": 0.25789545989232654,
+          "counts_spearmanr": 0.24780517547287795,
+          "counts_mse_uncalibrated": 3.2120825849676655,
+          "median_jsd": 0.7460314160835938,
+          "median_normalized_jsd": 0.07141309915429742
+        }
+      },
+      "improvement_over_scaled_bias": {
+        "peaks": {
+          "counts_pearsonr_gain": 0.25281031358639133,
+          "counts_spearmanr_gain": 0.18589922765515338,
+          "median_jsd_reduction": 0.04131086025530284,
+          "median_normalized_jsd_gain": 0.051079098536696066
+        },
+        "nonpeaks": {
+          "counts_pearsonr_gain": -0.16941441456498924,
+          "counts_spearmanr_gain": -0.12807474671786429,
+          "median_jsd_reduction": 0.000494007618856207,
+          "median_normalized_jsd_gain": 0.0003270090201572713
+        },
+        "peaks_and_nonpeaks": {
+          "counts_pearsonr_gain": 0.5140751862830754,
+          "counts_spearmanr_gain": 0.5070568509436654,
+          "median_jsd_reduction": 0.01130890055742173,
+          "median_normalized_jsd_gain": 0.012747054468691843
+        }
+      }
+    },
+    "LGS2": {
+      "cells": 1101,
+      "retained_fragment_records": 29433336,
+      "median_retained_fragments_per_cell": 20883.0,
+      "pooled_TSS_proxy": 22.752810105216856,
+      "model_metrics": {
+        "peaks": {
+          "counts_pearsonr": 0.6586774911041183,
+          "counts_spearmanr": 0.5936508587100814,
+          "counts_mse_uncalibrated": 1.5401307363815429,
+          "median_jsd": 0.5821180997485333,
+          "median_normalized_jsd": 0.22545531731447505
+        },
+        "nonpeaks": {
+          "counts_pearsonr": 0.43771150156156685,
+          "counts_spearmanr": 0.5035660942103143,
+          "counts_mse_uncalibrated": 3.981269777061496,
+          "median_jsd": 0.7905318299702586,
+          "median_normalized_jsd": 0.035144953429529745
+        },
+        "peaks_and_nonpeaks": {
+          "counts_pearsonr": 0.7728607026281797,
+          "counts_spearmanr": 0.7658053582840173,
+          "counts_mse_uncalibrated": 2.7607002567215195,
+          "median_jsd": 0.7066825345702505,
+          "median_normalized_jsd": 0.10782287711898514
+        }
+      },
+      "matched_scaled_bias_metrics": {
+        "peaks": {
+          "counts_pearsonr": 0.35342892793984604,
+          "counts_spearmanr": 0.36025654712918626,
+          "counts_mse_uncalibrated": 4.986334910992221,
+          "median_jsd": 0.6344300909775774,
+          "median_normalized_jsd": 0.15842449856382176
+        },
+        "nonpeaks": {
+          "counts_pearsonr": 0.5808533867234751,
+          "counts_spearmanr": 0.6029183333916566,
+          "counts_mse_uncalibrated": 1.9793532039775457,
+          "median_jsd": 0.7913403580043421,
+          "median_normalized_jsd": 0.034390761233733906
+        },
+        "peaks_and_nonpeaks": {
+          "counts_pearsonr": 0.21830762420024302,
+          "counts_spearmanr": 0.20153323184250588,
+          "counts_mse_uncalibrated": 3.4828440574848822,
+          "median_jsd": 0.7221681310795738,
+          "median_normalized_jsd": 0.08972101839021944
+        }
+      },
+      "improvement_over_scaled_bias": {
+        "peaks": {
+          "counts_pearsonr_gain": 0.3052485631642723,
+          "counts_spearmanr_gain": 0.23339431158089513,
+          "median_jsd_reduction": 0.052311991229044064,
+          "median_normalized_jsd_gain": 0.06703081875065328
+        },
+        "nonpeaks": {
+          "counts_pearsonr_gain": -0.14314188516190823,
+          "counts_spearmanr_gain": -0.09935223918134228,
+          "median_jsd_reduction": 0.0008085280340834888,
+          "median_normalized_jsd_gain": 0.0007541921957958386
+        },
+        "peaks_and_nonpeaks": {
+          "counts_pearsonr_gain": 0.5545530784279367,
+          "counts_spearmanr_gain": 0.5642721264415114,
+          "median_jsd_reduction": 0.01548559650932324,
+          "median_normalized_jsd_gain": 0.0181018587287657
+        }
+      }
+    },
+    "LGS3": {
+      "cells": 741,
+      "retained_fragment_records": 20491363,
+      "median_retained_fragments_per_cell": 22283.0,
+      "pooled_TSS_proxy": 22.757538112460665,
+      "model_metrics": {
+        "peaks": {
+          "counts_pearsonr": 0.6079273917383007,
+          "counts_spearmanr": 0.5423702534518681,
+          "counts_mse_uncalibrated": 2.770325719843546,
+          "median_jsd": 0.6337792525823281,
+          "median_normalized_jsd": 0.17904784831702236
+        },
+        "nonpeaks": {
+          "counts_pearsonr": 0.407001664494337,
+          "counts_spearmanr": 0.4610628498526802,
+          "counts_mse_uncalibrated": 5.233140906164277,
+          "median_jsd": 0.798325127803511,
+          "median_normalized_jsd": 0.028488729639391853
+        },
+        "peaks_and_nonpeaks": {
+          "counts_pearsonr": 0.7514224891549764,
+          "counts_spearmanr": 0.7281929083753588,
+          "counts_mse_uncalibrated": 4.0017333130039106,
+          "median_jsd": 0.7381576164053014,
+          "median_normalized_jsd": 0.0813774935592482
+        }
+      },
+      "matched_scaled_bias_metrics": {
+        "peaks": {
+          "counts_pearsonr": 0.358230582022294,
+          "counts_spearmanr": 0.3654532342390601,
+          "counts_mse_uncalibrated": 3.699913261255507,
+          "median_jsd": 0.6726337390028555,
+          "median_normalized_jsd": 0.12996119587935814
+        },
+        "nonpeaks": {
+          "counts_pearsonr": 0.5663259577511259,
+          "counts_spearmanr": 0.5832027283454839,
+          "counts_mse_uncalibrated": 2.749260315901676,
+          "median_jsd": 0.7985456455951633,
+          "median_normalized_jsd": 0.028332244015516348
+        },
+        "peaks_and_nonpeaks": {
+          "counts_pearsonr": 0.2355843195530501,
+          "counts_spearmanr": 0.22649828358027138,
+          "counts_mse_uncalibrated": 3.224586788578591,
+          "median_jsd": 0.7479130013954272,
+          "median_normalized_jsd": 0.06997897460537467
+        }
+      },
+      "improvement_over_scaled_bias": {
+        "peaks": {
+          "counts_pearsonr_gain": 0.24969680971600666,
+          "counts_spearmanr_gain": 0.17691701921280795,
+          "median_jsd_reduction": 0.03885448642052736,
+          "median_normalized_jsd_gain": 0.04908665243766422
+        },
+        "nonpeaks": {
+          "counts_pearsonr_gain": -0.15932429325678893,
+          "counts_spearmanr_gain": -0.12213987849280372,
+          "median_jsd_reduction": 0.00022051779165233043,
+          "median_normalized_jsd_gain": 0.0001564856238755047
+        },
+        "peaks_and_nonpeaks": {
+          "counts_pearsonr_gain": 0.5158381696019263,
+          "counts_spearmanr_gain": 0.5016946247950874,
+          "median_jsd_reduction": 0.009755384990125737,
+          "median_normalized_jsd_gain": 0.011398518953873532
+        }
+      }
+    },
+    "LVG1": {
+      "cells": 713,
+      "retained_fragment_records": 16317594,
+      "median_retained_fragments_per_cell": 22384.0,
+      "pooled_TSS_proxy": 20.204160824896476,
+      "model_metrics": {
+        "peaks": {
+          "counts_pearsonr": 0.5867276488878079,
+          "counts_spearmanr": 0.5497535110841036,
+          "counts_mse_uncalibrated": 3.078824343191701,
+          "median_jsd": 0.6332538855055023,
+          "median_normalized_jsd": 0.17788113003817024
+        },
+        "nonpeaks": {
+          "counts_pearsonr": 0.3684181861774986,
+          "counts_spearmanr": 0.41824388361195236,
+          "counts_mse_uncalibrated": 6.507153745191819,
+          "median_jsd": 0.806458215168204,
+          "median_normalized_jsd": 0.021726508979634882
+        },
+        "peaks_and_nonpeaks": {
+          "counts_pearsonr": 0.7484029788505838,
+          "counts_spearmanr": 0.7294294002309315,
+          "counts_mse_uncalibrated": 4.79298904419176,
+          "median_jsd": 0.7481799961020534,
+          "median_normalized_jsd": 0.07371272674947987
+        }
+      },
+      "matched_scaled_bias_metrics": {
+        "peaks": {
+          "counts_pearsonr": 0.2583297295800628,
+          "counts_spearmanr": 0.2562343628564745,
+          "counts_mse_uncalibrated": 3.573411001803364,
+          "median_jsd": 0.6721188075291769,
+          "median_normalized_jsd": 0.12927232331603683
+        },
+        "nonpeaks": {
+          "counts_pearsonr": 0.4855958862969015,
+          "counts_spearmanr": 0.49970776505539327,
+          "counts_mse_uncalibrated": 3.549496931524667,
+          "median_jsd": 0.8065522250213871,
+          "median_normalized_jsd": 0.021558160497173524
+        },
+        "peaks_and_nonpeaks": {
+          "counts_pearsonr": 0.15123660821728935,
+          "counts_spearmanr": 0.15255301056982232,
+          "counts_mse_uncalibrated": 3.5614539666640157,
+          "median_jsd": 0.7583936943630506,
+          "median_normalized_jsd": 0.06204992776481574
+        }
+      },
+      "improvement_over_scaled_bias": {
+        "peaks": {
+          "counts_pearsonr_gain": 0.32839791930774515,
+          "counts_spearmanr_gain": 0.29351914822762915,
+          "median_jsd_reduction": 0.03886492202367453,
+          "median_normalized_jsd_gain": 0.04860880672213341
+        },
+        "nonpeaks": {
+          "counts_pearsonr_gain": -0.11717770011940287,
+          "counts_spearmanr_gain": -0.08146388144344091,
+          "median_jsd_reduction": 9.400985318308575e-05,
+          "median_normalized_jsd_gain": 0.00016834848246135778
+        },
+        "peaks_and_nonpeaks": {
+          "counts_pearsonr_gain": 0.5971663706332945,
+          "counts_spearmanr_gain": 0.5768763896611092,
+          "median_jsd_reduction": 0.010213698260997162,
+          "median_normalized_jsd_gain": 0.01166279898466413
+        }
+      }
+    }
+  },
+  "across_donor_summary": {
+    "peak_counts_pearsonr": {
+      "mean": 0.6285703111100557,
+      "standard_deviation": 0.03711128166023453,
+      "minimum": 0.5867276488878079,
+      "maximum": 0.6609487127099957,
+      "range": 0.07422106382218774,
+      "coefficient_of_variation": 0.05904078033004132
+    },
+    "peak_counts_spearmanr": {
+      "mean": 0.5735213753993174,
+      "standard_deviation": 0.03240786626057423,
+      "minimum": 0.5423702534518681,
+      "maximum": 0.6083108783512166,
+      "range": 0.06594062489934849,
+      "coefficient_of_variation": 0.0565068150040791
+    },
+    "peak_median_jsd": {
+      "mean": 0.6208695279926227,
+      "standard_deviation": 0.02583799951052672,
+      "minimum": 0.5821180997485333,
+      "maximum": 0.6343268741341272,
+      "range": 0.052208774385593903,
+      "coefficient_of_variation": 0.04161582803727763
+    },
+    "peak_median_normalized_jsd": {
+      "mean": 0.19024699481719715,
+      "standard_deviation": 0.023477138974321812,
+      "minimum": 0.17788113003817024,
+      "maximum": 0.22545531731447505,
+      "range": 0.0475741872763048,
+      "coefficient_of_variation": 0.12340346819606964
+    },
+    "combined_counts_pearsonr": {
+      "mean": 0.7611642042022855,
+      "standard_deviation": 0.013055486051020334,
+      "minimum": 0.7484029788505838,
+      "maximum": 0.7728607026281797,
+      "range": 0.02445772377759592,
+      "coefficient_of_variation": 0.01715199687392385
+    },
+    "combined_counts_spearmanr": {
+      "mean": 0.7445724233267127,
+      "standard_deviation": 0.018746671857233478,
+      "minimum": 0.7281929083753588,
+      "maximum": 0.7658053582840173,
+      "range": 0.03761244990865853,
+      "coefficient_of_variation": 0.02517776816588812
+    },
+    "combined_median_jsd": {
+      "mean": 0.7319356656509444,
+      "standard_deviation": 0.01777712110738814,
+      "minimum": 0.7066825345702505,
+      "maximum": 0.7481799961020534,
+      "range": 0.04149746153180289,
+      "coefficient_of_variation": 0.02428781919183856
+    },
+    "combined_median_normalized_jsd": {
+      "mean": 0.08676831276267562,
+      "standard_deviation": 0.014715144490896706,
+      "minimum": 0.07371272674947987,
+      "maximum": 0.10782287711898514,
+      "range": 0.034110150369505265,
+      "coefficient_of_variation": 0.16959122544130642
+    }
+  },
+  "cautions": [],
+  "count_mse_policy": "Absolute count MSE is retained as an uncalibrated diagnostic but excluded from donor pass/fail because the checkpoint count scale reflects pooled depth.",
+  "scope": "Donor-resolved held-out evaluation of a pooled model. This tests whether sequence-derived count ranking and profile shape generalize across donors; it is not leave-one-donor-out retraining."
+}

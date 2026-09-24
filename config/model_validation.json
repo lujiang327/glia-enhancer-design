@@ -1,11 +1,13 @@
 {
-  "status": "CANDIDATE_QC_IN_PROGRESS",
+  "status": "GO_FOR_PHASE3_WITH_CAVEATS",
   "checkpoint": "models/chrombpnet/fold_0/seed_42_neg1/models/muller_chrombpnet_nobias.h5",
-  "checkpoint_sha256": null,
+  "checkpoint_sha256": "687befaa442fccae8896326acc884f9578cba5c5d2dd92412aa97f437384e80f",
+  "prediction_checkpoint": "models/chrombpnet/fold_0/seed_42_neg1/models/muller_chrombpnet.h5",
+  "prediction_checkpoint_sha256": "468a32f5f8e74a5ec4951b0377d633bd597d2584f89e7fe8971a46524c2de98f",
   "bias_model": {
     "status": "PASS_FOR_CHROMBPNET_PILOT_WITH_GC_CAVEAT",
     "checkpoint": "models/bias/fold_0/threshold_0.5/seed_42/models/muller_bias.h5",
-    "checkpoint_sha256": null,
+    "checkpoint_sha256": "276c86dc8e204e38df8b99f5aefd596c01fc31816d231f7d106187ff21ada210",
     "fold": 0,
     "threshold": 0.5,
     "seed": 42
@@ -15,7 +17,7 @@
     "training_stability_across_seeds": "pass_with_nonpeak_calibration_caveat",
     "held_out_count_performance": "pass_with_nonpeak_calibration_caveat",
     "held_out_profile_performance": "pass_initial_aggregate_screen",
-    "biological_donor_generalization": "pending",
+    "biological_donor_generalization": "pass_donor_consistency_not_leave_one_donor_out",
     "bias_model_no_tf_leakage": "pass_with_gc_composition_caveat",
     "tf_model_no_residual_tn5_bias": "pass_initial_motif_screen",
     "motif_recovery_and_attribution": "pass_with_retinal_homeobox_caveat"
@@ -26,6 +28,8 @@
     "reports/training/bias_fold0_seed42_motif_qc.json",
     "reports/training/chrombpnet_fold0_seed42_neg1_motif_qc.json",
     "reports/training/chrombpnet_neg1_motif_rna_support.tsv",
-    "reports/training/chrombpnet_fold0_neg1_seed_reproducibility.json"
+    "reports/training/chrombpnet_fold0_neg1_seed_reproducibility.json",
+    "reports/training/chrombpnet_fold0_seed42_neg1_donor_qc.json",
+    "reports/training/chrombpnet_fold0_seed42_neg1_donor_qc.md"
   ]
 }

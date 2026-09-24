@@ -77,6 +77,11 @@ def main():
             "improvement_over_scaled_bias": {},
         }
         for group in GROUPS:
+            # Upstream calls this median_norm_jsd, but it is a goodness score:
+            #   (JSD - maximum) / (minimum - maximum)
+            # With minimum=0 and maximum=JSD(observed, uniform), this is
+            #   1 - JSD / JSD(observed, uniform), clipped to [0, 1].
+            # Therefore higher is better and model - bias is the correct gain.
             gains = {
                 "counts_pearsonr_gain": model[group]["counts_pearsonr"] - bias[group]["counts_pearsonr"],
                 "counts_spearmanr_gain": model[group]["counts_spearmanr"] - bias[group]["counts_spearmanr"],
@@ -130,6 +135,11 @@ def main():
         "count_mse_policy": (
             "Absolute count MSE is retained as an uncalibrated diagnostic but excluded "
             "from donor pass/fail because the checkpoint count scale reflects pooled depth."
+        ),
+        "normalized_jsd_policy": (
+            "Upstream median_norm_jsd is a clipped goodness score equal to "
+            "1 - JSD/JSD(observed, uniform), not a divergence. Higher is better, so "
+            "median_normalized_jsd_gain is model minus bias."
         ),
         "scope": (
             "Donor-resolved held-out evaluation of a pooled model. This tests whether "

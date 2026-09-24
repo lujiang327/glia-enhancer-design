@@ -1,0 +1,86 @@
+[
+  {
+    "name": "GSM5866073_Microglia_frags.tsv.gz",
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5866nnn/GSM5866073/suppl/GSM5866073_Microglia_frags.tsv.gz",
+    "bytes": 70232441,
+    "sha256": "93a14f7b0f089a7adb06ca2cf9a668965ba30f2ecf572d356e145c4cba3a1093",
+    "path": "data/raw/GSM5866073_Microglia_frags.tsv.gz"
+  },
+  {
+    "name": "GSM5866073_AIIamacrine_frags.tsv.gz",
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5866nnn/GSM5866073/suppl/GSM5866073_AIIamacrine_frags.tsv.gz",
+    "bytes": 104696518,
+    "sha256": "8afd233f32b7e7a156184ee066b8d1fbcaed730e31f7be98db6b49d855ee0ff6",
+    "path": "data/raw/GSM5866073_AIIamacrine_frags.tsv.gz"
+  },
+  {
+    "name": "GSM5866073_Glyamacrine_frags.tsv.gz",
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5866nnn/GSM5866073/suppl/GSM5866073_Glyamacrine_frags.tsv.gz",
+    "bytes": 97648166,
+    "sha256": "2317b13935f1918042cf674db1004d8d19bc64511f44c01873708a78864ed3b2",
+    "path": "data/raw/GSM5866073_Glyamacrine_frags.tsv.gz"
+  },
+  {
+    "name": "GSM5866073_OFFconebipolar_frags.tsv.gz",
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5866nnn/GSM5866073/suppl/GSM5866073_OFFconebipolar_frags.tsv.gz",
+    "bytes": 651623368,
+    "sha256": "2f63ed686f44e27860edd49624bd06c142ebce95c477190e90458f3246188fda",
+    "path": "data/raw/GSM5866073_OFFconebipolar_frags.tsv.gz"
+  },
+  {
+    "name": "GSM5866073_ONconebipolar_frags.tsv.gz",
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5866nnn/GSM5866073/suppl/GSM5866073_ONconebipolar_frags.tsv.gz",
+    "bytes": 427429674,
+    "sha256": "f6ade2e9ec7a42e8f914e7db93f0033457b26e1ef999f2fd0d97fe4a445ce0dc",
+    "path": "data/raw/GSM5866073_ONconebipolar_frags.tsv.gz"
+  },
+  {
+    "name": "GSM5866073_GABAamacrine_frags.tsv.gz",
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5866nnn/GSM5866073/suppl/GSM5866073_GABAamacrine_frags.tsv.gz",
+    "bytes": 341745234,
+    "sha256": "11fa4c6349f13536b8d55d83bef86a7ec46c9f7c0df9e03922367a82a8088fec",
+    "path": "data/raw/GSM5866073_GABAamacrine_frags.tsv.gz"
+  },
+  {
+    "name": "GSM5866073_Rodbipolar_frags.tsv.gz",
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5866nnn/GSM5866073/suppl/GSM5866073_Rodbipolar_frags.tsv.gz",
+    "bytes": 477552854,
+    "sha256": "754aa5c81e0aa1ab946180ad5c1c1ac77539c757d2727765a402695888dd48fe",
+    "path": "data/raw/GSM5866073_Rodbipolar_frags.tsv.gz"
+  },
+  {
+    "name": "GSM5866073_Rod_frags.tsv.gz",
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5866nnn/GSM5866073/suppl/GSM5866073_Rod_frags.tsv.gz",
+    "bytes": 4200025905,
+    "sha256": "7e0141a845a621a8b7a6a7c93ba35e678c46cdba8be88d383812a8fb31a068ba",
+    "path": "data/raw/GSM5866073_Rod_frags.tsv.gz"
+  },
+  {
+    "name": "GSM5866073_Retinalganglioncell_frags.tsv.gz",
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5866nnn/GSM5866073/suppl/GSM5866073_Retinalganglioncell_frags.tsv.gz",
+    "bytes": 186787677,
+    "sha256": "4e405e1bbf193e9052f9d83a302255dfac012d054ea7a1965aca1817ecda7541",
+    "path": "data/raw/GSM5866073_Retinalganglioncell_frags.tsv.gz"
+  },
+  {
+    "name": "GSM5866073_Cone_frags.tsv.gz",
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5866nnn/GSM5866073/suppl/GSM5866073_Cone_frags.tsv.gz",
+    "bytes": 439756365,
+    "sha256": "df6b859ef1d300df0c0e910f268747957eaa23cac3000fd882f2ee2e18fb5c57",
+    "path": "data/raw/GSM5866073_Cone_frags.tsv.gz"
+  },
+  {
+    "name": "GSM5866073_Astrocyte_frags.tsv.gz",
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5866nnn/GSM5866073/suppl/GSM5866073_Astrocyte_frags.tsv.gz",
+    "bytes": 64680865,
+    "sha256": "569a80d7b85f382e1f2652279fc8ab673d25cfed39a4de81befe97f5b5d92c4a",
+    "path": "data/raw/GSM5866073_Astrocyte_frags.tsv.gz"
+  },
+  {
+    "name": "GSM5866073_Horizontal_frags.tsv.gz",
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5866nnn/GSM5866073/suppl/GSM5866073_Horizontal_frags.tsv.gz",
+    "bytes": 284490076,
+    "sha256": "7166056314a0f765d1a1d5faae0d8e3dcb1991a7057336d853d7ab2cdfa9afd0",
+    "path": "data/raw/GSM5866073_Horizontal_frags.tsv.gz"
+  }
+]

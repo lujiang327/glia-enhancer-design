@@ -1,0 +1,48 @@
+{
+  "status": "DATA_ACQUISITION_PENDING",
+  "dataset": "GSE196235",
+  "target": "MG",
+  "published_labels_only": true,
+  "donors": ["LGS1", "LGS2", "LGS3", "LVG1"],
+  "cell_type_map": "config/phase3_cell_types.tsv",
+  "off_target_fragment_manifest": "config/phase3_assets.json",
+  "expected_off_target_download_bytes": 7346669143,
+  "peak_universe": {
+    "policy": "union_reproducible_peaks_across_target_and_off_target_cell_types",
+    "exclude_blacklist": true,
+    "canonical_chromosomes_only": true,
+    "warning": "Do not test only the Muller-glia training peaks because that would bias discovery toward the target."
+  },
+  "replicate_unit": "biological_donor",
+  "pseudobulk_unit": "donor_by_published_cell_type",
+  "primary_model": "edgeR_quasi_likelihood",
+  "design": "donor_blocked",
+  "contrasts": {
+    "primary": "MG_vs_equal_weight_average_of_major_retinal_off_targets",
+    "secondary": [
+      "MG_vs_Rod",
+      "MG_vs_Cone",
+      "MG_vs_ON_cone_bipolar",
+      "MG_vs_OFF_cone_bipolar",
+      "MG_vs_Rod_bipolar",
+      "MG_vs_GABA_amacrine",
+      "MG_vs_Gly_amacrine",
+      "MG_vs_AII_amacrine",
+      "MG_vs_Horizontal",
+      "MG_vs_RGC",
+      "MG_vs_Astrocyte",
+      "MG_vs_Microglia"
+    ]
+  },
+  "candidate_ranking_fields": [
+    "primary_log2FC",
+    "primary_FDR",
+    "minimum_pairwise_log2FC",
+    "maximum_off_target_accessibility",
+    "Muller_accessibility",
+    "donor_reproducibility",
+    "genomic_annotation"
+  ],
+  "candidate_target_count": 1000,
+  "chrombpnet_checkpoint_frozen": "models/chrombpnet/fold_0/seed_42_neg1/models/muller_chrombpnet_nobias.h5"
+}

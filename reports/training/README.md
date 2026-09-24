@@ -61,5 +61,12 @@ Independent balanced-model replicas with seeds 123 and 456 reproduce the seed
 count-correlation CV is 0.092%, and combined profile-JSD CV is 0.067%. The seed
 reproducibility gate therefore passes while retaining the shared nonpeak-count
 calibration caveat. See `chrombpnet_fold0_neg1_seed_reproducibility.md` and its
-JSON, TSV, and SVG companions. Biological-donor sensitivity remains pending,
-so differential accessibility is still blocked.
+JSON, TSV, and SVG companions.
+
+Donor-resolved held-out evaluation subsequently passed across LGS1, LGS2,
+LGS3, and LVG1. Peak Pearson correlations range from 0.587 to 0.661, and every
+donor improves peak count and profile metrics over the bias baseline. The model
+is therefore a **GO for Phase 3 with caveats**. The nonpeak count-calibration
+limitation remains systematic across donors, and the donor analysis measures
+consistency rather than leave-one-donor-out generalization. See
+`chrombpnet_fold0_seed42_neg1_donor_qc.md`.
