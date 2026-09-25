@@ -1,0 +1,539 @@
+{
+  "status": "CELL_TYPE_DONOR_AUDIT_READY_FOR_REVIEW",
+  "cell_types": 13,
+  "donors": [
+    "LGS1",
+    "LGS2",
+    "LGS3",
+    "LVG1"
+  ],
+  "rows": [
+    {
+      "analysis_group": "AII_amacrine",
+      "published_label": "AII amacrine",
+      "donor": "LGS1",
+      "unambiguous_cells": 153,
+      "fragment_records": 4655866,
+      "canonical_fragment_records": 4653258,
+      "read_support_sum": 6906328,
+      "canonical_read_support_sum": 6902492
+    },
+    {
+      "analysis_group": "AII_amacrine",
+      "published_label": "AII amacrine",
+      "donor": "LGS2",
+      "unambiguous_cells": 116,
+      "fragment_records": 987253,
+      "canonical_fragment_records": 985675,
+      "read_support_sum": 1452624,
+      "canonical_read_support_sum": 1450323
+    },
+    {
+      "analysis_group": "AII_amacrine",
+      "published_label": "AII amacrine",
+      "donor": "LGS3",
+      "unambiguous_cells": 59,
+      "fragment_records": 1970537,
+      "canonical_fragment_records": 1969535,
+      "read_support_sum": 2705228,
+      "canonical_read_support_sum": 2703845
+    },
+    {
+      "analysis_group": "AII_amacrine",
+      "published_label": "AII amacrine",
+      "donor": "LVG1",
+      "unambiguous_cells": 91,
+      "fragment_records": 3034337,
+      "canonical_fragment_records": 3029151,
+      "read_support_sum": 5039009,
+      "canonical_read_support_sum": 5030626
+    },
+    {
+      "analysis_group": "Astrocyte",
+      "published_label": "Astrocyte",
+      "donor": "LGS1",
+      "unambiguous_cells": 12,
+      "fragment_records": 437423,
+      "canonical_fragment_records": 437180,
+      "read_support_sum": 660649,
+      "canonical_read_support_sum": 660271
+    },
+    {
+      "analysis_group": "Astrocyte",
+      "published_label": "Astrocyte",
+      "donor": "LGS2",
+      "unambiguous_cells": 46,
+      "fragment_records": 1732868,
+      "canonical_fragment_records": 1730821,
+      "read_support_sum": 2548596,
+      "canonical_read_support_sum": 2545694
+    },
+    {
+      "analysis_group": "Astrocyte",
+      "published_label": "Astrocyte",
+      "donor": "LGS3",
+      "unambiguous_cells": 90,
+      "fragment_records": 2665067,
+      "canonical_fragment_records": 2663765,
+      "read_support_sum": 3678850,
+      "canonical_read_support_sum": 3677097
+    },
+    {
+      "analysis_group": "Astrocyte",
+      "published_label": "Astrocyte",
+      "donor": "LVG1",
+      "unambiguous_cells": 69,
+      "fragment_records": 2138928,
+      "canonical_fragment_records": 2136596,
+      "read_support_sum": 3476001,
+      "canonical_read_support_sum": 3472264
+    },
+    {
+      "analysis_group": "Cone",
+      "published_label": "Cone photoreceptor",
+      "donor": "LGS1",
+      "unambiguous_cells": 681,
+      "fragment_records": 13417736,
+      "canonical_fragment_records": 13410351,
+      "read_support_sum": 20080202,
+      "canonical_read_support_sum": 20069433
+    },
+    {
+      "analysis_group": "Cone",
+      "published_label": "Cone photoreceptor",
+      "donor": "LGS2",
+      "unambiguous_cells": 646,
+      "fragment_records": 9003675,
+      "canonical_fragment_records": 8990229,
+      "read_support_sum": 13222047,
+      "canonical_read_support_sum": 13202683
+    },
+    {
+      "analysis_group": "Cone",
+      "published_label": "Cone photoreceptor",
+      "donor": "LGS3",
+      "unambiguous_cells": 433,
+      "fragment_records": 14014194,
+      "canonical_fragment_records": 14007854,
+      "read_support_sum": 19346545,
+      "canonical_read_support_sum": 19338036
+    },
+    {
+      "analysis_group": "Cone",
+      "published_label": "Cone photoreceptor",
+      "donor": "LVG1",
+      "unambiguous_cells": 339,
+      "fragment_records": 8749865,
+      "canonical_fragment_records": 8739169,
+      "read_support_sum": 14315423,
+      "canonical_read_support_sum": 14298201
+    },
+    {
+      "analysis_group": "GABA_amacrine",
+      "published_label": "GABA amacrine",
+      "donor": "LGS1",
+      "unambiguous_cells": 478,
+      "fragment_records": 11867982,
+      "canonical_fragment_records": 11862684,
+      "read_support_sum": 17655252,
+      "canonical_read_support_sum": 17647381
+    },
+    {
+      "analysis_group": "GABA_amacrine",
+      "published_label": "GABA amacrine",
+      "donor": "LGS2",
+      "unambiguous_cells": 377,
+      "fragment_records": 5263295,
+      "canonical_fragment_records": 5254945,
+      "read_support_sum": 7697726,
+      "canonical_read_support_sum": 7685657
+    },
+    {
+      "analysis_group": "GABA_amacrine",
+      "published_label": "GABA amacrine",
+      "donor": "LGS3",
+      "unambiguous_cells": 281,
+      "fragment_records": 7637852,
+      "canonical_fragment_records": 7634778,
+      "read_support_sum": 10496332,
+      "canonical_read_support_sum": 10492083
+    },
+    {
+      "analysis_group": "GABA_amacrine",
+      "published_label": "GABA amacrine",
+      "donor": "LVG1",
+      "unambiguous_cells": 306,
+      "fragment_records": 9316161,
+      "canonical_fragment_records": 9301371,
+      "read_support_sum": 15009189,
+      "canonical_read_support_sum": 14985765
+    },
+    {
+      "analysis_group": "Gly_amacrine",
+      "published_label": "Glycinergic amacrine",
+      "donor": "LGS1",
+      "unambiguous_cells": 237,
+      "fragment_records": 3492898,
+      "canonical_fragment_records": 3490798,
+      "read_support_sum": 5245121,
+      "canonical_read_support_sum": 5242076
+    },
+    {
+      "analysis_group": "Gly_amacrine",
+      "published_label": "Glycinergic amacrine",
+      "donor": "LGS2",
+      "unambiguous_cells": 176,
+      "fragment_records": 1288726,
+      "canonical_fragment_records": 1286748,
+      "read_support_sum": 1905872,
+      "canonical_read_support_sum": 1903042
+    },
+    {
+      "analysis_group": "Gly_amacrine",
+      "published_label": "Glycinergic amacrine",
+      "donor": "LGS3",
+      "unambiguous_cells": 134,
+      "fragment_records": 2335265,
+      "canonical_fragment_records": 2334052,
+      "read_support_sum": 3231251,
+      "canonical_read_support_sum": 3229590
+    },
+    {
+      "analysis_group": "Gly_amacrine",
+      "published_label": "Glycinergic amacrine",
+      "donor": "LVG1",
+      "unambiguous_cells": 139,
+      "fragment_records": 2730155,
+      "canonical_fragment_records": 2725621,
+      "read_support_sum": 4436116,
+      "canonical_read_support_sum": 4428854
+    },
+    {
+      "analysis_group": "Horizontal",
+      "published_label": "Horizontal cell",
+      "donor": "LGS1",
+      "unambiguous_cells": 229,
+      "fragment_records": 6362847,
+      "canonical_fragment_records": 6358828,
+      "read_support_sum": 9521662,
+      "canonical_read_support_sum": 9515622
+    },
+    {
+      "analysis_group": "Horizontal",
+      "published_label": "Horizontal cell",
+      "donor": "LGS2",
+      "unambiguous_cells": 289,
+      "fragment_records": 7218645,
+      "canonical_fragment_records": 7205945,
+      "read_support_sum": 10583998,
+      "canonical_read_support_sum": 10565712
+    },
+    {
+      "analysis_group": "Horizontal",
+      "published_label": "Horizontal cell",
+      "donor": "LGS3",
+      "unambiguous_cells": 325,
+      "fragment_records": 8741921,
+      "canonical_fragment_records": 8737480,
+      "read_support_sum": 12042621,
+      "canonical_read_support_sum": 12036596
+    },
+    {
+      "analysis_group": "Horizontal",
+      "published_label": "Horizontal cell",
+      "donor": "LVG1",
+      "unambiguous_cells": 209,
+      "fragment_records": 6324105,
+      "canonical_fragment_records": 6314817,
+      "read_support_sum": 10300676,
+      "canonical_read_support_sum": 10285592
+    },
+    {
+      "analysis_group": "MG",
+      "published_label": "Muller glia",
+      "donor": "LGS1",
+      "unambiguous_cells": 879,
+      "fragment_records": 19897589,
+      "canonical_fragment_records": 19887626,
+      "read_support_sum": 29803311,
+      "canonical_read_support_sum": 29788550
+    },
+    {
+      "analysis_group": "MG",
+      "published_label": "Muller glia",
+      "donor": "LGS2",
+      "unambiguous_cells": 1101,
+      "fragment_records": 29687059,
+      "canonical_fragment_records": 29653338,
+      "read_support_sum": 43718528,
+      "canonical_read_support_sum": 43669646
+    },
+    {
+      "analysis_group": "MG",
+      "published_label": "Muller glia",
+      "donor": "LGS3",
+      "unambiguous_cells": 741,
+      "fragment_records": 20647200,
+      "canonical_fragment_records": 20637919,
+      "read_support_sum": 28621842,
+      "canonical_read_support_sum": 28609122
+    },
+    {
+      "analysis_group": "MG",
+      "published_label": "Muller glia",
+      "donor": "LVG1",
+      "unambiguous_cells": 713,
+      "fragment_records": 16446559,
+      "canonical_fragment_records": 16427376,
+      "read_support_sum": 27059496,
+      "canonical_read_support_sum": 27028645
+    },
+    {
+      "analysis_group": "Microglia",
+      "published_label": "Microglia",
+      "donor": "LGS1",
+      "unambiguous_cells": 52,
+      "fragment_records": 1842477,
+      "canonical_fragment_records": 1841334,
+      "read_support_sum": 2733673,
+      "canonical_read_support_sum": 2732086
+    },
+    {
+      "analysis_group": "Microglia",
+      "published_label": "Microglia",
+      "donor": "LGS2",
+      "unambiguous_cells": 81,
+      "fragment_records": 2719441,
+      "canonical_fragment_records": 2716252,
+      "read_support_sum": 3984277,
+      "canonical_read_support_sum": 3979636
+    },
+    {
+      "analysis_group": "Microglia",
+      "published_label": "Microglia",
+      "donor": "LGS3",
+      "unambiguous_cells": 55,
+      "fragment_records": 2124917,
+      "canonical_fragment_records": 2124035,
+      "read_support_sum": 2936516,
+      "canonical_read_support_sum": 2935332
+    },
+    {
+      "analysis_group": "Microglia",
+      "published_label": "Microglia",
+      "donor": "LVG1",
+      "unambiguous_cells": 27,
+      "fragment_records": 666964,
+      "canonical_fragment_records": 666219,
+      "read_support_sum": 1078897,
+      "canonical_read_support_sum": 1077671
+    },
+    {
+      "analysis_group": "OFF_cone_bipolar",
+      "published_label": "OFF cone bipolar",
+      "donor": "LGS1",
+      "unambiguous_cells": 959,
+      "fragment_records": 15702991,
+      "canonical_fragment_records": 15696155,
+      "read_support_sum": 23505098,
+      "canonical_read_support_sum": 23494984
+    },
+    {
+      "analysis_group": "OFF_cone_bipolar",
+      "published_label": "OFF cone bipolar",
+      "donor": "LGS2",
+      "unambiguous_cells": 1095,
+      "fragment_records": 15859932,
+      "canonical_fragment_records": 15841510,
+      "read_support_sum": 23287622,
+      "canonical_read_support_sum": 23260842
+    },
+    {
+      "analysis_group": "OFF_cone_bipolar",
+      "published_label": "OFF cone bipolar",
+      "donor": "LGS3",
+      "unambiguous_cells": 922,
+      "fragment_records": 16526143,
+      "canonical_fragment_records": 16519923,
+      "read_support_sum": 22811880,
+      "canonical_read_support_sum": 22803338
+    },
+    {
+      "analysis_group": "OFF_cone_bipolar",
+      "published_label": "OFF cone bipolar",
+      "donor": "LVG1",
+      "unambiguous_cells": 710,
+      "fragment_records": 14008373,
+      "canonical_fragment_records": 13990937,
+      "read_support_sum": 22968174,
+      "canonical_read_support_sum": 22940054
+    },
+    {
+      "analysis_group": "ON_cone_bipolar",
+      "published_label": "ON cone bipolar",
+      "donor": "LGS1",
+      "unambiguous_cells": 603,
+      "fragment_records": 9289435,
+      "canonical_fragment_records": 9285047,
+      "read_support_sum": 13903436,
+      "canonical_read_support_sum": 13896902
+    },
+    {
+      "analysis_group": "ON_cone_bipolar",
+      "published_label": "ON cone bipolar",
+      "donor": "LGS2",
+      "unambiguous_cells": 781,
+      "fragment_records": 12581699,
+      "canonical_fragment_records": 12564424,
+      "read_support_sum": 18506819,
+      "canonical_read_support_sum": 18481858
+    },
+    {
+      "analysis_group": "ON_cone_bipolar",
+      "published_label": "ON cone bipolar",
+      "donor": "LGS3",
+      "unambiguous_cells": 632,
+      "fragment_records": 11559130,
+      "canonical_fragment_records": 11554200,
+      "read_support_sum": 15938558,
+      "canonical_read_support_sum": 15931833
+    },
+    {
+      "analysis_group": "ON_cone_bipolar",
+      "published_label": "ON cone bipolar",
+      "donor": "LVG1",
+      "unambiguous_cells": 440,
+      "fragment_records": 8898098,
+      "canonical_fragment_records": 8885619,
+      "read_support_sum": 14662664,
+      "canonical_read_support_sum": 14642409
+    },
+    {
+      "analysis_group": "RGC",
+      "published_label": "Retinal ganglion cell",
+      "donor": "LGS1",
+      "unambiguous_cells": 42,
+      "fragment_records": 1771665,
+      "canonical_fragment_records": 1770885,
+      "read_support_sum": 2630216,
+      "canonical_read_support_sum": 2629060
+    },
+    {
+      "analysis_group": "RGC",
+      "published_label": "Retinal ganglion cell",
+      "donor": "LGS2",
+      "unambiguous_cells": 160,
+      "fragment_records": 5358693,
+      "canonical_fragment_records": 5349731,
+      "read_support_sum": 7848251,
+      "canonical_read_support_sum": 7835270
+    },
+    {
+      "analysis_group": "RGC",
+      "published_label": "Retinal ganglion cell",
+      "donor": "LGS3",
+      "unambiguous_cells": 120,
+      "fragment_records": 5420411,
+      "canonical_fragment_records": 5418128,
+      "read_support_sum": 7471233,
+      "canonical_read_support_sum": 7468147
+    },
+    {
+      "analysis_group": "RGC",
+      "published_label": "Retinal ganglion cell",
+      "donor": "LVG1",
+      "unambiguous_cells": 143,
+      "fragment_records": 6875630,
+      "canonical_fragment_records": 6866075,
+      "read_support_sum": 11009518,
+      "canonical_read_support_sum": 10994379
+    },
+    {
+      "analysis_group": "Rod",
+      "published_label": "Rod photoreceptor",
+      "donor": "LGS1",
+      "unambiguous_cells": 12167,
+      "fragment_records": 145517469,
+      "canonical_fragment_records": 145442926,
+      "read_support_sum": 219272048,
+      "canonical_read_support_sum": 219161447
+    },
+    {
+      "analysis_group": "Rod",
+      "published_label": "Rod photoreceptor",
+      "donor": "LGS2",
+      "unambiguous_cells": 6163,
+      "fragment_records": 54395994,
+      "canonical_fragment_records": 54338931,
+      "read_support_sum": 80796859,
+      "canonical_read_support_sum": 80713823
+    },
+    {
+      "analysis_group": "Rod",
+      "published_label": "Rod photoreceptor",
+      "donor": "LGS3",
+      "unambiguous_cells": 5923,
+      "fragment_records": 83413518,
+      "canonical_fragment_records": 83380762,
+      "read_support_sum": 115600723,
+      "canonical_read_support_sum": 115555956
+    },
+    {
+      "analysis_group": "Rod",
+      "published_label": "Rod photoreceptor",
+      "donor": "LVG1",
+      "unambiguous_cells": 5809,
+      "fragment_records": 97881718,
+      "canonical_fragment_records": 97792109,
+      "read_support_sum": 161323663,
+      "canonical_read_support_sum": 161178780
+    },
+    {
+      "analysis_group": "Rod_bipolar",
+      "published_label": "Rod bipolar",
+      "donor": "LGS1",
+      "unambiguous_cells": 584,
+      "fragment_records": 11761633,
+      "canonical_fragment_records": 11756148,
+      "read_support_sum": 17472653,
+      "canonical_read_support_sum": 17464659
+    },
+    {
+      "analysis_group": "Rod_bipolar",
+      "published_label": "Rod bipolar",
+      "donor": "LGS2",
+      "unambiguous_cells": 618,
+      "fragment_records": 12317757,
+      "canonical_fragment_records": 12299714,
+      "read_support_sum": 18062422,
+      "canonical_read_support_sum": 18036139
+    },
+    {
+      "analysis_group": "Rod_bipolar",
+      "published_label": "Rod bipolar",
+      "donor": "LGS3",
+      "unambiguous_cells": 588,
+      "fragment_records": 13700141,
+      "canonical_fragment_records": 13695110,
+      "read_support_sum": 18888599,
+      "canonical_read_support_sum": 18881666
+    },
+    {
+      "analysis_group": "Rod_bipolar",
+      "published_label": "Rod bipolar",
+      "donor": "LVG1",
+      "unambiguous_cells": 399,
+      "fragment_records": 9685401,
+      "canonical_fragment_records": 9672217,
+      "read_support_sum": 15744798,
+      "canonical_read_support_sum": 15723732
+    }
+  ],
+  "cautions": [
+    "LGS1 has fewer than 50 cells for Astrocyte",
+    "LGS2 has fewer than 50 cells for Astrocyte",
+    "LVG1 has fewer than 50 cells for Microglia",
+    "LGS1 has fewer than 50 cells for RGC"
+  ],
+  "next_gate": "Review donor coverage before creating donor-by-cell-type pseudobulks and calling reproducible peaks."
+}

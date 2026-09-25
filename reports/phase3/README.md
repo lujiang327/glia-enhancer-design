@@ -38,3 +38,38 @@ dependent summary job writes `donor_celltype_audit.json`,
 `donor_celltype_audit.tsv`, and their checksum file here. Review zero-cell and
 low-cell donor strata, donor balance, retained canonical read support, and mapping
 loss before constructing donor-by-cell-type pseudobulks or calling consensus peaks.
+
+The completed audit passed this gate with caveats. See
+`donor_celltype_audit_review.md` for the decision and the required treatment of
+low-cell strata and rod abundance during downstream analysis.
+
+## Donor pseudobulk gate
+
+After accepting the donor-by-cell-type audit, build the 52 filtered donor
+pseudobulks and submit the dependent QC summary:
+
+```bash
+export PHASE3_SCRATCH_ROOT=/scratch/thahoang_root/thahoang0/lujiang/chrombpnet_mg_phase3
+
+PSEUDOBULK_JOB=$(sbatch --parsable \
+  --account=thahoang0 \
+  --export=ALL,PHASE3_SCRATCH_ROOT="$PHASE3_SCRATCH_ROOT" \
+  hpc/slurm/build_phase3_pseudobulks.sbatch)
+PSEUDOBULK_JOB=${PSEUDOBULK_JOB%%;*}
+
+PSEUDOBULK_SUMMARY_JOB=$(sbatch --parsable \
+  --account=thahoang0 \
+  --dependency="afterok:${PSEUDOBULK_JOB}" \
+  --export=ALL,PHASE3_SCRATCH_ROOT="$PHASE3_SCRATCH_ROOT" \
+  hpc/slurm/summarize_phase3_pseudobulks.sbatch)
+PSEUDOBULK_SUMMARY_JOB=${PSEUDOBULK_SUMMARY_JOB%%;*}
+
+printf 'PSEUDOBULK_JOB=%s\nPSEUDOBULK_SUMMARY_JOB=%s\n' \
+  "$PSEUDOBULK_JOB" "$PSEUDOBULK_SUMMARY_JOB"
+```
+
+Each pseudobulk retains one count per fragment-file row after canonical-chromosome,
+coordinate, and blacklist filtering. Fifth-column read support is recorded for
+QC and is not used to duplicate fragments. Review `pseudobulk_qc.json` and
+`pseudobulk_qc.tsv` before peak calling. Differential accessibility remains
+blocked at this gate.

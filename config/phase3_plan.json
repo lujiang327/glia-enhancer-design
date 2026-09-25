@@ -1,5 +1,5 @@
 {
-  "status": "DATA_ACQUISITION_PENDING",
+  "status": "GO_FOR_PSEUDOBULK_AND_PEAK_PREPARATION_WITH_CAVEATS",
   "dataset": "GSE196235",
   "target": "MG",
   "published_labels_only": true,
@@ -7,6 +7,22 @@
   "cell_type_map": "config/phase3_cell_types.tsv",
   "off_target_fragment_manifest": "config/phase3_assets.json",
   "expected_off_target_download_bytes": 7346669143,
+  "data_audit": {
+    "status": "pass_all_13_cell_types_present_in_all_4_donors",
+    "evidence": [
+      "reports/phase3/donor_celltype_audit.json",
+      "reports/phase3/donor_celltype_audit.tsv",
+      "reports/phase3/celltype_mapping_retention.tsv",
+      "reports/phase3/donor_celltype_audit_review.md"
+    ],
+    "caveats": [
+      "Astrocyte LGS1 and LGS2 have fewer than 50 unambiguous cells.",
+      "Microglia LVG1 has fewer than 50 unambiguous cells.",
+      "RGC LGS1 has fewer than 50 unambiguous cells.",
+      "Rod abundance greatly exceeds every other cell type and must not dominate the primary contrast."
+    ]
+  },
+  "differential_accessibility_status": "BLOCKED_PENDING_PSEUDOBULK_AND_PEAK_QC",
   "peak_universe": {
     "policy": "union_reproducible_peaks_across_target_and_off_target_cell_types",
     "exclude_blacklist": true,
