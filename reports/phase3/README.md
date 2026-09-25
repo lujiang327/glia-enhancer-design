@@ -73,3 +73,56 @@ coordinate, and blacklist filtering. Fifth-column read support is recorded for
 QC and is not used to duplicate fragments. Review `pseudobulk_qc.json` and
 `pseudobulk_qc.tsv` before peak calling. Differential accessibility remains
 blocked at this gate.
+
+All 52 pseudobulks passed the depth and filtering review. See
+`pseudobulk_qc_review.md`. The next permitted computation is reproducible peak
+calling and common-universe count-matrix QC; differential testing is still
+blocked.
+
+## Reproducible peak-calling gate
+
+The validated ChromBPNet image does not contain MACS3. Install MACS3 3.0.4 in
+an isolated scratch environment, leaving the model runtime unchanged:
+
+```bash
+MACS_JOB=$(sbatch --parsable \
+  --account=thahoang0 \
+  --export=ALL,PHASE3_SCRATCH_ROOT="$PHASE3_SCRATCH_ROOT" \
+  hpc/slurm/install_phase3_macs3.sbatch)
+MACS_JOB=${MACS_JOB%%;*}
+```
+
+Submit donor and pooled calls after the installation succeeds, then build the
+common universe only after both arrays finish:
+
+```bash
+DONOR_PEAK_JOB=$(sbatch --parsable \
+  --account=thahoang0 \
+  --dependency="afterok:${MACS_JOB}" \
+  --export=ALL,PHASE3_SCRATCH_ROOT="$PHASE3_SCRATCH_ROOT" \
+  hpc/slurm/call_phase3_donor_peaks.sbatch)
+DONOR_PEAK_JOB=${DONOR_PEAK_JOB%%;*}
+
+POOLED_PEAK_JOB=$(sbatch --parsable \
+  --account=thahoang0 \
+  --dependency="afterok:${MACS_JOB}" \
+  --export=ALL,PHASE3_SCRATCH_ROOT="$PHASE3_SCRATCH_ROOT" \
+  hpc/slurm/call_phase3_pooled_peaks.sbatch)
+POOLED_PEAK_JOB=${POOLED_PEAK_JOB%%;*}
+
+CONSENSUS_JOB=$(sbatch --parsable \
+  --account=thahoang0 \
+  --dependency="afterok:${DONOR_PEAK_JOB}:${POOLED_PEAK_JOB}" \
+  --export=ALL,PHASE3_SCRATCH_ROOT="$PHASE3_SCRATCH_ROOT" \
+  hpc/slurm/build_phase3_consensus_peaks.sbatch)
+CONSENSUS_JOB=${CONSENSUS_JOB%%;*}
+
+printf 'MACS_JOB=%s\nDONOR_PEAK_JOB=%s\nPOOLED_PEAK_JOB=%s\nCONSENSUS_JOB=%s\n' \
+  "$MACS_JOB" "$DONOR_PEAK_JOB" "$POOLED_PEAK_JOB" "$CONSENSUS_JOB"
+```
+
+The universe retains a pooled cell-type peak only when at least two donors have
+an overlapping peak. Reproducible summits are converted to nonoverlapping 500-bp
+regions across all 13 cell types. The complete parameters are recorded in
+`config/phase3_peak_calling.json`. Count-matrix and FRiP QC remain required before
+differential accessibility.

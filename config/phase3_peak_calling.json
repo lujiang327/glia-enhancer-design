@@ -1,0 +1,29 @@
+{
+  "peak_caller": "MACS3 3.0.4",
+  "input_format": "BEDPE",
+  "effective_genome": "hs",
+  "keep_duplicates": "all",
+  "qvalue": 0.01,
+  "call_summits": true,
+  "replicate_calls": "one call per biological donor and published cell type",
+  "pooled_calls": "one call per published cell type using all four donor pseudobulks",
+  "reproducibility": {
+    "minimum_supporting_donors": 2,
+    "overlap_definition": "pooled 500-bp summit window overlaps donor narrowPeak interval"
+  },
+  "consensus": {
+    "peak_width": 500,
+    "chromosomes": "chr1-22,X",
+    "exclude_hg38_blacklist": true,
+    "nonoverlap_priority": [
+      "donor_support_descending",
+      "MACS3_qvalue_descending",
+      "MACS3_signal_descending",
+      "source_group",
+      "chromosome",
+      "coordinate"
+    ]
+  },
+  "counting_unit": "one retained fragment-file row",
+  "differential_accessibility_gate": "blocked_until_common_universe_count_matrix_qc_passes"
+}

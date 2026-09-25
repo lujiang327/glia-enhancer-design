@@ -1,5 +1,5 @@
 {
-  "status": "GO_FOR_PSEUDOBULK_AND_PEAK_PREPARATION_WITH_CAVEATS",
+  "status": "GO_FOR_REPRODUCIBLE_PEAK_CALLING_WITH_CAVEATS",
   "dataset": "GSE196235",
   "target": "MG",
   "published_labels_only": true,
@@ -23,6 +23,22 @@
     ]
   },
   "differential_accessibility_status": "BLOCKED_PENDING_PSEUDOBULK_AND_PEAK_QC",
+  "pseudobulk_qc": {
+    "status": "pass_52_of_52_pseudobulks",
+    "total_retained_fragment_records": 775669056,
+    "minimum_sample_fragment_records": 434120,
+    "blacklist_loss_fraction": 0.007249,
+    "evidence": [
+      "reports/phase3/pseudobulk_qc.json",
+      "reports/phase3/pseudobulk_qc.tsv",
+      "reports/phase3/pseudobulk_qc_review.md"
+    ],
+    "caveats": [
+      "Fifth-column unique-to-support ratio has a systematic donor pattern; retain donor blocking and estimate sample-specific normalization factors.",
+      "AII amacrine, astrocyte, microglia, and RGC have the largest donor depth imbalance.",
+      "Rod depth greatly exceeds every other cell type and must not determine the weight of the primary off-target contrast."
+    ]
+  },
   "peak_universe": {
     "policy": "union_reproducible_peaks_across_target_and_off_target_cell_types",
     "exclude_blacklist": true,
