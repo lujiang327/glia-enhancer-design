@@ -42,6 +42,7 @@ singularity exec \
       > /phase3/software/macs3-3.0.4/requirements.freeze.txt
   '
 
+completion_part="$environment/INSTALL_COMPLETE.part"
 {
   date --iso-8601=seconds
   echo "git_commit=$(git rev-parse HEAD)"
@@ -50,6 +51,7 @@ singularity exec \
   sha256sum containers/chrombpnet-upstream-20260914.sif
   PHASE3_SCRATCH_ROOT="$scratch_root" hpc/run_phase3_macs3.sh macs3 --version
   sha256sum "$environment/requirements.freeze.txt"
-} > "$environment/INSTALL_COMPLETE"
+} > "$completion_part"
+mv "$completion_part" "$environment/INSTALL_COMPLETE"
 
 echo "Installed isolated MACS3 3.0.4 environment."
