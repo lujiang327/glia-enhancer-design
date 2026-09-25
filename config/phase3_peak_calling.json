@@ -17,7 +17,8 @@
     "exclude_hg38_blacklist": true,
     "nonoverlap_priority": [
       "donor_support_descending",
-      "MACS3_qvalue_descending",
+      "within_cell_type_and_donor_support_MACS3_rank_quantile_descending",
+      "MACS3_qvalue_descending_tiebreak",
       "MACS3_signal_descending",
       "source_group",
       "chromosome",

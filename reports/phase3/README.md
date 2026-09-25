@@ -123,6 +123,9 @@ printf 'MACS_JOB=%s\nDONOR_PEAK_JOB=%s\nPOOLED_PEAK_JOB=%s\nCONSENSUS_JOB=%s\n' 
 
 The universe retains a pooled cell-type peak only when at least two donors have
 an overlapping peak. Reproducible summits are converted to nonoverlapping 500-bp
-regions across all 13 cell types. The complete parameters are recorded in
+regions across all 13 cell types. MACS3 strength is rank-normalized within each
+cell type and donor-support stratum before resolving cross-cell-type overlaps so
+the much deeper rod library does not choose most shared summit centers. The
+complete parameters are recorded in
 `config/phase3_peak_calling.json`. Count-matrix and FRiP QC remain required before
 differential accessibility.

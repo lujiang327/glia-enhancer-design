@@ -170,13 +170,34 @@ def main():
             counters["reproducible_candidates"] += 1
         group_qc[group] = dict(counters)
 
-    # Resolve overlaps using donor reproducibility first, then MACS3 strength.
+    # Raw MACS3 significance scales with cell-type depth. Convert q-value/signal
+    # ordering to a within-cell-type rank quantile separately for each donor-
+    # support stratum so deep rod libraries do not choose most shared summits.
+    candidate_strata = collections.defaultdict(list)
+    for candidate in candidates:
+        candidate_strata[(candidate["source_group"], candidate["donor_support"])].append(candidate)
+    for stratum in candidate_strata.values():
+        stratum.sort(
+            key=lambda row: (
+                -row["qvalue"],
+                -row["signal"],
+                chrom_rank[row["chrom"]],
+                row["start"],
+            )
+        )
+        denominator = max(1, len(stratum) - 1)
+        for rank, candidate in enumerate(stratum):
+            candidate["within_group_support_rank_quantile"] = 1.0 - rank / denominator
+
+    # Resolve overlaps using donor reproducibility first, followed by normalized
+    # within-group evidence and raw MACS3 values only as deterministic tie-breaks.
     accepted_index = {chrom: ([], []) for chrom in sizes}
     accepted = []
     ordered = sorted(
         candidates,
         key=lambda row: (
             -row["donor_support"],
+            -row["within_group_support_rank_quantile"],
             -row["qvalue"],
             -row["signal"],
             row["source_group"],
@@ -202,7 +223,8 @@ def main():
     with bed_path.open("w") as bed, narrow_path.open("w") as narrow, metadata_path.open("w", newline="") as meta:
         fieldnames = [
             "peak_id", "chrom", "start", "end", "source_group", "donor_support",
-            "supporting_donors", "macs_signal", "macs_pvalue", "macs_qvalue",
+            "supporting_donors", "within_group_support_rank_quantile",
+            "macs_signal", "macs_pvalue", "macs_qvalue",
         ]
         writer = csv.DictWriter(meta, fieldnames=fieldnames, delimiter="\t")
         writer.writeheader()
@@ -225,6 +247,9 @@ def main():
                     "source_group": row["source_group"],
                     "donor_support": row["donor_support"],
                     "supporting_donors": ",".join(row["donors"]),
+                    "within_group_support_rank_quantile": row[
+                        "within_group_support_rank_quantile"
+                    ],
                     "macs_signal": row["signal"],
                     "macs_pvalue": row["pvalue"],
                     "macs_qvalue": row["qvalue"],
@@ -241,9 +266,14 @@ def main():
         "reproducible_candidates_before_overlap_resolution": len(candidates),
         "consensus_peaks": len(accepted),
         "selected_source_counts": dict(sorted(selected_by_group.items())),
+        "strength_normalization": (
+            "MACS3 q-value and signal are converted to a rank quantile within each "
+            "cell type and donor-support stratum before cross-cell-type overlap resolution."
+        ),
         "overlap_policy": (
-            "Fixed-width peaks are greedily selected by donor support, MACS3 q-value, "
-            "signal, source group, chromosome, and coordinate; final peaks do not overlap."
+            "Fixed-width peaks are greedily selected by donor support, within-cell-type "
+            "rank quantile, raw MACS3 q-value, signal, source group, chromosome, and "
+            "coordinate; final peaks do not overlap."
         ),
         "outputs": {
             "bed": str(bed_path),
