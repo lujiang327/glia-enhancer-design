@@ -129,3 +129,35 @@ the much deeper rod library does not choose most shared summit centers. The
 complete parameters are recorded in
 `config/phase3_peak_calling.json`. Count-matrix and FRiP QC remain required before
 differential accessibility.
+
+The corrected consensus build contains 177,777 peaks. All peaks are 500 bp,
+nonoverlapping, outside the hg38 blacklist, and supported by at least two donor
+peak calls in their source cell type. The compact build result and review are
+recorded in `consensus_peak_summary.json` and
+`consensus_peak_qc_review.md`. Submit donor-level counting and its dependent QC
+summary with:
+
+```bash
+COUNT_JOB=$(sbatch --parsable \
+  --account=thahoang0 \
+  --export=ALL,PHASE3_SCRATCH_ROOT="$PHASE3_SCRATCH_ROOT" \
+  hpc/slurm/count_phase3_consensus_peaks.sbatch)
+COUNT_JOB=${COUNT_JOB%%;*}
+
+COUNT_QC_JOB=$(sbatch --parsable \
+  --account=thahoang0 \
+  --dependency="afterok:${COUNT_JOB}" \
+  --export=ALL,PHASE3_SCRATCH_ROOT="$PHASE3_SCRATCH_ROOT" \
+  hpc/slurm/summarize_phase3_count_matrix.sbatch)
+COUNT_QC_JOB=${COUNT_QC_JOB%%;*}
+
+printf 'COUNT_JOB=%s\nCOUNT_QC_JOB=%s\n' "$COUNT_JOB" "$COUNT_QC_JOB"
+```
+
+Each retained fragment row contributes one count to every consensus peak it
+overlaps. The counter records fragments spanning multiple peaks so any departure
+from one-fragment/one-assignment behavior is visible. The dependent summary
+verifies all 52 sample checksums and pseudobulk depths, writes the full matrix to
+scratch, and writes compact FRiP, detected-peak, correlation, and PCA results to
+`reports/phase3/count_matrix_qc/`. These are exploratory QC calculations only;
+edgeR normalization and differential testing remain blocked until review.

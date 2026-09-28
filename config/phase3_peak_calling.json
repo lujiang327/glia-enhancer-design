@@ -25,6 +25,18 @@
       "coordinate"
     ]
   },
-  "counting_unit": "one retained fragment-file row",
+  "counting_unit": "one count per retained fragment-file row for each consensus peak it overlaps; consensus peaks are nonoverlapping",
+  "counting_qc": {
+    "samples": 52,
+    "metrics": [
+      "FRiP",
+      "detected_peaks",
+      "library_depth",
+      "within_cell_type_donor_correlation",
+      "log2_CPM_PCA",
+      "multiple_peak_fragment_fraction"
+    ],
+    "normalization_at_this_stage": "exploratory library-size log2 CPM only"
+  },
   "differential_accessibility_gate": "blocked_until_common_universe_count_matrix_qc_passes"
 }

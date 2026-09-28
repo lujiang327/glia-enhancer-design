@@ -1,0 +1,124 @@
+{
+  "status": "CONSENSUS_PEAK_UNIVERSE_READY_FOR_COUNTING",
+  "width": 500,
+  "minimum_donor_support": 2,
+  "cell_types": [
+    "MG",
+    "Rod",
+    "Cone",
+    "ON_cone_bipolar",
+    "OFF_cone_bipolar",
+    "Rod_bipolar",
+    "GABA_amacrine",
+    "Gly_amacrine",
+    "AII_amacrine",
+    "Horizontal",
+    "RGC",
+    "Astrocyte",
+    "Microglia"
+  ],
+  "group_qc": {
+    "MG": {
+      "pooled_raw": 129240,
+      "reproducible_candidates": 85292,
+      "insufficient_donor_support": 43936,
+      "blacklist_excluded": 12
+    },
+    "Rod": {
+      "pooled_raw": 131888,
+      "reproducible_candidates": 93277,
+      "insufficient_donor_support": 38597,
+      "blacklist_excluded": 14
+    },
+    "Cone": {
+      "pooled_raw": 86584,
+      "reproducible_candidates": 53478,
+      "insufficient_donor_support": 33097,
+      "blacklist_excluded": 9
+    },
+    "ON_cone_bipolar": {
+      "pooled_raw": 90918,
+      "reproducible_candidates": 54696,
+      "insufficient_donor_support": 36213,
+      "blacklist_excluded": 9
+    },
+    "OFF_cone_bipolar": {
+      "pooled_raw": 106594,
+      "reproducible_candidates": 65094,
+      "insufficient_donor_support": 41491,
+      "blacklist_excluded": 9
+    },
+    "Rod_bipolar": {
+      "pooled_raw": 105260,
+      "reproducible_candidates": 63694,
+      "insufficient_donor_support": 41558,
+      "blacklist_excluded": 8
+    },
+    "GABA_amacrine": {
+      "pooled_raw": 93284,
+      "insufficient_donor_support": 52766,
+      "reproducible_candidates": 40510,
+      "blacklist_excluded": 8
+    },
+    "Gly_amacrine": {
+      "pooled_raw": 50655,
+      "insufficient_donor_support": 32187,
+      "reproducible_candidates": 18462,
+      "blacklist_excluded": 6
+    },
+    "AII_amacrine": {
+      "pooled_raw": 46086,
+      "insufficient_donor_support": 29373,
+      "reproducible_candidates": 16706,
+      "blacklist_excluded": 7
+    },
+    "Horizontal": {
+      "pooled_raw": 75167,
+      "insufficient_donor_support": 39989,
+      "reproducible_candidates": 35171,
+      "blacklist_excluded": 7
+    },
+    "RGC": {
+      "pooled_raw": 67016,
+      "insufficient_donor_support": 41672,
+      "reproducible_candidates": 25337,
+      "blacklist_excluded": 7
+    },
+    "Astrocyte": {
+      "pooled_raw": 42909,
+      "reproducible_candidates": 17451,
+      "insufficient_donor_support": 25452,
+      "blacklist_excluded": 6
+    },
+    "Microglia": {
+      "pooled_raw": 31211,
+      "reproducible_candidates": 13375,
+      "insufficient_donor_support": 17832,
+      "blacklist_excluded": 4
+    }
+  },
+  "reproducible_candidates_before_overlap_resolution": 582543,
+  "consensus_peaks": 177777,
+  "selected_source_counts": {
+    "AII_amacrine": 564,
+    "Astrocyte": 422,
+    "Cone": 7091,
+    "GABA_amacrine": 7492,
+    "Gly_amacrine": 1092,
+    "Horizontal": 6050,
+    "MG": 42086,
+    "Microglia": 135,
+    "OFF_cone_bipolar": 18021,
+    "ON_cone_bipolar": 7411,
+    "RGC": 3150,
+    "Rod": 65698,
+    "Rod_bipolar": 18565
+  },
+  "strength_normalization": "MACS3 q-value and signal are converted to a rank quantile within each cell type and donor-support stratum before cross-cell-type overlap resolution.",
+  "overlap_policy": "Fixed-width peaks are greedily selected by donor support, within-cell-type rank quantile, raw MACS3 q-value, signal, source group, chromosome, and coordinate; final peaks do not overlap.",
+  "outputs": {
+    "bed": "/scratch/thahoang_root/thahoang0/lujiang/chrombpnet_mg_phase3/consensus_peaks/retina_consensus_peaks.bed",
+    "narrowPeak": "/scratch/thahoang_root/thahoang0/lujiang/chrombpnet_mg_phase3/consensus_peaks/retina_consensus_peaks.narrowPeak",
+    "metadata": "/scratch/thahoang_root/thahoang0/lujiang/chrombpnet_mg_phase3/consensus_peaks/retina_consensus_peak_metadata.tsv"
+  }
+}

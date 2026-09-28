@@ -22,7 +22,7 @@
       "Rod abundance greatly exceeds every other cell type and must not dominate the primary contrast."
     ]
   },
-  "differential_accessibility_status": "BLOCKED_PENDING_PSEUDOBULK_AND_PEAK_QC",
+  "differential_accessibility_status": "BLOCKED_PENDING_COMMON_UNIVERSE_COUNT_MATRIX_QC",
   "pseudobulk_qc": {
     "status": "pass_52_of_52_pseudobulks",
     "total_retained_fragment_records": 775669056,
@@ -40,6 +40,10 @@
     ]
   },
   "peak_universe": {
+    "status": "accepted_for_counting",
+    "consensus_peaks": 177777,
+    "minimum_supporting_donors": 2,
+    "selection_strength": "within_cell_type_and_donor_support_rank_quantile",
     "policy": "union_reproducible_peaks_across_target_and_off_target_cell_types",
     "exclude_blacklist": true,
     "canonical_chromosomes_only": true,
