@@ -34,7 +34,7 @@ class Phase3PeakCounting(unittest.TestCase):
             self.assertEqual(flow["fragments_overlapping_multiple_peaks"], 1)
             self.assertEqual(flow["extra_peak_assignments"], 1)
 
-    def test_unsorted_fragments_fail_closed(self):
+    def test_unsorted_fragments_are_counted(self):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
             peak_path = root / "peaks.bed"
@@ -43,8 +43,9 @@ class Phase3PeakCounting(unittest.TestCase):
             with gzip.open(str(fragment_path), "wt") as handle:
                 handle.write("chr1\t15\t16\nchr1\t14\t17\n")
             peaks, ordered = load_peaks(peak_path)
-            with self.assertRaises(ValueError):
-                count_fragments(fragment_path, peaks, len(ordered))
+            counts, flow = count_fragments(fragment_path, peaks, len(ordered))
+            self.assertEqual(counts, [2])
+            self.assertEqual(flow["fragments_in_any_peak"], 2)
 
 
 if __name__ == "__main__":

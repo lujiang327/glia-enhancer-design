@@ -7,6 +7,7 @@ more than one peak are counted explicitly in the QC summary.
 """
 
 import argparse
+import bisect
 import collections
 import gzip
 import hashlib
@@ -23,7 +24,7 @@ def sha256(path):
 
 
 def load_peaks(path):
-    peaks = collections.defaultdict(list)
+    peak_rows = collections.defaultdict(list)
     ordered = []
     previous = None
     with path.open() as handle:
@@ -40,18 +41,23 @@ def load_peaks(path):
             if peak_id != "retina_peak_{:06d}".format(line_number):
                 raise ValueError("Unexpected peak ID at line {}: {}".format(line_number, peak_id))
             peak_index = len(ordered)
-            peaks[chrom].append((start, end, peak_index))
+            peak_rows[chrom].append((start, end, peak_index))
             ordered.append((chrom, start, end, peak_id))
             previous = (chrom, start, end)
     if not ordered:
         raise ValueError("Peak BED is empty")
+    peaks = {}
+    for chrom, rows in peak_rows.items():
+        peaks[chrom] = (
+            [row[0] for row in rows],
+            [row[1] for row in rows],
+            [row[2] for row in rows],
+        )
     return peaks, ordered
 
 
 def count_fragments(fragment_path, peaks, peak_count):
     counts = [0] * peak_count
-    pointers = collections.defaultdict(int)
-    previous_start = {}
     flow = collections.Counter()
     with gzip.open(str(fragment_path), "rt") as handle:
         for line_number, line in enumerate(handle, 1):
@@ -64,26 +70,16 @@ def count_fragments(fragment_path, peaks, peak_count):
             start, end = int(start_text), int(end_text)
             if start < 0 or end <= start:
                 raise ValueError("Invalid fragment at {}:{}".format(fragment_path, line_number))
-            if chrom in previous_start and start < previous_start[chrom]:
-                raise ValueError(
-                    "Fragments are not start-sorted within {} at line {}".format(
-                        chrom, line_number
-                    )
-                )
-            previous_start[chrom] = start
             flow["fragment_records"] += 1
-            chrom_peaks = peaks.get(chrom, ())
-            pointer = pointers[chrom]
-            while pointer < len(chrom_peaks) and chrom_peaks[pointer][1] <= start:
-                pointer += 1
-            pointers[chrom] = pointer
-            position = pointer
+            starts, ends, indexes = peaks.get(chrom, ((), (), ()))
+            # The released cell-type fragment pools are not coordinate sorted.
+            # Find the first peak whose end is after this fragment's start;
+            # bisect runs in C and keeps counting independent of input order.
+            position = bisect.bisect_right(ends, start)
             overlaps = 0
-            while position < len(chrom_peaks) and chrom_peaks[position][0] < end:
-                peak_start, peak_end, peak_index = chrom_peaks[position]
-                if peak_end > start:
-                    counts[peak_index] += 1
-                    overlaps += 1
+            while position < len(starts) and starts[position] < end:
+                counts[indexes[position]] += 1
+                overlaps += 1
                 position += 1
             if overlaps:
                 flow["fragments_in_any_peak"] += 1
