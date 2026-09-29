@@ -1,0 +1,157 @@
+{
+  "status": "COUNT_MATRIX_QC_READY_FOR_SCIENTIFIC_REVIEW",
+  "differential_accessibility_status": "BLOCKED_PENDING_COUNT_MATRIX_QC_REVIEW",
+  "samples": 52,
+  "consensus_peaks": 177777,
+  "matrix_sha256": "98d1fd7b1c534dda1fd1903f5d1742fa35f6913dacf104ef250a2bb4e94fb233",
+  "total_fragment_records": 775669056,
+  "total_fragments_in_any_peak": 402711528,
+  "frip_range": [
+    0.2988060457635128,
+    0.6327530910882592
+  ],
+  "detected_peak_range": [
+    69281,
+    174869
+  ],
+  "multiple_peak_fragment_fraction": 0.013789553569608945,
+  "exploratory_qc_peaks": 177342,
+  "exploratory_qc_filter": "CPM >= 1 in at least 4 of 52 donor pseudobulks",
+  "within_cell_type_donor_correlations": {
+    "MG": {
+      "minimum": 0.8652036781593259,
+      "median": 0.9009193505691055,
+      "maximum": 0.9326823209820024
+    },
+    "Rod": {
+      "minimum": 0.9476809415725982,
+      "median": 0.9593665639903937,
+      "maximum": 0.9648907329135238
+    },
+    "Cone": {
+      "minimum": 0.8815366739200619,
+      "median": 0.8954089826208033,
+      "maximum": 0.9151297088007049
+    },
+    "ON_cone_bipolar": {
+      "minimum": 0.8447413637238931,
+      "median": 0.8773972419733158,
+      "maximum": 0.8995946951719521
+    },
+    "OFF_cone_bipolar": {
+      "minimum": 0.8744137566754682,
+      "median": 0.9048952164260795,
+      "maximum": 0.9119798670606213
+    },
+    "Rod_bipolar": {
+      "minimum": 0.8669226024723569,
+      "median": 0.8866868396917836,
+      "maximum": 0.9017288771153276
+    },
+    "GABA_amacrine": {
+      "minimum": 0.7688186762947864,
+      "median": 0.8181661648689451,
+      "maximum": 0.8658347129496111
+    },
+    "Gly_amacrine": {
+      "minimum": 0.72642404706544,
+      "median": 0.762337051254877,
+      "maximum": 0.8454669449713907
+    },
+    "AII_amacrine": {
+      "minimum": 0.6830838386520993,
+      "median": 0.7113963516486582,
+      "maximum": 0.7901317723665414
+    },
+    "Horizontal": {
+      "minimum": 0.814900585299661,
+      "median": 0.8373280059935768,
+      "maximum": 0.8546427594537326
+    },
+    "RGC": {
+      "minimum": 0.73227458483285,
+      "median": 0.780579688369628,
+      "maximum": 0.7857400855009147
+    },
+    "Astrocyte": {
+      "minimum": 0.69391496680601,
+      "median": 0.7355188540833582,
+      "maximum": 0.79209579841564
+    },
+    "Microglia": {
+      "minimum": 0.6867420599087594,
+      "median": 0.7057704084423784,
+      "maximum": 0.7569945221249372
+    }
+  },
+  "pca_associations": [
+    {
+      "component": 1,
+      "explained_variance_fraction": 0.451728118795764,
+      "cell_type_eta_squared": 0.9704889444556485,
+      "donor_eta_squared": 0.004907399204398434
+    },
+    {
+      "component": 2,
+      "explained_variance_fraction": 0.20951634152584014,
+      "cell_type_eta_squared": 0.9726701310930501,
+      "donor_eta_squared": 0.0006251047444306541
+    },
+    {
+      "component": 3,
+      "explained_variance_fraction": 0.0787592081931265,
+      "cell_type_eta_squared": 0.9603435000661772,
+      "donor_eta_squared": 0.009051739595899545
+    },
+    {
+      "component": 4,
+      "explained_variance_fraction": 0.03381814593870333,
+      "cell_type_eta_squared": 0.9732616950672066,
+      "donor_eta_squared": 0.0028696483795456005
+    },
+    {
+      "component": 5,
+      "explained_variance_fraction": 0.028506787092079267,
+      "cell_type_eta_squared": 0.9586355187676369,
+      "donor_eta_squared": 0.006192739692888984
+    },
+    {
+      "component": 6,
+      "explained_variance_fraction": 0.021796826273746944,
+      "cell_type_eta_squared": 0.9732960873265029,
+      "donor_eta_squared": 0.00781508263526568
+    },
+    {
+      "component": 7,
+      "explained_variance_fraction": 0.015245688880861164,
+      "cell_type_eta_squared": 0.9458032961473462,
+      "donor_eta_squared": 0.0042523806044699125
+    },
+    {
+      "component": 8,
+      "explained_variance_fraction": 0.01352002163705808,
+      "cell_type_eta_squared": 0.9415055928075082,
+      "donor_eta_squared": 0.020052776224566842
+    },
+    {
+      "component": 9,
+      "explained_variance_fraction": 0.009947920376566005,
+      "cell_type_eta_squared": 0.870129800437397,
+      "donor_eta_squared": 0.045756782280831826
+    },
+    {
+      "component": 10,
+      "explained_variance_fraction": 0.008646643464680543,
+      "cell_type_eta_squared": 0.8866845351499973,
+      "donor_eta_squared": 0.02843933937454456
+    }
+  ],
+  "normalization_scope": "Exploratory log2 CPM only; edgeR normalization factors are not estimated here.",
+  "review_required": [
+    "FRiP and detected-peak outliers",
+    "within-cell-type donor concordance",
+    "cell-type separation versus donor association in PCA",
+    "low-cell astrocyte, microglia, and RGC strata",
+    "rod depth dominance"
+  ]
+}

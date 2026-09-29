@@ -22,7 +22,7 @@
       "Rod abundance greatly exceeds every other cell type and must not dominate the primary contrast."
     ]
   },
-  "differential_accessibility_status": "BLOCKED_PENDING_COMMON_UNIVERSE_COUNT_MATRIX_QC",
+  "differential_accessibility_status": "GO_FOR_DONOR_BLOCKED_DIFFERENTIAL_ACCESSIBILITY_WITH_CAVEATS",
   "pseudobulk_qc": {
     "status": "pass_52_of_52_pseudobulks",
     "total_retained_fragment_records": 775669056,
@@ -48,6 +48,30 @@
     "exclude_blacklist": true,
     "canonical_chromosomes_only": true,
     "warning": "Do not test only the Muller-glia training peaks because that would bias discovery toward the target."
+  },
+  "count_matrix_qc": {
+    "status": "pass_for_donor_blocked_differential_accessibility_with_caveats",
+    "samples": 52,
+    "consensus_peaks": 177777,
+    "total_retained_fragment_records": 775669056,
+    "weighted_frip": 0.51918,
+    "frip_range": [0.298806, 0.632753],
+    "exploratory_qc_peaks": 177342,
+    "muller_donor_correlation_median": 0.900919,
+    "evidence": [
+      "reports/phase3/count_matrix_qc/count_matrix_qc.json",
+      "reports/phase3/count_matrix_qc/sample_qc.tsv",
+      "reports/phase3/count_matrix_qc/sample_correlation_logcpm.tsv",
+      "reports/phase3/count_matrix_qc/pca_scores.tsv",
+      "reports/phase3/count_matrix_qc_review.md"
+    ],
+    "caveats": [
+      "Retain donor blocking and estimate sample-specific edgeR normalization factors.",
+      "AII amacrine, astrocyte, microglia, RGC, and glycinergic amacrine have weaker donor concordance than the abundant neuronal groups.",
+      "Same-donor correlation is modestly elevated across glial cell types; require leave-one-donor-out sensitivity for MG-versus-astrocyte and MG-versus-microglia contrasts.",
+      "Rod depth greatly exceeds other cell types; use equal cell-type weighting in the primary contrast.",
+      "Keep all samples and perform influence diagnostics for the low-depth strata."
+    ]
   },
   "replicate_unit": "biological_donor",
   "pseudobulk_unit": "donor_by_published_cell_type",

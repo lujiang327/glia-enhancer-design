@@ -161,3 +161,14 @@ verifies all 52 sample checksums and pseudobulk depths, writes the full matrix t
 scratch, and writes compact FRiP, detected-peak, correlation, and PCA results to
 `reports/phase3/count_matrix_qc/`. These are exploratory QC calculations only;
 edgeR normalization and differential testing remain blocked until review.
+
+## Count-matrix QC decision
+
+All 52 counting tasks and the dependent summary completed successfully. The
+full matrix remains under `PHASE3_SCRATCH_ROOT/count_matrix`; compact tables and
+figures are in `count_matrix_qc/`. The scientific review in
+`count_matrix_qc_review.md` records a **GO for donor-blocked differential
+accessibility with caveats**. This opens model fitting and diagnostic review. It
+does not yet authorize ranking or selecting the approximately 1,000 regulatory
+regions; candidate selection remains conditional on acceptable differential-
+model normalization, dispersion, calibration, and donor-consistency checks.
