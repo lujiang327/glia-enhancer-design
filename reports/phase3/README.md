@@ -172,3 +172,35 @@ accessibility with caveats**. This opens model fitting and diagnostic review. It
 does not yet authorize ranking or selecting the approximately 1,000 regulatory
 regions; candidate selection remains conditional on acceptable differential-
 model normalization, dispersion, calibration, and donor-consistency checks.
+
+## Donor-blocked differential-model gate
+
+Install the isolated R 4.4.3/Bioconductor 3.19 edgeR runtime, then submit model
+fitting with an `afterok` dependency:
+
+```bash
+EDGER_INSTALL_JOB=$(sbatch --parsable \
+  --account=thahoang0 \
+  --export=ALL,PHASE3_SCRATCH_ROOT="$PHASE3_SCRATCH_ROOT" \
+  hpc/slurm/install_phase3_edger.sbatch)
+EDGER_INSTALL_JOB=${EDGER_INSTALL_JOB%%;*}
+
+DA_JOB=$(sbatch --parsable \
+  --account=thahoang0 \
+  --dependency="afterok:${EDGER_INSTALL_JOB}" \
+  --export=ALL,PHASE3_SCRATCH_ROOT="$PHASE3_SCRATCH_ROOT" \
+  hpc/slurm/run_phase3_edger.sbatch)
+DA_JOB=${DA_JOB%%;*}
+
+printf 'EDGER_INSTALL_JOB=%s\nDA_JOB=%s\n' "$EDGER_INSTALL_JOB" "$DA_JOB"
+```
+
+The model uses design-aware abundance filtering, TMM normalization, a full-rank
+published-cell-type-plus-donor design, robust dispersion estimation, and edgeR
+quasi-likelihood F-tests. It fits the equal-weight Müller-glia-versus-rest
+contrast and all 12 pairwise contrasts. Müller-glia-versus-astrocyte and
+Müller-glia-versus-microglia receive four leave-one-donor-out refits each.
+Complete result tables remain in scratch. Compact normalization, dispersion,
+MDS, p-value, contrast, and donor-sensitivity diagnostics are written under
+`reports/phase3/differential_accessibility_qc/`. Candidate ranking remains
+blocked until those diagnostics are reviewed.

@@ -1,5 +1,5 @@
 {
-  "status": "GO_FOR_REPRODUCIBLE_PEAK_CALLING_WITH_CAVEATS",
+  "status": "GO_FOR_DONOR_BLOCKED_DIFFERENTIAL_ACCESSIBILITY_WITH_CAVEATS",
   "dataset": "GSE196235",
   "target": "MG",
   "published_labels_only": true,
@@ -77,6 +77,8 @@
   "pseudobulk_unit": "donor_by_published_cell_type",
   "primary_model": "edgeR_quasi_likelihood",
   "design": "donor_blocked",
+  "differential_accessibility_contract": "config/phase3_differential_accessibility.json",
+  "candidate_selection_status": "BLOCKED_PENDING_DIFFERENTIAL_MODEL_QC",
   "contrasts": {
     "primary": "MG_vs_equal_weight_average_of_major_retinal_off_targets",
     "secondary": [

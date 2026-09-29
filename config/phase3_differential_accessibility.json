@@ -1,0 +1,34 @@
+{
+  "runtime": {
+    "R": "4.4.3",
+    "Bioconductor": "3.19",
+    "edgeR": "resolved_and_recorded_by_isolated_runtime_install"
+  },
+  "input": {
+    "count_matrix": "PHASE3_SCRATCH_ROOT/count_matrix/retina_consensus_peak_counts.tsv.gz",
+    "samples": 52,
+    "peaks_before_filtering": 177777,
+    "counting_unit": "one retained fragment row per overlapping consensus peak"
+  },
+  "model": {
+    "design": "~ 0 + published_cell_type + biological_donor",
+    "filter": "edgeR::filterByExpr with the full design and package defaults",
+    "normalization": "edgeR TMM",
+    "dispersion": "edgeR robust empirical-Bayes dispersion estimation",
+    "test": "edgeR quasi-likelihood F-test",
+    "fdr_method": "Benjamini-Hochberg"
+  },
+  "contrasts": {
+    "primary": "MG minus the equal-weight mean of all 12 off-target cell types",
+    "pairwise": "MG minus each off-target cell type",
+    "positive_logFC_direction": "more accessible in Muller glia"
+  },
+  "donor_diagnostics": {
+    "per_peak": "within-donor normalized log2-CPM target-minus-comparator effects",
+    "leave_one_donor_out": [
+      "MG_vs_Astrocyte",
+      "MG_vs_Microglia"
+    ]
+  },
+  "candidate_selection_status": "BLOCKED_PENDING_DIFFERENTIAL_MODEL_QC"
+}
