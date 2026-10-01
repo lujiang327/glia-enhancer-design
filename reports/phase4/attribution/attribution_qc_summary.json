@@ -1,0 +1,53 @@
+{
+  "status": "PASS_FOR_DUAL_ORIENTATION_PERTURBATION_WITH_FILTERING",
+  "candidates": 1000,
+  "attribution_qc_pass": 947,
+  "attribution_qc_fail": 53,
+  "gate": {
+    "count_parent_pearson_min": 0.5,
+    "count_parent_cosine_min": 0.5,
+    "count_parent_top10pct_sign_concordance_min": 0.8,
+    "profile_parent_pearson_min": 0.5,
+    "profile_parent_cosine_min": 0.5,
+    "profile_parent_top10pct_sign_concordance_min": 0.8,
+    "model_input_invalid_bases": 0
+  },
+  "failure_counts_nonexclusive": {
+    "ambiguous_model_input_bases": 1,
+    "count_cosine_lt_0.5": 3,
+    "count_pearson_lt_0.5": 4,
+    "profile_cosine_lt_0.5": 42,
+    "profile_pearson_lt_0.5": 43,
+    "profile_top10pct_sign_lt_0.8": 33
+  },
+  "pass_by_genomic_class": [
+    {
+      "genomic_class": "distal_intergenic",
+      "total": 501,
+      "passed": 472,
+      "failed": 29
+    },
+    {
+      "genomic_class": "exonic",
+      "total": 43,
+      "passed": 40,
+      "failed": 3
+    },
+    {
+      "genomic_class": "intronic",
+      "total": 420,
+      "passed": 401,
+      "failed": 19
+    },
+    {
+      "genomic_class": "promoter",
+      "total": 36,
+      "passed": 34,
+      "failed": 2
+    }
+  ],
+  "parent_count_orientation_flagged_total": 239,
+  "parent_count_orientation_flagged_among_pass": 226,
+  "policy": "Use only passing candidates for sequence perturbation; score every parent and variant in both orientations and require concordant improvement.",
+  "next_gate": "RUN_ATTRIBUTION_GUIDED_PERTURBATION_PILOT"
+}

@@ -1,5 +1,5 @@
 {
-  "status": "READY_TO_RUN_AFTER_PARENT_PREDICTION_QC",
+  "status": "PASS_FOR_DUAL_ORIENTATION_PERTURBATION_WITH_FILTERING",
   "candidates": "reports/phase4/parent_scoring/parent_predictions.tsv.gz",
   "reference_fasta": "data/raw/reference/hg38.canonical.fa",
   "reference_sha256": "fb96c995cd3a4b40b73873ff33ff885dd32da7e1b5490481aa4cc3a264965cf1",
@@ -13,5 +13,26 @@
   "consensus": "arithmetic mean of forward and aligned reverse-complement hypothetical scores",
   "agreement_scope": "projected basewise attribution within the 500-bp parent",
   "parent_count_orientation_flag_threshold": 1.0,
-  "next_gate": "BLOCK_VARIANT_GENERATION_PENDING_DUAL_ORIENTATION_ATTRIBUTION_QC"
+  "result": {
+    "job_id": 62995652,
+    "elapsed": "00:15:36",
+    "max_rss_kb": 14649208,
+    "candidates": 1000,
+    "attribution_qc_pass": 947,
+    "attribution_qc_fail": 53,
+    "count_parent_pearson_median": 0.8228353614,
+    "profile_parent_pearson_median": 0.8158011748,
+    "parent_count_orientation_flagged": 239,
+    "attribution_h5_sha256": "78d7a6e6c5b875b00de33449131cdd30bbd172e68b791408b4ac114fba4e1b95"
+  },
+  "perturbation_eligibility_gate": {
+    "count_parent_pearson_min": 0.5,
+    "count_parent_cosine_min": 0.5,
+    "count_parent_top10pct_sign_concordance_min": 0.8,
+    "profile_parent_pearson_min": 0.5,
+    "profile_parent_cosine_min": 0.5,
+    "profile_parent_top10pct_sign_concordance_min": 0.8,
+    "model_input_invalid_bases": 0
+  },
+  "next_gate": "RUN_ATTRIBUTION_GUIDED_PERTURBATION_PILOT"
 }

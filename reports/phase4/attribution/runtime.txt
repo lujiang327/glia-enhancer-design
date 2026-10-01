@@ -1,0 +1,10 @@
+2026-10-01T14:26:44-04:00
+git_commit=bd181ee27f58870ea888a9cabe7e517c9844a2a8
+slurm_job_id=62995652
+node=gl1519.arc-ts.umich.edu
+singularity-ce version 4.4.1
+NVIDIA A40, 595.71.05, 46068 MiB
+3eea58b1606fe1245ad70abe70ea6268cf10587ea88de52263c268d1952249d5  containers/chrombpnet-upstream-20260914.sif
+097aa833c90d61f4b236eef51fbed1228be83cfa20a6cb64924dbad87269afab  reports/phase4/parent_scoring/parent_predictions.tsv.gz
+fb96c995cd3a4b40b73873ff33ff885dd32da7e1b5490481aa4cc3a264965cf1  data/raw/reference/hg38.canonical.fa
+687befaa442fccae8896326acc884f9578cba5c5d2dd92412aa97f437384e80f  models/chrombpnet/fold_0/seed_42_neg1/models/muller_chrombpnet_nobias.h5
