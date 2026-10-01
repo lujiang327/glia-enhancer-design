@@ -1,0 +1,17 @@
+coefficient	MG_vs_rest	MG_vs_Rod	MG_vs_Cone	MG_vs_ON_cone_bipolar	MG_vs_OFF_cone_bipolar	MG_vs_Rod_bipolar	MG_vs_GABA_amacrine	MG_vs_Gly_amacrine	MG_vs_AII_amacrine	MG_vs_Horizontal	MG_vs_RGC	MG_vs_Astrocyte	MG_vs_Microglia
+MG	1	1	1	1	1	1	1	1	1	1	1	1	1
+Rod	-0.0833333333333333	-1	0	0	0	0	0	0	0	0	0	0	0
+Cone	-0.0833333333333333	0	-1	0	0	0	0	0	0	0	0	0	0
+ON_cone_bipolar	-0.0833333333333333	0	0	-1	0	0	0	0	0	0	0	0	0
+OFF_cone_bipolar	-0.0833333333333333	0	0	0	-1	0	0	0	0	0	0	0	0
+Rod_bipolar	-0.0833333333333333	0	0	0	0	-1	0	0	0	0	0	0	0
+GABA_amacrine	-0.0833333333333333	0	0	0	0	0	-1	0	0	0	0	0	0
+Gly_amacrine	-0.0833333333333333	0	0	0	0	0	0	-1	0	0	0	0	0
+AII_amacrine	-0.0833333333333333	0	0	0	0	0	0	0	-1	0	0	0	0
+Horizontal	-0.0833333333333333	0	0	0	0	0	0	0	0	-1	0	0	0
+RGC	-0.0833333333333333	0	0	0	0	0	0	0	0	0	-1	0	0
+Astrocyte	-0.0833333333333333	0	0	0	0	0	0	0	0	0	0	-1	0
+Microglia	-0.0833333333333333	0	0	0	0	0	0	0	0	0	0	0	-1
+donorLGS2	0	0	0	0	0	0	0	0	0	0	0	0	0
+donorLGS3	0	0	0	0	0	0	0	0	0	0	0	0	0
+donorLVG1	0	0	0	0	0	0	0	0	0	0	0	0	0

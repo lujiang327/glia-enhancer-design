@@ -78,7 +78,25 @@
   "primary_model": "edgeR_quasi_likelihood",
   "design": "donor_blocked",
   "differential_accessibility_contract": "config/phase3_differential_accessibility.json",
-  "candidate_selection_status": "BLOCKED_PENDING_DIFFERENTIAL_MODEL_QC",
+  "candidate_selection_status": "GO_FOR_CANDIDATE_RANKING_WITH_CAVEATS",
+  "differential_model_qc": {
+    "status": "pass_for_candidate_ranking_with_caveats",
+    "tested_peaks": 147359,
+    "primary_positive_fdr_lt_0_05": 51821,
+    "primary_positive_fdr_lt_0_05_log2fc_gte_1": 34030,
+    "primary_positive_all_four_donors": 47496,
+    "evidence": [
+      "reports/phase3/differential_accessibility_qc/differential_model_qc.json",
+      "reports/phase3/differential_accessibility_qc/contrast_summary.tsv",
+      "reports/phase3/differential_accessibility_qc/leave_one_donor_out_summary.tsv",
+      "reports/phase3/differential_accessibility_qc_review.md"
+    ],
+    "caveats": [
+      "Leave-one-donor-out effect directions are stable, but FDR retention drops for some three-donor glial refits.",
+      "Retain glial sensitivity metrics in ranking rather than requiring every leave-one-donor-out FDR to pass 0.05.",
+      "No off-target retinal ChromBPNet model is currently available."
+    ]
+  },
   "contrasts": {
     "primary": "MG_vs_equal_weight_average_of_major_retinal_off_targets",
     "secondary": [

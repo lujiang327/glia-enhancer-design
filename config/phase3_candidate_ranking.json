@@ -1,0 +1,32 @@
+{
+  "status": "READY_TO_RUN_AFTER_DIFFERENTIAL_QC_PASS",
+  "target_count": 1000,
+  "primary_eligibility": {
+    "fdr_lt": 0.05,
+    "log2fc_gte": 1.0,
+    "donors_positive": 4,
+    "positive_vs_astrocyte": true,
+    "positive_vs_microglia": true,
+    "positive_all_glial_leave_one_donor_out": true
+  },
+  "score_weights": {
+    "minimum_pairwise_log2fc_percentile": 0.25,
+    "observed_specificity_percentile": 0.20,
+    "primary_log2fc_percentile": 0.15,
+    "primary_significance_percentile": 0.10,
+    "muller_accessibility_percentile": 0.10,
+    "primary_donor_floor_percentile": 0.075,
+    "glial_lodo_effect_floor_percentile": 0.075,
+    "glial_lodo_significance_percentile": 0.05
+  },
+  "accessibility": {
+    "method": "mean donor CPM using edgeR effective library sizes",
+    "specificity": "log2((Muller mean CPM + 0.25) / (maximum off-target mean CPM + 0.25))"
+  },
+  "annotation": {
+    "source": "UCSC hg38 refGene",
+    "promoter_window_bp": 2000,
+    "priority": ["promoter", "exonic", "intronic", "distal_intergenic"]
+  },
+  "interpretation": "The top table is a provisional open-regulatory-region ranking, not a list of experimentally confirmed enhancers."
+}

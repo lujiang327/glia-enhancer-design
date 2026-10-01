@@ -30,5 +30,23 @@
       "MG_vs_Microglia"
     ]
   },
-  "candidate_selection_status": "BLOCKED_PENDING_DIFFERENTIAL_MODEL_QC"
+  "candidate_selection_status": "GO_FOR_CANDIDATE_RANKING_WITH_CAVEATS",
+  "qc_review": {
+    "decision": "GO_FOR_CANDIDATE_RANKING_WITH_CAVEATS",
+    "evidence": [
+      "reports/phase3/differential_accessibility_qc/differential_model_qc.json",
+      "reports/phase3/differential_accessibility_qc/contrast_summary.tsv",
+      "reports/phase3/differential_accessibility_qc/leave_one_donor_out_summary.tsv",
+      "reports/phase3/differential_accessibility_qc_review.md"
+    ],
+    "primary_eligibility": {
+      "fdr_lt": 0.05,
+      "log2fc_gte": 1.0,
+      "positive_in_all_four_donors": true,
+      "positive_vs_astrocyte": true,
+      "positive_vs_microglia": true,
+      "positive_in_all_glial_leave_one_donor_out_refits": true
+    },
+    "warning": "Leave-one-donor-out FDR retention is a ranking preference, not a hard eligibility filter."
+  }
 }

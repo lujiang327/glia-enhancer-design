@@ -22,13 +22,18 @@ class Phase3DifferentialAccessibilityContract(unittest.TestCase):
             contrast[group] = -1
             self.assertEqual(sum(contrast.values()), 0)
 
-    def test_candidate_selection_remains_blocked(self):
+    def test_candidate_ranking_gate_matches_review(self):
         root = Path(__file__).resolve().parents[1]
         contract = json.loads((root / "config/phase3_differential_accessibility.json").read_text())
         self.assertEqual(
             contract["candidate_selection_status"],
-            "BLOCKED_PENDING_DIFFERENTIAL_MODEL_QC",
+            "GO_FOR_CANDIDATE_RANKING_WITH_CAVEATS",
         )
+        self.assertEqual(
+            contract["qc_review"]["decision"],
+            contract["candidate_selection_status"],
+        )
+        self.assertTrue(contract["qc_review"]["primary_eligibility"]["positive_in_all_four_donors"])
 
 
 if __name__ == "__main__":

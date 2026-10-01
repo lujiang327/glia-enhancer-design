@@ -1,0 +1,265 @@
+{
+  "status": "DIFFERENTIAL_MODEL_DIAGNOSTICS_READY_FOR_REVIEW",
+  "candidate_selection_status": "BLOCKED_PENDING_DIFFERENTIAL_MODEL_QC_REVIEW",
+  "samples": 52,
+  "peaks_before_filtering": 177777,
+  "peaks_after_filterByExpr": 147359,
+  "design_rows": 52,
+  "design_columns": 16,
+  "design_rank": 16,
+  "design_condition_number": 17.5577590728,
+  "normalization": {
+    "method": "TMM",
+    "factor_range": [0.66124849957, 1.4190637821],
+    "product": 1
+  },
+  "dispersion": {
+    "common_dispersion": 0.042587678029,
+    "common_biological_coefficient_of_variation": 0.20636782217,
+    "tagwise_dispersion_quantiles": {
+      "0%": 0.0064912616836,
+      "25%": 0.049832893105,
+      "50%": 0.067617250363,
+      "75%": 0.088506911825,
+      "100%": 1.8294686394
+    },
+    "posterior_ql_dispersion_quantiles": {
+      "0%": 0.70760206802,
+      "25%": 1.3548428938,
+      "50%": 1.4805960482,
+      "75%": 1.6362215465,
+      "100%": 14.5085970283
+    }
+  },
+  "contrast_summaries": {
+    "MG_vs_rest": {
+      "tested_peaks": 147359,
+      "fdr_lt_0_05": 79471,
+      "positive_fdr_lt_0_05": 51821,
+      "negative_fdr_lt_0_05": 27650,
+      "positive_fdr_lt_0_05_logFC_ge_1": 34030,
+      "positive_all_four_donors": 47496,
+      "result": "/scratch/thahoang_root/thahoang0/lujiang/chrombpnet_mg_phase3/differential_accessibility/contrasts/MG_vs_rest.tsv.gz"
+    },
+    "MG_vs_Rod": {
+      "tested_peaks": 147359,
+      "fdr_lt_0_05": 109098,
+      "positive_fdr_lt_0_05": 55294,
+      "negative_fdr_lt_0_05": 53804,
+      "positive_fdr_lt_0_05_logFC_ge_1": 49644,
+      "positive_all_four_donors": 50345,
+      "result": "/scratch/thahoang_root/thahoang0/lujiang/chrombpnet_mg_phase3/differential_accessibility/contrasts/MG_vs_Rod.tsv.gz"
+    },
+    "MG_vs_Cone": {
+      "tested_peaks": 147359,
+      "fdr_lt_0_05": 94701,
+      "positive_fdr_lt_0_05": 54275,
+      "negative_fdr_lt_0_05": 40426,
+      "positive_fdr_lt_0_05_logFC_ge_1": 42999,
+      "positive_all_four_donors": 50310,
+      "result": "/scratch/thahoang_root/thahoang0/lujiang/chrombpnet_mg_phase3/differential_accessibility/contrasts/MG_vs_Cone.tsv.gz"
+    },
+    "MG_vs_ON_cone_bipolar": {
+      "tested_peaks": 147359,
+      "fdr_lt_0_05": 92386,
+      "positive_fdr_lt_0_05": 49550,
+      "negative_fdr_lt_0_05": 42836,
+      "positive_fdr_lt_0_05_logFC_ge_1": 39040,
+      "positive_all_four_donors": 46308,
+      "result": "/scratch/thahoang_root/thahoang0/lujiang/chrombpnet_mg_phase3/differential_accessibility/contrasts/MG_vs_ON_cone_bipolar.tsv.gz"
+    },
+    "MG_vs_OFF_cone_bipolar": {
+      "tested_peaks": 147359,
+      "fdr_lt_0_05": 95761,
+      "positive_fdr_lt_0_05": 50098,
+      "negative_fdr_lt_0_05": 45663,
+      "positive_fdr_lt_0_05_logFC_ge_1": 37615,
+      "positive_all_four_donors": 46470,
+      "result": "/scratch/thahoang_root/thahoang0/lujiang/chrombpnet_mg_phase3/differential_accessibility/contrasts/MG_vs_OFF_cone_bipolar.tsv.gz"
+    },
+    "MG_vs_Rod_bipolar": {
+      "tested_peaks": 147359,
+      "fdr_lt_0_05": 92069,
+      "positive_fdr_lt_0_05": 48819,
+      "negative_fdr_lt_0_05": 43250,
+      "positive_fdr_lt_0_05_logFC_ge_1": 36745,
+      "positive_all_four_donors": 45705,
+      "result": "/scratch/thahoang_root/thahoang0/lujiang/chrombpnet_mg_phase3/differential_accessibility/contrasts/MG_vs_Rod_bipolar.tsv.gz"
+    },
+    "MG_vs_GABA_amacrine": {
+      "tested_peaks": 147359,
+      "fdr_lt_0_05": 84264,
+      "positive_fdr_lt_0_05": 42909,
+      "negative_fdr_lt_0_05": 41355,
+      "positive_fdr_lt_0_05_logFC_ge_1": 30756,
+      "positive_all_four_donors": 38568,
+      "result": "/scratch/thahoang_root/thahoang0/lujiang/chrombpnet_mg_phase3/differential_accessibility/contrasts/MG_vs_GABA_amacrine.tsv.gz"
+    },
+    "MG_vs_Gly_amacrine": {
+      "tested_peaks": 147359,
+      "fdr_lt_0_05": 60091,
+      "positive_fdr_lt_0_05": 37334,
+      "negative_fdr_lt_0_05": 22757,
+      "positive_fdr_lt_0_05_logFC_ge_1": 31884,
+      "positive_all_four_donors": 35400,
+      "result": "/scratch/thahoang_root/thahoang0/lujiang/chrombpnet_mg_phase3/differential_accessibility/contrasts/MG_vs_Gly_amacrine.tsv.gz"
+    },
+    "MG_vs_AII_amacrine": {
+      "tested_peaks": 147359,
+      "fdr_lt_0_05": 56538,
+      "positive_fdr_lt_0_05": 33420,
+      "negative_fdr_lt_0_05": 23118,
+      "positive_fdr_lt_0_05_logFC_ge_1": 26161,
+      "positive_all_four_donors": 30856,
+      "result": "/scratch/thahoang_root/thahoang0/lujiang/chrombpnet_mg_phase3/differential_accessibility/contrasts/MG_vs_AII_amacrine.tsv.gz"
+    },
+    "MG_vs_Horizontal": {
+      "tested_peaks": 147359,
+      "fdr_lt_0_05": 73766,
+      "positive_fdr_lt_0_05": 41216,
+      "negative_fdr_lt_0_05": 32550,
+      "positive_fdr_lt_0_05_logFC_ge_1": 31301,
+      "positive_all_four_donors": 38463,
+      "result": "/scratch/thahoang_root/thahoang0/lujiang/chrombpnet_mg_phase3/differential_accessibility/contrasts/MG_vs_Horizontal.tsv.gz"
+    },
+    "MG_vs_RGC": {
+      "tested_peaks": 147359,
+      "fdr_lt_0_05": 70198,
+      "positive_fdr_lt_0_05": 39196,
+      "negative_fdr_lt_0_05": 31002,
+      "positive_fdr_lt_0_05_logFC_ge_1": 28469,
+      "positive_all_four_donors": 36062,
+      "result": "/scratch/thahoang_root/thahoang0/lujiang/chrombpnet_mg_phase3/differential_accessibility/contrasts/MG_vs_RGC.tsv.gz"
+    },
+    "MG_vs_Astrocyte": {
+      "tested_peaks": 147359,
+      "fdr_lt_0_05": 16652,
+      "positive_fdr_lt_0_05": 11612,
+      "negative_fdr_lt_0_05": 5040,
+      "positive_fdr_lt_0_05_logFC_ge_1": 9384,
+      "positive_all_four_donors": 10926,
+      "result": "/scratch/thahoang_root/thahoang0/lujiang/chrombpnet_mg_phase3/differential_accessibility/contrasts/MG_vs_Astrocyte.tsv.gz"
+    },
+    "MG_vs_Microglia": {
+      "tested_peaks": 147359,
+      "fdr_lt_0_05": 21992,
+      "positive_fdr_lt_0_05": 16718,
+      "negative_fdr_lt_0_05": 5274,
+      "positive_fdr_lt_0_05_logFC_ge_1": 14770,
+      "positive_all_four_donors": 16335,
+      "result": "/scratch/thahoang_root/thahoang0/lujiang/chrombpnet_mg_phase3/differential_accessibility/contrasts/MG_vs_Microglia.tsv.gz"
+    }
+  },
+  "leave_one_donor_out": {
+    "1": [
+      {
+        "contrast": "MG_vs_Astrocyte",
+        "excluded_donor": "LGS1",
+        "pearson_logFC": 0.95420647913,
+        "spearman_logFC": 0.95889594913,
+        "sign_concordance_all_peaks": 0.89028155729,
+        "full_positive_peaks": 11612,
+        "fraction_full_positive_remaining_positive": 1,
+        "fraction_full_positive_remaining_fdr": 0.99896658629,
+        "result": "/scratch/thahoang_root/thahoang0/lujiang/chrombpnet_mg_phase3/differential_accessibility/leave_one_donor_out/MG_vs_Astrocyte_without_LGS1.tsv.gz"
+      }
+    ],
+    "2": [
+      {
+        "contrast": "MG_vs_Astrocyte",
+        "excluded_donor": "LGS2",
+        "pearson_logFC": 0.84488084475,
+        "spearman_logFC": 0.8659297827,
+        "sign_concordance_all_peaks": 0.88535481375,
+        "full_positive_peaks": 11612,
+        "fraction_full_positive_remaining_positive": 1,
+        "fraction_full_positive_remaining_fdr": 0.9342059938,
+        "result": "/scratch/thahoang_root/thahoang0/lujiang/chrombpnet_mg_phase3/differential_accessibility/leave_one_donor_out/MG_vs_Astrocyte_without_LGS2.tsv.gz"
+      }
+    ],
+    "3": [
+      {
+        "contrast": "MG_vs_Astrocyte",
+        "excluded_donor": "LGS3",
+        "pearson_logFC": 0.80957144492,
+        "spearman_logFC": 0.83975004903,
+        "sign_concordance_all_peaks": 0.87377764507,
+        "full_positive_peaks": 11612,
+        "fraction_full_positive_remaining_positive": 1,
+        "fraction_full_positive_remaining_fdr": 0.64950051671,
+        "result": "/scratch/thahoang_root/thahoang0/lujiang/chrombpnet_mg_phase3/differential_accessibility/leave_one_donor_out/MG_vs_Astrocyte_without_LGS3.tsv.gz"
+      }
+    ],
+    "4": [
+      {
+        "contrast": "MG_vs_Astrocyte",
+        "excluded_donor": "LVG1",
+        "pearson_logFC": 0.87166462078,
+        "spearman_logFC": 0.8813643086,
+        "sign_concordance_all_peaks": 0.8799869706,
+        "full_positive_peaks": 11612,
+        "fraction_full_positive_remaining_positive": 1,
+        "fraction_full_positive_remaining_fdr": 0.3223389597,
+        "result": "/scratch/thahoang_root/thahoang0/lujiang/chrombpnet_mg_phase3/differential_accessibility/leave_one_donor_out/MG_vs_Astrocyte_without_LVG1.tsv.gz"
+      }
+    ],
+    "5": [
+      {
+        "contrast": "MG_vs_Microglia",
+        "excluded_donor": "LGS1",
+        "pearson_logFC": 0.88082269444,
+        "spearman_logFC": 0.90477354546,
+        "sign_concordance_all_peaks": 0.87884689771,
+        "full_positive_peaks": 16718,
+        "fraction_full_positive_remaining_positive": 1,
+        "fraction_full_positive_remaining_fdr": 0.97750927144,
+        "result": "/scratch/thahoang_root/thahoang0/lujiang/chrombpnet_mg_phase3/differential_accessibility/leave_one_donor_out/MG_vs_Microglia_without_LGS1.tsv.gz"
+      }
+    ],
+    "6": [
+      {
+        "contrast": "MG_vs_Microglia",
+        "excluded_donor": "LGS2",
+        "pearson_logFC": 0.83166407834,
+        "spearman_logFC": 0.86235953993,
+        "sign_concordance_all_peaks": 0.87375728663,
+        "full_positive_peaks": 16718,
+        "fraction_full_positive_remaining_positive": 1,
+        "fraction_full_positive_remaining_fdr": 0.80936714918,
+        "result": "/scratch/thahoang_root/thahoang0/lujiang/chrombpnet_mg_phase3/differential_accessibility/leave_one_donor_out/MG_vs_Microglia_without_LGS2.tsv.gz"
+      }
+    ],
+    "7": [
+      {
+        "contrast": "MG_vs_Microglia",
+        "excluded_donor": "LGS3",
+        "pearson_logFC": 0.85376631578,
+        "spearman_logFC": 0.87968984558,
+        "sign_concordance_all_peaks": 0.89016619277,
+        "full_positive_peaks": 16718,
+        "fraction_full_positive_remaining_positive": 1,
+        "fraction_full_positive_remaining_fdr": 0.59211628185,
+        "result": "/scratch/thahoang_root/thahoang0/lujiang/chrombpnet_mg_phase3/differential_accessibility/leave_one_donor_out/MG_vs_Microglia_without_LGS3.tsv.gz"
+      }
+    ],
+    "8": [
+      {
+        "contrast": "MG_vs_Microglia",
+        "excluded_donor": "LVG1",
+        "pearson_logFC": 0.95982508461,
+        "spearman_logFC": 0.96654912904,
+        "sign_concordance_all_peaks": 0.93482583351,
+        "full_positive_peaks": 16718,
+        "fraction_full_positive_remaining_positive": 1,
+        "fraction_full_positive_remaining_fdr": 0.60569446106,
+        "result": "/scratch/thahoang_root/thahoang0/lujiang/chrombpnet_mg_phase3/differential_accessibility/leave_one_donor_out/MG_vs_Microglia_without_LVG1.tsv.gz"
+      }
+    ]
+  },
+  "package_versions": {
+    "R": "R version 4.4.3 (2025-02-28)",
+    "edgeR": "4.2.2",
+    "limma": "3.60.6"
+  },
+  "scope": "Model fitting and diagnostics only. No candidate ranking or selection was performed."
+}

@@ -204,3 +204,18 @@ Complete result tables remain in scratch. Compact normalization, dispersion,
 MDS, p-value, contrast, and donor-sensitivity diagnostics are written under
 `reports/phase3/differential_accessibility_qc/`. Candidate ranking remains
 blocked until those diagnostics are reviewed.
+
+## Differential-model QC decision
+
+Great Lakes job `62403767` completed successfully and all compact output
+checksums passed. The design was full rank, TMM normalization and dispersion
+trends were acceptable, the expected cell-type structure was retained, and
+Muller-positive effects against astrocytes and microglia retained their
+direction in every leave-one-donor-out refit. The scientific review records a
+**GO for candidate ranking with caveats**. See
+`differential_accessibility_qc_review.md`.
+
+Candidate ranking must retain primary FDR/effect size, all-donor direction,
+all pairwise off-target effects, target/off-target accessibility, and glial
+leave-one-donor-out stability. This decision does not label selected regions as
+confirmed enhancers and does not yet authorize sequence optimization.
