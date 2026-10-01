@@ -1,0 +1,18 @@
+{
+  "status": "CANDIDATE_RANKING_READY_FOR_REVIEW",
+  "tested_regions": 147359,
+  "eligible_regions": 21269,
+  "selected_regions": 1000,
+  "top_set_genomic_classes": {
+    "distal_intergenic": 501,
+    "intronic": 420,
+    "promoter": 36,
+    "exonic": 43
+  },
+  "config": "config/phase3_candidate_ranking.json",
+  "outputs": {
+    "all_scored": "/scratch/thahoang_root/thahoang0/lujiang/chrombpnet_mg_phase3/candidate_ranking/all_scored_regions.tsv.gz",
+    "top_candidates": "/scratch/thahoang_root/thahoang0/lujiang/chrombpnet_mg_phase3/candidate_ranking/top_1000_candidates.tsv.gz"
+  },
+  "interpretation": "The top table is a provisional open-regulatory-region ranking, not a list of experimentally confirmed enhancers."
+}

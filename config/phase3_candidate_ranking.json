@@ -1,5 +1,5 @@
 {
-  "status": "READY_TO_RUN_AFTER_DIFFERENTIAL_QC_PASS",
+  "status": "PASS_FOR_CHROMBPNET_PARENT_SCORING_WITH_CAVEATS",
   "target_count": 1000,
   "primary_eligibility": {
     "fdr_lt": 0.05,
@@ -28,5 +28,19 @@
     "promoter_window_bp": 2000,
     "priority": ["promoter", "exonic", "intronic", "distal_intergenic"]
   },
-  "interpretation": "The top table is a provisional open-regulatory-region ranking, not a list of experimentally confirmed enhancers."
+  "interpretation": "The top table is a provisional open-regulatory-region ranking, not a list of experimentally confirmed enhancers.",
+  "result": {
+    "job_id": 62978649,
+    "tested_regions": 147359,
+    "eligible_regions": 21269,
+    "selected_regions": 1000,
+    "full_scored_sha256": "bb46032fa97bc327ee446185ea03699272af1c7c2a47415e7727524f59f9c844",
+    "evidence": [
+      "reports/phase3/candidate_ranking/candidate_ranking_summary.json",
+      "reports/phase3/candidate_ranking/top_1000_candidates.tsv.gz",
+      "reports/phase3/candidate_ranking/top_1000_candidates.bed",
+      "reports/phase3/candidate_ranking_review.md"
+    ]
+  },
+  "next_gate": "BLOCK_VARIANT_GENERATION_PENDING_PARENT_SEQUENCE_AND_PREDICTION_QC"
 }

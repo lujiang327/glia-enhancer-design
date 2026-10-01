@@ -219,3 +219,15 @@ Candidate ranking must retain primary FDR/effect size, all-donor direction,
 all pairwise off-target effects, target/off-target accessibility, and glial
 leave-one-donor-out stability. This decision does not label selected regions as
 confirmed enhancers and does not yet authorize sequence optimization.
+
+## Candidate-ranking decision
+
+Great Lakes job `62978649` scored the complete tested universe and produced a
+provisional top 1,000 from 21,269 eligible regions. Structural and scientific
+review passed. The selected set contains 501 distal-intergenic, 420 intronic,
+43 exonic, and 36 promoter regions. All selected regions are positive in every
+full-model pairwise contrast and in every glial leave-one-donor-out refit.
+
+The decision is **GO for frozen-model parent-sequence scoring with caveats**.
+See `candidate_ranking_review.md` and `candidate_ranking/`. Variant generation
+remains blocked until sequence extraction and parent-prediction QC pass.

@@ -78,7 +78,7 @@
   "primary_model": "edgeR_quasi_likelihood",
   "design": "donor_blocked",
   "differential_accessibility_contract": "config/phase3_differential_accessibility.json",
-  "candidate_selection_status": "GO_FOR_CANDIDATE_RANKING_WITH_CAVEATS",
+  "candidate_selection_status": "PROVISIONAL_TOP_1000_ACCEPTED_FOR_CHROMBPNET_PARENT_SCORING",
   "differential_model_qc": {
     "status": "pass_for_candidate_ranking_with_caveats",
     "tested_peaks": 147359,
