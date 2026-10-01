@@ -1,5 +1,5 @@
 {
-  "status": "READY_TO_RUN_AFTER_CANDIDATE_RANKING_PASS",
+  "status": "PASS_FOR_DUAL_ORIENTATION_ATTRIBUTION_WITH_CAVEATS",
   "candidate_table": "reports/phase3/candidate_ranking/top_1000_candidates.tsv.gz",
   "reference_fasta": "data/raw/reference/hg38.canonical.fa",
   "reference_sha256": "fb96c995cd3a4b40b73873ff33ff885dd32da7e1b5490481aa4cc3a264965cf1",
@@ -16,5 +16,25 @@
     "parent_profiles.h5",
     "parent_scoring_summary.json"
   ],
-  "next_gate": "BLOCK_VARIANT_GENERATION_PENDING_PARENT_PREDICTION_QC"
+  "result": {
+    "job_id": 62992460,
+    "candidates": 1000,
+    "parent_sequences_with_invalid_bases": 0,
+    "model_inputs_with_invalid_bases": 1,
+    "prediction_observed_pearsonr": 0.3664630469,
+    "prediction_observed_spearmanr": 0.3882755923,
+    "forward_reverse_logcount_pearsonr": 0.6568605653,
+    "median_absolute_orientation_logcount_delta": 0.5788769722,
+    "candidates_orientation_delta_gt_1": 239,
+    "candidates_mean_logcount_lte_4": 11,
+    "profile_h5_sha256": "1a019a7d08a0d67979c05db4ab24da631aa36cd1dd69fce1526313296db24aea",
+    "evidence": [
+      "reports/phase4/parent_scoring/parent_predictions.tsv.gz",
+      "reports/phase4/parent_scoring/parent_scoring_summary.json",
+      "reports/phase4/parent_scoring_review.md"
+    ]
+  },
+  "attribution_policy": "forward_and_reverse_complement_scored_separately_then_aligned_and_averaged",
+  "library_annotation_requirement": "Add repeat-overlap and mappability flags before final oligo selection.",
+  "next_gate": "BLOCK_VARIANT_GENERATION_PENDING_DUAL_ORIENTATION_ATTRIBUTION_QC"
 }

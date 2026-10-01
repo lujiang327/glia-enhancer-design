@@ -1,0 +1,61 @@
+{
+  "status": "PARENT_PREDICTIONS_READY_FOR_QC",
+  "candidates": 1000,
+  "model_input_length": 2114,
+  "model_output_length": 1000,
+  "model_output_names": [
+    "wo_bias_bpnet_logits_profile_predictions",
+    "wo_bias_bpnet_logcount_predictions"
+  ],
+  "parent_sequence_length": 500,
+  "parents_with_invalid_bases": 0,
+  "inputs_with_invalid_bases": 1,
+  "total_parent_invalid_bases": 0,
+  "total_input_invalid_bases": 3,
+  "prediction_vs_observed_muller_accessibility": {
+    "pearsonr": 0.36646304687761394,
+    "spearmanr": 0.38827559227559233,
+    "scope": "Association screen on selected candidates, not held-out model evaluation."
+  },
+  "reverse_complement_consistency": {
+    "logcount_pearsonr": 0.6568605653423896,
+    "absolute_logcount_delta_quantiles": {
+      "0": 5.7220458984375e-06,
+      "0.01": 0.006656594276428222,
+      "0.05": 0.051569914817810064,
+      "0.25": 0.2580893039703369,
+      "0.5": 0.5788769721984863,
+      "0.75": 0.9548013210296631,
+      "0.95": 1.781996846199035,
+      "0.99": 2.4164507341384884,
+      "1": 4.309244871139526
+    },
+    "profile_jsd_quantiles": {
+      "0": 0.009026307230858066,
+      "0.01": 0.009853632524624158,
+      "0.05": 0.010818842085565184,
+      "0.25": 0.013170453449063979,
+      "0.5": 0.015524693848959714,
+      "0.75": 0.019207271722881947,
+      "0.95": 0.030915307299236125,
+      "0.99": 0.048518496963420636,
+      "1": 0.08911109768310155
+    }
+  },
+  "mean_logcount_quantiles": {
+    "0": -0.03927462548017502,
+    "0.01": 3.996306048631668,
+    "0.05": 4.885098934173584,
+    "0.25": 6.063379168510437,
+    "0.5": 6.729906797409058,
+    "0.75": 7.329475820064545,
+    "0.95": 8.040847027301789,
+    "0.99": 8.446580774784088,
+    "1": 8.994592189788818
+  },
+  "outputs": {
+    "table": "/workspace/data/intermediate/phase4_parent_scoring_job_62992460/parent_predictions.tsv.gz",
+    "profiles": "/workspace/data/intermediate/phase4_parent_scoring_job_62992460/parent_profiles.h5"
+  },
+  "next_gate": "BLOCK_VARIANT_GENERATION_PENDING_PARENT_PREDICTION_QC"
+}
