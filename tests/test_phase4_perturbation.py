@@ -1,0 +1,40 @@
+from pathlib import Path
+import sys
+import unittest
+
+import numpy as np
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
+from run_phase4_perturbation_pilot import nominate_edits, reverse_complement_one_hot, select_spaced
+
+
+class Phase4Perturbation(unittest.TestCase):
+    def test_select_spaced_prefers_score_then_position(self):
+        records = [
+            {"nomination_score": 3, "parent_position_0based": 10},
+            {"nomination_score": 2, "parent_position_0based": 12},
+            {"nomination_score": 1, "parent_position_0based": 20},
+        ]
+        selected = select_spaced(records, 2, 5)
+        self.assertEqual([value["parent_position_0based"] for value in selected], [10, 20])
+
+    def test_nomination_uses_only_parent_slice_and_alt_alleles(self):
+        sequence = np.zeros((8, 4), dtype=np.int8)
+        sequence[:, 0] = 1
+        counts = np.zeros((8, 4), dtype=float)
+        profile = np.zeros((8, 4), dtype=float)
+        for position in range(2, 6):
+            counts[position] = [0, position, -position, 0.5]
+        edits = nominate_edits(sequence, counts, profile, 2, 6, 2, 2, 1)
+        self.assertEqual(len(edits), 4)
+        self.assertTrue(all(0 <= value["parent_position_0based"] < 4 for value in edits))
+        self.assertTrue(all(value["ref"] != value["alt"] for value in edits))
+        self.assertEqual({value["design_class"] for value in edits}, {"gain", "loss_control"})
+
+    def test_reverse_complement_round_trip(self):
+        values = np.arange(2 * 7 * 4).reshape(2, 7, 4)
+        self.assertTrue(np.array_equal(reverse_complement_one_hot(reverse_complement_one_hot(values)), values))
+
+
+if __name__ == "__main__":
+    unittest.main()

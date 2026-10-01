@@ -1,0 +1,21 @@
+{
+  "status": "READY_TO_RUN",
+  "candidate_qc": "reports/phase4/attribution/attribution_qc.tsv.gz",
+  "attribution_h5": "phase4_attribution/dual_orientation_attributions.h5",
+  "attribution_h5_sha256": "78d7a6e6c5b875b00de33449131cdd30bbd172e68b791408b4ac114fba4e1b95",
+  "reference_fasta": "data/raw/reference/hg38.canonical.fa",
+  "reference_sha256": "fb96c995cd3a4b40b73873ff33ff885dd32da7e1b5490481aa4cc3a264965cf1",
+  "model": "models/chrombpnet/fold_0/seed_42_neg1/models/muller_chrombpnet_nobias.h5",
+  "model_sha256": "687befaa442fccae8896326acc884f9578cba5c5d2dd92412aa97f437384e80f",
+  "pilot_parents": 100,
+  "gain_substitutions_per_parent": 5,
+  "loss_control_substitutions_per_parent": 5,
+  "minimum_spacing_bp_within_class": 5,
+  "model_input_bp": 2114,
+  "parent_sequence_bp": 500,
+  "parent_slice_zero_based_half_open": [807, 1307],
+  "batch_size": 128,
+  "acceptance_policy": "direct model effect must have intended sign in both forward and reverse-complement orientations",
+  "off_target_sequence_score": "unavailable; retain Phase 3 observed specificity metrics",
+  "next_gate": "REVIEW_PILOT_CALIBRATION_BEFORE_FULL_VARIANT_DESIGN"
+}
