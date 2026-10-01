@@ -1,0 +1,17 @@
+{
+  "status": "READY_TO_RUN_AFTER_PARENT_PREDICTION_QC",
+  "candidates": "reports/phase4/parent_scoring/parent_predictions.tsv.gz",
+  "reference_fasta": "data/raw/reference/hg38.canonical.fa",
+  "reference_sha256": "fb96c995cd3a4b40b73873ff33ff885dd32da7e1b5490481aa4cc3a264965cf1",
+  "model": "models/chrombpnet/fold_0/seed_42_neg1/models/muller_chrombpnet_nobias.h5",
+  "model_sha256": "687befaa442fccae8896326acc884f9578cba5c5d2dd92412aa97f437384e80f",
+  "model_input_bp": 2114,
+  "parent_sequence_bp": 500,
+  "parent_slice_zero_based_half_open": [807, 1307],
+  "heads": ["counts", "profile"],
+  "orientations": ["forward", "reverse_complement_aligned"],
+  "consensus": "arithmetic mean of forward and aligned reverse-complement hypothetical scores",
+  "agreement_scope": "projected basewise attribution within the 500-bp parent",
+  "parent_count_orientation_flag_threshold": 1.0,
+  "next_gate": "BLOCK_VARIANT_GENERATION_PENDING_DUAL_ORIENTATION_ATTRIBUTION_QC"
+}
