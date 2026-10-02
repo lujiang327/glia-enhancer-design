@@ -91,9 +91,32 @@ def sha256_text(value):
     return hashlib.sha256(value.encode("ascii")).hexdigest()
 
 
+def load_pilot_candidates(qc_path, parents_path, count):
+    import pandas as pd
+    qc = pd.read_csv(qc_path, sep="\t")
+    parents = pd.read_csv(parents_path, sep="\t")
+    keys = ["peak_id", "candidate_rank", "chrom", "start", "end"]
+    if qc["peak_id"].duplicated().any() or parents["peak_id"].duplicated().any():
+        raise ValueError("Duplicate parent identifiers")
+    candidates = qc.merge(
+        parents[keys + ["parent_sequence", "parent_sequence_sha256"]],
+        on=keys, how="left", validate="one_to_one",
+    )
+    if candidates["parent_sequence"].isna().any():
+        raise ValueError("QC rows do not match parent identifiers and coordinates")
+    for row in candidates.itertuples(index=False):
+        if sha256_text(row.parent_sequence) != row.parent_sequence_sha256:
+            raise ValueError("Parent sequence checksum mismatch for {}".format(row.peak_id))
+    pilot = candidates[candidates["attribution_qc_pass"]].sort_values("candidate_rank").head(count).copy()
+    if len(pilot) != count:
+        raise ValueError("Insufficient attribution-passing parents for pilot")
+    return pilot
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--candidate-qc", required=True, type=Path)
+    parser.add_argument("--parents", required=True, type=Path)
     parser.add_argument("--attributions", required=True, type=Path)
     parser.add_argument("--model", required=True, type=Path)
     parser.add_argument("--config", required=True, type=Path)
@@ -109,12 +132,7 @@ def main():
     from tensorflow.keras.utils import get_custom_objects
 
     config = json.loads(args.config.read_text())
-    candidates = pd.read_csv(args.candidate_qc, sep="\t")
-    pilot = candidates[candidates["attribution_qc_pass"]].sort_values("candidate_rank").head(
-        int(config["pilot_parents"])
-    ).copy()
-    if len(pilot) != int(config["pilot_parents"]):
-        raise ValueError("Insufficient attribution-passing parents for pilot")
+    pilot = load_pilot_candidates(args.candidate_qc, args.parents, int(config["pilot_parents"]))
 
     with h5py.File(args.attributions, "r") as handle:
         h5_ids = [value.decode() if isinstance(value, bytes) else str(value) for value in handle["peak_id"][:]]

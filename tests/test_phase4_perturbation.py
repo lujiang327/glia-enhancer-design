@@ -5,10 +5,21 @@ import unittest
 import numpy as np
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
-from run_phase4_perturbation_pilot import nominate_edits, reverse_complement_one_hot, select_spaced
+from run_phase4_perturbation_pilot import load_pilot_candidates, nominate_edits, reverse_complement_one_hot, select_spaced
 
 
 class Phase4Perturbation(unittest.TestCase):
+    def test_real_qc_joins_verified_parent_sequences(self):
+        root = Path(__file__).resolve().parents[1]
+        pilot = load_pilot_candidates(
+            root / "reports/phase4/attribution/attribution_qc.tsv.gz",
+            root / "reports/phase4/parent_scoring/parent_predictions.tsv.gz", 100,
+        )
+        self.assertEqual(len(pilot), 100)
+        self.assertTrue(pilot.attribution_qc_pass.all())
+        self.assertTrue((pilot.parent_sequence.str.len() == 500).all())
+        self.assertEqual(pilot.candidate_rank.max(), 104)
+
     def test_select_spaced_prefers_score_then_position(self):
         records = [
             {"nomination_score": 3, "parent_position_0based": 10},

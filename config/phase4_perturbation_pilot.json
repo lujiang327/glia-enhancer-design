@@ -1,6 +1,14 @@
 {
-  "status": "READY_TO_RUN",
+  "status": "READY_TO_RERUN_AFTER_PARENT_INPUT_FIX",
+  "failed_attempt": {
+    "job_id": 63001997,
+    "exit_code": "1:0",
+    "elapsed": "00:00:36",
+    "failure": "QC table lacks parent_sequence; fixed by joining checksum-verified parent predictions on identifier and genomic coordinates",
+    "variant_predictions_produced": false
+  },
   "candidate_qc": "reports/phase4/attribution/attribution_qc.tsv.gz",
+  "parent_predictions": "reports/phase4/parent_scoring/parent_predictions.tsv.gz",
   "attribution_h5": "phase4_attribution/dual_orientation_attributions.h5",
   "attribution_h5_sha256": "78d7a6e6c5b875b00de33449131cdd30bbd172e68b791408b4ac114fba4e1b95",
   "reference_fasta": "data/raw/reference/hg38.canonical.fa",

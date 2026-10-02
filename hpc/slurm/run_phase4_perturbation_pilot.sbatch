@@ -19,11 +19,12 @@ output_dir="$scratch_root/phase4_perturbation_pilot"
 work_dir="data/intermediate/phase4_perturbation_pilot_job_${SLURM_JOB_ID}"
 model="models/chrombpnet/fold_0/seed_42_neg1/models/muller_chrombpnet_nobias.h5"
 candidate_qc="reports/phase4/attribution/attribution_qc.tsv.gz"
+parents="reports/phase4/parent_scoring/parent_predictions.tsv.gz"
 
 cd "$project_root"
 module load singularity
 mkdir -p logs/slurm
-for path in "$attribution_source" "$model" "$candidate_qc" config/phase4_perturbation_pilot.json; do
+for path in "$attribution_source" "$model" "$candidate_qc" "$parents" config/phase4_perturbation_pilot.json; do
   [[ -s "$path" ]] || { echo "Missing perturbation input: $path" >&2; exit 1; }
 done
 [[ ! -e "$output_dir" ]] || { echo "Refusing to overwrite: $output_dir" >&2; exit 1; }
@@ -40,12 +41,13 @@ cp "$attribution_source" "$work_dir/dual_orientation_attributions.h5"
   echo "node=$HOSTNAME"
   singularity --version
   nvidia-smi --query-gpu=name,driver_version,memory.total --format=csv,noheader
-  sha256sum containers/chrombpnet-upstream-20260914.sif "$attribution_source" "$model" "$candidate_qc"
+  sha256sum containers/chrombpnet-upstream-20260914.sif "$attribution_source" "$model" "$candidate_qc" "$parents"
 } > "$output_dir.runtime/runtime.txt"
 
 hpc/run_chrombpnet_container.sh --gpu \
   python scripts/run_phase4_perturbation_pilot.py \
   --candidate-qc "/workspace/$candidate_qc" \
+  --parents "/workspace/$parents" \
   --attributions "/workspace/$work_dir/dual_orientation_attributions.h5" \
   --model "/workspace/$model" \
   --config /workspace/config/phase4_perturbation_pilot.json \
