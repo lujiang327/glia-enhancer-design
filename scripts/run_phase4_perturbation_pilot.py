@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
-"""Nominate and directly score dual-orientation single-base perturbations."""
+"""Nominate and directly score dual-orientation single-base perturbations.
+
+The pilot and full scan share this implementation; scope comes from config.
+"""
 
 import argparse
 import hashlib
@@ -91,6 +94,10 @@ def sha256_text(value):
     return hashlib.sha256(value.encode("ascii")).hexdigest()
 
 
+def edit_screen_pass(minimum_effect, forward_jsd, reverse_jsd, min_effect, max_jsd):
+    return (minimum_effect >= min_effect) & (forward_jsd <= max_jsd) & (reverse_jsd <= max_jsd)
+
+
 def load_pilot_candidates(qc_path, parents_path, count):
     import pandas as pd
     qc = pd.read_csv(qc_path, sep="\t")
@@ -132,21 +139,29 @@ def main():
     from tensorflow.keras.utils import get_custom_objects
 
     config = json.loads(args.config.read_text())
-    pilot = load_pilot_candidates(args.candidate_qc, args.parents, int(config["pilot_parents"]))
+    parent_count = int(config.get("parent_count", config.get("pilot_parents", 100)))
+    pilot = load_pilot_candidates(args.candidate_qc, args.parents, parent_count)
 
     with h5py.File(args.attributions, "r") as handle:
         h5_ids = [value.decode() if isinstance(value, bytes) else str(value) for value in handle["peak_id"][:]]
         h5_index = {value: index for index, value in enumerate(h5_ids)}
         indices = np.asarray([h5_index[value] for value in pilot["peak_id"]], dtype=int)
+        if len(h5_index) != len(h5_ids):
+            raise ValueError("Duplicate attribution identifiers")
         sequences = handle["sequence_one_hot"][indices].astype(np.int8)
         count_hypothetical = handle["counts/consensus_hypothetical"][indices].astype(np.float32)
         profile_hypothetical = handle["profile/consensus_hypothetical"][indices].astype(np.float32)
+    if not np.all(sequences.sum(axis=2) == 1):
+        raise ValueError("Selected model inputs contain ambiguous bases")
+    if not np.isfinite(count_hypothetical).all() or not np.isfinite(profile_hypothetical).all():
+        raise ValueError("Non-finite hypothetical attribution")
 
     parent_start, parent_end = config["parent_slice_zero_based_half_open"]
     edit_rows = []
     model_inputs = []
     sequence_ids = []
     parent_input_index = {}
+    nomination_rows = []
     for local_index, row in enumerate(pilot.itertuples(index=False)):
         parent_one_hot = sequences[local_index]
         parent_sequence = "".join(BASES[index] for index in parent_one_hot[parent_start:parent_end].argmax(axis=1))
@@ -162,8 +177,14 @@ def main():
             int(config["minimum_spacing_bp_within_class"]),
         )
         expected = int(config["gain_substitutions_per_parent"]) + int(config["loss_control_substitutions_per_parent"])
-        if len(edits) != expected:
+        if len(edits) != expected and not config.get("allow_incomplete_nominations", False):
             raise ValueError("Could not nominate {} edits for {}".format(expected, row.peak_id))
+        nomination_rows.append({
+            "candidate_rank": row.candidate_rank, "peak_id": row.peak_id,
+            "gain_nominated": sum(edit["design_class"] == "gain" for edit in edits),
+            "loss_control_nominated": sum(edit["design_class"] == "loss_control" for edit in edits),
+            "nomination_complete": len(edits) == expected,
+        })
         for edit_number, edit in enumerate(edits, 1):
             position = int(edit["parent_position_0based"])
             if parent_sequence[position] != edit["ref"]:
@@ -184,6 +205,8 @@ def main():
                 "genomic_class": row.genomic_class, "ranking_score": row.ranking_score,
                 "muller_mean_cpm": row.muller_mean_cpm,
                 "observed_specificity_log2_ratio": row.observed_specificity_log2_ratio,
+                "parent_count_orientation_flag": row.parent_count_orientation_flag,
+                "variant_off_target_specificity_prediction_available": False,
                 "parent_sequence": parent_sequence, "parent_sequence_sha256": sha256_text(parent_sequence),
                 "variant_id": variant_id, "variant_sequence": variant_sequence,
                 "variant_sequence_sha256": sha256_text(variant_sequence),
@@ -212,6 +235,14 @@ def main():
         forward_profiles, reverse_profiles, forward_counts, reverse_counts
     )):
         raise ValueError("Non-finite model predictions")
+    for row in pilot.itertuples(index=False):
+        i = parent_input_index[row.peak_id]
+        if not np.isclose((forward_counts[i] + reverse_counts[i]) / 2,
+                          row.chrombpnet_mean_logcount, atol=1e-5, rtol=0):
+            raise ValueError("Rescored parent differs from frozen baseline for {}".format(row.peak_id))
+
+    if not edit_rows:
+        raise ValueError("No substitutions nominated; preserve failed run for review")
 
     results = pd.DataFrame(edit_rows)
     metrics = []
@@ -243,14 +274,23 @@ def main():
     results["mean_profile_jsd_vs_parent"] = (
         results["forward_profile_jsd_vs_parent"] + results["reverse_profile_jsd_vs_parent"]
     ) / 2
+    if "edit_screen" in config:
+        screen = config["edit_screen"]
+        results["edit_screen_pass"] = edit_screen_pass(
+            results["robust_effect_lower_bound"], results["forward_profile_jsd_vs_parent"],
+            results["reverse_profile_jsd_vs_parent"],
+            float(screen["minimum_intended_logcount_effect_each_orientation"]),
+            float(screen["maximum_profile_jsd_vs_parent_each_orientation"]),
+        )
     results = results.sort_values(
         ["design_class", "robust_effect_lower_bound", "candidate_rank"], ascending=[True, False, True]
     )
 
     args.output_dir.mkdir(parents=True, exist_ok=False)
-    table_path = args.output_dir / "perturbation_pilot.tsv.gz"
+    prefix = config.get("output_prefix", "perturbation_pilot")
+    table_path = args.output_dir / (prefix + ".tsv.gz")
     results.to_csv(table_path, sep="\t", index=False, compression="gzip")
-    profile_path = args.output_dir / "perturbation_pilot_profiles.h5"
+    profile_path = args.output_dir / (prefix + "_profiles.h5")
     string_type = h5py.string_dtype(encoding="utf-8")
     with h5py.File(profile_path, "w") as handle:
         handle.create_dataset("sequence_id", data=np.asarray(sequence_ids, dtype=object), dtype=string_type)
@@ -267,15 +307,27 @@ def main():
             "median_robust_effect_lower_bound": float(group["robust_effect_lower_bound"].median()),
             "median_profile_jsd_vs_parent": float(group["mean_profile_jsd_vs_parent"].median()),
         }
+        if "edit_screen_pass" in group:
+            passing = group[group["edit_screen_pass"]]
+            by_class[design_class]["screen_pass_variants"] = int(len(passing))
+            by_class[design_class]["screen_pass_parents"] = int(passing["peak_id"].nunique())
+    coverage = pd.DataFrame(nomination_rows)
+    if "edit_screen_pass" in results:
+        for design_class in ("gain", "loss_control"):
+            passing = results[(results["design_class"] == design_class) & results["edit_screen_pass"]]
+            coverage[design_class + "_screen_pass"] = coverage["peak_id"].map(passing.groupby("peak_id").size()).fillna(0).astype(int)
+    coverage_path = args.output_dir / (prefix + "_parent_coverage.tsv.gz")
+    coverage.to_csv(coverage_path, sep="\t", index=False, compression="gzip")
     summary = {
-        "status": "PERTURBATION_PILOT_READY_FOR_REVIEW",
+        "status": config.get("result_status", "PERTURBATION_PILOT_READY_FOR_REVIEW"),
         "parents": int(len(pilot)), "variants": int(len(results)),
         "model_sequences_scored_per_orientation": int(len(inputs)),
         "by_design_class": by_class,
-        "outputs": {"table": str(table_path), "profiles": str(profile_path)},
+        "parents_with_incomplete_nominations": int((~coverage["nomination_complete"]).sum()),
+        "outputs": {"table": str(table_path), "profiles": str(profile_path), "coverage": str(coverage_path)},
         "next_gate": config["next_gate"],
     }
-    (args.output_dir / "perturbation_pilot_summary.json").write_text(json.dumps(summary, indent=2) + "\n")
+    (args.output_dir / (prefix + "_summary.json")).write_text(json.dumps(summary, indent=2) + "\n")
     print(json.dumps(summary, indent=2))
 
 

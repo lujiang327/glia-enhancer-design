@@ -5,10 +5,27 @@ import unittest
 import numpy as np
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
-from run_phase4_perturbation_pilot import load_pilot_candidates, nominate_edits, reverse_complement_one_hot, select_spaced
+from run_phase4_perturbation_pilot import edit_screen_pass, load_pilot_candidates, nominate_edits, reverse_complement_one_hot, select_spaced
 
 
 class Phase4Perturbation(unittest.TestCase):
+    def test_full_scan_selects_all_eligible_parents(self):
+        root = Path(__file__).resolve().parents[1]
+        parents = load_pilot_candidates(
+            root / "reports/phase4/attribution/attribution_qc.tsv.gz",
+            root / "reports/phase4/parent_scoring/parent_predictions.tsv.gz", 947,
+        )
+        self.assertEqual(len(parents), 947)
+        self.assertEqual(parents.peak_id.nunique(), 947)
+        self.assertTrue(parents.attribution_qc_pass.all())
+
+    def test_screen_requires_effect_and_both_profile_limits(self):
+        effect = np.array([.1, -.1, .2, .2, .099])
+        forward = np.array([.05, 0, .051, 0, 0])
+        reverse = np.array([.05, 0, 0, .051, 0])
+        self.assertEqual(edit_screen_pass(effect, forward, reverse, .1, .05).tolist(),
+                         [True, False, False, False, False])
+
     def test_real_qc_joins_verified_parent_sequences(self):
         root = Path(__file__).resolve().parents[1]
         pilot = load_pilot_candidates(
