@@ -1,0 +1,25 @@
+{
+  "status": "READY_TO_DOWNLOAD_AND_ANNOTATE",
+  "assembly": "hg38",
+  "parents": "reports/phase4/parent_scoring/parent_predictions.tsv.gz",
+  "edits": "reports/phase4/perturbation_full/best_passing_single_edits.tsv.gz",
+  "reference_fai": "data/raw/reference/hg38.canonical.fa.fai",
+  "assets_directory": "data/raw/phase4_annotation",
+  "assets": [
+    {"name": "rmsk.txt.gz", "url": "https://hgdownload.soe.ucsc.edu/goldenPath/hg38/database/rmsk.txt.gz"},
+    {"name": "rmsk.sql", "url": "https://hgdownload.soe.ucsc.edu/goldenPath/hg38/database/rmsk.sql"},
+    {"name": "k50.Umap.MultiTrackMappability.bw", "url": "https://hgdownload.soe.ucsc.edu/gbdb/hg38/hoffmanMappability/k50.Umap.MultiTrackMappability.bw"},
+    {"name": "k100.Umap.MultiTrackMappability.bw", "url": "https://hgdownload.soe.ucsc.edu/gbdb/hg38/hoffmanMappability/k100.Umap.MultiTrackMappability.bw"}
+  ],
+  "mappability": {
+    "kind": "Umap multi-read, unconverted genome",
+    "read_lengths_bp": [50, 100],
+    "omitted_interval_value": 0,
+    "scope": "natural reference locus; no designed-variant mappability prediction",
+    "not_equivalent_to": "paired-end ATAC alignment quality with actual read lengths and aligner settings"
+  },
+  "repeat_overlap_policy": "union of clipped repeat intervals; preserve all repeat names/classes/families and edit-base context",
+  "selection_policy": "annotation only; no automatic repeat or mappability exclusions",
+  "provenance_policy": "first download records observed SHA256 and HTTP metadata; subsequent use verifies the saved hashes",
+  "next_gate": "REVIEW_LOCUS_ANNOTATIONS_BEFORE_LIBRARY_SELECTION"
+}
