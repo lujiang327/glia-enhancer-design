@@ -1,0 +1,29 @@
+{
+  "status": "PERTURBATION_PILOT_READY_FOR_REVIEW",
+  "parents": 100,
+  "variants": 1000,
+  "model_sequences_scored_per_orientation": 1100,
+  "by_design_class": {
+    "gain": {
+      "variants": 500,
+      "intended_effect_both_orientations": 395,
+      "intended_effect_fraction": 0.79,
+      "median_delta_mean_logcount": 0.2532515525817871,
+      "median_robust_effect_lower_bound": 0.16251754760742188,
+      "median_profile_jsd_vs_parent": 0.0010374303248394945
+    },
+    "loss_control": {
+      "variants": 500,
+      "intended_effect_both_orientations": 494,
+      "intended_effect_fraction": 0.988,
+      "median_delta_mean_logcount": -0.7003062963485718,
+      "median_robust_effect_lower_bound": 0.5517088174819946,
+      "median_profile_jsd_vs_parent": 0.004815114138327692
+    }
+  },
+  "outputs": {
+    "table": "/workspace/data/intermediate/phase4_perturbation_pilot_job_63107642/output/perturbation_pilot.tsv.gz",
+    "profiles": "/workspace/data/intermediate/phase4_perturbation_pilot_job_63107642/output/perturbation_pilot_profiles.h5"
+  },
+  "next_gate": "REVIEW_PILOT_CALIBRATION_BEFORE_FULL_VARIANT_DESIGN"
+}

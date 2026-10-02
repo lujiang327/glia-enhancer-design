@@ -1,0 +1,31 @@
+{
+  "status": "GO_FOR_SCALED_SINGLE_BASE_NOMINATION_AND_DIRECT_RESCORING",
+  "parents": 100,
+  "variants": 1000,
+  "min_effect_each_orientation": 0.1,
+  "max_profile_jsd_each_orientation": 0.05,
+  "by_design_class": {
+    "gain": {
+      "variants": 500,
+      "intended_effect_both_orientations": 395,
+      "screen_pass_variants": 319,
+      "screen_pass_parents": 100,
+      "median_delta_mean_logcount": 0.2532515525817871,
+      "median_robust_effect_lower_bound": 0.16251754760742185,
+      "nomination_direct_effect_spearman": 0.19712950060240617,
+      "forward_reverse_effect_pearson": 0.6415365717806057,
+      "profile_jsd_failures": 0
+    },
+    "loss_control": {
+      "variants": 500,
+      "intended_effect_both_orientations": 494,
+      "screen_pass_variants": 475,
+      "screen_pass_parents": 100,
+      "median_delta_mean_logcount": -0.7003062963485718,
+      "median_robust_effect_lower_bound": 0.5517088174819946,
+      "nomination_direct_effect_spearman": 0.7287845460464961,
+      "forward_reverse_effect_pearson": 0.7107651909303855,
+      "profile_jsd_failures": 0
+    }
+  }
+}

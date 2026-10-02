@@ -1,5 +1,5 @@
 {
-  "status": "READY_TO_RERUN_AFTER_PARENT_INPUT_FIX",
+  "status": "GO_FOR_SCALED_SINGLE_BASE_NOMINATION_AND_DIRECT_RESCORING",
   "failed_attempt": {
     "job_id": 63001997,
     "exit_code": "1:0",
@@ -21,9 +21,31 @@
   "minimum_spacing_bp_within_class": 5,
   "model_input_bp": 2114,
   "parent_sequence_bp": 500,
-  "parent_slice_zero_based_half_open": [807, 1307],
+  "parent_slice_zero_based_half_open": [
+    807,
+    1307
+  ],
   "batch_size": 128,
   "acceptance_policy": "direct model effect must have intended sign in both forward and reverse-complement orientations",
   "off_target_sequence_score": "unavailable; retain Phase 3 observed specificity metrics",
-  "next_gate": "REVIEW_PILOT_CALIBRATION_BEFORE_FULL_VARIANT_DESIGN"
+  "next_gate": "SCALE_SINGLE_BASE_NOMINATION_AND_DIRECT_RESCORING_TO_947_PARENTS",
+  "result": {
+    "job_id": 63107642,
+    "elapsed": "00:00:57",
+    "max_rss_kb": 10893324,
+    "parents": 100,
+    "variants": 1000,
+    "gain_both_orientation_sign_pass": 395,
+    "loss_control_both_orientation_sign_pass": 494,
+    "gain_screen_pass": 319,
+    "loss_control_screen_pass": 475,
+    "screen_pass_parents_each_class": 100,
+    "nomination_direct_gain_spearman": 0.1971295006,
+    "nomination_direct_loss_spearman": 0.728784546
+  },
+  "review_screen": {
+    "minimum_intended_logcount_effect_each_orientation": 0.1,
+    "maximum_profile_jsd_vs_parent_each_orientation": 0.05,
+    "threshold_scope": "project screening choices made during pilot review"
+  }
 }
