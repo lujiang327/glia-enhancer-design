@@ -18,7 +18,7 @@
   ],
   "batch_size": 128,
   "off_target_sequence_score": "unavailable; retain Phase 3 observed specificity metrics",
-  "status": "READY_TO_RUN_AFTER_PILOT_REVIEW",
+  "status": "PASS_FOR_PROVISIONAL_EDIT_PRIORITIZATION_LIBRARY_ANNOTATION_PENDING",
   "parent_count": 947,
   "output_prefix": "perturbation_full",
   "result_status": "FULL_SINGLE_BASE_SCAN_READY_FOR_REVIEW",
@@ -29,5 +29,21 @@
     "threshold_scope": "project screening choices made during pilot review"
   },
   "pilot_evidence": "reports/phase4/perturbation_pilot_review.md",
-  "next_gate": "REVIEW_FULL_SCAN_AND_ANNOTATE_REPEATS_AND_MAPPABILITY_BEFORE_LIBRARY_SELECTION"
+  "next_gate": "ANNOTATE_REPEAT_OVERLAP_AND_MAPPABILITY_BEFORE_LIBRARY_SELECTION",
+  "result": {
+    "job_id": 63110459,
+    "elapsed": "00:02:05",
+    "max_rss_kb": 11675880,
+    "parents": 947,
+    "variants": 9470,
+    "gain_screen_pass": 3201,
+    "gain_screen_pass_parents": 938,
+    "loss_control_screen_pass": 4493,
+    "loss_control_screen_pass_parents": 946,
+    "parents_with_both": 938,
+    "repeated_pilot_variants": 1000,
+    "pilot_effect_max_absolute_difference": 0.0,
+    "profile_h5_sha256": "a05369c5773142f73a5037d9f365c1033284a873deb7f4406919c245e9271822",
+    "review": "reports/phase4/full_perturbation_review.md"
+  }
 }

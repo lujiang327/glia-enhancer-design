@@ -1,0 +1,36 @@
+{
+  "status": "PASS_FOR_PROVISIONAL_EDIT_PRIORITIZATION_LIBRARY_ANNOTATION_PENDING",
+  "parents": 947,
+  "variants": 9470,
+  "parents_with_passing_gain": 938,
+  "parents_with_passing_loss_control": 946,
+  "parents_with_both": 938,
+  "parents_without_gain": 9,
+  "parents_without_loss_control": 1,
+  "best_passing_edit_rows": 1884,
+  "repeated_pilot_variants": 1000,
+  "pilot_max_absolute_differences": {
+    "delta_forward_logcount": 0.0,
+    "delta_reverse_complement_logcount": 0.0,
+    "delta_mean_logcount": 0.0,
+    "forward_profile_jsd_vs_parent": 0.0,
+    "reverse_profile_jsd_vs_parent": 0.0
+  },
+  "by_design_class": {
+    "gain": {
+      "variants": 4735,
+      "screen_pass": 3201,
+      "median_delta_mean_logcount": 0.2909815311431885,
+      "nomination_direct_effect_spearman": 0.27710291551520566,
+      "profile_jsd_failures": 0
+    },
+    "loss_control": {
+      "variants": 4735,
+      "screen_pass": 4493,
+      "median_delta_mean_logcount": -0.7358834743499756,
+      "nomination_direct_effect_spearman": 0.6936895746031744,
+      "profile_jsd_failures": 5
+    }
+  },
+  "next_gate": "ANNOTATE_REPEAT_OVERLAP_AND_MAPPABILITY_BEFORE_LIBRARY_SELECTION"
+}

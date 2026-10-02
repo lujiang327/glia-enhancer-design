@@ -1,0 +1,35 @@
+{
+  "status": "FULL_SINGLE_BASE_SCAN_READY_FOR_REVIEW",
+  "parents": 947,
+  "variants": 9470,
+  "model_sequences_scored_per_orientation": 10417,
+  "by_design_class": {
+    "gain": {
+      "variants": 4735,
+      "intended_effect_both_orientations": 3847,
+      "intended_effect_fraction": 0.8124604012671595,
+      "median_delta_mean_logcount": 0.2909815311431885,
+      "median_robust_effect_lower_bound": 0.19117975234985352,
+      "median_profile_jsd_vs_parent": 0.001048095879495392,
+      "screen_pass_variants": 3201,
+      "screen_pass_parents": 938
+    },
+    "loss_control": {
+      "variants": 4735,
+      "intended_effect_both_orientations": 4649,
+      "intended_effect_fraction": 0.9818373812038015,
+      "median_delta_mean_logcount": -0.7358834743499756,
+      "median_robust_effect_lower_bound": 0.5833392143249512,
+      "median_profile_jsd_vs_parent": 0.004885162104984353,
+      "screen_pass_variants": 4493,
+      "screen_pass_parents": 946
+    }
+  },
+  "parents_with_incomplete_nominations": 0,
+  "outputs": {
+    "table": "/workspace/data/intermediate/phase4_perturbation_full_job_63110459/output/perturbation_full.tsv.gz",
+    "profiles": "/workspace/data/intermediate/phase4_perturbation_full_job_63110459/output/perturbation_full_profiles.h5",
+    "coverage": "/workspace/data/intermediate/phase4_perturbation_full_job_63110459/output/perturbation_full_parent_coverage.tsv.gz"
+  },
+  "next_gate": "REVIEW_FULL_SCAN_AND_ANNOTATE_REPEATS_AND_MAPPABILITY_BEFORE_LIBRARY_SELECTION"
+}
