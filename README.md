@@ -17,15 +17,28 @@ full project and its scientific validation gate.
 - Figures, measured tables, logs, pinned QC dependencies and five chromosome folds.
 - Verified reference and donor/pooled insertion tracks, 256,248 genome-wide
   training peaks and GC-matched backgrounds; all five input-integrity checks pass.
-- A fail-closed model-validation gate; later analyses are not implemented or run.
+- Bias and Müller glia ChromBPNet training, held-out prediction, attribution/motif
+  review, donor sensitivity and seed reproducibility assessments on Great Lakes.
+- Donor-aware differential accessibility and 1,000 ranked natural regulatory regions.
+- Dual-orientation parent scoring and attribution, direct single-base variant scoring,
+  repeat/mappability annotations and candidate-level motif attribution context.
+- A 2,884-insert experimental planning draft retaining 1,000 natural parents,
+  938 gain variants and 946 loss controls.
 
-No trained ChromBPNet checkpoint exists yet. Local training-input preparation is
-documented in [the preparation guide](docs/training_preparation.md). The GPU
-runtime, bias model and ChromBPNet fitting/validation remain separate next steps.
-See [the input-preparation report and GC plots](reports/preparation/README.md).
-Great Lakes runtime and bias-preparation commands are documented in
-[the HPC guide](hpc/README.md); private account and directory settings are never
-stored in its tracked scripts.
+Current scientific results are documented in the
+[training review](reports/training/README.md),
+[candidate-ranking review](reports/phase3/candidate_ranking_review.md) and
+[motif/attribution review](reports/phase5/motif_attribution_review.md).
+The [parent-centered experimental groups](reports/phase5/experimental_groups/README.md)
+organize the complete draft for assay planning. Variant off-target specificity,
+reporter performance and causal motif assignments remain unresolved. The draft is
+not a synthesis order: assay/vector, budget, insert constraints, adapters and
+barcode design are needed before final experimental selection.
+
+Reproduction begins with [the preparation guide](docs/training_preparation.md)
+and [input-preparation report](reports/preparation/README.md).
+Cluster instructions are in [the HPC guide](hpc/README.md); private account and
+directory settings remain excluded from tracked configuration.
 
 ## Mac to Great Lakes
 
@@ -37,9 +50,9 @@ Record the commit used for each training run.
 Private connection, account and directory settings are saved locally in
 `config/greatlakes.json`. This file is excluded from Git and must be synchronized
 manually between machines. Copy [the template](config/greatlakes.example.json)
-to that path when configuring a new checkout. Singularity 4.4.1 was
-confirmed by the user after `module load singularity`; the GPU training environment
-has not yet been validated. These settings do not submit jobs or provision resources.
+to that path when configuring a new checkout. The validated GPU runtime uses
+Singularity through `module load singularity` and the pinned container wrapper
+`hpc/run_chrombpnet_container.sh`. These settings do not submit jobs or provision resources.
 
 Git does not carry the ignored raw data, donor pseudobulks, local virtual environment,
 container images or checkpoints. Recreate/download large inputs from the manifests

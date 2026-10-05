@@ -1,0 +1,18 @@
+{
+  "status": "GROUPED_DRAFT_AWAITING_EXPERIMENTAL_PARAMETERS",
+  "parent_loci": 1000,
+  "unique_inserts": 2884,
+  "complete_triplets": 938,
+  "parent_and_gain_only": 0,
+  "parent_and_loss_control_only": 8,
+  "parent_only": 54,
+  "inserts_before_barcodes_and_adapters": 2884,
+  "required_inputs": [
+    "assay/vector",
+    "construct budget",
+    "insert-length constraints",
+    "cloning/adaptor sequences and prohibited sites",
+    "barcode and replicate design"
+  ],
+  "source_sha256": "0bb423946088c73d0012d523ed4c86c8eaf56ecff3711bd8fb8dca128d6b7b24"
+}
