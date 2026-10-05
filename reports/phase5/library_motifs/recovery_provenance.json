@@ -1,0 +1,12 @@
+{
+  "source_job": 63282882,
+  "source_job_state": "FAILED_POSTPROCESSING",
+  "source_revision": "3d2ccb2f231bac7e0ec16342e283b059fc6359c5",
+  "recovery": "local postprocessing of verified completed raw scan; no rescan",
+  "full_intermediate_outputs": {
+    "data/intermediate/phase5_library_motifs_recovered/fimo_hits.tsv": "834b2686c88caeff8335d17f7d5cef81899009ac52574138293349468bcb451a",
+    "data/intermediate/phase5_library_motifs_recovered/ranked_library_with_motif_matches.tsv.gz": "712fb5da783bca46225c1a460fd103bdf076ba6be43b1949d27df5c48c1255da",
+    "data/intermediate/phase5_library_motifs_recovered/annotated_motif_hits.tsv.gz": "1aec9bb106298b99506c8f1aa214fd427a7ba92659577b683a179285a3360e10",
+    "data/intermediate/phase5_library_motifs_recovered/motif_scan_summary.json": "8e4d256808b3e019bedea45286c7bcfb484a892704ba46a884453aae81c096ff"
+  }
+}

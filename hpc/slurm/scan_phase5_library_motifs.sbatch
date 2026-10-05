@@ -14,8 +14,12 @@ output_dir="${PHASE3_SCRATCH_ROOT:?Set scratch root}/phase5_library_motifs"
 staging_dir="data/intermediate/phase5_library_motifs_job_${SLURM_JOB_ID}"
 [[ ! -e "$output_dir" && ! -e "$staging_dir" ]] || { echo 'Output already exists' >&2; exit 1; }
 module load singularity
+reuse_args=()
+if [[ -n "${REUSE_FIMO_PATH:-}" ]]; then
+  reuse_args=(--reuse-fimo "$REUSE_FIMO_PATH" --reuse-fimo-sha256 "${REUSE_FIMO_SHA256:?Set preserved output hash}")
+fi
 hpc/run_chrombpnet_container.sh python -u scripts/scan_phase5_library_motifs.py \
-  --config config/phase5_library_motifs.json --output-dir "$staging_dir"
+  --config config/phase5_library_motifs.json --output-dir "$staging_dir" "${reuse_args[@]}"
 {
   date --iso-8601=seconds
   echo "git_commit=$(git rev-parse HEAD)"

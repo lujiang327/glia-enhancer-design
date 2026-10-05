@@ -1,10 +1,11 @@
 import unittest
 from pathlib import Path
 import sys
+import tempfile
 import pandas as pd
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]/'scripts'))
 from assemble_phase5_library import assemble
-from scan_phase5_library_motifs import annotate_hits
+from scan_phase5_library_motifs import annotate_hits, read_fimo_hits
 
 
 class LibraryContract(unittest.TestCase):
@@ -44,6 +45,23 @@ class LibraryContract(unittest.TestCase):
         hits.loc[0, 'stop'] = 501
         with self.assertRaises(ValueError):
             annotate_hits(hits, library)
+
+    def test_legacy_and_modern_fimo_headers_preserve_first_match(self):
+        headers = ['#pattern name\tsequence name\tstart\tstop\tstrand\tscore\tp-value\tq-value\tmatched sequence',
+                   'motif_id\tsequence_name\tstart\tstop\tstrand\tscore\tp-value\tq-value\tmatched_sequence']
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory)/'fimo.tsv'
+            for header in headers:
+                path.write_text(header+'\nNFI\tv\t1\t3\t+\t8.1\t1e-5\t\tACT\n')
+                hits = read_fimo_hits(path)
+                self.assertEqual(len(hits), 1)
+                self.assertEqual(hits.iloc[0].motif_id, 'NFI')
+                self.assertEqual(hits.iloc[0].sequence_name, 'v')
+                path.write_text(header+'\n')
+                self.assertTrue(read_fimo_hits(path).empty)
+            path.write_text('unexpected\tcolumns\n')
+            with self.assertRaises(ValueError):
+                read_fimo_hits(path)
 
 if __name__ == '__main__':
     unittest.main()

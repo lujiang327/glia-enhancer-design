@@ -4,8 +4,22 @@ import argparse
 import hashlib
 import json
 import subprocess
+import shutil
 from pathlib import Path
 import pandas as pd
+
+
+def read_fimo_hits(path):
+    """Support legacy commented headers and current MEME TSV headers."""
+    with Path(path).open() as stream:
+        header = stream.readline().strip().lstrip('#').strip().split('\t')
+    aliases = {'pattern name': 'motif_id', 'sequence name': 'sequence_name',
+               'matched sequence': 'matched_sequence'}
+    names = [aliases.get(c, c) for c in header]
+    required = {'motif_id', 'sequence_name', 'start', 'stop', 'strand', 'score', 'p-value'}
+    if not required.issubset(names) or len(names) != len(set(names)):
+        raise ValueError('Unrecognized FIMO header: ' + repr(header))
+    return pd.read_csv(path, sep='\t', skiprows=1, names=names, comment='#')
 
 
 def annotate_hits(hits, library):
@@ -33,17 +47,32 @@ def main():
     p = argparse.ArgumentParser()
     p.add_argument('--config', type=Path, required=True)
     p.add_argument('--output-dir', type=Path, required=True)
+    p.add_argument('--reuse-fimo', type=Path)
+    p.add_argument('--reuse-fimo-sha256')
+    p.add_argument('--reuse-fimo-version', help='Verified source FIMO version for portable postprocessing')
     a = p.parse_args()
+    if bool(a.reuse_fimo) != bool(a.reuse_fimo_sha256):
+        p.error('--reuse-fimo and --reuse-fimo-sha256 must be supplied together')
+    if a.reuse_fimo_version and not a.reuse_fimo:
+        p.error('--reuse-fimo-version requires --reuse-fimo')
     cfg = json.loads(a.config.read_text())
     for name in ['motifs', 'library', 'fasta']:
         if hashlib.sha256(Path(cfg[name]).read_bytes()).hexdigest() != cfg[name+'_sha256']:
             raise ValueError('Pinned input hash mismatch: '+name)
     a.output_dir.mkdir(parents=True, exist_ok=False)
     cmd = ['fimo', '--text', '--thresh', str(cfg['p_value_threshold']), cfg['motifs'], cfg['fasta']]
-    with (a.output_dir/'fimo_hits.tsv').open('w') as out, (a.output_dir/'fimo.stderr.log').open('w') as err:
-        subprocess.run(cmd, stdout=out, stderr=err, check=True)
+    if a.reuse_fimo:
+        if hashlib.sha256(a.reuse_fimo.read_bytes()).hexdigest() != a.reuse_fimo_sha256:
+            raise ValueError('Preserved FIMO output hash mismatch')
+        shutil.copy2(a.reuse_fimo, a.output_dir/'fimo_hits.tsv')
+        log = a.reuse_fimo.parent/'fimo.stderr.log'
+        if log.exists():
+            shutil.copy2(log, a.output_dir/'fimo.stderr.log')
+    else:
+        with (a.output_dir/'fimo_hits.tsv').open('w') as out, (a.output_dir/'fimo.stderr.log').open('w') as err:
+            subprocess.run(cmd, stdout=out, stderr=err, check=True)
     library = pd.read_csv(cfg['library'], sep='\t')
-    hits = pd.read_csv(a.output_dir/'fimo_hits.tsv', sep='\t', comment='#')
+    hits = read_fimo_hits(a.output_dir/'fimo_hits.tsv')
     hits = annotate_hits(hits, library)
     hits.to_csv(a.output_dir/'annotated_motif_hits.tsv.gz', sep='\t', index=False)
     groups = {k: g for k, g in hits.groupby('sequence_name')}
@@ -68,8 +97,10 @@ def main():
     result['motif_evidence_status'] = 'FIMO sequence match only; per-site attribution not assessed'
     result.to_csv(a.output_dir/'ranked_library_with_motif_matches.tsv.gz', sep='\t', index=False)
     summary = dict(status='MOTIF_SCAN_COMPLETE_SCIENTIFIC_REVIEW_PENDING', sequences=len(result), hits=len(hits),
-                   command=cmd, fimo_version=subprocess.check_output(['fimo', '--version'], text=True).strip(),
+                   command=cmd, fimo_version=a.reuse_fimo_version or subprocess.check_output(['fimo', '--version'], text=True).strip(),
                    config=cfg, threshold_scope='nominal site p-value; no q-values in text mode',
+                   reused_fimo_source=str(a.reuse_fimo) if a.reuse_fimo else None,
+                   raw_fimo_sha256=hashlib.sha256((a.output_dir/'fimo_hits.tsv').read_bytes()).hexdigest(),
                    limitations=['matches do not establish TF binding or causal motif contribution',
                                 'database includes enzyme motifs and redundant TF family matches; retain IDs for review',
                                 'gained/lost means threshold crossing only; variant attribution not computed'])

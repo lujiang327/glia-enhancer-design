@@ -1,0 +1,29 @@
+{
+  "status": "PASS_LIBRARY_AND_MOTIF_MATCH_INTEGRITY_ATTRIBUTION_OVERLAP_PENDING",
+  "sequences": 2884,
+  "hits": 1154982,
+  "edit_overlapping_motif_comparisons": 59828,
+  "roles": {
+    "gain": {
+      "sequences": 938,
+      "median_matches": 386.0,
+      "sequences_with_gained_sites": 828,
+      "sequences_with_lost_sites": 718,
+      "sequences_with_any_threshold_change": 902
+    },
+    "loss_control": {
+      "sequences": 946,
+      "median_matches": 347.0,
+      "sequences_with_gained_sites": 634,
+      "sequences_with_lost_sites": 921,
+      "sequences_with_any_threshold_change": 937
+    },
+    "parent": {
+      "sequences": 1000,
+      "median_matches": 374.0,
+      "sequences_with_gained_sites": 0,
+      "sequences_with_lost_sites": 0,
+      "sequences_with_any_threshold_change": 0
+    }
+  }
+}
