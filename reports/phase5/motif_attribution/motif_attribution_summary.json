@@ -1,0 +1,25 @@
+{
+  "status": "PARENT_ATTRIBUTION_OVERLAP_COMPLETE_SCIENTIFIC_REVIEW_PENDING",
+  "parents": 1000,
+  "edits": 1884,
+  "motif_comparisons": 59828,
+  "config": {
+    "attribution_sha256": "78d7a6e6c5b875b00de33449131cdd30bbd172e68b791408b4ac114fba4e1b95",
+    "parent_slice_zero_based_half_open": [
+      807,
+      1307
+    ],
+    "library": "reports/phase5/library_motifs/ranked_library_with_motif_matches.tsv.gz",
+    "library_sha256": "ec29ec3944621a952a16b73129ab0c1e675fb5bb7f08691e636a3d10a941b39e",
+    "motif_comparisons": "reports/phase5/library_motifs/edit_overlapping_motif_comparisons.tsv.gz",
+    "motif_comparisons_sha256": "321c8f0be8faddfc6fe4570f9de03358120bb2d6d53e09068ce85ee8889223a9"
+  },
+  "counts_direction_agrees_both_orientations": 1884,
+  "limitations": [
+    "all attribution describes natural parent, including gained motif intervals",
+    "float16 saved scores introduce quantization; exact edit effects remain direct float32 model predictions",
+    "overlapping/redundant motifs share bases; their attribution sums must not be added together",
+    "site sign and magnitude are descriptive, not statistical significance or causal TF evidence",
+    "profile attribution concerns profile shape, not total accessibility direction"
+  ]
+}

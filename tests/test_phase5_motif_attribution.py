@@ -2,11 +2,23 @@ from pathlib import Path
 import sys
 import unittest
 import numpy as np
+import pandas as pd
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]/'scripts'))
 from annotate_phase5_motif_attribution import project, site_features, edit_features
+from review_phase5_motif_attribution import contextual_flags
 
 
 class MotifAttribution(unittest.TestCase):
+    def test_enzyme_and_low_attribution_matches_are_separate_context(self):
+        sites = pd.DataFrame(dict(motif_id=['TN5_1','DNASE_2','NFI','SOX9','AP1'],
+            counts_site_positive_both_orientations=[True,True,True,True,False],
+            counts_site_negative_both_orientations=[False,False,False,False,True],
+            counts_site_top10pct_parent_bases=[2,2,2,0,1]))
+        result = contextual_flags(sites)
+        self.assertEqual(result.enzyme_motif_reference_match.tolist(), [True,True,False,False,False])
+        self.assertEqual(result.nonenzyme_positive_parent_count_context.tolist(), [False,False,True,False,False])
+        self.assertEqual(result.nonenzyme_negative_parent_count_context.tolist(), [False,False,False,False,True])
+
     def test_projection_uses_observed_base_not_largest_channel(self):
         scores = np.array([[1,99,0,0], [99,2,0,0], [0,0,-3,99], [99,0,0,4]])
         observed = np.eye(4)

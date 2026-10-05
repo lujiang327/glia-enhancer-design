@@ -1,0 +1,37 @@
+{
+  "status": "PASS_INTEGRITY_DESCRIPTIVE_PARENT_CONTEXT_REVIEW",
+  "source_job": 63285123,
+  "elapsed": "00:01:01",
+  "max_rss_kb": 5326092,
+  "sequences": 2884,
+  "edits": 1884,
+  "motif_comparisons": 59828,
+  "enzyme_motif_comparisons": 360,
+  "roles": {
+    "gain": {
+      "sequences": 938,
+      "count_delta_direction_agrees_both_orientations": 938,
+      "median_edited_parent_base_absolute_attribution_percentile": 0.906,
+      "median_direct_delta_mean_logcount": 0.5836172103881836,
+      "median_robust_effect_lower_bound": 0.4784512519836426,
+      "edits_with_nonenzyme_positive_parent_count_context": 670,
+      "edits_with_lost_match_in_nonenzyme_positive_parent_count_context": 459,
+      "edits_with_lost_match_in_nonenzyme_negative_parent_count_context": 231,
+      "hypothetical_vs_direct_effect_spearman": 0.29744715226030155
+    },
+    "loss_control": {
+      "sequences": 946,
+      "count_delta_direction_agrees_both_orientations": 946,
+      "median_edited_parent_base_absolute_attribution_percentile": 0.998,
+      "median_direct_delta_mean_logcount": -1.2545650005340576,
+      "median_robust_effect_lower_bound": 1.0892703533172607,
+      "edits_with_nonenzyme_positive_parent_count_context": 940,
+      "edits_with_lost_match_in_nonenzyme_positive_parent_count_context": 919,
+      "edits_with_lost_match_in_nonenzyme_negative_parent_count_context": 3,
+      "hypothetical_vs_direct_effect_spearman": 0.6649239445619776
+    }
+  },
+  "inference_scope": "parent attribution context; no causal TF or variant specificity assignment",
+  "independent_validation": false,
+  "independent_validation_reason": "edits were nominated using these same parent attribution maps"
+}

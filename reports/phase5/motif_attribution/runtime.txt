@@ -1,0 +1,7 @@
+2026-10-05T14:39:44-04:00
+git_commit=1f139643df094b1077cf1cdf0fbb1f208e8508fe
+slurm_job_id=63285123
+node=gl3187.arc-ts.umich.edu
+3eea58b1606fe1245ad70abe70ea6268cf10587ea88de52263c268d1952249d5  containers/chrombpnet-upstream-20260914.sif
+78d7a6e6c5b875b00de33449131cdd30bbd172e68b791408b4ac114fba4e1b95  /scratch/thahoang_root/thahoang0/lujiang/chrombpnet_mg_phase3/phase4_attribution/dual_orientation_attributions.h5
+b6ffe965de6599c6451899ce6317215f633117c572f62c0a01aa4324fe2a3898  config/phase5_motif_attribution.json
