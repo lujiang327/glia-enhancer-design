@@ -1,0 +1,43 @@
+{
+  "status": "LOCUS_ANNOTATIONS_READY_FOR_REVIEW",
+  "parents": 1000,
+  "proposed_edits": 1884,
+  "parents_overlapping_repeats": 508,
+  "edits_in_repeats": 294,
+  "repeat_overlap_fraction_quantiles": {
+    "0": 0.0,
+    "0.25": 0.0,
+    "0.5": 0.018000000000000002,
+    "0.75": 0.2765,
+    "0.95": 0.9301999999999999,
+    "1": 1.0
+  },
+  "reference_locus_mappability": {
+    "50": {
+      "mean_quantiles": {
+        "0": 0.3108000005185604,
+        "0.05": 0.9639000032961369,
+        "0.25": 1.0,
+        "0.5": 1.0,
+        "0.75": 1.0,
+        "0.95": 1.0,
+        "1": 1.0
+      },
+      "parents_mean_lt_0_8_descriptive": 15
+    },
+    "100": {
+      "mean_quantiles": {
+        "0": 0.6039599999487401,
+        "0.05": 1.0,
+        "0.25": 1.0,
+        "0.5": 1.0,
+        "0.75": 1.0,
+        "0.95": 1.0,
+        "1": 1.0
+      },
+      "parents_mean_lt_0_8_descriptive": 5
+    }
+  },
+  "automatic_exclusions": 0,
+  "next_gate": "REVIEW_LOCUS_ANNOTATIONS_BEFORE_LIBRARY_SELECTION"
+}

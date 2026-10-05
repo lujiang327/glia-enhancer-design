@@ -1,0 +1,58 @@
+{
+  "assets": {
+    "rmsk.txt.gz": {
+      "url": "https://hgdownload.soe.ucsc.edu/goldenPath/hg38/database/rmsk.txt.gz",
+      "resolved_url": "https://hgdownload.soe.ucsc.edu/goldenPath/hg38/database/rmsk.txt.gz",
+      "sha256": "db60e6aa7ac175f8f5465cd01b48b550e67e1fb0fd828608d8343481867bb276",
+      "bytes": 155633856,
+      "http_last_modified": "Wed, 19 Oct 2022 06:39:32 GMT",
+      "http_etag": "\"946c8c0-5eb5d78b067f0\"",
+      "downloaded_at_utc": "2026-10-02T20:28:06.462992+00:00",
+      "verification_scope": "observed snapshot checksum, not an upstream published checksum"
+    },
+    "rmsk.sql": {
+      "url": "https://hgdownload.soe.ucsc.edu/goldenPath/hg38/database/rmsk.sql",
+      "resolved_url": "https://hgdownload.soe.ucsc.edu/goldenPath/hg38/database/rmsk.sql",
+      "sha256": "6be9042d45bb3ae916e94e284cc9f93836a704785093aac433ed54ece3a5851a",
+      "bytes": 1920,
+      "http_last_modified": "Wed, 19 Oct 2022 06:39:32 GMT",
+      "http_etag": "\"780-5eb5d78b067f0\"",
+      "downloaded_at_utc": "2026-10-02T20:28:06.947145+00:00",
+      "verification_scope": "observed snapshot checksum, not an upstream published checksum"
+    },
+    "k50.Umap.MultiTrackMappability.bw": {
+      "url": "https://hgdownload.soe.ucsc.edu/gbdb/hg38/hoffmanMappability/k50.Umap.MultiTrackMappability.bw",
+      "resolved_url": "https://hgdownload.soe.ucsc.edu/gbdb/hg38/hoffmanMappability/k50.Umap.MultiTrackMappability.bw",
+      "sha256": "9f02bb2f5ee681bc0ef0ad8aa5afbd0a94a44424c9082014a73d9f3609b2c4f9",
+      "bytes": 1331314604,
+      "http_last_modified": "Fri, 28 Apr 2017 18:18:26 GMT",
+      "http_etag": "\"4f5a3fac-54e3e197b4080\"",
+      "downloaded_at_utc": "2026-10-02T20:28:40.413979+00:00",
+      "verification_scope": "observed snapshot checksum, not an upstream published checksum"
+    },
+    "k100.Umap.MultiTrackMappability.bw": {
+      "url": "https://hgdownload.soe.ucsc.edu/gbdb/hg38/hoffmanMappability/k100.Umap.MultiTrackMappability.bw",
+      "resolved_url": "https://hgdownload.soe.ucsc.edu/gbdb/hg38/hoffmanMappability/k100.Umap.MultiTrackMappability.bw",
+      "sha256": "93876c70032d4d59ef2e90778a039622e3e1e4744c2b9e9735c7c1bbe08f0b53",
+      "bytes": 864604710,
+      "http_last_modified": "Fri, 28 Apr 2017 18:18:33 GMT",
+      "http_etag": "\"3388d226-54e3e19e61040\"",
+      "downloaded_at_utc": "2026-10-02T20:29:02.679336+00:00",
+      "verification_scope": "observed snapshot checksum, not an upstream published checksum"
+    }
+  },
+  "analysis_inputs": {
+    "parents": {
+      "path": "reports/phase4/parent_scoring/parent_predictions.tsv.gz",
+      "sha256": "097aa833c90d61f4b236eef51fbed1228be83cfa20a6cb64924dbad87269afab"
+    },
+    "edits": {
+      "path": "reports/phase4/perturbation_full/best_passing_single_edits.tsv.gz",
+      "sha256": "6ce82c6e1e0929aa47d50d80e2fbc203f48229bda0fef1f88caa1cdf37008b05"
+    },
+    "reference_fai": {
+      "path": "data/raw/reference/hg38.canonical.fa.fai",
+      "sha256": "15312f85f6ff6a975cc3ecbb6106b44eb8d3be1e8a22b89ef327458900081d52"
+    }
+  }
+}

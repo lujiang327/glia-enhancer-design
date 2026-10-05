@@ -1,0 +1,28 @@
+{
+  "status": "PASS_ANNOTATION_INTEGRITY_LIBRARY_REVIEW_PENDING",
+  "parents": 1000,
+  "proposed_edits": 1884,
+  "parents_repeat_overlap_any": 508,
+  "parents_repeat_overlap_ge_50pct": 142,
+  "parents_repeat_overlap_ge_90pct": 56,
+  "parents_umap_k50_mean_lt_0_8": 15,
+  "parents_umap_k100_mean_lt_0_8": 5,
+  "proposed_edits_in_repeats": 294,
+  "proposed_edit_parents_with_umap_k50_mean_lt_0_8": 13,
+  "automatic_exclusions": 0,
+  "by_edit_class": {
+    "gain": {
+      "edits": 938,
+      "edits_in_repeats": 150,
+      "edit_base_reference_umap_k50_lt_0_8": 7,
+      "edit_base_reference_umap_k100_lt_0_8": 2
+    },
+    "loss_control": {
+      "edits": 946,
+      "edits_in_repeats": 144,
+      "edit_base_reference_umap_k50_lt_0_8": 7,
+      "edit_base_reference_umap_k100_lt_0_8": 1
+    }
+  },
+  "next_gate": "ASSEMBLE_PARENT_VARIANT_LIBRARY_REVIEW_TABLE_WITH_MOTIF_EVIDENCE"
+}
