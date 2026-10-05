@@ -1,0 +1,20 @@
+{
+  "status": "DRAFT_REVIEW_PENDING_NOT_SYNTHESIS_READY",
+  "sequences": 2884,
+  "roles": {
+    "parent": 1000,
+    "loss_control": 946,
+    "gain": 938
+  },
+  "parents": 1000,
+  "input_sha256": {
+    "reports/phase4/locus_annotation/parent_annotation_review.tsv.gz": "8f109e7897a3cb5f8a9c99694e25987c491caa08474614fcdad8b21ae3328706",
+    "reports/phase4/locus_annotation/edit_annotation_review.tsv.gz": "25e023efc42509bb88fe068480b6a83be1e6b0e26baaf406c5533cee4d9721d7",
+    "reports/phase4/attribution/attribution_qc.tsv.gz": "48d4db92a84eb2f24128dd248c2a2456ae88a68fe3651b7571e8ca66065e81b7"
+  },
+  "pending": [
+    "candidate motif scan and review",
+    "off-target sequence predictions unavailable",
+    "final experimental selection and oligo/barcode/adapter design"
+  ]
+}

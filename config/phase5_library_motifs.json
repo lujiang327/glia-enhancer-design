@@ -1,0 +1,9 @@
+{
+  "p_value_threshold": 0.0001,
+  "motifs": "data/intermediate/vendor/chrombpnet-eaa0fe58b6a43da62ea23b75cfc2bef4ecd3550c/chrombpnet/data/motifs.meme.txt",
+  "motifs_sha256": "53a376d6fb5e900398df78ae8afb48e34d034681ad8257f39d69ef59175a802f",
+  "library": "reports/phase5/library_draft/ranked_library_draft.tsv.gz",
+  "library_sha256": "ba60a101df0978e91f75afbab13ba2b515e2d358f7d7c0591718abdc0f64ada1",
+  "fasta": "reports/phase5/library_draft/library_sequences.fa",
+  "fasta_sha256": "3e54ec54835aa0a1a7cb230698fad22f9b2d9a020c296ff06a3140e85ba7072d"
+}
