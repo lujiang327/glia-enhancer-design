@@ -1,0 +1,9 @@
+{
+  "reports/phase3/pseudobulk_qc.tsv": "84a33f676e8aba5e892d38364a9f7aa494af51a8b7f0d68942cfa98f50755460",
+  "reports/phase4/perturbation_full/perturbation_full_summary.json": "6df762beb0cc17a09c8e14bf98ae0006d979fd02dd089b4db3f1ccf5977910b9",
+  "reports/phase5/motif_attribution/attribution_review_summary.json": "fe5ef5e54ba50dfc7098911039e2190c9cfd9c197225116bfe6df3acd29c6010",
+  "reports/phase5/motif_attribution/ranked_library_with_parent_attribution.tsv.gz": "0bb423946088c73d0012d523ed4c86c8eaf56ecff3711bd8fb8dca128d6b7b24",
+  "reports/training/bias_fold0_seed42_numerical_qc.json": "fe31d1db7d491fed82aa09fda1b8539e725210561823d5c0a89926faa1f26d53",
+  "reports/training/chrombpnet_fold0_neg1_seed_reproducibility.json": "e89cd0c3cb2067f821d7ad26fccf1aa8f1075af9cb4cdc0e5f357f21630424e0",
+  "reports/training/chrombpnet_fold0_seed42_neg1_donor_qc.json": "9b92a6f57221a34bcc9b84f6cb0fa21f7d3886ad260fcba1366ebc99ba241ff5"
+}

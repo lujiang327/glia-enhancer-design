@@ -1,0 +1,16 @@
+{
+  "parents": 1000,
+  "gain_variants": 938,
+  "loss_controls": 946,
+  "all_glial_lodo_fdr_pass": 872,
+  "strongest_offtarget_microglia_or_astrocyte": 920,
+  "parent_flags": {
+    "repeat_ge_50pct": 142,
+    "k50_low": 15,
+    "orientation_gap_gt_1": 239,
+    "attribution_fail": 53
+  },
+  "no_experimental_validation": true,
+  "no_offtarget_variant_models": true,
+  "decision": "GO for pilot planning with explicit limitations; insufficient evidence for a large specificity-optimized synthesis order"
+}

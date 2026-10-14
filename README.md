@@ -35,6 +35,12 @@ reporter performance and causal motif assignments remain unresolved. The draft i
 not a synthesis order: assay/vector, budget, insert constraints, adapters and
 barcode design are needed before final experimental selection.
 
+For the pre-experiment discussion, open the standalone
+[four-sheet evidence review](reports/decision_review/evidence_review.html) and
+[interpretation with remaining decision gates](reports/decision_review/README.md).
+It separates held-out model evidence and parent enrichment from selected edit
+predictions and unresolved experimental specificity.
+
 Reproduction begins with [the preparation guide](docs/training_preparation.md)
 and [input-preparation report](reports/preparation/README.md).
 Cluster instructions are in [the HPC guide](hpc/README.md); private account and
