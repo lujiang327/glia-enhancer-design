@@ -1,0 +1,16 @@
+{
+  "status": "PASS_MG_BROWSER_TRACK_INTEGRITY",
+  "tracks": 5,
+  "candidates": 1000,
+  "preview_ranks": [
+    1,
+    200,
+    400,
+    600,
+    800,
+    1000
+  ],
+  "total_bigwig_bytes": 718589138,
+  "off_target_tracks_included": false,
+  "all_bigwig_integrals_approximately_one_million": true
+}

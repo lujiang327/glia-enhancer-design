@@ -1,0 +1,9 @@
+{
+  "archive": "data/intermediate/browser_tracks/MG_hg38_browser_review.tar",
+  "bytes": 718951424,
+  "sha256": "b1c42ce202f050c6977b2b846d9ed5f807ded8843ac3f4727bfe69c72a35de70",
+  "bigwigs": 5,
+  "candidate_regions": 1000,
+  "off_target_tracks_included": false,
+  "tests_passed": 49
+}

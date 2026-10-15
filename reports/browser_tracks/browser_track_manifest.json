@@ -1,0 +1,68 @@
+{
+  "status": "OBSERVED_MG_BROWSER_TRACKS_READY_OFFTARGET_TRACKS_NOT_INCLUDED",
+  "assembly": "hg38",
+  "signal": "observed ATAC insertion density, not model prediction",
+  "unit": "insertions per million retained insertions per base",
+  "bin_bp": 100,
+  "normalization": "bin insertion count / actual bin width * 1e6 / whole-track retained insertion count",
+  "display_note": "100bp bin mean for overview; raw single-base tracks remain available at their source paths",
+  "shifts": "inherited from previously validated training tracks; no additional endpoint shift",
+  "zero_bins": "explicitly included",
+  "tracks": [
+    {
+      "source": "data/intermediate/training/muller.insertions.bw",
+      "file": "MG_pooled.IPM_per_base.100bp.bw",
+      "source_insertions": 171959170,
+      "source_sha256": "1f59fa6a1b517dd95cd32743b46fd40d0be531b43eeb1ff58542b6236a067bea",
+      "normalized_signal_integral": 999999,
+      "sha256": "5c09d633cbc38fe3f5167e189c161ed40f763b587c18dfb33fdf0a583362d7ac",
+      "bytes": 159025396
+    },
+    {
+      "source": "data/intermediate/training/LGS1.insertions.bw",
+      "file": "MG_LGS1.IPM_per_base.100bp.bw",
+      "source_insertions": 39474584,
+      "source_sha256": "14e9d8f583a1b25b41d1dbc0ccc1f0aa14a0bd3df8cafa59ec4f2a5043122da7",
+      "normalized_signal_integral": 1000000,
+      "sha256": "7958e9abe546f8d6deab79787f3764574f5c17431fc3b4db946ececbba41c9bf",
+      "bytes": 138706095
+    },
+    {
+      "source": "data/intermediate/training/LGS2.insertions.bw",
+      "file": "MG_LGS2.IPM_per_base.100bp.bw",
+      "source_insertions": 58866672,
+      "source_sha256": "9244ed33265029890a19c281a931aabc204d5be6234c1612113278620d7827d5",
+      "normalized_signal_integral": 999999,
+      "sha256": "024cd402a41765e972375af5a6232cfca24f8f5d6eaf972d50049f490350e71f",
+      "bytes": 145312504
+    },
+    {
+      "source": "data/intermediate/training/LGS3.insertions.bw",
+      "file": "MG_LGS3.IPM_per_base.100bp.bw",
+      "source_insertions": 40982726,
+      "source_sha256": "6a26b7922f3d28bce9314918596bb0e72598362a30af90640c470e16a5157a7a",
+      "normalized_signal_integral": 999999,
+      "sha256": "56e19e9463870fb86f46bd61075811ea53b8777ed336ff7270b8025017491e6c",
+      "bytes": 139574172
+    },
+    {
+      "source": "data/intermediate/training/LVG1.insertions.bw",
+      "file": "MG_LVG1.IPM_per_base.100bp.bw",
+      "source_insertions": 32635188,
+      "source_sha256": "a9c5d26010393e361d6a979ad41e9cc048c96747755c3ac50bc7f90702173df7",
+      "normalized_signal_integral": 1000000,
+      "sha256": "35693f25c244dce48877e0cdd59a68a20903c279d1b3fd298c76b4fb41a27bb6",
+      "bytes": 135970971
+    }
+  ],
+  "candidate_regions": 1000,
+  "first_locus": "chr13:27503893-27506392",
+  "limitations": [
+    "MG tracks alone do not demonstrate off-target specificity",
+    "donor tracks use separate depth normalization",
+    "100bp bins do not resolve single-base footprints",
+    "designed variants have no observed ATAC signal",
+    "global library normalization does not equal absolute accessibility per cell"
+  ],
+  "input_summary_sha256": "0c4d5d57d59a0bda65b99ccb85aa0fb77be344130c4fa8bfc27d8389c8ceb5bf"
+}

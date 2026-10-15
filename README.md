@@ -40,6 +40,10 @@ For the pre-experiment discussion, open the standalone
 [interpretation with remaining decision gates](reports/decision_review/README.md).
 It separates held-out model evidence and parent enrichment from selected edit
 predictions and unresolved experimental specificity.
+Observed MG genome-browser BigWigs and candidate BED files are described in
+[the browser-track guide](reports/browser_tracks/README.md), with a
+[six-locus donor preview](reports/browser_tracks/MG_candidate_track_preview.png).
+Large track binaries and the sharing archive remain outside Git.
 
 Reproduction begins with [the preparation guide](docs/training_preparation.md)
 and [input-preparation report](reports/preparation/README.md).
