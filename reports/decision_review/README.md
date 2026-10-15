@@ -2,6 +2,11 @@
 
 Prepared for the October 14, 2026 discussion with Thanh. This is an assessment of existing results, not a new validation run.
 
+For a short, plain-language explanation of each A-D panel, use the
+[two-page figure reading guide](../../output/pdf/decision_review_simple_guide.pdf).
+The guide includes the subsequent update that observed off-target browser tracks
+are available; off-target sequence models and mutant reporter validation remain pending.
+
 **Recommendation: GO for planning a controlled pilot; insufficient evidence for a large order justified as specificity-optimized variants.** We have useful MG sequence models, donor-supported parent-region enrichment and screened predicted edits. We do not yet have off-target variant predictions, cross-seed edit stability or reporter validation. Figures should support an informed decision about those uncertainties rather than imply that computational predictions guarantee experimental success.
 
 Open **`evidence_review.html`** in a browser. It embeds all four figure sheets and can be shared as one standalone file. PNGs are suitable for discussion and SVGs for editing or presentations. All plots have numerical exports and a source-checksum manifest. No private cluster connection settings are needed to view this report.
