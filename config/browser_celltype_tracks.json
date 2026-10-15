@@ -1,0 +1,349 @@
+{
+  "assembly": "hg38",
+  "bin_bp": 100,
+  "chrom_sizes_sha256": "b849c963be442d1346e6b999f49d42f734369ad435faafca239ec900e6e04cd7",
+  "mg_reference_sha256": "1f59fa6a1b517dd95cd32743b46fd40d0be531b43eeb1ff58542b6236a067bea",
+  "source_qc_sha256": "84a33f676e8aba5e892d38364a9f7aa494af51a8b7f0d68942cfa98f50755460",
+  "group_order": [
+    "MG",
+    "Astrocyte",
+    "Microglia",
+    "Rod",
+    "Cone",
+    "ON_cone_bipolar",
+    "OFF_cone_bipolar",
+    "Rod_bipolar",
+    "GABA_amacrine",
+    "Gly_amacrine",
+    "AII_amacrine",
+    "Horizontal",
+    "RGC"
+  ],
+  "groups": {
+    "MG": {
+      "keep_donor_tracks": true,
+      "donors": {
+        "LGS1": {
+          "fragments": 19737292,
+          "cells": 879,
+          "sha256": "2556a2aeba377a1e1d5f6ecded68ebd7b98f327067228144cb1545a3fb88e596"
+        },
+        "LGS2": {
+          "fragments": 29433336,
+          "cells": 1101,
+          "sha256": "390d9bccb278ec35f842d89a89a025fb7e0571866ab54086664b54000c67f1f5"
+        },
+        "LGS3": {
+          "fragments": 20491363,
+          "cells": 741,
+          "sha256": "fd46cd2d6bab0035b3602b472b6ea79ea7dbf8dee5ccadab0effead155120d70"
+        },
+        "LVG1": {
+          "fragments": 16317594,
+          "cells": 713,
+          "sha256": "a60aea494c85927f8b4ddc4dd94ec67713da5627439b59bf607f6c1afa7bd2da"
+        }
+      }
+    },
+    "Astrocyte": {
+      "keep_donor_tracks": true,
+      "donors": {
+        "LGS1": {
+          "fragments": 434120,
+          "cells": 12,
+          "sha256": "6d10c517d702d45c8fa9687c46b0e05568dff4a0ad4a8986d5e9e1108309bf91"
+        },
+        "LGS2": {
+          "fragments": 1718223,
+          "cells": 46,
+          "sha256": "515dd15302f70c9c70f931946e67c66ac3d7306dfca6a01413bcc3bde3090cc9"
+        },
+        "LGS3": {
+          "fragments": 2645714,
+          "cells": 90,
+          "sha256": "1ce6c2327a1f05cf02deca41dc0239392017636df045788b3242c1afdffbf321"
+        },
+        "LVG1": {
+          "fragments": 2123393,
+          "cells": 69,
+          "sha256": "b9b2075035184909de40eff9837446b2b5e62767e70bf8aa9081f4a67d0df6fb"
+        }
+      }
+    },
+    "Microglia": {
+      "keep_donor_tracks": true,
+      "donors": {
+        "LGS1": {
+          "fragments": 1827435,
+          "cells": 52,
+          "sha256": "1a681db313b75a7be913fa71987f507af0f358bb3605e687d218950defbac4b6"
+        },
+        "LGS2": {
+          "fragments": 2695229,
+          "cells": 81,
+          "sha256": "6124e73abf48a81c93764ef308146ef13cb0f17314b7cafc81ad601a0b6f7574"
+        },
+        "LGS3": {
+          "fragments": 2108603,
+          "cells": 55,
+          "sha256": "5928025c7e2c76733042599d9a6313b57e0e4f0de2129814dee1ebbf36ad8e4b"
+        },
+        "LVG1": {
+          "fragments": 661472,
+          "cells": 27,
+          "sha256": "f56cd70e5da4d64ce603858526f119b91b023a5119aa39982c5df6e67edbf43b"
+        }
+      }
+    },
+    "Rod": {
+      "keep_donor_tracks": false,
+      "donors": {
+        "LGS1": {
+          "fragments": 144343114,
+          "cells": 12167,
+          "sha256": "acde5fef82f729c34f2e02e116a449fa0b85edbc0eb8c39714fe8dd201678e0d"
+        },
+        "LGS2": {
+          "fragments": 53891457,
+          "cells": 6163,
+          "sha256": "a6d9a44a46666b769890d8a348c17e05521f3b1e3486df1e6c62fa4c4d9379c4"
+        },
+        "LGS3": {
+          "fragments": 82783957,
+          "cells": 5923,
+          "sha256": "2d5e79792be08bdf5426bf94d8b7043181828981c93e11ece5b2141bb6509ede"
+        },
+        "LVG1": {
+          "fragments": 97062461,
+          "cells": 5809,
+          "sha256": "dbff89dcb219b6cd0933f56753c2bac1a713060c29151eeb631f69ba0b65b08b"
+        }
+      }
+    },
+    "Cone": {
+      "keep_donor_tracks": false,
+      "donors": {
+        "LGS1": {
+          "fragments": 13310852,
+          "cells": 681,
+          "sha256": "b3631f471a7bd0e1c624af4af35aa133bdf3a6caf5b92f4d14219efbb28c2ff8"
+        },
+        "LGS2": {
+          "fragments": 8915429,
+          "cells": 646,
+          "sha256": "c4494879d7472987028bf500d4d8d6608ff9ab24f05ce8a98faba262b1728304"
+        },
+        "LGS3": {
+          "fragments": 13910132,
+          "cells": 433,
+          "sha256": "ebcdcb228fb2b8a64315cb7a94cd2f4103b9e7669350f6af51a58bec73119ea2"
+        },
+        "LVG1": {
+          "fragments": 8676816,
+          "cells": 339,
+          "sha256": "aedb34cecc89eaa6537a9b2f95c369d8aad6520710d2de571cf8983625d95d93"
+        }
+      }
+    },
+    "ON_cone_bipolar": {
+      "keep_donor_tracks": false,
+      "donors": {
+        "LGS1": {
+          "fragments": 9220446,
+          "cells": 603,
+          "sha256": "027eefcafb80147369dfd0956cd0ec1bd827bc1f912c25d3cdc6d0b80e3cb882"
+        },
+        "LGS2": {
+          "fragments": 12470755,
+          "cells": 781,
+          "sha256": "d8cb044dae3d3022c394a82ec7dcd1ea9ed9f25622754aa1f0ae382acac70cf9"
+        },
+        "LGS3": {
+          "fragments": 11475059,
+          "cells": 632,
+          "sha256": "772d92d252ac183627f7394a4dda593836bd39f92341685e9c0427a3eb97b0c4"
+        },
+        "LVG1": {
+          "fragments": 8825494,
+          "cells": 440,
+          "sha256": "4fe95cf31739cfa260ad720cc57e9c2aef505c84a1642d81500c02e7aa5b5a0a"
+        }
+      }
+    },
+    "OFF_cone_bipolar": {
+      "keep_donor_tracks": false,
+      "donors": {
+        "LGS1": {
+          "fragments": 15592208,
+          "cells": 959,
+          "sha256": "070e0c019681908a457967f67d1306bfd163d793c73a432b23ddfb9b535d0d07"
+        },
+        "LGS2": {
+          "fragments": 15727994,
+          "cells": 1095,
+          "sha256": "3303215618cdad631bf4a2a6241cab05304aae7926cb604da5c77eb73cb79671"
+        },
+        "LGS3": {
+          "fragments": 16415306,
+          "cells": 922,
+          "sha256": "783e2672c6692d1690f5353a7366d39b11d47e92f3de6126cb1b6669eb994ce6"
+        },
+        "LVG1": {
+          "fragments": 13903265,
+          "cells": 710,
+          "sha256": "f2f2320a925afc6f283899bfcbdb151327ea6606e6e1beb732152912acd08f79"
+        }
+      }
+    },
+    "Rod_bipolar": {
+      "keep_donor_tracks": false,
+      "donors": {
+        "LGS1": {
+          "fragments": 11673942,
+          "cells": 584,
+          "sha256": "9eae777a5e18d3b2093eaa0ed463ef7ea126586d4006e2389a6ea93a1667b581"
+        },
+        "LGS2": {
+          "fragments": 12208438,
+          "cells": 618,
+          "sha256": "6de8244c271505b7d3679ab831fe9299c69f6402065ee780858f9390bec3f4a2"
+        },
+        "LGS3": {
+          "fragments": 13602453,
+          "cells": 588,
+          "sha256": "f863f8b6079296e32517cd56b20e1980794a3a7c9a58ddf2ff0a28b16e9e9109"
+        },
+        "LVG1": {
+          "fragments": 9607709,
+          "cells": 399,
+          "sha256": "efbe99b8ce927ffb421f356ff4a9dd7d9795e80e5cee2740f687cdbf5929e052"
+        }
+      }
+    },
+    "GABA_amacrine": {
+      "keep_donor_tracks": false,
+      "donors": {
+        "LGS1": {
+          "fragments": 11787028,
+          "cells": 478,
+          "sha256": "5431f81f2fc7697131a0e0f836ed6cca53b3299acb02fca282aa93a69ea6eb6e"
+        },
+        "LGS2": {
+          "fragments": 5215637,
+          "cells": 377,
+          "sha256": "9db9810bb788e38e980dc2dc050d9cfeb1949fac576e16a8e267497841bb4b9d"
+        },
+        "LGS3": {
+          "fragments": 7584791,
+          "cells": 281,
+          "sha256": "f5c28bd35c6cbf55122c5bd43ae611610e59b628fcf4836c2e5725f2525f5538"
+        },
+        "LVG1": {
+          "fragments": 9243026,
+          "cells": 306,
+          "sha256": "a2055c0ae49c0bd4e36c41cabd57984689989a94bedbebc2552c78e4ec7862c9"
+        }
+      }
+    },
+    "Gly_amacrine": {
+      "keep_donor_tracks": false,
+      "donors": {
+        "LGS1": {
+          "fragments": 3467362,
+          "cells": 237,
+          "sha256": "1729a65565b4b740843350b5e79b68ae8ee3b66bb202fc9d7352d1199b2f469d"
+        },
+        "LGS2": {
+          "fragments": 1276379,
+          "cells": 176,
+          "sha256": "c0c33d6e138b9c5deaebf0332d92c9653cb0ed3f178c2a357891faf87ccf495c"
+        },
+        "LGS3": {
+          "fragments": 2318171,
+          "cells": 134,
+          "sha256": "16bde5f6218072cf27d3ea61b1c4e0d7189f7ba2a127ee384d5b843685ff9c1d"
+        },
+        "LVG1": {
+          "fragments": 2708402,
+          "cells": 139,
+          "sha256": "2b5b459b564ba5a1a4824e21c8661309ea6108572126b049b93b952e6b6637b2"
+        }
+      }
+    },
+    "AII_amacrine": {
+      "keep_donor_tracks": false,
+      "donors": {
+        "LGS1": {
+          "fragments": 4621354,
+          "cells": 153,
+          "sha256": "f8e25a3b2636c5d011b3daefc0f4bea6ae8febece5f39c126db4bc8d663ae577"
+        },
+        "LGS2": {
+          "fragments": 977593,
+          "cells": 116,
+          "sha256": "f1c4ab80a879392dc4f2278201a78c0ce6d95fa338f4274576f225ef2a9e6f92"
+        },
+        "LGS3": {
+          "fragments": 1956216,
+          "cells": 59,
+          "sha256": "9ba841c3ae080c9d1aec9f39ea684bee7ceb9554313d949a3fd030824c4cf27b"
+        },
+        "LVG1": {
+          "fragments": 3009750,
+          "cells": 91,
+          "sha256": "ed4712879d40d76d826d403e137077431156e4d7dea718629599aa97325c669b"
+        }
+      }
+    },
+    "Horizontal": {
+      "keep_donor_tracks": false,
+      "donors": {
+        "LGS1": {
+          "fragments": 6315469,
+          "cells": 229,
+          "sha256": "6a97715a188616c41794f9cb0fa8186d9fff72536e03400b8cbd16b200e96471"
+        },
+        "LGS2": {
+          "fragments": 7148471,
+          "cells": 289,
+          "sha256": "8ffbfaa5ba4445d875739584ed02d874a2a4d4817b104e34a74e151fb4a72ead"
+        },
+        "LGS3": {
+          "fragments": 8677058,
+          "cells": 325,
+          "sha256": "836ef13754f379ae66674416e4eb1dc5b237ca4bac0543ce1ed1074ca3daaf21"
+        },
+        "LVG1": {
+          "fragments": 6270379,
+          "cells": 209,
+          "sha256": "f6f6ae41d234ce242a88eea2682ddeeee69335fc04a3618b7721c55777462ff7"
+        }
+      }
+    },
+    "RGC": {
+      "keep_donor_tracks": false,
+      "donors": {
+        "LGS1": {
+          "fragments": 1760704,
+          "cells": 42,
+          "sha256": "fecfdcbac8fb2063d1a0f249f1880a3fd07a7ff42a34b8686f88c67a33d3561f"
+        },
+        "LGS2": {
+          "fragments": 5312320,
+          "cells": 160,
+          "sha256": "32b0f6f8be55f51a32a26a595c117528a10dc03fe7193fc1464e9b196c7b3ff2"
+        },
+        "LGS3": {
+          "fragments": 5383746,
+          "cells": 120,
+          "sha256": "aaf53dfbfa1998f29b285c18cefd98f51c4e52d097b5c01f7673d3bf943c550a"
+        },
+        "LVG1": {
+          "fragments": 6824139,
+          "cells": 143,
+          "sha256": "2461bae2b62d183c629de2432a625b8a8552abdc45a8c0c46f3c4e52fe1f0881"
+        }
+      }
+    }
+  }
+}

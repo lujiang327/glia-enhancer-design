@@ -39,6 +39,11 @@ These are **observed natural-locus ATAC tracks**, not model predictions, RNA exp
 
 The reusable Great Lakes SSH session was unavailable during this export. Local MG inputs were sufficient to finish this package; remote off-target track inventory/preparation requires a renewed session. Do not interpret the MG-only view as evidence that other cell types are inactive.
 
+The session was subsequently renewed and all 52 donor pseudobulks were confirmed
+available. The [matched cell-type export protocol](celltype_comparison_protocol.md)
+now documents the prepared CPU job array for MG and all 12 off-target cell types.
+Those comparison tracks are not yet part of the initial sharing archive.
+
 ## Reproduce
 
 Run from the repository root, using a new output directory:
