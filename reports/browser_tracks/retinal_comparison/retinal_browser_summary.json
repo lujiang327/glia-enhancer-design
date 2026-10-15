@@ -1,0 +1,22 @@
+{
+  "status": "PASS_ALL_25_BROWSER_TRACKS",
+  "source_array_job": 64054545,
+  "cell_types": 13,
+  "tracks": 25,
+  "pooled_tracks": 13,
+  "donor_tracks": 12,
+  "bytes": 3425772682,
+  "candidate_regions": 1000,
+  "mg_reference_match": "exact integer bins across genome",
+  "preview_ranks": [
+    1,
+    200,
+    400,
+    600,
+    800,
+    1000
+  ],
+  "config_sha256": "ad197c3c4385680ad69368a2889c139adff16001f8b5e0dfd5e54e5fb2475a35",
+  "off_target_sequence_models_trained": false,
+  "signal": "observed native-locus insertion density; IPM/base; 100bp mean"
+}

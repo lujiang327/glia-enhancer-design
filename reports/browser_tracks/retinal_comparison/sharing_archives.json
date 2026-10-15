@@ -1,0 +1,12 @@
+{
+  "full": {
+    "file": "retina_hg38_review_100bp.tar",
+    "bytes": 3426140160,
+    "sha256": "00fb502b06d5d5607a604c7126dbc710f7f11c9bc449836a4b06d879a3c06bb5"
+  },
+  "glial_core": {
+    "file": "retina_hg38_review_100bp_glial_core.tar",
+    "bytes": 418396160,
+    "sha256": "629ddf458b6b3acac6e5ab5c8a38c49688277cbdd8fdbb8c0ad8cb6d7d459e68"
+  }
+}

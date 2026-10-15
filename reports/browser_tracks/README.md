@@ -1,5 +1,11 @@
 # MG browser-review BigWigs
 
+**Latest:** the [matched retinal comparison](retinal_comparison/README.md) is now
+verified, with 13 pooled cell-type tracks and 12 glial donor tracks. Start with
+its compact MG/astrocyte/microglia archive or the
+[glial comparison preview](retinal_comparison/MG_vs_glial_offtargets_preview.png).
+The MG-only package below remains available as the initial export.
+
 The browser package is generated under ignored `data/intermediate/browser_tracks/MG_hg38_100bp/`. Large binary signal files remain outside Git. A matching tar archive is prepared alongside this directory for manual sharing; nothing is sent or published automatically.
 
 ## Contents
@@ -42,7 +48,8 @@ The reusable Great Lakes SSH session was unavailable during this export. Local M
 The session was subsequently renewed and all 52 donor pseudobulks were confirmed
 available. The [matched cell-type export protocol](celltype_comparison_protocol.md)
 now documents the prepared CPU job array for MG and all 12 off-target cell types.
-Those comparison tracks are not yet part of the initial sharing archive.
+Those comparison tracks are now verified in the separate retinal comparison
+packages; they are not added to the unchanged initial MG-only archive.
 
 ## Reproduce
 
