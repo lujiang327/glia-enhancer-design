@@ -1,0 +1,10 @@
+{
+  "log2FC_values_checked": 13000,
+  "FDR_values_checked": 13000,
+  "browser_signal_values_checked": 13000,
+  "minimum_FDR_preserved": 2.36068630207151e-70,
+  "formula_error_cells": 0,
+  "table_count": 5,
+  "rendered_sheets_visually_reviewed": 5,
+  "GUI_application_load_tested": false
+}

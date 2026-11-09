@@ -1,0 +1,14 @@
+analysis_group	LGS1	LGS2	LGS3	LVG1
+MG	879	1101	741	713
+Astrocyte	12	46	90	69
+Microglia	52	81	55	27
+Rod	12167	6163	5923	5809
+Cone	681	646	433	339
+ON_cone_bipolar	603	781	632	440
+OFF_cone_bipolar	959	1095	922	710
+Rod_bipolar	584	618	588	399
+GABA_amacrine	478	377	281	306
+Gly_amacrine	237	176	134	139
+AII_amacrine	153	116	59	91
+Horizontal	229	289	325	209
+RGC	42	160	120	143

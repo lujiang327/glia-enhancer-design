@@ -1,0 +1,23 @@
+{
+  "data/intermediate/annotation_review_sources/Wang2022_Figure1.jpg": "7473944daf493cb8f2c1010ce3fec4d167863fcb4c42516ad3143f250d0c38d9",
+  "data/metadata/author_code/seankwang-retina-multiome-651e181/scRNA": "34ac89e26e0be0726eda0b12d32cce0da60169fb825cbec51715815004f81774",
+  "data/metadata/author_code/seankwang-retina-multiome-651e181/scATAC": "deb0bdb6d4444e01dcf46896cbe3fc8e23b98d69efd0e018785130543f3459aa",
+  "config/samples.tsv": "ec47a026f689ec0b13b75cd1e6a65a3705cc4f9a5d58a727677ac958ddcefa5b",
+  "config/phase3_cell_types.tsv": "ad55a99ab39f480ede6449b357ae98cd1b1e0f012d244eda2138659954573ff1",
+  "reports/qc/fragment_audit.json": "8e2220a21f58417a2e67c516dbee7736122207232878f638a47db0f22f509715",
+  "data/metadata/GSE196235_asset_inventory.json": "835e9cdba0483fc10e8edaa4be25ba3828ac48cabbb5aa6a81bea0e8fe4cddbf",
+  "reports/qc/marker_qc.json": "aa9abe61d4fa114448b26610cee9782de8765a1bff786d30b0ee24115bd519f9",
+  "reports/qc/donor_metadata.tsv": "167835db410aeecc255e237dd732dd254e9f117821d38c6015d1c8632cc52381",
+  "data/raw/GSM5866081_barcodes.tsv.gz": "6764b048fc44a3919e110b5a4186bc5a7e3319d133bf433374ccf60eae021618",
+  "reports/qc/donor_summary.tsv": "d07482b08587470a1bc809cb390bbf198c6bbb2decb222648360e1f8482f73f1",
+  "reports/qc/frip.tsv": "8285280597d98b361ab622c8c5939f18ef6a1513795682f5463d1a1efa1ea985",
+  "reports/phase3/pseudobulk_qc.tsv": "84a33f676e8aba5e892d38364a9f7aa494af51a8b7f0d68942cfa98f50755460",
+  "scripts/marker_qc.py": "1291e114a95cc1e5b913cc70003ae0eb1b36c8fc5ce69f5ec190d396c24111bd",
+  "scripts/audit_fragments.py": "7f5d11d437a7672d56e66a261ea04de0f2c6031fee190e43c65065b389a079bc",
+  "scripts/audit_phase3_celltype_fragments.py": "3f36ea0963f51bf7f92a62383a31e60edb77179241c68ca23366a054549530e8",
+  "reports/qc/marker_summary.tsv": "db3d007ef077826070874e04a99fe23cc9af04f76520ef647f15a83672627746",
+  "reports/phase3/donor_celltype_audit.tsv": "34a8fe805b4ec6ca0631cafb88ccb17968da4e3b04bb26498af0521a377d41b2",
+  "reports/phase3/count_matrix_qc/pca_scores.tsv": "30d64c75898daf91ba010e2477a80dc66de5b1cb339a1e2d8d76fd7ea1d84402",
+  "reports/phase3/count_matrix_qc/count_matrix_qc.json": "05651ed37e7d2ade386923fdd5d2f79937cff69b8b8f451d3d412177b114eb68",
+  "reports/qc/cells.unambiguous.tsv": "cb79df8e26ab7d70f5a8ffaa780fe791698807281ec40f39e1af11e76d40e164"
+}

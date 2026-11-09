@@ -1,0 +1,14 @@
+{
+  "independent_filter_and_order_check": "PASS",
+  "ranked_parents": 30,
+  "eligible_parents": 787,
+  "displayed_values": 975000,
+  "selected_browser_means_match_BigWig_values": true,
+  "pooled_track_SHA256_checked": 13,
+  "PDF_pages_rendered_and_visually_reviewed": 7,
+  "one_global_atlas_y_range": [
+    0,
+    0.07708225175738335
+  ],
+  "original_significance_outputs_overwritten": false
+}

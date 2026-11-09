@@ -1,0 +1,20 @@
+{
+  "scope": "Review-only re-ranking of the fixed 1000 natural parents; no change to library or differential tests",
+  "target_count": 30,
+  "eligibility": {
+    "maximum_pairwise_FDR_lt": 0.05,
+    "minimum_pairwise_log2FC_gte": 1.5,
+    "pooled_browser_MG_to_strongest_offtarget_gte": 3.0,
+    "maximum_glial_leave_one_donor_out_FDR_lt": 0.05,
+    "primary_positive_donors": 4,
+    "browser_donors_MG_above_both_glia": 4
+  },
+  "order": [
+    "pooled MG mean IPM per base over the exact 500bp parent, descending",
+    "pooled MG / strongest of 12 off-target mean signals, descending",
+    "original candidate rank, ascending"
+  ],
+  "threshold_sensitivity_browser_ratios": [2.5, 3.0, 3.5, 4.0],
+  "atlas_y_axis": "One global range across all 30 loci and all 13 cell types",
+  "interpretation": "Adjustable review thresholds, not biological validation cutoffs; accessibility is not reporter activity"
+}

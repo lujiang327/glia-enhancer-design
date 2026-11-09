@@ -1,0 +1,121 @@
+{
+  "selection": "Activity descending after specificity and donor filters",
+  "selection_used_track_shapes": false,
+  "parents": 30,
+  "cell_types": 13,
+  "pdf_pages": 7,
+  "original_candidate_ranks": [
+    140,
+    25,
+    779,
+    63,
+    334,
+    54,
+    806,
+    66,
+    9,
+    600,
+    762,
+    194,
+    82,
+    291,
+    77,
+    823,
+    432,
+    72,
+    1,
+    33,
+    165,
+    336,
+    253,
+    46,
+    47,
+    452,
+    101,
+    160,
+    44,
+    621
+  ],
+  "worst_pairwise_FDR_min": 1.18599920142055e-09,
+  "worst_pairwise_FDR_max": 9.12231048292696e-06,
+  "minimum_pairwise_log2FC": 1.55065065508864,
+  "browser_MG_to_strongest_offtarget_min": 3.0339449086192474,
+  "browser_MG_to_strongest_offtarget_median": 3.548162229672764,
+  "browser_MG_to_strongest_offtarget_max": 5.301067398142838,
+  "all_glial_lodo_FDR_lt_0_05": 30,
+  "normalization": "Browser: global IPM/base 100bp means. DA: donor-blocked fragment overlaps with TMM.",
+  "source_table_sha256": "fd7c29ddcdd14e3fc9d15da0b3a08ba0842cc4f8ba2826773abf96e34f2975f3",
+  "source_track_sha256": {
+    "MG_pooled.IPM_per_base.100bp.bw": "5c09d633cbc38fe3f5167e189c161ed40f763b587c18dfb33fdf0a583362d7ac",
+    "Astrocyte_pooled.IPM_per_base.100bp.bw": "730bfc6861eb0f195b6e4500a7ad66434cae05b4cda1758f45b3d9b43faa4eab",
+    "Microglia_pooled.IPM_per_base.100bp.bw": "2bb58093b3c643399e3ecc3ca59cc891b3d73323fb742a44054ca70fff5b9740",
+    "Rod_pooled.IPM_per_base.100bp.bw": "488268248c332b027bbc1d8e88006b294db633bd778ca2050c95dac0c12ba3be",
+    "Cone_pooled.IPM_per_base.100bp.bw": "f87cbdc96c769667b717890a94f5cca2b7c860b0af3defe017f22bcb34fa8321",
+    "ON_cone_bipolar_pooled.IPM_per_base.100bp.bw": "ecca780f16ae126abaaa4b7127b51a74d15e5145bbecf3daaa68dfec9fb28e41",
+    "OFF_cone_bipolar_pooled.IPM_per_base.100bp.bw": "034697eb5c7dc33c2b9de2146e22c8bbd81a269baee95c8bcb8ed2891fb25ae9",
+    "Rod_bipolar_pooled.IPM_per_base.100bp.bw": "c2f97e244f64c0ef968ea2a88bff7b92d6e10d5a01f9ad23d797578e4d58f0a5",
+    "GABA_amacrine_pooled.IPM_per_base.100bp.bw": "15e9d493f912a1b430d3b712675fae6b6bbbec59d992781f0b62e3a59a10e070",
+    "Gly_amacrine_pooled.IPM_per_base.100bp.bw": "0d025a0aaadbe03abb868fd6be9acab74a2d3d9244693091fd81e2965ea6e9d3",
+    "AII_amacrine_pooled.IPM_per_base.100bp.bw": "2564a73e5adfbbb2fe33f1c7d3908ee59499b920e6fdd163bfcae04d13d972df",
+    "Horizontal_pooled.IPM_per_base.100bp.bw": "85d27f89b19faff13daa7218e93f640aa6f49ef4b927efc3c22f0e89350542e6",
+    "RGC_pooled.IPM_per_base.100bp.bw": "f8b7276c7a708cd6dbb5f4ed2630a8da035db91d9bc05fc87ac66443a93d3784"
+  },
+  "view": "2.5kb per locus; one global y-range across every locus and cell type",
+  "scope": "Selected best cases. Not representative of the entire library, independent validation, reporter evidence or variant specificity.",
+  "ranking_config": {
+    "scope": "Review-only re-ranking of the fixed 1000 natural parents; no change to library or differential tests",
+    "target_count": 30,
+    "eligibility": {
+      "maximum_pairwise_FDR_lt": 0.05,
+      "minimum_pairwise_log2FC_gte": 1.5,
+      "pooled_browser_MG_to_strongest_offtarget_gte": 3.0,
+      "maximum_glial_leave_one_donor_out_FDR_lt": 0.05,
+      "primary_positive_donors": 4,
+      "browser_donors_MG_above_both_glia": 4
+    },
+    "order": [
+      "pooled MG mean IPM per base over the exact 500bp parent, descending",
+      "pooled MG / strongest of 12 off-target mean signals, descending",
+      "original candidate rank, ascending"
+    ],
+    "threshold_sensitivity_browser_ratios": [
+      2.5,
+      3.0,
+      3.5,
+      4.0
+    ],
+    "atlas_y_axis": "One global range across all 30 loci and all 13 cell types",
+    "interpretation": "Adjustable review thresholds, not biological validation cutoffs; accessibility is not reporter activity"
+  },
+  "ranking_config_sha256": "d4b4400756272048a6e3ef9ecb1dde9f4d27733a918f0d30db82191c7827946f",
+  "ranking_comparison": {
+    "old_significance_top30": {
+      "regions": 30,
+      "median_MG_browser_signal": 0.03176178380288183,
+      "median_equal_donor_TMM_MG_CPM": 42.964444773714874,
+      "minimum_browser_specificity": 2.7607925407068614,
+      "median_browser_specificity": 4.152927801782713
+    },
+    "new_activity_specificity_top30": {
+      "regions": 30,
+      "median_MG_browser_signal": 0.03611793355084955,
+      "median_equal_donor_TMM_MG_CPM": 46.50653890464126,
+      "minimum_browser_specificity": 3.0339449086192474,
+      "median_browser_specificity": 3.548162229672764
+    },
+    "overlap_parents": 14,
+    "eligible_parents": 787,
+    "original_universe": 1000,
+    "browser_audit_sha256": "6d5828b09d2ec96418338f633c6eb49eb1ca1e94b7ad1b497a27c422031d0ccb",
+    "median_MG_signal_change_fraction": 0.1371506643015583,
+    "activity_only_top30_without_additional_filters": {
+      "regions": 30,
+      "median_MG_browser_signal": 0.03825123116839677,
+      "median_equal_donor_TMM_MG_CPM": 49.33649113279564,
+      "minimum_browser_specificity": 2.27138110746083,
+      "median_browser_specificity": 3.3271766853869056
+    },
+    "maximum_possible_top30_median_MG_signal_gain_in_fixed_1000": 0.20431621239503972
+  },
+  "atlas_global_ymax": 0.07708225175738335
+}

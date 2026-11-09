@@ -1,0 +1,26 @@
+{
+  "PDF_pages": 5,
+  "PDF_pages_rendered_and_visually_reviewed": 5,
+  "MG_cell_IDs_unique": 3434,
+  "MG_bare_barcodes_unique": 3434,
+  "MG_ids_present_in_RNA_matrix": 3434,
+  "all_MG_donor_and_eye_mappings_match_sample_map": true,
+  "RNA_matrix_columns": 51645,
+  "RNA_sample_prefixes": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8"
+  ],
+  "all_cell_type_donor_count_rows": 52,
+  "donor_assigned_cell_records_across_13_pools": 48422,
+  "RNA_reclustering_performed": false,
+  "all_13_type_RNA_marker_audit_performed": false,
+  "raw_alignment_reprocessed": false,
+  "ambient_RNA_correction_performed": false,
+  "global_cross_pool_cell_ID_conflict_audit_performed": false
+}

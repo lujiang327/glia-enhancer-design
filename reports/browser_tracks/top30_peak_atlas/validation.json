@@ -1,0 +1,10 @@
+{
+  "selection_exact_match": true,
+  "regions": 30,
+  "cell_types": 13,
+  "plotted_values": 975000,
+  "parent_browser_means_cross_checked": 390,
+  "finite_nonnegative_track_values": true,
+  "PDF_pages_rendered_and_visually_inspected": 7,
+  "independent_y_autoscaling_within_locus": false
+}

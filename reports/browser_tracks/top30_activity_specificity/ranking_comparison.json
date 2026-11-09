@@ -1,0 +1,29 @@
+{
+  "old_significance_top30": {
+    "regions": 30,
+    "median_MG_browser_signal": 0.03176178380288183,
+    "median_equal_donor_TMM_MG_CPM": 42.964444773714874,
+    "minimum_browser_specificity": 2.7607925407068614,
+    "median_browser_specificity": 4.152927801782713
+  },
+  "new_activity_specificity_top30": {
+    "regions": 30,
+    "median_MG_browser_signal": 0.03611793355084955,
+    "median_equal_donor_TMM_MG_CPM": 46.50653890464126,
+    "minimum_browser_specificity": 3.0339449086192474,
+    "median_browser_specificity": 3.548162229672764
+  },
+  "overlap_parents": 14,
+  "eligible_parents": 787,
+  "original_universe": 1000,
+  "browser_audit_sha256": "6d5828b09d2ec96418338f633c6eb49eb1ca1e94b7ad1b497a27c422031d0ccb",
+  "median_MG_signal_change_fraction": 0.1371506643015583,
+  "activity_only_top30_without_additional_filters": {
+    "regions": 30,
+    "median_MG_browser_signal": 0.03825123116839677,
+    "median_equal_donor_TMM_MG_CPM": 49.33649113279564,
+    "minimum_browser_specificity": 2.27138110746083,
+    "median_browser_specificity": 3.3271766853869056
+  },
+  "maximum_possible_top30_median_MG_signal_gain_in_fixed_1000": 0.20431621239503972
+}

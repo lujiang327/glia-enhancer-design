@@ -1,0 +1,30 @@
+{
+  "parents": 1000,
+  "pairwise_comparisons": 12,
+  "all_twelve_positive_and_FDR_lt_0_05": 1000,
+  "browser_MG_above_all_twelve_offtargets": 1000,
+  "browser_ratio_min": 2.2584236275071468,
+  "browser_ratio_median": 3.8371928729358227,
+  "browser_ratio_max": 11.85405286556116,
+  "browser_ratio_ge_2": 1000,
+  "browser_ratio_ge_4": 426,
+  "all_eight_glial_lodo_FDR_lt_0_05": 872,
+  "all_four_browser_donors_MG_above_both_glia": 978,
+  "per_donor_browser_MG_above_both_glia": {
+    "LGS1": 981,
+    "LGS2": 997,
+    "LGS3": 1000,
+    "LVG1": 1000
+  },
+  "weakest_browser_ratio_rank": 972,
+  "browser_figure_ranks": [
+    1,
+    500,
+    1000,
+    972
+  ],
+  "track_sha256_verified": 25,
+  "candidate_BED_identity_check": "PASS_ALL_1000",
+  "no_new_differential_tests": true,
+  "no_variant_specificity_evidence": true
+}
