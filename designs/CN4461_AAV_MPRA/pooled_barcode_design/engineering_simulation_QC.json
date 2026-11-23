@@ -1,0 +1,752 @@
+[
+  {
+    "id": "MG_P140_parent500_BC0001",
+    "exact_directed_assembly": true,
+    "all_nonbarcode_pilot_bases_unchanged": true,
+    "original_parent_500bp_unchanged": true,
+    "protected_feature_sequences_unchanged": true,
+    "EcoRV_sites": [
+      1492
+    ],
+    "PmlI_sites": [
+      1987
+    ],
+    "new_barcode_1based": [
+      1750,
+      1765
+    ],
+    "new_BGHpA_signal_1based": [
+      1780,
+      1891
+    ],
+    "right_ITR_long_1based": [
+      2009,
+      2149
+    ]
+  },
+  {
+    "id": "MG_P140_parent500_BC0002",
+    "exact_directed_assembly": true,
+    "all_nonbarcode_pilot_bases_unchanged": true,
+    "original_parent_500bp_unchanged": true,
+    "protected_feature_sequences_unchanged": true,
+    "EcoRV_sites": [
+      1492
+    ],
+    "PmlI_sites": [
+      1987
+    ],
+    "new_barcode_1based": [
+      1750,
+      1765
+    ],
+    "new_BGHpA_signal_1based": [
+      1780,
+      1891
+    ],
+    "right_ITR_long_1based": [
+      2009,
+      2149
+    ]
+  },
+  {
+    "id": "MG_P140_parent500_BC0003",
+    "exact_directed_assembly": true,
+    "all_nonbarcode_pilot_bases_unchanged": true,
+    "original_parent_500bp_unchanged": true,
+    "protected_feature_sequences_unchanged": true,
+    "EcoRV_sites": [
+      1492
+    ],
+    "PmlI_sites": [
+      1987
+    ],
+    "new_barcode_1based": [
+      1750,
+      1765
+    ],
+    "new_BGHpA_signal_1based": [
+      1780,
+      1891
+    ],
+    "right_ITR_long_1based": [
+      2009,
+      2149
+    ]
+  },
+  {
+    "id": "MG_P140_parent500_BC0004",
+    "exact_directed_assembly": true,
+    "all_nonbarcode_pilot_bases_unchanged": true,
+    "original_parent_500bp_unchanged": true,
+    "protected_feature_sequences_unchanged": true,
+    "EcoRV_sites": [
+      1492
+    ],
+    "PmlI_sites": [
+      1987
+    ],
+    "new_barcode_1based": [
+      1750,
+      1765
+    ],
+    "new_BGHpA_signal_1based": [
+      1780,
+      1891
+    ],
+    "right_ITR_long_1based": [
+      2009,
+      2149
+    ]
+  },
+  {
+    "id": "MG_P140_parent500_BC0005",
+    "exact_directed_assembly": true,
+    "all_nonbarcode_pilot_bases_unchanged": true,
+    "original_parent_500bp_unchanged": true,
+    "protected_feature_sequences_unchanged": true,
+    "EcoRV_sites": [
+      1492
+    ],
+    "PmlI_sites": [
+      1987
+    ],
+    "new_barcode_1based": [
+      1750,
+      1765
+    ],
+    "new_BGHpA_signal_1based": [
+      1780,
+      1891
+    ],
+    "right_ITR_long_1based": [
+      2009,
+      2149
+    ]
+  },
+  {
+    "id": "MG_P140_parent500_BC0006",
+    "exact_directed_assembly": true,
+    "all_nonbarcode_pilot_bases_unchanged": true,
+    "original_parent_500bp_unchanged": true,
+    "protected_feature_sequences_unchanged": true,
+    "EcoRV_sites": [
+      1492
+    ],
+    "PmlI_sites": [
+      1987
+    ],
+    "new_barcode_1based": [
+      1750,
+      1765
+    ],
+    "new_BGHpA_signal_1based": [
+      1780,
+      1891
+    ],
+    "right_ITR_long_1based": [
+      2009,
+      2149
+    ]
+  },
+  {
+    "id": "MG_P140_parent500_BC0007",
+    "exact_directed_assembly": true,
+    "all_nonbarcode_pilot_bases_unchanged": true,
+    "original_parent_500bp_unchanged": true,
+    "protected_feature_sequences_unchanged": true,
+    "EcoRV_sites": [
+      1492
+    ],
+    "PmlI_sites": [
+      1987
+    ],
+    "new_barcode_1based": [
+      1750,
+      1765
+    ],
+    "new_BGHpA_signal_1based": [
+      1780,
+      1891
+    ],
+    "right_ITR_long_1based": [
+      2009,
+      2149
+    ]
+  },
+  {
+    "id": "MG_P140_parent500_BC0008",
+    "exact_directed_assembly": true,
+    "all_nonbarcode_pilot_bases_unchanged": true,
+    "original_parent_500bp_unchanged": true,
+    "protected_feature_sequences_unchanged": true,
+    "EcoRV_sites": [
+      1492
+    ],
+    "PmlI_sites": [
+      1987
+    ],
+    "new_barcode_1based": [
+      1750,
+      1765
+    ],
+    "new_BGHpA_signal_1based": [
+      1780,
+      1891
+    ],
+    "right_ITR_long_1based": [
+      2009,
+      2149
+    ]
+  },
+  {
+    "id": "MG_P140_parent500_BC0009",
+    "exact_directed_assembly": true,
+    "all_nonbarcode_pilot_bases_unchanged": true,
+    "original_parent_500bp_unchanged": true,
+    "protected_feature_sequences_unchanged": true,
+    "EcoRV_sites": [
+      1492
+    ],
+    "PmlI_sites": [
+      1987
+    ],
+    "new_barcode_1based": [
+      1750,
+      1765
+    ],
+    "new_BGHpA_signal_1based": [
+      1780,
+      1891
+    ],
+    "right_ITR_long_1based": [
+      2009,
+      2149
+    ]
+  },
+  {
+    "id": "MG_P140_parent500_BC0010",
+    "exact_directed_assembly": true,
+    "all_nonbarcode_pilot_bases_unchanged": true,
+    "original_parent_500bp_unchanged": true,
+    "protected_feature_sequences_unchanged": true,
+    "EcoRV_sites": [
+      1492
+    ],
+    "PmlI_sites": [
+      1987
+    ],
+    "new_barcode_1based": [
+      1750,
+      1765
+    ],
+    "new_BGHpA_signal_1based": [
+      1780,
+      1891
+    ],
+    "right_ITR_long_1based": [
+      2009,
+      2149
+    ]
+  },
+  {
+    "id": "MG_P25_parent500_BC0011",
+    "exact_directed_assembly": true,
+    "all_nonbarcode_pilot_bases_unchanged": true,
+    "original_parent_500bp_unchanged": true,
+    "protected_feature_sequences_unchanged": true,
+    "EcoRV_sites": [
+      1492
+    ],
+    "PmlI_sites": [
+      1987
+    ],
+    "new_barcode_1based": [
+      1750,
+      1765
+    ],
+    "new_BGHpA_signal_1based": [
+      1780,
+      1891
+    ],
+    "right_ITR_long_1based": [
+      2009,
+      2149
+    ]
+  },
+  {
+    "id": "MG_P25_parent500_BC0012",
+    "exact_directed_assembly": true,
+    "all_nonbarcode_pilot_bases_unchanged": true,
+    "original_parent_500bp_unchanged": true,
+    "protected_feature_sequences_unchanged": true,
+    "EcoRV_sites": [
+      1492
+    ],
+    "PmlI_sites": [
+      1987
+    ],
+    "new_barcode_1based": [
+      1750,
+      1765
+    ],
+    "new_BGHpA_signal_1based": [
+      1780,
+      1891
+    ],
+    "right_ITR_long_1based": [
+      2009,
+      2149
+    ]
+  },
+  {
+    "id": "MG_P25_parent500_BC0013",
+    "exact_directed_assembly": true,
+    "all_nonbarcode_pilot_bases_unchanged": true,
+    "original_parent_500bp_unchanged": true,
+    "protected_feature_sequences_unchanged": true,
+    "EcoRV_sites": [
+      1492
+    ],
+    "PmlI_sites": [
+      1987
+    ],
+    "new_barcode_1based": [
+      1750,
+      1765
+    ],
+    "new_BGHpA_signal_1based": [
+      1780,
+      1891
+    ],
+    "right_ITR_long_1based": [
+      2009,
+      2149
+    ]
+  },
+  {
+    "id": "MG_P25_parent500_BC0014",
+    "exact_directed_assembly": true,
+    "all_nonbarcode_pilot_bases_unchanged": true,
+    "original_parent_500bp_unchanged": true,
+    "protected_feature_sequences_unchanged": true,
+    "EcoRV_sites": [
+      1492
+    ],
+    "PmlI_sites": [
+      1987
+    ],
+    "new_barcode_1based": [
+      1750,
+      1765
+    ],
+    "new_BGHpA_signal_1based": [
+      1780,
+      1891
+    ],
+    "right_ITR_long_1based": [
+      2009,
+      2149
+    ]
+  },
+  {
+    "id": "MG_P25_parent500_BC0015",
+    "exact_directed_assembly": true,
+    "all_nonbarcode_pilot_bases_unchanged": true,
+    "original_parent_500bp_unchanged": true,
+    "protected_feature_sequences_unchanged": true,
+    "EcoRV_sites": [
+      1492
+    ],
+    "PmlI_sites": [
+      1987
+    ],
+    "new_barcode_1based": [
+      1750,
+      1765
+    ],
+    "new_BGHpA_signal_1based": [
+      1780,
+      1891
+    ],
+    "right_ITR_long_1based": [
+      2009,
+      2149
+    ]
+  },
+  {
+    "id": "MG_P25_parent500_BC0016",
+    "exact_directed_assembly": true,
+    "all_nonbarcode_pilot_bases_unchanged": true,
+    "original_parent_500bp_unchanged": true,
+    "protected_feature_sequences_unchanged": true,
+    "EcoRV_sites": [
+      1492
+    ],
+    "PmlI_sites": [
+      1987
+    ],
+    "new_barcode_1based": [
+      1750,
+      1765
+    ],
+    "new_BGHpA_signal_1based": [
+      1780,
+      1891
+    ],
+    "right_ITR_long_1based": [
+      2009,
+      2149
+    ]
+  },
+  {
+    "id": "MG_P25_parent500_BC0017",
+    "exact_directed_assembly": true,
+    "all_nonbarcode_pilot_bases_unchanged": true,
+    "original_parent_500bp_unchanged": true,
+    "protected_feature_sequences_unchanged": true,
+    "EcoRV_sites": [
+      1492
+    ],
+    "PmlI_sites": [
+      1987
+    ],
+    "new_barcode_1based": [
+      1750,
+      1765
+    ],
+    "new_BGHpA_signal_1based": [
+      1780,
+      1891
+    ],
+    "right_ITR_long_1based": [
+      2009,
+      2149
+    ]
+  },
+  {
+    "id": "MG_P25_parent500_BC0018",
+    "exact_directed_assembly": true,
+    "all_nonbarcode_pilot_bases_unchanged": true,
+    "original_parent_500bp_unchanged": true,
+    "protected_feature_sequences_unchanged": true,
+    "EcoRV_sites": [
+      1492
+    ],
+    "PmlI_sites": [
+      1987
+    ],
+    "new_barcode_1based": [
+      1750,
+      1765
+    ],
+    "new_BGHpA_signal_1based": [
+      1780,
+      1891
+    ],
+    "right_ITR_long_1based": [
+      2009,
+      2149
+    ]
+  },
+  {
+    "id": "MG_P25_parent500_BC0019",
+    "exact_directed_assembly": true,
+    "all_nonbarcode_pilot_bases_unchanged": true,
+    "original_parent_500bp_unchanged": true,
+    "protected_feature_sequences_unchanged": true,
+    "EcoRV_sites": [
+      1492
+    ],
+    "PmlI_sites": [
+      1987
+    ],
+    "new_barcode_1based": [
+      1750,
+      1765
+    ],
+    "new_BGHpA_signal_1based": [
+      1780,
+      1891
+    ],
+    "right_ITR_long_1based": [
+      2009,
+      2149
+    ]
+  },
+  {
+    "id": "MG_P25_parent500_BC0020",
+    "exact_directed_assembly": true,
+    "all_nonbarcode_pilot_bases_unchanged": true,
+    "original_parent_500bp_unchanged": true,
+    "protected_feature_sequences_unchanged": true,
+    "EcoRV_sites": [
+      1492
+    ],
+    "PmlI_sites": [
+      1987
+    ],
+    "new_barcode_1based": [
+      1750,
+      1765
+    ],
+    "new_BGHpA_signal_1based": [
+      1780,
+      1891
+    ],
+    "right_ITR_long_1based": [
+      2009,
+      2149
+    ]
+  },
+  {
+    "id": "MG_P779_parent500_BC0021",
+    "exact_directed_assembly": true,
+    "all_nonbarcode_pilot_bases_unchanged": true,
+    "original_parent_500bp_unchanged": true,
+    "protected_feature_sequences_unchanged": true,
+    "EcoRV_sites": [
+      1492
+    ],
+    "PmlI_sites": [
+      1987
+    ],
+    "new_barcode_1based": [
+      1750,
+      1765
+    ],
+    "new_BGHpA_signal_1based": [
+      1780,
+      1891
+    ],
+    "right_ITR_long_1based": [
+      2009,
+      2149
+    ]
+  },
+  {
+    "id": "MG_P779_parent500_BC0022",
+    "exact_directed_assembly": true,
+    "all_nonbarcode_pilot_bases_unchanged": true,
+    "original_parent_500bp_unchanged": true,
+    "protected_feature_sequences_unchanged": true,
+    "EcoRV_sites": [
+      1492
+    ],
+    "PmlI_sites": [
+      1987
+    ],
+    "new_barcode_1based": [
+      1750,
+      1765
+    ],
+    "new_BGHpA_signal_1based": [
+      1780,
+      1891
+    ],
+    "right_ITR_long_1based": [
+      2009,
+      2149
+    ]
+  },
+  {
+    "id": "MG_P779_parent500_BC0023",
+    "exact_directed_assembly": true,
+    "all_nonbarcode_pilot_bases_unchanged": true,
+    "original_parent_500bp_unchanged": true,
+    "protected_feature_sequences_unchanged": true,
+    "EcoRV_sites": [
+      1492
+    ],
+    "PmlI_sites": [
+      1987
+    ],
+    "new_barcode_1based": [
+      1750,
+      1765
+    ],
+    "new_BGHpA_signal_1based": [
+      1780,
+      1891
+    ],
+    "right_ITR_long_1based": [
+      2009,
+      2149
+    ]
+  },
+  {
+    "id": "MG_P779_parent500_BC0024",
+    "exact_directed_assembly": true,
+    "all_nonbarcode_pilot_bases_unchanged": true,
+    "original_parent_500bp_unchanged": true,
+    "protected_feature_sequences_unchanged": true,
+    "EcoRV_sites": [
+      1492
+    ],
+    "PmlI_sites": [
+      1987
+    ],
+    "new_barcode_1based": [
+      1750,
+      1765
+    ],
+    "new_BGHpA_signal_1based": [
+      1780,
+      1891
+    ],
+    "right_ITR_long_1based": [
+      2009,
+      2149
+    ]
+  },
+  {
+    "id": "MG_P779_parent500_BC0025",
+    "exact_directed_assembly": true,
+    "all_nonbarcode_pilot_bases_unchanged": true,
+    "original_parent_500bp_unchanged": true,
+    "protected_feature_sequences_unchanged": true,
+    "EcoRV_sites": [
+      1492
+    ],
+    "PmlI_sites": [
+      1987
+    ],
+    "new_barcode_1based": [
+      1750,
+      1765
+    ],
+    "new_BGHpA_signal_1based": [
+      1780,
+      1891
+    ],
+    "right_ITR_long_1based": [
+      2009,
+      2149
+    ]
+  },
+  {
+    "id": "MG_P779_parent500_BC0026",
+    "exact_directed_assembly": true,
+    "all_nonbarcode_pilot_bases_unchanged": true,
+    "original_parent_500bp_unchanged": true,
+    "protected_feature_sequences_unchanged": true,
+    "EcoRV_sites": [
+      1492
+    ],
+    "PmlI_sites": [
+      1987
+    ],
+    "new_barcode_1based": [
+      1750,
+      1765
+    ],
+    "new_BGHpA_signal_1based": [
+      1780,
+      1891
+    ],
+    "right_ITR_long_1based": [
+      2009,
+      2149
+    ]
+  },
+  {
+    "id": "MG_P779_parent500_BC0027",
+    "exact_directed_assembly": true,
+    "all_nonbarcode_pilot_bases_unchanged": true,
+    "original_parent_500bp_unchanged": true,
+    "protected_feature_sequences_unchanged": true,
+    "EcoRV_sites": [
+      1492
+    ],
+    "PmlI_sites": [
+      1987
+    ],
+    "new_barcode_1based": [
+      1750,
+      1765
+    ],
+    "new_BGHpA_signal_1based": [
+      1780,
+      1891
+    ],
+    "right_ITR_long_1based": [
+      2009,
+      2149
+    ]
+  },
+  {
+    "id": "MG_P779_parent500_BC0028",
+    "exact_directed_assembly": true,
+    "all_nonbarcode_pilot_bases_unchanged": true,
+    "original_parent_500bp_unchanged": true,
+    "protected_feature_sequences_unchanged": true,
+    "EcoRV_sites": [
+      1492
+    ],
+    "PmlI_sites": [
+      1987
+    ],
+    "new_barcode_1based": [
+      1750,
+      1765
+    ],
+    "new_BGHpA_signal_1based": [
+      1780,
+      1891
+    ],
+    "right_ITR_long_1based": [
+      2009,
+      2149
+    ]
+  },
+  {
+    "id": "MG_P779_parent500_BC0029",
+    "exact_directed_assembly": true,
+    "all_nonbarcode_pilot_bases_unchanged": true,
+    "original_parent_500bp_unchanged": true,
+    "protected_feature_sequences_unchanged": true,
+    "EcoRV_sites": [
+      1492
+    ],
+    "PmlI_sites": [
+      1987
+    ],
+    "new_barcode_1based": [
+      1750,
+      1765
+    ],
+    "new_BGHpA_signal_1based": [
+      1780,
+      1891
+    ],
+    "right_ITR_long_1based": [
+      2009,
+      2149
+    ]
+  },
+  {
+    "id": "MG_P779_parent500_BC0030",
+    "exact_directed_assembly": true,
+    "all_nonbarcode_pilot_bases_unchanged": true,
+    "original_parent_500bp_unchanged": true,
+    "protected_feature_sequences_unchanged": true,
+    "EcoRV_sites": [
+      1492
+    ],
+    "PmlI_sites": [
+      1987
+    ],
+    "new_barcode_1based": [
+      1750,
+      1765
+    ],
+    "new_BGHpA_signal_1based": [
+      1780,
+      1891
+    ],
+    "right_ITR_long_1based": [
+      2009,
+      2149
+    ]
+  }
+]

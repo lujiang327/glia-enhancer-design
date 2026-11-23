@@ -1,0 +1,11 @@
+label	type	ranges_1based_inclusive
+AAV2 ITR	repeat_region	2083-2223
+bGH poly(A) signal	polyA_signal	1854-1965
+SYFP2	CDS	826-828;829-831;832-1542
+Kozak sequence	regulatory	820-829
+f1 ori	rep_origin	2298-2753
+ori	rep_origin	4171-4759
+AmpR	CDS	3140-3208;3209-4000
+AmpR promoter	promoter	3035-3139
+AAV2 ITR (alternate)	repeat_region	1-130
+AAV2 ITR	repeat_region	2083-2212

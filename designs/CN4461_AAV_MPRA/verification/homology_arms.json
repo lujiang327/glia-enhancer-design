@@ -1,0 +1,40 @@
+[
+  {
+    "arm": "left",
+    "reference_start": 125,
+    "reference_end": 144,
+    "sequence_5to3": "GTTCCTGCGGCCGCACGCGT",
+    "length": 20,
+    "retained_top_strand_overlap": "GTTCCTGCGGCCGCA",
+    "retained_top_strand_overlap_length": 15,
+    "reference_exact_forward_hits": [
+      125
+    ],
+    "reference_exact_reverse_hits": [],
+    "overlap_Tm_NN_C": 54.53,
+    "longest_exact_run_elsewhere": {
+      "length": 14,
+      "sequence": "GTTCCTGCGGCCGC"
+    },
+    "Tm_assumptions": "Biopython DNA_NN3 defaults: 25 nM each strand, 50 mM Na, no Mg correction; comparative estimate only"
+  },
+  {
+    "arm": "right",
+    "reference_start": 727,
+    "reference_end": 756,
+    "sequence_5to3": "GAGCTCGGGCTGGGCATAAAAGTCAGGGCA",
+    "length": 30,
+    "retained_top_strand_overlap": "CGGGCTGGGCATAAAAGTCAGGGCA",
+    "retained_top_strand_overlap_length": 25,
+    "reference_exact_forward_hits": [
+      727
+    ],
+    "reference_exact_reverse_hits": [],
+    "overlap_Tm_NN_C": 63.18,
+    "longest_exact_run_elsewhere": {
+      "length": 8,
+      "sequence": "CTCGGGCT"
+    },
+    "Tm_assumptions": "Biopython DNA_NN3 defaults: 25 nM each strand, 50 mM Na, no Mg correction; comparative estimate only"
+  }
+]

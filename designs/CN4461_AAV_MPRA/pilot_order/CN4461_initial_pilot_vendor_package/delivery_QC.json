@@ -1,0 +1,15 @@
+{
+  "date": "2026-11-10",
+  "initial_pilot_fragments": 3,
+  "pilot_exact_parent_and_arm_identity": true,
+  "exported_workbook_full_sequences_checked": true,
+  "cached_length_formulas_all_550": true,
+  "spreadsheet_formula_errors": 0,
+  "both_sheets_visually_reviewed": true,
+  "pooled_genbank_and_fasta_examples_independently_read_back": 30,
+  "unique_prototype_ids": 30,
+  "only_intended_8bp_to16bp_changes_in_examples": true,
+  "barcode_codebook_distance_check": "all 4000 pairwise and reverse-complement comparisons, min 5",
+  "experimental_QC": "Not performed; plan and acceptance targets only",
+  "orders_placed": false
+}

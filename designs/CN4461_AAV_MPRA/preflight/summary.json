@@ -1,0 +1,43 @@
+{
+  "status": "REFERENCE_SEQUENCE_REQUIRED_NO_CLONING_DESIGN_RELEASED",
+  "reference": {
+    "plasmid": "CN4461",
+    "addgene_id": 236600,
+    "official_url": "https://www.addgene.org/236600/sequences/",
+    "nucleotide_sequence_available": false,
+    "reason": "Official download/copy requires login; no matching local GenBank/SnapGene file found"
+  },
+  "source_library": "reports/phase5/motif_attribution/ranked_library_with_parent_attribution.tsv.gz",
+  "source_library_sha256": "0bb423946088c73d0012d523ed4c86c8eaf56ecff3711bd8fb8dca128d6b7b24",
+  "insert_sequences_screened": 2884,
+  "by_role": {
+    "parent": 1000,
+    "loss_control": 946,
+    "gain": 938
+  },
+  "all_source_sequence_checksums_match": true,
+  "sequence_lengths": {
+    "500": 2884
+  },
+  "unique_insert_sequences": 2884,
+  "non_ACGT_sequences": 0,
+  "review_flagged_sequences": 663,
+  "internal_sites": {
+    "MluI": {
+      "recognition_sequence": "ACGCGT",
+      "sequences_with_site": 6,
+      "total_sites": 6
+    },
+    "SacI": {
+      "recognition_sequence": "GAGCTC",
+      "sequences_with_site": 417,
+      "total_sites": 460
+    }
+  },
+  "caveats": [
+    "Sequence flags are transparent review heuristics, not vendor acceptance criteria or automatic exclusions.",
+    "Internal MluI/SacI sites do not automatically prevent homology assembly with separately linearized backbone.",
+    "Backbone sites, enhancer boundaries, junctions, overlaps, protected features, vector lengths and circular assemblies are unverified.",
+    "No homology arms, final synthesis fragments, unique MPRA barcodes or order-ready vendor files were generated."
+  ]
+}

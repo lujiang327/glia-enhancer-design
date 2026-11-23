@@ -1,0 +1,173 @@
+[
+  {
+    "id": "pilot_parent_rank140",
+    "parent_sequence_id": "parent__retina_peak_097158",
+    "parent_rank": 140,
+    "peak_id": "retina_peak_097158",
+    "design_status": "COMPUTATIONAL_SEQUENCE_CHECKS_PASS_PILOT_SELECTION_PROVISIONAL",
+    "intended_orientation": "+ relative to reference SYFP2",
+    "plasmid_length": 4738,
+    "fragment_length": 550,
+    "vector_genome_including_long_annotated_ITRs": 2141,
+    "alternative_short_annotation_span": 2130,
+    "all_non_enhancer_reference_bases_preserved": true,
+    "protected_features": {
+      "Left AAV2 ITR": true,
+      "minBG candidate": true,
+      "Promoter/linker protected interval": true,
+      "SYFP2 CDS": true,
+      "SYFP2 stop": true,
+      "WPRE3 aligned core": true,
+      "WPRE/linker protected interval": true,
+      "BarcodeS candidate": true,
+      "Barcode junction protected interval": true,
+      "BGHpA annotated signal": true,
+      "Downstream polyA context": true,
+      "Right AAV2 ITR long annotation": true,
+      "Right AAV2 ITR short annotation": true
+    },
+    "intact_old_C2_repeat_present": false,
+    "parent_copies": 1,
+    "insert_internal_MluI": [],
+    "insert_internal_SacI": [
+      392
+    ],
+    "assembled_MluI": [
+      139
+    ],
+    "assembled_SacI": [
+      536,
+      645
+    ],
+    "GC_fraction": 0.628,
+    "maximum_homopolymer": 5,
+    "insert_exact_full_arm_matches": {
+      "left": [],
+      "right": []
+    },
+    "longest_insert_arm_shared_run": {
+      "left": {
+        "length": 9,
+        "sequence": "TCCTGCGGC"
+      },
+      "right": {
+        "length": 6,
+        "sequence": "GAGCTC"
+      }
+    },
+    "plasmid_sha256": "d65ee8682cb52e7bd003ea02eb1bccfc2215f859e59ab385ac1d6a4c476fbba7",
+    "fragment_sha256": "4d0e09f8b7f87247121efb077f90ef0d9517abc3e758f69b6f2a4b9ee2d3f980"
+  },
+  {
+    "id": "pilot_parent_rank25",
+    "parent_sequence_id": "parent__retina_peak_160616",
+    "parent_rank": 25,
+    "peak_id": "retina_peak_160616",
+    "design_status": "COMPUTATIONAL_SEQUENCE_CHECKS_PASS_PILOT_SELECTION_PROVISIONAL",
+    "intended_orientation": "+ relative to reference SYFP2",
+    "plasmid_length": 4738,
+    "fragment_length": 550,
+    "vector_genome_including_long_annotated_ITRs": 2141,
+    "alternative_short_annotation_span": 2130,
+    "all_non_enhancer_reference_bases_preserved": true,
+    "protected_features": {
+      "Left AAV2 ITR": true,
+      "minBG candidate": true,
+      "Promoter/linker protected interval": true,
+      "SYFP2 CDS": true,
+      "SYFP2 stop": true,
+      "WPRE3 aligned core": true,
+      "WPRE/linker protected interval": true,
+      "BarcodeS candidate": true,
+      "Barcode junction protected interval": true,
+      "BGHpA annotated signal": true,
+      "Downstream polyA context": true,
+      "Right AAV2 ITR long annotation": true,
+      "Right AAV2 ITR short annotation": true
+    },
+    "intact_old_C2_repeat_present": false,
+    "parent_copies": 1,
+    "insert_internal_MluI": [],
+    "insert_internal_SacI": [],
+    "assembled_MluI": [
+      139
+    ],
+    "assembled_SacI": [
+      645
+    ],
+    "GC_fraction": 0.62,
+    "maximum_homopolymer": 6,
+    "insert_exact_full_arm_matches": {
+      "left": [],
+      "right": []
+    },
+    "longest_insert_arm_shared_run": {
+      "left": {
+        "length": 7,
+        "sequence": "CTGCGGC"
+      },
+      "right": {
+        "length": 7,
+        "sequence": "GGGCTGG"
+      }
+    },
+    "plasmid_sha256": "91e1720144972917d055520325e80d5bfb495eb83e8dd56f6321fbc17431400d",
+    "fragment_sha256": "2300ae749f38e28ea9eb3183c1a865d0c92950f93320d73279f1c8d0b97e610e"
+  },
+  {
+    "id": "pilot_parent_rank779",
+    "parent_sequence_id": "parent__retina_peak_097490",
+    "parent_rank": 779,
+    "peak_id": "retina_peak_097490",
+    "design_status": "COMPUTATIONAL_SEQUENCE_CHECKS_PASS_PILOT_SELECTION_PROVISIONAL",
+    "intended_orientation": "+ relative to reference SYFP2",
+    "plasmid_length": 4738,
+    "fragment_length": 550,
+    "vector_genome_including_long_annotated_ITRs": 2141,
+    "alternative_short_annotation_span": 2130,
+    "all_non_enhancer_reference_bases_preserved": true,
+    "protected_features": {
+      "Left AAV2 ITR": true,
+      "minBG candidate": true,
+      "Promoter/linker protected interval": true,
+      "SYFP2 CDS": true,
+      "SYFP2 stop": true,
+      "WPRE3 aligned core": true,
+      "WPRE/linker protected interval": true,
+      "BarcodeS candidate": true,
+      "Barcode junction protected interval": true,
+      "BGHpA annotated signal": true,
+      "Downstream polyA context": true,
+      "Right AAV2 ITR long annotation": true,
+      "Right AAV2 ITR short annotation": true
+    },
+    "intact_old_C2_repeat_present": false,
+    "parent_copies": 1,
+    "insert_internal_MluI": [],
+    "insert_internal_SacI": [],
+    "assembled_MluI": [
+      139
+    ],
+    "assembled_SacI": [
+      645
+    ],
+    "GC_fraction": 0.48,
+    "maximum_homopolymer": 4,
+    "insert_exact_full_arm_matches": {
+      "left": [],
+      "right": []
+    },
+    "longest_insert_arm_shared_run": {
+      "left": {
+        "length": 7,
+        "sequence": "GTTCCTG"
+      },
+      "right": {
+        "length": 8,
+        "sequence": "TCGGGCTG"
+      }
+    },
+    "plasmid_sha256": "04c12d8d1975becfc8c2fdb7d9a3848117ee096875c19412622c4e823e8ecb33",
+    "fragment_sha256": "feb62fc753207551ca47ec50dfb9925146d9a981348ae1094650351cb7375c04"
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "biopython_version": "1.85",
+  "coordinate_convention": "1-based inclusive unless explicitly labeled otherwise",
+  "alignment": "difflib.SequenceMatcher(autojunk=False), full length plus orientation; original origins already identical",
+  "pilot_selection": "Illustrative parents from previous activity-oriented top list, original candidate ranks 140,25,779; not final selection",
+  "simulation": "Resolve 15-bp left and 25-bp right directed overlaps of actual restriction-cut top strand and synthetic dsDNA top strand, close circle, rotate to reference origin",
+  "assembly_method": "NEBuilder HiFi-type two-fragment homology assembly; backbone digested separately; synthetic insert NOT restriction digested",
+  "excluded_claims": [
+    "No thermodynamic folding/reaction kinetics model",
+    "No laboratory or packaging validation",
+    "No barcode redesign",
+    "No order"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "pdf_pages": 3,
+  "all_candidate_labels_present_on_every_page": true,
+  "all_three_PDF_pages_rendered_and_visually_reviewed": true,
+  "source_BigWigs_verified": 25,
+  "displayed_500bp_means_match_prior_audits": true,
+  "pdf_sha256": "fbacca664462634571c3aacde18857eb3e10e0c2502e893785044d1481abc69d"
+}

@@ -1,0 +1,61 @@
+{
+  "reference_recognition_site_starts": {
+    "XhoI": [
+      205,
+      399,
+      593,
+      1826
+    ],
+    "EcoRV": [
+      1574
+    ],
+    "PmlI": [
+      2061
+    ],
+    "AscI": [
+      1552
+    ]
+  },
+  "replacement_8bp": [
+    1832,
+    1839
+  ],
+  "new_barcode_length": 16,
+  "reference_cassette_between_complete_sites": [
+    1580,
+    2060
+  ],
+  "reference_cassette_length": 481,
+  "new_cassette_length": 489,
+  "left_flank": {
+    "sequence": "ACGGCGCGCCGCGGCCGCGAATTCGATATC",
+    "interval": [
+      1550,
+      1579
+    ],
+    "length": 30,
+    "actual_overlap_bp": 27
+  },
+  "right_flank": {
+    "sequence": "CACGTGCGGACCGAGCGGCC",
+    "interval": [
+      2061,
+      2080
+    ],
+    "length": 20,
+    "actual_overlap_bp": 17
+  },
+  "EcoRV_cut_after": 1576,
+  "PmlI_cut_after": 2063,
+  "removed_top_strand": [
+    1577,
+    2063
+  ],
+  "removed_top_strand_length": 487,
+  "engineering_fragment_bp": 539,
+  "only_base_change": "Replace 8bp candidate BarcodeS with new16bp tag; retain all flanks and cassette sequence",
+  "scope": "Validated digitally on selected three parents; screen sites anew for every eventual pooled enhancer/variant",
+  "linearization": "Backbone separately EcoRV/PmlI digested; cassette not digested; both original sites restored",
+  "reference_unmodified_with_new_tag_bp": 4828,
+  "pilot_parent_with_new_tag_bp": 4746
+}

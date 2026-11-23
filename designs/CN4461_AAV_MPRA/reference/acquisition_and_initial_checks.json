@@ -1,0 +1,44 @@
+{
+  "status": "OFFICIAL_REFERENCE_ACQUIRED_SEQUENCE_CONCORDANCE_PASS_CLONING_DESIGN_PENDING",
+  "downloaded_date": "2026-11-09",
+  "source": "Official Addgene download links in user-authenticated Chrome session",
+  "source_page": "https://www.addgene.org/236600/sequences/",
+  "addgene_id": 236600,
+  "addgene_sequence_id": 472831,
+  "sequence_label": "Addgene NGS Result",
+  "reference_length_bp": 4820,
+  "GenBank_SnapGene_sequence_identical": true,
+  "sequence_sha256": "d307c7f1e22e2e81eb939cebfe671d836e346c6f06ef2a73414244aa027514c0",
+  "circular_restriction_site_scan": {
+    "MluI": [
+      {
+        "start_1based": 139,
+        "end_1based_inclusive": 144,
+        "motif": "ACGCGT"
+      }
+    ],
+    "SacI": [
+      {
+        "start_1based": 727,
+        "end_1based_inclusive": 732,
+        "motif": "GAGCTC"
+      }
+    ]
+  },
+  "missing_explicit_feature_labels": [
+    "AiE0779m_3xC2 enhancer",
+    "minBG promoter",
+    "WPRE3",
+    "BarcodeS"
+  ],
+  "files": {
+    "addgene-plasmid-236600-sequence-472831.gbk": {
+      "bytes": 13481,
+      "sha256": "80c2b3312ea2a451d49a1def159824430d9455bd7a12a5395bf3b973ec9b0f14"
+    },
+    "addgene-plasmid-236600-sequence-472831.dna": {
+      "bytes": 31807,
+      "sha256": "5b6d3aa607ff79e3d1a9ee371cd8918f6ba8514f4daab3358602266d17108c20"
+    }
+  }
+}

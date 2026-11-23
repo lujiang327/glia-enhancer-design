@@ -1,0 +1,66 @@
+{
+  "date": "2026-11-10",
+  "status": "EXACT_ENHANCER_REPLACEMENT_VERIFIED_WITH_ANNOTATION_CAVEATS",
+  "reference_length": 4820,
+  "related_reference_length": 4808,
+  "reference_sequence_sha256": "d307c7f1e22e2e81eb939cebfe671d836e346c6f06ef2a73414244aa027514c0",
+  "related_sequence_sha256": "1041b5011ba26329acace4b4a6217ff172772c06ebd48873a43c211a833d2294",
+  "enhancer_1based_inclusive": [
+    145,
+    726
+  ],
+  "published_enhancer_exact_match": true,
+  "repeat_length": 194,
+  "repeat_copies": 3,
+  "nominal_minBG_length_from_publication": 53,
+  "barcode_candidate": "AGCAATTA",
+  "barcode_candidate_interval": [
+    1832,
+    1839
+  ],
+  "alignment_gap_interval": [
+    1828,
+    1839
+  ],
+  "full_reference_protected_interval_identity": true,
+  "candidate_source": "reports/phase5/motif_attribution/ranked_library_with_parent_attribution.tsv.gz",
+  "candidate_source_sha256": "0bb423946088c73d0012d523ed4c86c8eaf56ecff3711bd8fb8dca128d6b7b24",
+  "pilot_parent_ranks": [
+    140,
+    25,
+    779
+  ],
+  "MluI": {
+    "recognition": [
+      139,
+      144
+    ],
+    "top_cut_after": 139,
+    "bottom_cut_after": 143,
+    "overhang": "5prime CGCG"
+  },
+  "SacI": {
+    "recognition": [
+      727,
+      732
+    ],
+    "top_cut_after": 731,
+    "bottom_cut_after": 727,
+    "overhang": "3prime AGCT"
+  },
+  "retained_top_strand_length": 4228,
+  "removed_top_strand_interval": [
+    140,
+    731
+  ],
+  "removed_top_strand_length": 592,
+  "final_enhancer_replacement_length": 582,
+  "limitations": [
+    "Exact minimal-promoter identity boundary inferred from published 53-bp length and conserved junctions",
+    "WPRE3 core exact 246 bp; terminal boundary convention not independently annotated",
+    "BarcodeS 8-bp identity inferred using published readout pattern; request depositor barcode-name mapping",
+    "Overlapping 130/141-bp right-ITR annotations unresolved; both sequences preserved",
+    "Pilot candidates illustrative, not finalized; no unique barcodes assigned",
+    "Digital overlap reconstruction does not validate physical assembly, ITR folding, packaging, or enhancer activity"
+  ]
+}

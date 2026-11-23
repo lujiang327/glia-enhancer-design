@@ -1,0 +1,134 @@
+{
+  "seed": 446120261110,
+  "length": 16,
+  "barcodes": 4000,
+  "barcodes_per_enhancer_proposed": 10,
+  "capacity_enhancers_including_controls": 400,
+  "minimum_pairwise_hamming": 5,
+  "minimum_hamming_to_reverse_complements_including_self": 5,
+  "GC_allowed_counts": [
+    7,
+    8,
+    9
+  ],
+  "max_homopolymer": 2,
+  "perfect_dinucleotide_6mer_excluded": true,
+  "forbidden_motifs": [
+    "ACGCGT",
+    "GAGCTC",
+    "CTCGAG",
+    "GATATC",
+    "CACGTG",
+    "GGCGCGCC",
+    "AATAAA",
+    "ATTAAA"
+  ],
+  "junctions_screened": true,
+  "assignment": "No full-library assignment; first 30 used only in engineering prototypes",
+  "position_base_fractions": [
+    {
+      "A": 0.25775,
+      "C": 0.239,
+      "G": 0.247,
+      "T": 0.25625
+    },
+    {
+      "A": 0.2485,
+      "C": 0.255,
+      "G": 0.26475,
+      "T": 0.23175
+    },
+    {
+      "A": 0.2605,
+      "C": 0.22975,
+      "G": 0.25,
+      "T": 0.25975
+    },
+    {
+      "A": 0.26425,
+      "C": 0.241,
+      "G": 0.248,
+      "T": 0.24675
+    },
+    {
+      "A": 0.247,
+      "C": 0.2515,
+      "G": 0.2485,
+      "T": 0.253
+    },
+    {
+      "A": 0.244,
+      "C": 0.25575,
+      "G": 0.251,
+      "T": 0.24925
+    },
+    {
+      "A": 0.2505,
+      "C": 0.2425,
+      "G": 0.252,
+      "T": 0.255
+    },
+    {
+      "A": 0.2515,
+      "C": 0.25625,
+      "G": 0.24925,
+      "T": 0.243
+    },
+    {
+      "A": 0.25175,
+      "C": 0.2415,
+      "G": 0.25775,
+      "T": 0.249
+    },
+    {
+      "A": 0.24325,
+      "C": 0.25675,
+      "G": 0.2435,
+      "T": 0.2565
+    },
+    {
+      "A": 0.2565,
+      "C": 0.24775,
+      "G": 0.25075,
+      "T": 0.245
+    },
+    {
+      "A": 0.2605,
+      "C": 0.25375,
+      "G": 0.2435,
+      "T": 0.24225
+    },
+    {
+      "A": 0.24975,
+      "C": 0.25225,
+      "G": 0.2505,
+      "T": 0.2475
+    },
+    {
+      "A": 0.2605,
+      "C": 0.24125,
+      "G": 0.252,
+      "T": 0.24625
+    },
+    {
+      "A": 0.2555,
+      "C": 0.2045,
+      "G": 0.27375,
+      "T": 0.26625
+    },
+    {
+      "A": 0.26175,
+      "C": 0.275,
+      "G": 0.27275,
+      "T": 0.1905
+    }
+  ],
+  "candidates_rejected": 16664,
+  "decoder": "Extract known flanks, exactly 16nt; unique expected whitelist exact match or <=1 substitution; reject ambiguous/indel/low-quality tags",
+  "limitations": [
+    "Not empirically neutral barcodes",
+    "Not a minimal-edit-distance code",
+    "Hamming screening does not correct indels",
+    "No final experimental catalog assigned"
+  ]
+}

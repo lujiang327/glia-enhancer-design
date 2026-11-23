@@ -1,0 +1,4 @@
+operation_CN4461_to_CN3044	CN4461_start	CN4461_end	CN3044_start	CN3044_end	CN4461_difference	CN3044_difference
+equal	1	1827	1	1827		
+delete	1828	1839	1828	1827	CGAGAGCAATTA	
+equal	1840	4820	1828	4808		
